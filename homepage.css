@@ -3,3 +3,135 @@
   height: auto;
   display: block;
 }
+.hold{
+float:left;
+ }
+ 
+  .event-row{
+ box-sizing:border-box;
+ margin:auto;
+ margin:-17px;
+ width:100%;
+ padding:15px ;
+ height:25vh;
+ display:flex;
+  }
+ 
+ .event-img{
+ border-radius:5px  0px 0px 5px ;
+ background-size:cover;
+ box-sizing:border-box;
+ width:30%;
+ box-shadow: 5px 5px 5px 5px #140c38; 
+ 
+ }
+ 
+ .event-1{
+ background-image:url("Banners/halloween1.png");
+ background-position:15%;
+ }
+ 
+  .event-2{
+ background-image:url("Banners/Summer1.png");
+ background-position:50%;
+ }
+
+
+ .event-3{
+ background-image:url("Banners/chi1.png");
+ background-position:80%;
+ }
+
+
+ .event-4{
+ background-image:url("Banners/iota1.png");
+ background-position:75%;
+ }
+
+ .event-link{
+ color:#dbd0fd;
+ display:block;
+ display:block;
+ }
+ 
+  .event-link:hover{
+ color:#caedf7;
+ display:block;
+ }
+ 
+ .eventbox{
+box-sizing:border-box;
+width:70%;
+overflow:auto;
+padding:5px;
+margin-top:0px;
+background-color:#403175;
+border-radius:0px 5px 5px 0px;
+box-shadow: 5px 5px 5px 5px #140c38;
+margin: 0px 0px 0px  0px;
+margin-right:15px;
+ }
+ 
+.clanbox{
+box-sizing:border-box;
+width:70%;
+overflow:auto;
+padding:5px;
+margin-top:0px;
+background-color:#403175;
+box-shadow: 12px 5px 5px 5px #140c38;
+margin: 0px 0px 0px  0px;
+margin-right:0px;
+}
+ .clanimg{
+ background-image:url("Banners/epsilon3.png");
+background-position:35%;
+ border-radius:  0px 5px 5px 0px ;
+ background-size:cover;
+ box-sizing:border-box;
+ width:30%;
+ min-height:30vh;
+ box-shadow: 5px 5px 5px 5px #140c38; 
+}
+
+.top5{
+background-color:#403175;
+box-shadow: 5px 5px 5px 5px #140c38;
+width:10%;
+border-radius: 5px 0px 0px  5px; 
+}
+
+.top5-all{
+height:50px;
+width:50px;
+margin:10px;
+border-radius:100px; 
+background-position:center;
+background-size:cover
+}
+.top5-1{
+background-image:url(images/kitten1.png);
+}
+.top5-2{
+background-image:url(images/kitten1.png);
+}
+.top5-3{
+background-image:url(images/kitten1.png);
+}
+.top5-4{
+background-image:url(images/kitten1.png);
+}
+.top5-5{
+background-image:url(images/kitten1.png);
+}
+
+
+.top5 a{
+width:100%;
+display: block;
+transition: height 5s ease-in-out !important; 
+}
+.top5 a:hover{
+transform: scale(0.9) rotate(2deg); 
+}
+
