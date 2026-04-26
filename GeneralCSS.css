@@ -47,6 +47,7 @@ width:100%;
 }
  
  footer{
+box-sizing: border-box;
  margin-top:2%;
 padding:10px;
 background-color:#ae97da;
@@ -126,6 +127,7 @@ background-color:rgba(52,35,104,0.4);
   overflow: hidden;
   max-height:0px;
   transition: all 0.3s ease-in-out;
+transition-delay: 0.06s;
   left:0;
   box-sizing:border-box;
   background-color: #a867b7;
@@ -183,6 +185,12 @@ color:#ae97da;
 .small-card img{
 max-width:80%;
 }
+.small-card .button{
+color:#291e51;
+}
+.small-card .button:hover{
+color:#291e51;
+}
 .shrink{
 width:100%;
 display: block;
@@ -227,6 +235,12 @@ button{
 button:active, .button:active{
 	transform: scale(.97);
 }
+button:disabled {
+	background: #c1b0d9;
+	transition: none;
+	transform: none;
+	cursor: not-allowed;
+}
 
 <!-------- Columns--------->
   .row-center{
@@ -235,11 +249,14 @@ justify-content: center;
  width:75%;
  padding:15px;
  }
- .row{
- width:75%;
- padding:15px 
+.row{
+ box-sizing:border-box;
+ margin:auto;
+ margin-top:15px;
+ width:80%;
+ padding:15px ;
  display:flex;
- }
+  }
  
   .ImageCol{
 box-sizing:border-box;

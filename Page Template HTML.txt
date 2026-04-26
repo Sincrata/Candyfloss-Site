@@ -6,6 +6,7 @@
 	<script src="components/header-component.js"></script>
 	<script src="components/footer-component.js"></script>
 	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
     	<style>
     	</style>
 </head>
@@ -48,6 +49,61 @@
 	<footer>
 		<main-footer></main-footer>
 	</footer>
+	<script>
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+		main();
+	</script>
 </body>
 </html> 
 
