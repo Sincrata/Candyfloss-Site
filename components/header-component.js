@@ -4,7 +4,7 @@ class Header extends HTMLElement {
 
 
 <div class="header-box">
-<a href="index.html"><img src="images/logo.gif"></a>
+<a href="index.html"><img src="logos/logo.gif"></a>
 </div>
 <div id="nav-bar">
 <div class="stripe"></div>
