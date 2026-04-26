@@ -157,11 +157,11 @@ background-color:#403175;
 border-radius:5px;
 box-shadow: 5px 5px 5px 5px #140c38;
 width:60%;
-min-width:700px;
+min-width:20%;
 padding:15px;
 margin: auto;
 overflow: hidden;    
-  height: auto;
+height: auto;
 margin-top:2%;
 }
 
@@ -245,6 +245,7 @@ button:disabled {
 <!-------- Columns--------->
   .row-center{
 display: flex;
+ box-sizing:border-box;
 justify-content: center;
  width:75%;
  padding:15px;
@@ -256,7 +257,7 @@ justify-content: center;
  width:80%;
  padding:15px ;
  display:flex;
-  }
+   }
  
   .ImageCol{
 box-sizing:border-box;
@@ -370,6 +371,22 @@ width:75%;
 padding:15px;
 margin-right:15px;
  }
+  
+  .row-big{
+ box-sizing:border-box;
+ margin:auto;
+ width:100%;
+ padding:0px;
+ display:flex;
+  }
+ 
+  <!------------MISC------------------------->
+.clangem{
+display:inline-block;
+margin:15px;
+width: 70%; 
+height: auto;
+}
 
 <!--------------Media Querry---------------->
 @media (max-width: 700px) {
@@ -378,3 +395,4 @@ margin-right:15px;
 @media (max-width: 1000px) {
  	
 }
+
