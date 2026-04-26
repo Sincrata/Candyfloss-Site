@@ -7,6 +7,10 @@ font-family:calibri;
 color:white;
 background-color: #302360;
 }
+nav-bar{
+	top:0px;
+	position:sticky;
+}
 
   
 header{

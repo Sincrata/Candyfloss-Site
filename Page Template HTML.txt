@@ -1,108 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="GeneralCSS.css">
-    <style>
-    </style>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+    	<style>
+    	</style>
 </head>
 <body>
-<header>
-<a href="Index.html"><img src="logo.gif"></a>
-<div class="stripe"></div>
-
-<!----------NAV MENU ----------->
- <nav>
-<ul id="button-bar">
-            			<li id="nav1">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav1">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			</div>
-            			</div>
-            			</li> 
-            			<li id="nav2">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav2">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-              			 </div>
-            			 </div>
-            			 </li> 	
-            			 <li id="nav3">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav3">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-              			</div>
-            			  </div>
-            			</li> 	
-            			<li id="nav4">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav4">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-              			</div>
-            			  </div>
-            			</li> 	
-            			<li id="nav5">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav5">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-              			</div>
-            			  </div>
-            			</li> 
-	            			<li id="nav6">
-            			  <div class="dropdown" >
-            			       <a>World</a>
-            			       <div class="dropdown-content" id="nav6">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-              			</div>
-            			  </div>
-            			</li> 
-	            			<li id="nav7">
-            			      <div class="dropdown" >
-            			      <a>World</a>
-            			      <div class="dropdown-content" id="nav7">
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			      <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-            			       <a href="https://toyhou.se/~world/53663.the-candyfloss">World</a>
-             			 </div>
-            			 </div>
-            			</li> 
-        		</ul>
-    		</nav>
-</header>
-<main>
-<div class= "card">
-<center><h1>This is a Title</h1>
-<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</span><br><br>
-<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Text on the button</a>
-</div>
-<div class="row"><div class = "col">x</div><div class = "col">x</div><div class = "col">x</div>
-</div></center>
-</main> 
-<footer><center>Tenshilove Studios LLC<br>&#128712; <a href="https://toyhou.se/~world/53663.the-candyfloss/page/10511.what-is-candyfloss">ABOUT</a> | &#128464; <a href="https://toyhou.se/~world/53663.the-candyfloss/page/10514.species-and-group-rules">TOS</a> | &#128401; <a href="#">STAFF</a> | &#128490; <a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">DISCORD</a> | &#8962;<a href="https://toyhou.se/~world/53663.the-candyfloss">TOYHOU.SE</center></footer>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div class= "card">
+				<h1>This is a Title</h1>
+				<span>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+					ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+					adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+					nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+					nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+				</span>
+				<br>
+				<br>
+				<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Text on the button</a>
+			</div>
+			<div class="row">
+				<div class = "col">
+					x
+				</div>
+				<div class = "col">
+					x
+				</div>
+				<div class = "col">
+					x
+				</div>
+			</div>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
 </body>
 </html> 
 
