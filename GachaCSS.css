@@ -46,3 +46,10 @@ justify-content: center;
     box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
     outline: none;
 }
+#link{
+text-decoration: none; 
+color: #ae97da;
+}
+#link:hover{
+color:#d4c7fe;
+}
