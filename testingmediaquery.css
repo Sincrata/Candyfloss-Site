@@ -1,0 +1,9 @@
+.testbox{
+background-color:white;
+}
+
+@media (max-width: 700px) {
+	.testbox{
+	background-color:blue;
+	}
+}

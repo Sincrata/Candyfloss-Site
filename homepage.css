@@ -17,6 +17,10 @@ float:left;
  display:flex;
   }
  
+ .mobileclanbox{
+ height:fit-content;
+ }
+ 
  .event-img{
  border-radius:5px  0px 0px 5px ;
  background-size:cover;
@@ -27,26 +31,32 @@ float:left;
  }
  
  .event-1{
- background-image:url("Banners/halloween1.png");
- background-position:15%;
+ background-image:url("Banners/clean.png");
+ background-position:100%;
  }
  
   .event-2{
- background-image:url("Banners/Summer1.png");
- background-position:50%;
+ background-image:url("Banners/dog.png");
+ background-position:60%;
  }
 
 
  .event-3{
- background-image:url("Banners/chi1.png");
- background-position:80%;
+ background-image:url("Banners/plant.png");
+ background-position:20%;
  }
 
 
  .event-4{
- background-image:url("Banners/iota1.png");
- background-position:75%;
+ background-image:url("Banners/school.png");
+ background-position:50%;
  }
+ 
+  .event-5{
+ background-image:url("https://f2.toyhou.se/file/f2-toyhou-se/images/107562374_5nAv31T24GPiGrM.jpg?1758422025");
+ background-position:100%;
+ }
+
 
  .event-link{
  color:#dbd0fd;
@@ -62,7 +72,6 @@ float:left;
  .eventbox{
 box-sizing:border-box;
 width:70%;
-overflow:auto;
 padding:5px;
 margin-top:0px;
 background-color:#403175;
@@ -75,7 +84,7 @@ margin-right:15px;
 .clanbox{
 box-sizing:border-box;
 width:70%;
-overflow:auto;
+ min-height:30vh;
 padding:5px;
 margin-top:0px;
 background-color:#403175;
@@ -95,9 +104,9 @@ background-position:35%;
 }
 
 .top5{
+
 background-color:#403175;
 box-shadow: 5px 5px 5px 5px #140c38;
-width:10%;
 border-radius: 5px 0px 0px  5px; 
 }
 
@@ -107,22 +116,43 @@ width:50px;
 margin:10px;
 border-radius:100px; 
 background-position:center;
-background-size:cover
+background-size:100%;
+background-color:#584894;
 }
 .top5-1{
-background-image:url(images/kitten1.png);
+background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/4344317?1715386700);
 }
 .top5-2{
-background-image:url(images/kitten1.png);
+background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/10273794?1616717466);
 }
 .top5-3{
-background-image:url(images/kitten1.png);
+background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/12989614?1690408197);
 }
 .top5-4{
-background-image:url(images/kitten1.png);
+background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/7007063?1675918461);
 }
 .top5-5{
-background-image:url(images/kitten1.png);
+background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/13393269?1650168371);
+}
+.row-art{
+grid-template-columns:1fr 1fr 1fr 1fr;
+display: grid;
+align-items: flex-end; 
+justify-content: space-between;
+}
+
+#mobiletop5{
+float:left;
+margin-left:10%;
+display:none;}
+
+#mobiletop5 a{
+width:100%;
+display: block;
+transition: height 5s ease-in-out !important; 
+}
+#mobiletop5 a:hover{
+transform: scale(0.9) rotate(2deg); 
 }
 
 
@@ -134,4 +164,26 @@ transition: height 5s ease-in-out !important;
 .top5 a:hover{
 transform: scale(0.9) rotate(2deg); 
 }
+#clanofthemonth{
+margin-right:15px; 
+width:98%;
+}
+.clanrow{
+ box-sizing:border-box;
+ display:flex;
+ margin:auto;
+ margin-top:15px;
+ width: 80%;
+ padding:15px ;
+ overflow:hidden;
+}
+
+
+ <!--------------Media Querry---------------->
+@media (min-width: 700px) {
+}
+@media (min-width: 1000px) {
+ 	
+}
+
 
