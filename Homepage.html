@@ -34,6 +34,10 @@
  	display:block;
  	visibility:visible;
  	}
+ 	.mobile-card{
+ 	display:block;
+ 	}
+
  	#mo-text{
  	font-size:20px;
  	}
@@ -107,15 +111,20 @@
 }
 
 
-}
+
 @media (min-width: 600px) {
  	.mobile{
+ 	display:none;
+ 	}
+ 	#mo-text{
  	display:none;
  	}
  	.eventbox{
  	overflow:auto;
  	}
- 	
+ 	.mobile-card{
+display:none;
+ 	}
  	.top5{
  	width:10%;
  	}
