@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+    	<style>
+		#achievement-logo{
+			margin: auto;
+			margin-top: 15px;
+		}
+		#achievment-info p{
+			max-width: 75%;
+		}
+		#three-columns {
+    			display: grid;
+    			grid-template-columns: repeat(3, 1fr);
+    			gap: 20px;
+		}
+
+		#three-columns > div {
+    			background-color: #584894;
+    			border-radius: 5px;
+			padding-bottom: 15px;
+		}
+		#current-achievements{
+			display: grid;
+			grid-auto-rows: stretch;
+    			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+			width: 80%;
+			justify-content: center;
+			margin: auto;
+			margin-top: 15px;
+			overflow: hidden;
+		}
+		#current-achievements .small-card{
+			box-sizing: border-box;
+			width: 100%;
+    			flex: 1; /* take up remaining vertical space */
+    			display: flex;
+    			flex-direction: column;
+			align-items: center;
+		}
+		.current-info{
+			height: 100%;
+			display: flex;
+    			flex-direction: column;
+		}
+		.current-badge{
+			width: 30%;
+		}
+		.img-box {
+   	 		width: 100%;
+    			aspect-ratio: 1606 / 538;
+    			overflow: hidden;
+		}
+		.img-box img, #fotm-img{
+    			width: 100%;
+    			height: 100%;
+    			object-fit: cover;
+    			object-position: center;
+		}
+		#current-achievements .button{
+			min-width: 50%;
+		}
+		#fotm{
+			margin-top: 15px;
+			width: 60%;
+			height: 25vh;
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			background-color: #403175;
+			
+		}
+		#fotm-container{
+			min-width: 200px;
+			height: 100%;
+			flex: 0 0 40%;
+    			overflow: hidden;
+		}
+		#fotmbox{
+			height: 25vh;
+			overflow: auto;
+			display: flex;
+			flex-direction: row;
+			box-sizing: border-box;
+		}
+		#fotm-info{
+			margin: 0px 20px;
+		}
+		#fotm-info span{
+			background-color: #584894;
+			display: block;
+			padding: 10px;
+		}
+		#fotm-info .button{
+			width: 50%;
+		}
+		#fotm-badge{
+			margin: 10px;
+		}
+		#fotm-badge img{
+			margin: 10px;
+		}
+		
+		@media (max-width: 800px) {
+    			#three-columns{
+        			grid-template-columns: 1fr;
+				max-width: 350px;
+    			}
+		}
+		@media (max-width: 700px) {
+    			.card, #current-achievements{
+        			width: 90%;
+    			}
+			#fotmbox img{
+				max-width: 35px;
+			}
+			#fotm-badge{
+				margin: 0px;
+			}
+			#current-achievements{
+        			grid-template-columns: 1fr;
+    			}
+		}
+		@media (max-width: 1000px) {
+    			.card, #current-achievements, #fotm{
+        			width: 90%;
+    			}
+			#current-achievements{
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		@media (max-width: 500px) {
+			#current-achievements{
+				grid-template-columns: 1fr;
+			}
+		}
+	
+
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<img id="achievement-logo" src="logos/gacha.png">
+			<div class="card" id="achievment-info">
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+					ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+					adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+					nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+					nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+				</p>
+				<br>
+				<div id="three-columns" "style="display: block;">
+					<div>
+						<h2>Prompt</h2>
+						<span> 
+							RulesRulesRules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+						</span>
+					</div>
+					<div>
+						<h2>Chains</h2>
+						<span> 
+							RulesRules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+						</span>
+					</div>
+					<div>
+						<h2>Stories</h2>
+						<span> 
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+							Rules
+							<br>
+						</span>
+					</div>
+				</div>
+				<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Text on the button</a>
+			</div>
+			<div id="current-achievements">
+				<div class="current-info">
+					<div class="img-box"><img class="current-img" src="banners/clean.png"></div>
+					<div class="small-card">
+						<h3>Spring Cleaning</h3>
+						<img class="current-badge" src="badge/clean.png">
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+
+						</p>
+						<a class="button" href="">Submit</a>
+					</div>
+					
+				</div>
+				<div class="current-info">
+					<div class="img-box"><img class="current-img" src="banners/dog.png"></div>
+					<div class="small-card">
+						<h3>Dog Days</h3>
+						<img class="current-badge" src="badge/dog.png">
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+						</p>
+						<a class="button" href="">Submit</a>
+					</div>
+					
+				</div>
+				<div class="current-info">
+					<div class="img-box"><img class="current-img" src="banners/plant.png"></div>
+					<div class="small-card">
+						<h3>House Plant</h3>
+						<img class="current-badge" src="badge/plant.png">
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+						</p>
+						<a class="button" href="">Submit</a>
+					</div>
+					
+				</div>
+				<div class="current-info">
+					<div class="img-box"><img class="current-img" src="banners/school.png"></div>
+					<div class="small-card">
+						<h3>First Day of School</h3>
+						<img class="current-badge" src="badge/school.png">
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+						</p>
+						<a class="button" href="">Submit</a>
+					</div>
+				</div>
+			</div>
+
+ 			<div id="fotm">
+        			<div id="fotm-container">
+					<img id="fotm-img" src="https://f2.toyhou.se/file/f2-toyhou-se/images/107562374_5nAv31T24GPiGrM.jpg?1758422025">
+				</div>
+				<div id="fotmbox"> 	
+					<div id="fotm-info">
+						<h2>Floss of the Month</h2>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+						</span>
+						<a class="button" href="">Submit</a>
+					</div>
+						<div id="fotm-badge">
+							<img src="badge/school.png">
+						</div>
+					</div>
+
+				</div>
+ 			</div> 
+
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+		main();
+	</script>
+</body>
+</html> 
