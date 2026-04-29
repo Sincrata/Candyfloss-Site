@@ -7,6 +7,7 @@
 	<script src="components/footer-component.js"></script>
 	<script src="components/navbar-component.js"></script>
 	<link rel="icon" href="icons/Planet.ico">
+	<title>CF Achievements</title>
     	<style>
 		#achievement-logo{
 			margin: auto;
@@ -34,16 +35,18 @@
 			width: 80%;
 			justify-content: center;
 			margin: auto;
-			margin-top: 15px;
+			margin-top: 35px;
 			overflow: hidden;
 		}
 		#current-achievements .small-card{
 			box-sizing: border-box;
 			width: 100%;
-    			flex: 1; /* take up remaining vertical space */
+    			flex: 1;
     			display: flex;
     			flex-direction: column;
 			align-items: center;
+			margin-top: 0px;
+			box-shadow: 5px 5px 5px 5px #140c38;
 		}
 		.current-info{
 			height: 100%;
@@ -57,6 +60,8 @@
    	 		width: 100%;
     			aspect-ratio: 1606 / 538;
     			overflow: hidden;
+			z-index: 2;
+			border-radius: 5px 5px 0px 0px;
 		}
 		.img-box img, #fotm-img{
     			width: 100%;
@@ -75,13 +80,15 @@
 			flex-direction: row;
 			align-items: stretch;
 			background-color: #403175;
-			
+			margin-top: 35px;
+			border-radius: 5px;
 		}
 		#fotm-container{
 			min-width: 200px;
 			height: 100%;
 			flex: 0 0 40%;
     			overflow: hidden;
+			border-radius: 5px 0px 0px 5px;
 		}
 		#fotmbox{
 			height: 25vh;
@@ -92,11 +99,13 @@
 		}
 		#fotm-info{
 			margin: 0px 20px;
+			border-radius: 0px 5px 5px 0px;
 		}
 		#fotm-info span{
 			background-color: #584894;
 			display: block;
 			padding: 10px;
+			border-radius: 5px;
 		}
 		#fotm-info .button{
 			width: 50%;
@@ -106,6 +115,9 @@
 		}
 		#fotm-badge img{
 			margin: 10px;
+		}
+		h2{
+			margin-bottom: 5px;
 		}
 		
 		@media (max-width: 800px) {
@@ -152,7 +164,7 @@
 	<main>
 		<nav-bar></nav-bar>
 		<center>
-			<img id="achievement-logo" src="logos/gacha.png">
+			<img id="achievement-logo" src="logos/achievements.png">
 			<div class="card" id="achievment-info">
 				<p>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
@@ -212,80 +224,75 @@
 						</span>
 					</div>
 				</div>
-				<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Text on the button</a>
 			</div>
 			<div id="current-achievements">
 				<div class="current-info">
 					<div class="img-box"><img class="current-img" src="banners/clean.png"></div>
 					<div class="small-card">
-						<h3>Spring Cleaning</h3>
+						<h2>Spring Cleaning</h2>
+						<span>Art Prompt</span>
 						<img class="current-badge" src="badge/clean.png">
 						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
-							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-
+							Spring is here and the Candyfloss are ready to get cleaning!
+							From scrubbing their homes, to washing away their worries with a relaxing mental health day, 
+							the Floss are breaking out the brooms and bubbles!
+							Draw one or more of your Candyfloss cleaning their surroundings, 
+							getting rid of old junk, cleaning their bodies or paritcipating in a more metaphorical 
+							cleaning activity to help them refresh and renew this spring!
 						</p>
-						<a class="button" href="">Submit</a>
+						<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
 					</div>
 					
 				</div>
 				<div class="current-info">
 					<div class="img-box"><img class="current-img" src="banners/dog.png"></div>
 					<div class="small-card">
-						<h3>Dog Days</h3>
+						<h2>Dog Days</h2>
+						<span>Art Chain</span>
 						<img class="current-badge" src="badge/dog.png">
 						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
-							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
-							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+							From Paizo pups, to Anijuru, to Rushounds and more! The Candyfloss just adore their loyal companions!
+							We are giving some love to our Dog type petpets this month with the Dog Days chain game! 
+							Join the chain to draw the above floss with their furry companion! 
+							Come jump into the Chain game to give some pats and paws and see those tails wag!
 						</p>
-						<a class="button" href="">Submit</a>
+						<a class="button" href="">Enter</a>
 					</div>
 					
 				</div>
 				<div class="current-info">
 					<div class="img-box"><img class="current-img" src="banners/plant.png"></div>
 					<div class="small-card">
-						<h3>House Plant</h3>
+						<h2>House Plant</h2>
+						<span>Art Prompt</span>
 						<img class="current-badge" src="badge/plant.png">
 						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
-							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
-							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+							Let it grow! Candyfloss with green thumbs unite in this prompt! Floss of all sorts adore gardening!
+							Whether they are the type to burn through potted plants faster than a Kappafloss can sprint, 
+							or if they are a respectable plant-mom and have a house filled with greenery, 
+							we want to see their beloved potted plants!
 						</p>
-						<a class="button" href="">Submit</a>
+						<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
 					</div>
 					
 				</div>
 				<div class="current-info">
 					<div class="img-box"><img class="current-img" src="banners/school.png"></div>
 					<div class="small-card">
-						<h3>First Day of School</h3>
+						<h2>First Day of School</h2>
+						<span>Literature Prompt</span>
 						<img class="current-badge" src="badge/school.png">
 						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
-							ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-							adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
-							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+							School is in session! So many exciting things can happen when a young floss sets out to their first day of school!
+							Whether it's the exciting new world of kindergarten, the drama filled high school days, 
+							or the party-filled adventure of college, anything can happen when a floss steps into a new life in a new 
+							school! Write a short story about your candyfloss' first day at a new school! 
+							What wacky shinnanigans or prospective love stories await them? 
+							Maybe they're joining a super hero school to learn to use their powers for good, 
+							or maybe they're joining a sensei to learn the ways of the Thetan Shinobi or the Epsilonion monks! 
+							We want to hear all about their chaotic first day!
 						</p>
-						<a class="button" href="">Submit</a>
+						<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
 					</div>
 				</div>
 			</div>
@@ -307,7 +314,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
 						</span>
-						<a class="button" href="">Submit</a>
+						<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
 					</div>
 						<div id="fotm-badge">
 							<img src="badge/school.png">
