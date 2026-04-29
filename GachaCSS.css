@@ -6,9 +6,13 @@ margin: auto;
 margin-top:2%;
 }
 
-#ball:hover{
- content: url("images/gacha4.png");
+#ball{
+transition: height 5s ease-in-out !important; 
 }
+#ball:hover{
+transform: scale(0.9) rotate(2deg); 
+}
+
 
 .input{
 background-color:white;
