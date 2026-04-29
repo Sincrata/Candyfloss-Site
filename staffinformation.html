@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="staffinformation.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<title>CF Staff Info</title>
+    	<style>
+    	@media (max-width: 700px) {
+.grid{
+grid-template-columns: repeat(1, 1fr);
+ }
+ }
+
+
+
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div class= "card">
+				<h1>Meet The Candyfloss Staff</h1>
+  
+<div class="grid">
+    <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/tenshilove "><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/Tenshilove?43" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Tenshilove</h2><b>Founder</b> <br>Wearer of Many Hats<br><br>Tenshi or Chel <br>she/her
+    </div>
+    </div>
+         <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/ink-palette "><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/ink-palette?3" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Ink-Palette</h2><b>Admin</b> <br>Achievement Approval<br><br>Mink<br>she/her
+    </div>
+    </div>
+
+     <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/bigbyshand "><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/bigbyshand?3" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Bigbyshand</h2><b>Contributor</b><br>Designer and Discord Mod<br><br>Bigby or Tucker<br>he/him
+    </div>
+    </div>
+
+     <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/Twila-Fish" ><img src="https://file.toyhou.se/users/Twila-Fish?7" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Tenshilove</h2><b>Admn</b><br>Shopkeeper
+          <br><br>Twila<br>she/her
+    </div>
+    </div>
+      <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/KrissySempaiArt"><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/KrissySempaiArt?4" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">KrissySempaiArt</h2><b>Admin</b><br>Petshop Runner<br><br>Krissy<br>she/her
+    </div>
+    </div>
+  <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/Katsumi-Draws"><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/Katsumi-Draws?7" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Katsumi-draws</h2><b>Admin</b><br>Coder and Head of Redesign<br><br>Kat or Ali <br>she/her
+    </div>
+ </div>
+   <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/Countless"><img src="https://f2.toyhou.se/file/f2-toyhou-se/users/Countless?94" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Countless</h2><b>Admin</b><br>Head of MYOs<br><br>Countless<br>any pronouns</div>
+ </div>
+
+  <div class="staff">
+          <div class="inner-card" style="min-width:80%;max-width:100%;">
+          <a class="shrink" href="https://toyhou.se/Lilbeedraws"><img src="https://file.toyhou.se/users/Lilbeedraws?1" style="width:100px;border-radius:100px;height:100px;"></a><h2 style="margin:0px;">Lilbee</h2><b>Admin</b><br>Gachapon Manager<br><br>Lilbee, Bunny, or Chrissy<br>she/her
+    </div>
+ </div>
+
+</div>
+</div>			
+ 
+		 
+
+				         	
+				         	
+</div>
+</div>					 
+					 
+		 
+
+				 
+		 
+				 
+		
+			<div class="row">
+			</div>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+		main();
+	</script>
+</body>
+</html> 
+
+
