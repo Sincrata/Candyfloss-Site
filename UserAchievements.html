@@ -10,15 +10,31 @@
 	<script src="components/navbar-component.js"></script>
   	<link rel="icon" href="icons/Planet.ico">
   <style>
-	#myo-grid, #trait-grid, #voucher-grid, #event-grid, #petpet-grid{
+	#badge-grid, #image-grid, #literature-grid{
     		display: grid;
     		grid-template-columns: repeat(auto-fill, 280px);
     		gap: 1rem;
     		justify-content: center;
+		background-color:#403175;
+		border-radius:5px;
+		box-shadow: 5px 5px 5px 5px #140c38;
+    		width: 100%;
+		box-sizing: border-box;
+	}
+	#badge-grid{
+		grid-template-columns: repeat(auto-fill, 150px);
 	}
 
-
-	.myo, .trait, .voucher, .event, .petpet{ 
+	.badge{
+		border-radius:5px;
+		padding: 1em; 
+		margin: 1rem;
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+	}
+	.image, .literature{ 
 		background-color: #403175;
 		border-radius:5px;
 		box-shadow: 5px 5px 5px 5px #140c38;
@@ -52,22 +68,20 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-
-
-	.myo-image, .trait-image, .voucher-image, .event-image, .petpet-image{
+	.badge-image, .image-image, .literature-image{
     		width: 100%;
     		height: auto;
     		display: block;
     		border-radius: 6px;
 	}
 
-	.myo-title, .trait-title, .voucher-title, .event-title, .petpet-title, .loading h4{
+	.badge-title, .image-title, .literature-title, .loading h4{
     		margin: 0.5rem 0;
     		font-size: 1.2rem;
 		text-align: center;
 	}
 
-	.myo-info p, .trait-info p, .voucher-info p, .event-info p, .petpet-info p{
+	.badge-info p, .image-info p, .literature-info p{
     		margin: 0;
     		font-size: 0.9rem;
 		text-align: center;
@@ -92,17 +106,14 @@
 	.collapsed + .collapsible-content {
     		display: none;
 	}
-	#inventory{
+	#achievements{
 		margin: 0px 25px;
 		box-sizing: border-box;
-	}
-	#disclaimer{
-		margin: 0px 25px;
 	}
 	main{
 		min-height: 65vh;
 	}
-	#onto-inventory{
+	#onto-achievements{
 		max-width: 90%;
 		display: flex;
 		justify-items: center;
@@ -138,16 +149,16 @@
 	</header>
 	<main>
 		<nav-bar></nav-bar>
-		<div id="onto-inventory" class="card" style="display: none;">
+		<div id="onto-achievements" class="card" style="display: none;">
 			<img src="logos/achievements.png" alt="Inventory" style="inline-block">
 			<br>
 			<span> Enter your username below to check out the Achievements you've completed! </span>
 			<br>
 			<input class="input" id="username" type="text" placeholder="Enter Username..." style=""></input>
 			<br>
-			<button id="inventory-button" class="button" style="width: 75%; margin: auto;" disabled>Go To Inventory</button>
+			<button id="achievement-button" class="button" style="width: 75%; margin: auto;" disabled>Go To Inventory</button>
 		</div>
-		<div id="inventory">
+		<div id="achievements">
 			<div class="title-card" style="margin-top: 15px;">
 				<div class="title-row">
 					<h1 id="title"> X's Achievemnts</h1>
@@ -159,35 +170,36 @@
 				<hr>
 			</div>
 
-			<article id="event">
-				<div id="event-header" class="collapsible"><span class="arrow">▼</span><h2>Badges</h2></div>
-				<div id="event-body" class="collapsible-content">
-					<div id="event-loading" class="loading"><h4>Loading Event</h4></div>
-					<div id="event-grid">
+
+			<article id="badges"">
+				<div id="badge-header" class="collapsible"><span class="arrow">▼</span><h2>Badges</h2></div>
+				<div id="badge-body" class="collapsible-content">
+					<div id="badge-loading" class="loading"><h4>Loading Badges</h4></div>
+					<div id="badge-grid">
 					</div>
 				</div>
 			</article>
 
 
-			<article id="myos">
-				<div id="myo-header" class="collapsible"><span class="arrow">▼</span><h2>Art Gallery</h2></div>
-				<div id="myo-body" class="collapsible-content">
-					<div id="myo-loading" class="loading"><h4>Loading Myos</h4></div>
-					<div id="myo-grid">
+			<article id="images" style="display: none;">
+				<div id="image-header" class="collapsible"><span class="arrow">▼</span><h2>Art Entries</h2></div>
+				<div id="image-body" class="collapsible-content">
+					<div id="image-loading" class="loading"><h4>Coming Soon!</h4></div>
+					<div id="image-grid">
 					</div>
 				</div>
 			</article>
 
-
-			<article id="traits">
-				<div id="traits-header" class="collapsible"><span class="arrow">▼</span><h2>Library</h2></div>
-				<div id="traits-body" class="collapsible-content">
-					<div id="trait-loading" class="loading"><h4>Loading Traits</h4></div>
-					<div id="trait-grid">
+			<article id="literatures" style="display: none;">
+				<div id="literature-header" class="collapsible"><span class="arrow">▼</span><h2>Literature Entries</h2></div>
+				<div id="literature-body" class="collapsible-content">
+					<div id="literature-loading" class="loading"><h4>Coming Soon!</h4></div>
+					<div id="literaturet-grid">
 					</div>
 				</div>
 			</article>
-	</main>
+
+		</main>
 	<footer>
 		<main-footer></main-footer>
 	</footer>
@@ -197,29 +209,29 @@
 		var username = params.get("username") ?? "";
 
 		if(username ==""){
-			const button = document.getElementById("onto-inventory");
-			const inventory = document.getElementById("inventory");
+			const button = document.getElementById("onto-achievements");
+			const inventory = document.getElementById("achievements");
 			button.style.display = "block";
 			inventory.style.display = "none";
 
 
-			const invbtn = document.getElementById("inventory-button");
+			const achbtn = document.getElementById("achievement-button");
 			username = document.getElementById("username");
 
 			var userinput = username.value;
 
 			username.addEventListener("keyup", () => {
 				if(username.value.length > 0){
-					invbtn.disabled = false;
+					achbtn.disabled = false;
 				}else{
-					invbtn.disabled = true;
+					achbtn.disabled = true;
 				}
 				userinput = username.value;
 			});
 
-			invbtn.addEventListener("click", () => {
+			achbtn.addEventListener("click", () => {
     				const encoded = encodeURIComponent(userinput);
-				window.location.href = `inventory.html?username=${encoded}`;
+				window.location.href = `UserAchievements.html?username=${encoded}`;
 			});
 		}
 		
@@ -242,7 +254,7 @@
 
 		
 		const title = document.getElementById("title");
-		title.innerHTML = `${username}'s Inventory`;
+		title.innerHTML = `${username}'s Achievements`;
 
 
 		async function fetchCSV(url) {
@@ -356,23 +368,7 @@
 			return results;
 		}
 
-		async function loadFilteredEventData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFYX5ZwxiLNERSnxX7W_ttlM1KGc_Lr7P8ZhpOHE5XNWDEi_qEk49HEyBm4n-00WpzKO_lng-M2x-V/pub?gid=1030020312&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows2(
-        			rows,
-        			"Username",  username,
-				"Used",  "used"
-    			);
-
-    			console.log(results);
-			return results;
-		}
 		
-
 		
 		const count = document.getElementById("coin-count");
 		const coin = await loadFilteredCoinData();
@@ -383,273 +379,58 @@
 		}
 		count.innerHTML = `${coins} Coins`;
 
-
-
-		
-		const events = await loadFilteredEventData();
-		
-		var htmlev = "";
-		const eventgrid = document.getElementById("event-grid");
-		
-		for (let i = 0; i < events.length; i++) { 
-			const event = events[i]
-			if (event[5] == "pending fixes") { 
-				htmlev += `<div class="event"> 
-				<img class="event-image" src="${event[3]}">
-				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
-				<div class="event-info">
-					<p>Used: <a style="color: white;"href="${event[6]}">Pending</a></p>
-					<p>Expires: 6/1/26</p>
-				</div>
-				</div>
-				`;
-			}else{
-				htmlev += `<div class="event"> 
-				<img class="event-image" src="${event[3]}">
-				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
-				<div class="event-info">
-					<p>Used: Unused</p>`;
-				
-
-				if(event[4].includes("Event")){
-					htmlev += "<p>Expires: 6/1/26</p>"
-				}else{
-					htmlev += "<p>Expires: 5/1/26</p>"
-				}
-
-				htmlev += `</div>
-				</div>
-
-				`;
-			}
-		}
-		
-		
-		if(htmlev == ""){
-			htmlev = `<div class="loading" style="width: 100%;"> <h4 class="event-title">No Unused Ascension Vouchers Found</h4></div>`;
-			eventgrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-		}
-
-		var eloading = document.getElementById("event-loading");
-		eloading.style.display = "none";
-
-		eventgrid.innerHTML = htmlev;
-
-		async function loadFilteredMYOData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRclpELOsw7e_9hsNHgafNBOtAwe76GOxPDX5rvX243m7Q6W8hqOTsw7k8kIEvOZKJSQTVOsuXmwCyK/pub?gid=1756069810&single=true&output=csv";
+	
+		async function loadFilteredEntriesData() {
+    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=256204382&single=true&output=csv";
 
     			const csv = await fetchCSV(url);
     			const rows = parseCSV(csv);
 
     			const results = filterRows(
         			rows,
-        			"Username",  username,
-        			"Used", "unused"
+        			"User",  username,
+        			"Approved", "Yes"
     			);
 
     			console.log(results);
 			return results;
 		}
-
-		const myos = await loadFilteredMYOData();
+		
+		const entries = await loadFilteredEntriesData();
 
 		var html = "";
 
-		for (let i = 0; i < myos.length; i++) { 
-			const myo = myos[i]
-			if (myo[4].toLowerCase().includes("admin") || myo[4].toLowerCase().includes("contributor")) { 
-				html += `<div class="myo"> 
-				<img class="myo-image" src="${myo[3]}">
-				<h4 class="myo-title">${capitalizeFirstWord(myo[4])} #${myo[2]}</h4>
-				<div class="myo-info">
-					<p>From: ${myo[5]}</p>
-					<p>Date: ${myo[6]}</p>
+		for (let i = 0; i < entries.length; i++) { 
+			var entry = entries[i];
+			html += `
+				<div class="badge"> 
+					<img class="badge-image" src="badge/${entry[7]}">
+					<h4 class="badge-title">${capitalizeFirstWord(entry[3])}</h4>
+					<div class="badge-info">
+						<p>${entry[5]}</p>
+					</div>
 				</div>
-				</div>
-			
-				`;
-			}else{
-				html += `<div class="myo"> 
-				<img class="myo-image" src="${myo[3]}">
-				<h4 class="myo-title">${capitalizeFirstWord(myo[4])}</h4>
-				<div class="myo-info">
-					<p>From: ${myo[5]} #${myo[2]}</p>
-					<p>Date: ${myo[6]}</p>
-				</div>
-				</div>
-			
-				`;
-			}
-		}
-
-		
-		const myogrid = document.getElementById("myo-grid");
-		if(html == ""){
-			html = `<div class="loading" style="width: 100%;"> <h4 class="myo-title">No Unused MYOs Found</h4></div>`;
-			myogrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-		}
-		
-		var loading = document.getElementById("myo-loading");
-		loading.style.display = "none";
-
-		myogrid.innerHTML = html;
-
-		async function loadFilteredTraitData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRclpELOsw7e_9hsNHgafNBOtAwe76GOxPDX5rvX243m7Q6W8hqOTsw7k8kIEvOZKJSQTVOsuXmwCyK/pub?gid=677812775&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows(
-        			rows,
-        			"Username",  username,
-        			"Used", ""
-    			);
-
-    			console.log(results);
-			return results;
-		}
-
-		const traits = await loadFilteredTraitData();
-		
-		html = "";
-		
-
-		for (let i = 0; i < traits.length; i++) { 
-			const trait = traits[i]
-			html += `<div class="trait"> 
-			<img class="trait-image" src="${trait[2]}">
-			<h4 class="trait-title">${trait[3]}</h4>
-			<div class="trait-info">
-				<p>From: ${trait[4]}</p>
-				<p>Date: ${trait[5]}</p>
-			</div>
-			</div>
-			
 			`;
 		}
-
 		
-		const traitgrid = document.getElementById("trait-grid");
+
+		const badgegrid = document.getElementById("badge-grid");
 		if(html == ""){
-			html = `<div class="loading" style="width: 100%"> <h4 class="trait-title">No Unused Traits Found</h4></div>`;
-			traitgrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+			html = `<div class="loading" style="width: 100%;"> <h4 class="badge-title">No Badges Earned</h4></div>`;
+			badgegrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
 		}
-		
-		loading = document.getElementById("trait-loading");
+
+		var loading = document.getElementById("badge-loading");
 		loading.style.display = "none";
-		
 
-		traitgrid.innerHTML = html;
-
+		badgegrid.innerHTML = html;
 
 
-		async function loadFilteredVoucherData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRclpELOsw7e_9hsNHgafNBOtAwe76GOxPDX5rvX243m7Q6W8hqOTsw7k8kIEvOZKJSQTVOsuXmwCyK/pub?gid=1273044878&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows2(
-        			rows,
-        			"Username",  username,
-        			"Remaining", "0"
-    			);
-
-    			console.log(results);
-			return results;
-		}
-
-		const vouchers = await loadFilteredVoucherData();
-		
 		html = "";
 
-		var total = 0;
+		
 		
 
-		for (let i = 0; i < vouchers.length; i++) { 
-			const voucher = vouchers[i]
-			total += parseFloat(voucher[5], 10);
-			html += `<div class="voucher"> 
-			<img class="voucher-image" src="${voucher[2]}">
-			<h4 class="voucher-title">$${voucher[3]} Redesign Voucher</h4>
-			<div class="voucher-info">
-				<p>Used: $${voucher[4]}</p>
-				<p>Remaining: $${voucher[5]}</p>
-				<p>From: ${voucher[6]}</p>
-				<p>Date: ${voucher[7]}</p>
-			</div>
-			</div>
-			
-			`;
-		}
-
-		
-		const vouchergrid = document.getElementById("voucher-grid");
-		if(html == ""){
-			html = `<div class="loading" style="width: 100%"> <h4 class="voucher-title">No Unused Vouchers Found</h4></div>`;
-			vouchergrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-		}
-		
-		loading = document.getElementById("voucher-loading");
-		loading.style.display = "none";
-
-		vouchergrid.innerHTML = html;
-
-		const counter = document.getElementById("vouchers-header");
-		
-		counter.innerHTML = `<span class="arrow">▼</span><h2>Redesign Vouchers: $${total}</h2>`;
-
-
-
-
-		async function loadFilteredPetpetData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0exCOdni2TTA43W-_V9LKJCEk5dGTS5vVOHlBGqY0T9f_3xoZNGtotrKCIqI7c6TPsghx-s3gLgqt/pub?gid=2084318873&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows(
-        			rows,
-        			"Username",  username,
-        			"Used", ""
-    			);
-
-    			console.log(results);
-			return results;
-		}
-
-		const petpets = await loadFilteredPetpetData();
-		
-		html = "";
-		
-
-		for (let i = 0; i < petpets.length; i++) { 
-			const petpet = petpets[i];
-			html += `<div class="petpet"> 
-			<img class="petpet-image" src="${petpet[1]}">
-			<h4 class="petpet-title">${petpet[2]}</h4>
-			<div class="petpet-info">
-				<p>From: ${petpet[3]}</p>
-				<p>Date: ${petpet[4]}</p>
-			</div>
-			</div>
-			
-			`;
-		}
-
-		
-		const petpetgrid = document.getElementById("petpet-grid");
-		if(html == ""){
-			html = `<div class="loading" style="width: 100%"> <h4 class="petpet-title">No Unused Petpet MYOs Found</h4></div>`;
-			petpetgrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-		}
-		
-		loading = document.getElementById("petpet-loading");
-		loading.style.display = "none";
-		
-
-		petpetgrid.innerHTML = html;
 
 	}
 	main();

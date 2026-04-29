@@ -8,11 +8,15 @@
 	<script src="components/footer-component.js"></script>
 	<script src="components/navbar-component.js"></script>
 	<link rel="preload" href="https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png" as="image">
-	<link rel="preload" href="images/Epsilon2.png" as="image">
 	<link rel="preload" href="logos/logo.gif" as="image">
-	<link rel="preload" href="images/gacha4.png" as="image">
 	<link rel="icon" href="icons/Planet.ico">
    	<style>
+		#gacha-mobile{
+			display: none;
+		}
+		#intro{
+			width: 80%;
+		}
 		.input {
     			width: 25%;
     			padding: 6px 16px;
@@ -31,6 +35,71 @@
     			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
     			outline: none;
 		}
+		.img-col.inner-card{
+			style="width:70%;"
+		}
+		#submit-stock{
+			width:50%;
+		}
+		#ball{
+			width: 100%;
+			max-width: 200px;
+			display: inline-block:
+			margin: auto;
+		}
+		@media (max-width: 1000px) {
+ 			#gacha{
+ 				display:none;
+ 			}
+ 			#gacha-mobile{
+ 				display: block;
+ 				width: 60%;
+				margin: auto;
+ 			}
+			#img-col{
+				display: none;
+			}
+			.inner-card{
+				width: 90%;
+			}
+ 		}
+		@media (max-width: 800px) {
+ 			#gacha{
+ 				display:none;
+ 			}
+ 			#gacha-mobile{
+ 				display: inline;
+ 				width: 80%;
+ 			}
+			#img-col{
+				display: none;
+			}
+			.inner-card{
+				width: 90%;
+			}
+			#gacha-pic{
+				max-width: 100%;
+			}
+			#bottom-cards{
+				flex-direction: column;
+				align-items: center;
+				width: 90%;
+			}
+			#submit-stock{
+				width: 100%;
+			}
+			.col-5{
+				width: 100%;
+			}
+ 		}
+		@media (max-width: 500px) {
+
+ 			#gacha-mobile{
+ 				width: 80%;
+ 			}
+ 		}
+
+		
     	</style>
 </head>
 <body>
@@ -39,16 +108,20 @@
 </header>
 <main>
 	<nav-bar></nav-bar>
-	<center><img src="logos/gacha.png" alt="Gachapon">
-		 <div class= "card"  style="width:80%;margin:0px;padding:0px;box-sizing:border-box;">
+	<center><img id="gacha-pic" src="logos/gacha.png" alt="Gachapon">
+		 <div class= "card" id="intro" style="margin:0px;padding:0px;box-sizing:border-box;">
 		<div class="row">
-					<div class="img-col inner-card" style="width:70%;"><br>
+					<div class="img-col inner-card"><br>
                         <span><h2>Welcome to the Candyfloss Gachapon Machine! </h2>
 				Here you use your Floss Coins to spin the machine and receive a randomized Candyfloss! 
 				Who will you get! Only one way to find out!
 			</span>
-			<br>&nbsp;<br>
-                        <a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Spin for a Floss!</a>
+			<br>
+			&nbsp;
+			<br>
+			<img id="gacha-mobile" loading="eager" fetchpriority="high" src="images/gachamachine2.png">
+			
+                        <a class = "button" href="https://toyhou.se/~forums/68831.may-2026/789018.gpc">Spin for a Floss!</a>
 			<br>
                         <span><h2>Check your current coin total!</h2>Input a username below to check your current coin total before you spin!
 				<br>
@@ -67,12 +140,12 @@
                        	</div>
 			<br>	
 			<br>
-                </div><div class="img-col" style="float:right;margin-left:15%;"><img id="gacha" loading="eager" fetchpriority="high" src="images/gachamachine2.png" style="margin:auto;max-width:100%;">
+                </div><div id="img-col" class="img-col" style="float:right;margin-left:15%;"><img id="gacha" loading="eager" fetchpriority="high" src="images/gachamachine2.png" style="margin:auto;max-width:100%;">
 			</div>
 </div></div>
 <!-----------------------BOTTOM CARDS----------------------->
-		<div class="row">
-			<div class = "ImageCol" style="width:50%;">
+		<div class="row" id="bottom-cards">
+			<div class = "ImageCol" id="submit-stock">
 	 			<div class="small-card">
 				<div class="inner-card">	<h2>Submit a Floss!</h2>
 					The Gachapon machine is stocked by STAFF and the Community! 
@@ -80,7 +153,7 @@
 					Do you want notifications when new floss are added to the machine? 
 					Grab the Gachapon ping role in our Discord to get an alert on there when new stock is added in!!
 					<br>
-					<a class = "button" id="user-submit" href="https://toyhou.se/~world/53663.the-candyfloss">Submit a Floss</a></div><br>
+					<a class = "button" id="user-submit" href="https://toyhou.se/~forums/68831.may-2026/789017.gpd ">Submit a Floss</a></div><br>
 		 
 				<div class="inner-card"><h2> Stock</h2>
 				Check out which floss are currently stocked in the machine! 
@@ -91,7 +164,7 @@
 				<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Check the Stock</a>
 			 	</div></div>
 	</div>
-			<div class = "col-5"><img id="ball" src="images/ball.png" style="height:8vw;">
+			<div class = "col-5"><img id="ball" src="images/ball.png">
 				<h2>How does the machine work?</h2> <div class="inner-card">
 				By cashing in 1 Floss Coin, you will spin the machine and receive a random floss from the stock. 
 				There is no weights, which means all floss have an equal chance of being rolled.
