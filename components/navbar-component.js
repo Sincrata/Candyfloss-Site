@@ -26,7 +26,7 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Your Floss</a>
 				<div class="dropdown-content" id="nav2">
-            			      	<a href="https://thecandyflossspecies.com/inventory">Inventory</a>
+            			      	<a href="inventory.html">Inventory</a>
             			      	<a href="UserAchievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
