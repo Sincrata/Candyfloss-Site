@@ -461,6 +461,7 @@ background-color:#403175;
     .dropdown > a {
         display: block;
         padding: 1rem;
+	font-size: 2rem;
     }
 
     .dropdown-content.open {

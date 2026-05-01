@@ -141,6 +141,11 @@
     			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
     			outline: none;
 		}
+	@media (max-width: 600px) {
+		h1{
+			font-size: 1.2em;
+		}
+	}
 
   </style>
 </head>
@@ -151,7 +156,7 @@
 	<main>
 		<nav-bar></nav-bar>
 		<div id="onto-achievements" class="card" style="display: none;">
-			<img src="logos/achievements.png" alt="Inventory" style="inline-block">
+			<img src="logos/achievements.png" alt="Inventory" style="display: inline-block; max-width: 100%;">
 			<br>
 			<span> Enter your username below to check out the Achievements you've completed! </span>
 			<br>
