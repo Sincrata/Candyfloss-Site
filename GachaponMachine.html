@@ -299,6 +299,7 @@ async function main() {
 
 
 	button.addEventListener("click",  async () => {
+		username = input.value;
 		box.style.display = "block";
 		count.innerHTML = `Loading Coins`;
 		const coin = await loadFilteredCoinData();
