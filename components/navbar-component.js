@@ -19,7 +19,6 @@ class Nav extends HTMLElement {
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/characters">Character Database</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">World Map</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/158096.color-program">Color Picker Program</a>
-
             			</div>
             		</div>
             	</li> 
@@ -27,8 +26,8 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Your Floss</a>
 				<div class="dropdown-content" id="nav2">
-            			      	<a href="inventory.html">Inventory</a>
-            			      	<a href="achievments.html">My Achievements</a>
+            			      	<a href="https://thecandyflossspecies.com/inventory">Inventory</a>
+            			      	<a href="UserAchievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10546.redesign-center">Redesign Your Floss</a>
@@ -39,8 +38,8 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Activities</a>
 				<div class="dropdown-content" id="nav3">
-            			      	<a href="#">Achievements</a>
-            			      	<a href="#">Floss Gachapon</a>
+            			      	<a href="Achievements.html">Achievements</a>
+            			      	<a href="GachaponMachine.html">Floss Gachapon</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12732.july-event">Event</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12731.july-holiday-opens-on-the-1st">Featured Clans</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
