@@ -416,7 +416,7 @@ background-color:#403175;
  	
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	.dropdown:hover .dropdown-content {
   		display: hidden;
 	}
