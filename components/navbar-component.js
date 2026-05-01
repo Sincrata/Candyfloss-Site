@@ -3,7 +3,10 @@ class Nav extends HTMLElement {
     this.innerHTML = `
 <div class="stripe"></div>
 
+<button id="nav-toggle" aria-label="Toggle navigation"> Menu</button>
+
 <!----------NAV MENU ----------->
+<div id="nav-wrapper">
 <nav>
 	<ul id="button-bar">
 		<li id="nav1">
@@ -117,8 +120,31 @@ class Nav extends HTMLElement {
             	</li> 
         </ul>
 </nav>
+</div>
+<script>
+// Toggle whole menu
+console.log("Got here");
+document.getElementById("nav-toggle").addEventListener("click", () => {
+	console.log("Nav button clicked");
+    document.getElementById("nav-wrapper").classList.toggle("open");
+});
+
+// Toggle dropdowns on mobile
+document.querySelectorAll(".dropdown > a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        // Only do this on mobile
+        if (window.innerWidth > 700) return;
+
+        e.preventDefault();
+        const dropdown = link.nextElementSibling;
+        dropdown.classList.toggle("open");
+    });
+});
+</script>
+
 
 `;
   }
 }
 customElements.define('nav-bar', Nav);
+

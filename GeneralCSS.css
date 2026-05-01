@@ -12,7 +12,13 @@ nav-bar{
 	position:sticky;
 	z-index: 100;
 }
-
+#nav-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
  
 header{
 display: flex;
@@ -403,10 +409,102 @@ transform: scale(0.9) rotate(2deg);
 background-color:#403175;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
 
  }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
  	
 }
+
+@media (max-width: 700px) {
+	.dropdown:hover .dropdown-content {
+  		display: hidden;
+	}
+
+    #nav-toggle {
+        display: block;
+	background-color: #584894;
+	width: 100%;
+	text-align: center;
+	text-shadow:-1px -1px 0 #322265, 1px -1px 0 #322265, -1px 1px 0 #322265, 1px 1px 0 #322265;
+	transformation: none;
+	
+    }
+	#nav-toggle:active{
+		transform: none;
+	}
+
+    #nav-wrapper {
+        display: none;
+        width: 100%;
+    }
+
+    #nav-wrapper.open {
+        display: block !important;
+    }
+
+    #button-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .dropdown-content {
+        display: none !important;
+        position: static !important;
+        background: #eee;
+        padding-left: 1rem;
+	max-height: 200px !important;
+	overflow: auto;
+    }
+
+    .dropdown > a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .dropdown-content.open {
+        display: block !important;
+    }
+	nav-bar{
+		max-height: 100vh;
+		overflow: auto;
+	}
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #caa6ff;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+body::-webkit-scrollbar-thumb{
+	background: #584894;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b58af0;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(52,35,104,0.4) transparent;
+}
+
+html, body{
+    scrollbar-width: thin;
+    scrollbar-color: #584894 transparent;
+}
+
+
 
