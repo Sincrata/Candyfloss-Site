@@ -149,6 +149,9 @@
 			<br>
 			<button id="inventory-button" class="button" style="width: 75%; margin: auto;" disabled>Go To Inventory</button>
 		</div>
+
+
+
 		<div id="inventory">
 			<div class="title-card" style="margin-top: 15px;">
 				<div class="title-row">
@@ -228,6 +231,9 @@
         			dropdown.classList.toggle("open");
     			});
 		});
+
+
+
 	async function main() {
 		const params = new URLSearchParams(window.location.search);
 		var username = params.get("username") ?? "";
@@ -259,6 +265,7 @@
 			});
 		}
 		
+
 		document.querySelectorAll(".collapsible").forEach(header => {
     			header.addEventListener("click", () => {
         			header.classList.toggle("collapsed");
@@ -297,6 +304,9 @@
                 	.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
         		);
 		}
+	
+
+		//you want a column to equal a certain value and another column to equal another value
 
 		function filterRows(rows, colAName, colAValue, colBName, colBValue) {
     			const header = rows[0];
@@ -330,6 +340,8 @@
     			});
 		}
 
+
+		//you want one column to match a value, and another column to be anything other than a value
 	
 		function filterRows2(rows, colAName, colAValue, colBName, colBValue) {
     			const header = rows[0];
@@ -362,6 +374,8 @@
                		b.toLowerCase() !== colBValue.toLowerCase();
     			});
 		}
+
+		//you need one column to match one value
 
 		function filterRows3(rows, colAName, colAValue) {
     			const header = rows[0];
@@ -435,7 +449,13 @@
 				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
 				<div class="event-info">
 					<p>Used: <a style="color: white;"href="${event[6]}">Pending</a></p>
-					<p>Expires: 6/1/26</p>
+
+
+					if(event[4].includes("Event")){
+						htmlev += "<p>Expires: 7/1/26</p>"
+					}else{
+						htmlev += "<p>Expires: 6/1/26</p>"
+					}
 				</div>
 				</div>
 				`;
@@ -470,11 +490,14 @@
 
 		eventgrid.innerHTML = htmlev;
 
+
+
 		async function loadFilteredMYOData() {
     			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRclpELOsw7e_9hsNHgafNBOtAwe76GOxPDX5rvX243m7Q6W8hqOTsw7k8kIEvOZKJSQTVOsuXmwCyK/pub?gid=1756069810&single=true&output=csv";
 
     			const csv = await fetchCSV(url);
     			const rows = parseCSV(csv);
+
 
     			const results = filterRows(
         			rows,
@@ -545,19 +568,52 @@
 			return results;
 		}
 
+		async function loadFilteredFlossboundTraitData() {
+    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRclpELOsw7e_9hsNHgafNBOtAwe76GOxPDX5rvX243m7Q6W8hqOTsw7k8kIEvOZKJSQTVOsuXmwCyK/pub?gid=1904193529&single=true&output=csv";
+
+    			const csv = await fetchCSV(url);
+    			const rows = parseCSV(csv);
+
+    			const results = filterRows(
+        			rows,
+        			"Username",  username,
+        			"Used", ""
+    			);
+
+    			console.log(results);
+			return results;
+		}
+
 		const traits = await loadFilteredTraitData();
 		
 		html = "";
 		
 
 		for (let i = 0; i < traits.length; i++) { 
-			const trait = traits[i]
+			const trait = traits[i];
 			html += `<div class="trait"> 
 			<img class="trait-image" src="${trait[2]}">
 			<h4 class="trait-title">${trait[3]}</h4>
 			<div class="trait-info">
 				<p>From: ${trait[4]}</p>
 				<p>Date: ${trait[5]}</p>
+			</div>
+			</div>
+			
+			`;
+		}
+
+		const flossboundtraits = await loadFilteredFlossboundTraitData();
+
+		for (let i = 0; i < flossboundtraits.length; i++) {
+			const flosstrait = flossboundtraits[i];
+			html += `<div class="trait"> 
+			<img class="trait-image" src="${flosstrait[3]}">
+			<h4 class="trait-title">${flosstrait[4]}</h4>
+			<div class="trait-info">
+				<p>From: ${flosstrait[5]}</p>
+				<p>Date: ${flosstrait[6]}</p>
+				<p>Note: Bound to <a style="color: white;" href="${flosstrait[2]}">floss</a></p>
 			</div>
 			</div>
 			
