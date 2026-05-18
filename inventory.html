@@ -448,7 +448,7 @@
 				<img class="event-image" src="${event[3]}">
 				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
 				<div class="event-info">
-					<p>Used: <a style="color: white;"href="${event[6]}">Pending</a></p>
+					<p>Used: <a style="color: white;"href="${event[6]}">Pending</a></p>`;
 
 
 					if(event[4].includes("Event")){
@@ -456,7 +456,7 @@
 					}else{
 						htmlev += "<p>Expires: 6/1/26</p>"
 					}
-				</div>
+				htmlev += `</div>
 				</div>
 				`;
 			}else{
@@ -589,7 +589,7 @@
 		html = "";
 		
 
-		for (let i = 0; i < traits.length; i++) { 
+		for (let i = 0; i < traits.length; i++){ 
 			const trait = traits[i];
 			html += `<div class="trait"> 
 			<img class="trait-image" src="${trait[2]}">
@@ -605,7 +605,7 @@
 
 		const flossboundtraits = await loadFilteredFlossboundTraitData();
 
-		for (let i = 0; i < flossboundtraits.length; i++) {
+		for (let i = 0; i < flossboundtraits.length; i++){
 			const flosstrait = flossboundtraits[i];
 			html += `<div class="trait"> 
 			<img class="trait-image" src="${flosstrait[3]}">
