@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CF Gallery</title>
+    	<style>
+
+		#entry-grid{
+    			display: grid;
+    			grid-template-columns: repeat(auto-fill, 280px);
+    			gap: 1rem;
+    			justify-content: center;
+		}
+
+
+		.entry{ 
+			background-color: #403175;
+			border-radius:5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+			padding: 1em; 
+			margin: 1rem;
+			display: flex; 
+			flex-direction: column; 
+			justify-content: center; 
+			align-items: center;
+		}
+		.loading {
+			background-color:#403175;
+			border-radius:5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+    			width: 100%;
+    			padding: 1.5rem;
+    			text-align: center;
+    			box-sizing: border-box;
+		}
+		.entry-image{
+    			width: 100%;
+    			height: auto;
+    			display: block;
+    			border-radius: 6px;
+		}
+
+		.entry-title, .loading h4{
+    			margin: 0.5rem 0;
+    			font-size: 1.2rem;
+			text-align: center;
+		}
+
+		.entry-info p{
+    			margin: 0;
+    			font-size: 0.9rem;
+			text-align: center;
+		}
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div class= "card">
+				<h1>This is a Title</h1>
+				<span>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+					ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+					adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+					nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+					nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+				</span>
+				<br>
+				<br>
+				<a class = "button" href="https://toyhou.se/~world/53663.the-candyfloss">Text on the button</a>
+
+			</div>
+
+			<article id="entries">
+				<div id="entry-body">
+					<div id="entry-loading" class="loading"><h4>Loading Entries</h4></div>
+					<div id="entry-grid">
+					</div>
+				</div>
+			</article>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+			const params = new URLSearchParams(window.location.search);
+			var achievement = params.get("achievement") ?? "";
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+			async function loadFilteredEntryData() {
+    				const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=256204382&single=true&output=csv";
+
+    				const csv = await fetchCSV(url);
+    				const rows = parseCSV(csv);
+
+    				const results = filterRows(
+        				rows,
+        				"Approved",  "yes",
+					"Broken Link",  ""
+    				);
+
+    				console.log(results);
+				return results;
+			}
+
+			const entries = await loadFilteredEntryData();
+
+			var html = "";
+			const entrygrid = document.getElementById("entry-grid");
+
+			for (let i = 0; i < entries.length; i++) { 
+				const entry = entries[i];
+				html +=`<div class="entry"> 	
+				`;
+				if(entry[8] == "Art"){
+					html += `<img class="entry-image" src="${entry[1]}">`;
+				}else{
+					html += `<a href="${entry[1]}"><img class="entry-image" src="https://f2.toyhou.se/file/f2-toyhou-se/images/120184233_7wE40pb13YsbG2i.png"></a>`;
+				}
+				html +=`
+				<h4 class="entry-title">${entry[3]}</h4>
+				<div class="entry-info">
+					<p>Artist: <a style="color: white;" href="https://toyhou.se/${entry[0].trim()}">${entry[0]}</a></p>
+					<p>Date: ${entry[5]}</p>
+				</div>	
+				</div>
+				`;
+			}
+
+			if(html == ""){
+				html = `<div class="loading" style="width: 100%;"> <h4 class="entry-title">No Entries Yet</h4></div>`;
+				entrygrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+			}
+
+			var eloading = document.getElementById("entry-loading");
+			eloading.style.display = "none";
+
+			entrygrid.innerHTML = html;
+
+			
+
+		}
+		main();
+	</script>
+</body>
+</html> 
