@@ -1,3 +1,28 @@
+
+
+
+@media (min-width: 600px) {
+ 	.mobile{
+ 	display:none;
+ 	}
+ 	#mo-text{
+ 	display:none;
+ 	}
+ 	.eventbox{
+ 	overflow:auto;
+ 	}
+ 	.mobile-card{
+display:none;
+ 	}
+ 	.top5{
+ 	width:10%;
+ 	}
+ 	.clanbox{
+ 	overflow:auto;
+ 	}
+ }
+
+
 .col-25 img {
   width: 100%;
   height: auto;
@@ -93,8 +118,6 @@ margin: 0px 0px 0px  0px;
 margin-right:0px;
 }
  .clanimg{
- background-image:url("Banners/epsilon3.png");
-background-position:35%;
  border-radius:  0px 5px 5px 0px ;
  background-size:cover;
  box-sizing:border-box;

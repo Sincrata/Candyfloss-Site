@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="AutomaticImagesTesting.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Automatic Image Testing</title>
+    	<style>
+    
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div id="rotating-clan" style="max-width:60%;">
+				
+			</div>
+			<br>
+			<div id="com-art"  style="max-width:60%;"></div>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+//------------------------------------- IMAGE ROTATION-----------------------------------------
+	  const currentMonth = new Date().getMonth();
+	  
+	  const monthlyContent = [
+    //JANUARY
+    {
+      img: "pool",
+      title: "January",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+     //FEBRUARY
+     {
+      img: "pool",
+      title: "February",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //MARCH
+    {
+       img: "pool",
+      title: "March",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //APRIL
+        {
+      img: "pool",
+      title: "April",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+       //JUNE
+     {
+            imgPool: [
+        { file: "lambda1.png", position: "65%" },
+        { file: "lambda1.png", position: "95%" },
+        { file: "lambda3.png", position: "75%" },
+        { file: "lambda3.png", position: "90%" },
+        { file: "lambda4.png", position: "75%" },
+        { file: "lambda4.png", position: "15%" },
+        { file: "lambda5.png", position: "100%" },
+        { file: "lambda5.png", position: "25%" },
+        { file: "lambda6.png", position: "15%" },
+        { file: "lambda7.png", position: "5%" },
+      ],
+      title: "Lambda",
+      text: "The Lambda Clan is the islander clan. The Lambdas are carefree and live in a bright, beautiful environment. The air is warm and mild, and the breezes pass through tall strong palm trees throughout the entire clan. Floss in Lambda enjoy a perpetual summer. </span> <div id='hide'></span> Located on the Northern section of the Karpos Island, the clan is long and thin, with over 50% of their landmass being tropical beach land.  They love to throw large feasts and parties by the water and are always ready to sit back and relax in a hammock. Unlike most clans the Lambda are strong believers in relaxation and happiness over the notion of hard work and success. You will often hear the Lambdafloss say 'Alualu i kou hauʻoli' to one another, this is a common greeting or send off in their culture that means 'Pursue your Happiness'. They believe that the most important thing in life is true happiness, not monetary success. ",
+      page: "https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan",
+      gem: "lambda"
+    },
+
+    //MAY
+    {
+            imgPool: [
+        { file: "epsilon3.png", position: "35%" },
+        { file: "epsilon1.png", position: "15%" },
+        { file: "epsilon1.png", position: "80%" },
+        { file: "epsilon2.png", position: "100%" },
+        { file: "epsilon6.png", position: "10%" },
+        { file: "epsilon5.png", position: "10%" }
+      ],
+      title: "Epsilon",
+      text: "The Epsilon Clan is the spiritual clan. It is made up of a modern monk-like people who put great stock into their physical, mental, and emotional well being.</span> <div id='hide'></span> Religion is an ever present part of the Epsilon culture and even those who do not believe in higher power tend to take on many of the religious practices like feng shui, meditation and spiritual centering that the Epsilon believe in for mental and physical health purposes. Many meditate for hours at a time and all strive to find inner peace. Epsilons put very little importance on material things and instead advocate for kindness and patience above all else.",
+      page: "https://toyhou.se/~world/53663.the-candyfloss/page/10524.epsilon-clan",
+      gem: "epsilon"
+    },
+     //JULY
+    {
+      img: "pool",
+      title: "July",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+        //AUGUST
+    {
+      img: "pool",
+      title: "August",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //SEPTEMBER
+        {
+      img: "pool",
+      title: "September",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //OCTOBER
+    {
+      img: "pool",
+      title: "October",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //NOVEMBER
+    {
+      img: "pool",
+      title: "November",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //DECEMBER
+    {
+      img: "pool",
+      title: "December",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+  ];
+  
+    const communityArt = [ 
+        {
+		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/118409142_xkRbGmWTd9E2T2H.png",
+		position:"center",
+		prompt: "Downpour",
+		artist: "Countless"
+	},
+        {
+		artlink: "https://64.media.tumblr.com/48597f58bf78b79a401daa025b4be72f/ef9fbc954cccebe3-c8/s2048x3072/af0d51e4f2c7e35317530d7507ec050f1237ad87.pnj",
+		prompt: "Downpour",
+		position:"center",
+		artist: "UsernameRedacted"
+	},
+        {
+		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/35df47f5-0dbc-4d53-b0e0-329322e32473/dlvv5q8-13333b8b-2101-49ef-8aaa-299ca2940db7.png/v1/fill/w_894,h_894,q_70,strp/untitled465_20260418213132_by_echospirit1234_dlvv5q8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi8zNWRmNDdmNS0wZGJjLTRkNTMtYjBlMC0zMjkzMjJlMzI0NzMvZGx2djVxOC0xMzMzM2I4Yi0yMTAxLTQ5ZWYtOGFhYS0yOTljYTI5NDBkYjcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mFqlqW8wMOOxpeeTGhSrf1njuqx4ZoMK0D_AfAkiWSI",
+		prompt: "Downpour",
+		position: "center",
+		artist: "Echospirit1234"
+	},
+        {
+		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/802de623-7e16-41a8-8ef5-a05fcecfd731/dluuae3-249de13f-63c9-4e8a-a6e2-2b295d041796.png/v1/fill/w_1280,h_995/fotm_by_sha3min_dluuae3-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTk1IiwicGF0aCI6Ii9mLzgwMmRlNjIzLTdlMTYtNDFhOC04ZWY1LWEwNWZjZWNmZDczMS9kbHV1YWUzLTI0OWRlMTNmLTYzYzktNGU4YS1hNmUyLTJiMjk1ZDA0MTc5Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kV0WsNf6Owa4sfvruorE-6LbMXAwRLVQM2kLui1gzd8",
+		prompt: "Floss of the Month",
+		position:"center",
+		artist: "CursedFreak"
+	},
+        {
+		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dab1e960-5cb3-4067-894a-acf431fd38a1/dlysit3-aeb3c4cf-c43a-4ae7-aa77-cb3652a0c4a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kYWIxZTk2MC01Y2IzLTQwNjctODk0YS1hY2Y0MzFmZDM4YTEvZGx5c2l0My1hZWIzYzRjZi1jNDNhLTRhZTctYWE3Ny1jYjM2NTJhMGM0YTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XZwacvflF5xlS7tTqfHZJqTFmBaKdoYGZwIjuVEuY3s",
+		prompt: "Dog Days",
+		position:"center",
+		artist: "Nifewoofy"
+	},
+ 	{
+		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119465082_dHxZuzmEu9nNlpV.png",
+		prompt: "House Plants",
+		position:"center",
+		artist: "Nifewoofy"
+	},
+	 	{
+		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119671530_64cdYFriNNHxEWJ.png",
+		prompt: "Spring Cleaning",
+		position:"center",
+		artist: "KrissySempaiArt"
+	},
+
+ 	{
+		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119999691_sNFry1ElA3UO7OD.png",
+		prompt: "Dog Days",
+		position:"center",
+		artist: "KrissySempaiArt"
+	},
+
+
+
+];
+ 
+  const currentData = monthlyContent[currentMonth];
+  const randomIndex = Math.floor(Math.random() * currentData.imgPool.length);
+  const chosenImage = currentData.imgPool[randomIndex];
+  
+  document.getElementById('rotating-clan').innerHTML = `
+    <div id="mobiletop5">
+			<a href="https://toyhou.se/4344317.kei-fen"><div class="top5-all top5-1"></div></a>
+			<a href="https://toyhou.se/10273794.friday-e"><div class="top5-all top5-2"></div></a>
+			<a href="https://toyhou.se/12989614.tbn"><div class="top5-all top5-3"></div></a>
+			<a href="https://toyhou.se/7007063.levi-abezeth"><div class="top5-all top5-4"></div></a>
+			<a href="https://toyhou.se/13393269.metatron-lumiere-graves"><div class="top5-all top5-5"></div></a> 
+</div><div class="clanrow" id="clanofthemonth" >
+	<div class="top5">
+	<h2 id="top5title" style="margin-top:2px;"> Top 5<br>Floss</h2>
+			<a href="https://toyhou.se/4344317.kei-fen"><div class="top5-all top5-1"></div></a>
+			<a href="https://toyhou.se/10273794.friday-e"><div class="top5-all top5-2"></div></a>
+			<a href="https://toyhou.se/12989614.tbn"><div class="top5-all top5-3"></div></a>
+			<a href="https://toyhou.se/7007063.levi-abezeth"><div class="top5-all top5-4"></div></a>
+			<a href="https://toyhou.se/13393269.metatron-lumiere-graves"><div class="top5-all top5-5"></div></a>
+ 
+	</div>
+<div class="clanbox">
+    <a href="${currentData.page}"class="shrink">
+    	<img class="clangem" src="gems/${currentData.gem}.png" style="display:block;height:15%;margin:auto;">
+    </a>
+    
+    <h2 id="hide" style="margin:2px;">${currentData.title}</h2>
+    
+    <div class="inner-card">
+    <span>${currentData.text} </span>
+    </div> 
+  
+    <br><br>
+  
+    <a class="event-link" href="${currentData.page}">Read more about the ${currentData.title} Clan!</a>
+    
+    <span>and look out for ${currentData.title} discounts across the site this month, like clothing, bases, and petpets found in this clan!</span>
+    
+    </div> <br><br>
+    </div>
+    <div class="clanimg" style="background-image: url('Banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
+      </div>
+    </div>
+    </div>
+    </div>
+  `;
+  
+   const uniqueArt = new Set();
+while (uniqueArt.size < 4 && uniqueArt.size < communityArt.length) {
+  const randomItem = communityArt[Math.floor(Math.random() * communityArt.length)];
+  uniqueArt.add(randomItem);
+}
+const [communityArt1, communityArt2, communityArt3, communityArt4] = uniqueArt;
+   
+     document.getElementById('com-art').innerHTML = `
+   
+   <img src="logos/art.png" style="width:60%;">
+<div id="comart" class="small-card">
+	<div class="row-art" >
+		<div class ="image-col" >
+			<img id="art1" src="${communityArt1.artlink}" ><br>Art by <span id="artist1"><a id="artist1link" href="https://toyhou.se/${communityArt1.artist}">${communityArt1.artist}</a><br>${communityArt1.prompt}</span>
+		</div>
+		<div class ="image-col"  >
+			<img id="art2" src="${communityArt2.artlink}" ><br>Art by <span id="artist2"><a id="artist2link" href="https://toyhou.se/${communityArt2.artist}">${communityArt2.artist}</a><br>${communityArt2.prompt}</span>			</div>
+		<div class ="image-col" >
+
+			<img id="art3" src="${communityArt3.artlink}" ><br>Art by <span id="artist3"><a id="artist3link" href="https://toyhou.se/${communityArt3.artist}">${communityArt3.artist}</a><br>${communityArt3.prompt}</span>			</div>
+		<div class ="image-col" >
+
+			<img id="art4" src="${communityArt4.artlink}"><br>Art by <span id="artist4"><a id="artist4link" href="https://toyhou.se/${communityArt4.artist}">${communityArt4.artist}</a><br>${communityArt4.prompt}</span>
+		</div>
+	</div>
+ `;
+
+	
+	//----------------------------------------- NAV BAR ---------------------------------------------
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+		main();
+	</script>
+</body>
+</html> 
+

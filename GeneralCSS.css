@@ -507,5 +507,12 @@ html, body{
     scrollbar-color: #584894 transparent;
 }
 
+<!---------------------SHEETS STUFF--------------->
+.data-grid{
+    		display: grid;
+    		grid-template-columns: repeat(auto-fill, 280px);
+    		gap: 1rem;
+    		justify-content: center;
+	}
 
 

@@ -1,0 +1,136 @@
+	#badge-grid, #image-grid, #literature-grid{
+    		display: grid;
+    		grid-template-columns: repeat(auto-fill, 280px);
+    		gap: 1rem;
+    		justify-content: center;
+		background-color:#403175;
+		border-radius:5px;
+		box-shadow: 5px 5px 5px 5px #140c38;
+    		width: 100%;
+		box-sizing: border-box;
+	}
+	#badge-grid{
+		grid-template-columns: repeat(auto-fill, 150px);
+	}
+
+	.badge{
+		border-radius:5px;
+		padding: 1em; 
+		margin: 1rem;
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+	}
+	.image, .literature{ 
+		background-color: #403175;
+		border-radius:5px;
+		box-shadow: 5px 5px 5px 5px #140c38;
+		padding: 1em; 
+		margin: 1rem;
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+	}
+	.loading {
+		background-color:#403175;
+		border-radius:5px;
+		box-shadow: 5px 5px 5px 5px #140c38;
+    		width: 100%;
+    		padding: 1.5rem;
+    		text-align: center;
+    		box-sizing: border-box;
+	}
+	.title-card{
+		background-color:#403175;
+		border-radius:5px;
+		box-shadow: 5px 5px 5px 5px #140c38;
+    		width: 100%;
+    		padding: 1.5rem;
+		box-sizing: border-box;
+	}
+	.title-card .title-row{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.badge-image, .image-image, .literature-image{
+    		width: 100%;
+    		height: auto;
+    		display: block;
+    		border-radius: 6px;
+	}
+
+	.badge-title, .image-title, .literature-title, .loading h4{
+    		margin: 0.5rem 0;
+    		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.badge-info p, .image-info p, .literature-info p{
+    		margin: 0;
+    		font-size: 0.9rem;
+		text-align: center;
+	}
+	.collapsible {
+    		cursor: pointer;
+    		display: flex;
+    		align-items: center;
+    		gap: 0.5rem;
+		margin-left: 25px;
+		
+	}
+	.arrow {
+    		transition: transform 0.2s ease;
+	}
+	.collapsed .arrow {
+    		transform: rotate(-90deg);
+	}
+	.collapsible-content {
+    		display: block;
+	}
+	.collapsed + .collapsible-content {
+    		display: none;
+	}
+	#achievements{
+		margin: 0px 25px;
+		box-sizing: border-box;
+	}
+	main{
+		min-height: 65vh;
+	}
+	#onto-achievements{
+		max-width: 90%;
+		display: flex;
+		justify-items: center;
+		margin: auto;
+		margin-top: 15px;
+		text-align: center;
+		min-height: 35vh;
+	}
+		.input {
+    			width: 25%;
+    			padding: 6px 16px;
+    			border: 2px solid #d9c5ff;
+    			border-radius: 8px;
+    			background: #f7f2ff;
+    			color: #471c81;
+    			font-size: 1rem;
+    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.input:focus {
+    			border-color: #8c6cff;
+    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+    			outline: none;
+		}
+	@media (max-width: 600px) {
+		h1{
+			font-size: 1.2em;
+		}
+	}
+

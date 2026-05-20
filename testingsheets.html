@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="gridInputCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community Gallery</title>
+    	<style>
+    		.collapsible {
+    		cursor: pointer;
+    		display: flex;
+    		align-items: center;
+    		gap: 0.5rem;
+		margin-left: 25px;
+		
+	}
+	.arrow {
+    		transition: transform 0.2s ease;
+	}
+	.collapsed .arrow {
+    		transform: rotate(-90deg);
+	}
+	.collapsible-content {
+    		display: block;
+	}
+	.collapsed + .collapsible-content {
+    		display: none;
+	}
+		.input {
+    			width: 25%;
+    			padding: 6px 16px;
+    			border: 2px solid #d9c5ff;
+    			border-radius: 8px;
+    			background: #f7f2ff;
+    			color: #471c81;
+    			font-size: 1rem;
+    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.input:focus {
+    			border-color: #8c6cff;
+    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+    			outline: none;
+		}
+		
+
+    	
+    	
+    	
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+			<center>
+<!-------------------------------------------------Page Content ------------------------------------------------------>
+<!----------The page for user input and not displaying data----------->
+<div id="ID OF ELEMENT WHICH APPEARS">
+html of the stuff which appears before user input is put in
+<input class= "input" id="ID OF THE INPUT FIELD" type="text" placeholder="place holder text" style=""></input>
+<button id="ID OF THE ELEMENT YOU CLICK TO SUBMIT INPUT" class="button" style="width: 75%; margin: auto;" disabled>
+BUTTON TEXT
+</button>
+</div>
+
+
+<!--------------page after input------------------->
+< div id="ID-OF-ELEMENT-WHICH-HIDES">
+html of stuff which appears after the user input is put in
+
+	< article id = "CONTAINER-OF-DATA">
+			<div id ="collapsible-box" class="collapsible-content">
+				<div id="DATA-loading">
+				<div class="your box class that the data is showing up inside of" id="ID OF ELEMENT WHICH CONTAINS INFO/GRID">
+			</div>
+	</article>
+
+
+</div>	
+		 	
+	 
+	
+
+<!-------------------------------------------------Page Content ENDS------------------------------------------------------>
+		</center></main> 
+
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+<!-------------------------------------------------SHEETS JAVA ------------------------------------------------------>
+async function main() {
+<!---------MAIN FUNCTION----------------->
+		const params = new URLSearchParams(window.location.search);
+		
+		
+<!------------SPECIFIC PAGES BY USER INPUT IN THE URL-------------->
+		var YOURVALUE = params.get("YOURVALUE") ?? "";
+
+<!------------------------ SETUP INPUT SPECIFIC PAGE------------------->
+		if(YOURVALUE ==""){
+			const NEWVALUENAME1 = document.getElementById("ID OF ELEMENT WHICH APPEARS");
+			const NEWVALUENAME2 = document.getElementById("ID OF ELEMENT WHICH HIDES");
+			
+			VALUENAME1.style.display = "block";
+			VALUENAME2.style.display = "none";
+
+
+			const NEWVALUENAME3 = document.getElementById("ID OF THE ELEMENT YOU CLICK TO SUBMIT INPUT");
+			const NEWVALUENAME4 = document.getElementById("ID OF THE INPUT FIELD");
+
+			var USERINPUT = VALUE4.value;
+
+			VALUE4.addEventListener("keyup", () => {
+				if(VALUE4.value.length > 0){
+					VALUE3.disabled = false;
+				}else{
+					VALUE3.disabled = true;
+				}
+				USERINPUT = VALUE4.value;
+			});
+
+			VALUE3.addEventListener("click", () => {
+    				const encoded = encodeURIComponent(USERINPUT);
+				window.location.href = `PAGENAME.html?YOURVALUE=${encoded}`;
+			});
+		}
+ <!---------------------------------------------MAKES SECTIONS COLLAPSE---------------------------------------------------->
+		document.querySelectorAll(".collapsible").forEach(header => {
+    			header.addEventListener("click", () => {
+        			header.classList.toggle("collapsed");
+    			});
+		});
+<!---------------------------------------------MAKES INPUT CAPS---------------------------------------------------->
+			function capitalizeFirstWord(str) {
+    			if (!str) return "";
+    			const [first, ...rest] = str.trim().split(/\s+/);
+    			return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() + 
+           			(rest.length ? " " + rest.join(" ") : "");
+		}
+				username = capitalizeFirstWord(username);
+
+<!-------------------------------------USER INPUT IN TITLE---------------------------->
+		const title = document.getElementById("ID-OF-YOUR-TITLE");
+		title.innerHTML = `${USERINPUT}`;
+<!--------------------------------------------NECESSARY FUNCTION DONT CHANGE---------------------->
+		async function fetchCSV(url) {
+    			const res = await fetch(url);
+    			const text = await res.text();
+    			return text;
+		}
+
+		function parseCSV(text) {
+    			return text
+        		.trim()
+        		.split(/\r?\n/)
+        		.map(line =>
+            			line
+                	.split(",")
+                	.map(cell => cell.replace(/^"|"$/g, "")) 
+        		);
+		}
+
+<!---------------------------------------FILTERS----------------------------------------->
+<!-----------------------------DO NOT EDIT BELOW------------------------------>
+<!----------------FILTER 1: IF TWO VALUES MATCH THE SPECIFIED VALUE------------------>
+		function filterRowsBy2(rows, colAName, colAValue, colBName, colBValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			const colBIndex = header.indexOf(colBName);
+
+    			if (colAIndex === -1 || colBIndex === -1) {
+        		console.error("Column name not found in header:", { header, colAName, colBName });
+        		return [];
+    			}
+
+    			const maxIndex = Math.max(colAIndex, colBIndex);
+
+    			return data.filter(row => {
+        			if (!row || row.length <= maxIndex) {
+            	  			return false;
+        			}
+
+        			const a = row[colAIndex];
+        			const b = row[colBIndex];
+
+        			if (a == null || b == null) {
+            				return false;
+        			}
+
+        			return a.toLowerCase() === colAValue.toLowerCase() &&
+               			b.toLowerCase() === colBValue.toLowerCase();
+    			});
+		}
+<-----------FILTER 2: ONE COLUMN MATCHES A VALUE, AND ANOTHER COLUMN IS NOT A SPECIFIED VALUE---->
+		function filterRowsMatch1Not1(rows, colAName, colAValue, colBName, colBValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			const colBIndex = header.indexOf(colBName);
+
+    			if (colAIndex === -1 || colBIndex === -1) {
+        		console.error("Column name not found in header:", { header, colAName, colBName });
+        		return [];
+    			}
+
+    			const maxIndex = Math.max(colAIndex, colBIndex);
+
+    			return data.filter(row => {
+        			if (!row || row.length <= maxIndex) {
+            			// too short to safely read both columns → ignore
+            			return false;
+        		}
+
+        		const a = row[colAIndex];
+        		const b = row[colBIndex];
+
+        		if (a == null || b == null) {
+            			return false;
+        		}
+
+        		return a.toLowerCase() === colAValue.toLowerCase() &&
+               		b.toLowerCase() !== colBValue.toLowerCase();
+    			});
+		}
+<!-------------------------------FILTER 3: IF ONE COLUMN MATCHES ONE SPECIFIED VALUE--------------------------------->
+		function filterRowsMatch1(rows, colAName, colAValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			if (colAIndex === -1) return [];
+
+    			return data.filter(row => {
+        			if (!row || row.length <= colAIndex) return false;
+        			const a = row[colAIndex];
+        			return a != null && a.toLowerCase() === colAValue.toLowerCase();
+    			});
+		}
+<!--------------------FILTER 4: IF ONE COLUMN DOES NOT MATCH ONE SPECIFIED VALUE------------------------->
+		function filterRowsNotMatch1(rows, colAName, colAValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			if (colAIndex === -1) return [];
+
+    			return data.filter(row => {
+        			if (!row || row.length <= colAIndex) return false;
+        			const a = row[colAIndex];
+        			return a != null && a.toLowerCase() !== colAValue.toLowerCase();
+    			});
+		}
+		
+	var html = "";
+<!----------------------------------DO NOT EDIT ABOVE--------------------------->
+<!-----------------------TO SET UP MULTIPLE DISPLAYS COPY STARTS HERE----------------------->
+<!-----------FILTER SPECIFICATIONS BELOW | COPY PASTE FOR USING 2+ FILTERS-------------->
+	async function loadFilteredNAMEYOURDATA() {
+    			const url = "YOURSHEETCSVURLFULL";
+
+    			const csv = await fetchCSV(url);
+    			const rows = parseCSV(csv);
+
+    			const results = filterRowsTYPE(
+        			rows,
+        			"COL-A-NAME",  NEWVALUE#,
+        			"COL-NAME", "MATCHING-VALUE-IN-COL"
+    			);
+<!---------------------CHANGE ABOVE VALUE LIST TO MATCH CHOSEN FILTER------------------->
+    		
+    			console.log(results);
+			return results;
+		}
+		
+const DATANAME = await loadFilteredNAMEYOURDATA();
+
+<!-----------------------------------------CREATE HTML CODING------------------------------------>
+		 html = "";
+
+		for (let i = 0; i < DATANAME.length; i++) { 
+			const ONEDATA = DATANAME[i] 
+
+				html += `<div class="CLASSNAMEOFYOURCHOICE"> 
+				<img class="CLASS-FOR-IMAGES" src="${ONEDATA[COL#-1]}">
+				<h4 class="CLASS-FOR-TITLE">${capitalizeFirstWord(ONEDATA[COL#-1])}</h4>
+				<div class="CLASS-FOR-TEXT">
+					<p>text text text ${ONEDATA[COL#-1]} </p>
+				</div>
+				</div>
+			
+				`;
+		}
+<!----------------------------------COULD SET UP IF ELSE STATEMENTS IN THE HTML IF YOU WANT TO--------------->
+
+	const NEWVALUENAME6 = document.getElementById("ID OF ELEMENT WHICH CONTAINS INFO/GRID");
+
+<!------------------------------NONE FOUND MESSAGE---------------------------->
+		if(html == ""){
+			html = `<div class="message" style="width: 100%;"> 
+			<h4 class="CLASS-FOR-TITLE">
+			YOUR NONE FOUND MESSAGE HERE
+			</h4>
+			</div>`;
+			
+			<!------------grows the grid for error message----------->
+			NEWVALUENAME6.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+		}
+	
+	
+		var message = document.getElementById("DATA-loading");
+		message.style.display = "none";
+		NEWVALUENAME6.innerHTML = html;
+
+<!-----------------------TO SET UP MULTIPLE DISPLAYS COPY ENDS HERE----------------------->
+<!-------------------------------------------------SHEETS JAVA ENDS------------------------------------------------>
+}
+		main();
+	</script>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="gridInputCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community Gallery</title>
+    	<style>
+    		.collapsible {
+    		cursor: pointer;
+    		display: flex;
+    		align-items: center;
+    		gap: 0.5rem;
+		margin-left: 25px;
+		
+	}
+	.arrow {
+    		transition: transform 0.2s ease;
+	}
+	.collapsed .arrow {
+    		transform: rotate(-90deg);
+	}
+	.collapsible-content {
+    		display: block;
+	}
+	.collapsed + .collapsible-content {
+    		display: none;
+	}
+		.input {
+    			width: 25%;
+    			padding: 6px 16px;
+    			border: 2px solid #d9c5ff;
+    			border-radius: 8px;
+    			background: #f7f2ff;
+    			color: #471c81;
+    			font-size: 1rem;
+    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.input:focus {
+    			border-color: #8c6cff;
+    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+    			outline: none;
+		}
+		
+
+    	
+    	
+    	
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+			<center>
+<!-------------------------------------------------Page Content ------------------------------------------------------>
+<!----------The page for user input and not displaying data----------->
+<div id="ID OF ELEMENT WHICH APPEARS">
+html of the stuff which appears before user input is put in
+<input class= "input" id="ID OF THE INPUT FIELD" type="text" placeholder="place holder text" style=""></input>
+<button id="ID OF THE ELEMENT YOU CLICK TO SUBMIT INPUT" class="button" style="width: 75%; margin: auto;" disabled>
+BUTTON TEXT
+</button>
+</div>
+
+
+<!--------------page after input------------------->
+< div id="ID-OF-ELEMENT-WHICH-HIDES">
+html of stuff which appears after the user input is put in
+
+	< article id = "CONTAINER-OF-DATA">
+			<div id ="collapsible-box" class="collapsible-content">
+				<div id="DATA-loading">
+				<div id="data-grid">
+			</div>
+	</article>
+
+
+</div>	
+		 	
+	 
+	
+
+<!-------------------------------------------------Page Content ENDS------------------------------------------------------>
+		</center></main> 
+
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+<!-------------------------------------------------SHEETS JAVA ------------------------------------------------------>
+async function main() {
+<!---------MAIN FUNCTION----------------->
+		const params = new URLSearchParams(window.location.search);
+		
+		
+<!------------SPECIFIC PAGES BY USER INPUT IN THE URL-------------->
+		var YOURVALUE = params.get("YOURVALUE") ?? "";
+
+<!------------------------ SETUP INPUT SPECIFIC PAGE------------------->
+		if(YOURVALUE ==""){
+			const NEWVALUENAME1 = document.getElementById("ID OF ELEMENT WHICH APPEARS");
+			const NEWVALUENAME2 = document.getElementById("ID OF ELEMENT WHICH HIDES");
+			
+			VALUENAME1.style.display = "block";
+			VALUENAME2.style.display = "none";
+
+
+			const NEWVALUENAME3 = document.getElementById("ID OF THE ELEMENT YOU CLICK TO SUBMIT INPUT");
+			const NEWVALUENAME4 = document.getElementById("ID OF THE INPUT FIELD");
+
+			var USERINPUT = VALUE4.value;
+
+			VALUE4.addEventListener("keyup", () => {
+				if(VALUE4.value.length > 0){
+					VALUE3.disabled = false;
+				}else{
+					VALUE3.disabled = true;
+				}
+				USERINPUT = VALUE4.value;
+			});
+
+			VALUE3.addEventListener("click", () => {
+    				const encoded = encodeURIComponent(USERINPUT);
+				window.location.href = `PAGENAME.html?YOURVALUE=${encoded}`;
+			});
+		}
+ <!---------------------------------------------MAKES SECTIONS COLLAPSE---------------------------------------------------->
+		document.querySelectorAll(".collapsible").forEach(header => {
+    			header.addEventListener("click", () => {
+        			header.classList.toggle("collapsed");
+    			});
+		});
+<!---------------------------------------------MAKES INPUT CAPS---------------------------------------------------->
+			function capitalizeFirstWord(str) {
+    			if (!str) return "";
+    			const [first, ...rest] = str.trim().split(/\s+/);
+    			return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() + 
+           			(rest.length ? " " + rest.join(" ") : "");
+		}
+				username = capitalizeFirstWord(username);
+
+<!-------------------------------------USER INPUT IN TITLE---------------------------->
+		const title = document.getElementById("ID-OF-YOUR-TITLE");
+		title.innerHTML = `${USERINPUT}`;
+<!--------------------------------------------NECESSARY FUNCTION DONT CHANGE---------------------->
+		async function fetchCSV(url) {
+    			const res = await fetch(url);
+    			const text = await res.text();
+    			return text;
+		}
+
+		function parseCSV(text) {
+    			return text
+        		.trim()
+        		.split(/\r?\n/)
+        		.map(line =>
+            			line
+                	.split(",")
+                	.map(cell => cell.replace(/^"|"$/g, "")) 
+        		);
+		}
+
+<!---------------------------------------FILTERS----------------------------------------->
+<!-----------------------------DO NOT EDIT BELOW------------------------------>
+<!----------------FILTER 1: IF TWO VALUES MATCH THE SPECIFIED VALUE------------------>
+		function filterRowsBy2(rows, colAName, colAValue, colBName, colBValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			const colBIndex = header.indexOf(colBName);
+
+    			if (colAIndex === -1 || colBIndex === -1) {
+        		console.error("Column name not found in header:", { header, colAName, colBName });
+        		return [];
+    			}
+
+    			const maxIndex = Math.max(colAIndex, colBIndex);
+
+    			return data.filter(row => {
+        			if (!row || row.length <= maxIndex) {
+            	  			return false;
+        			}
+
+        			const a = row[colAIndex];
+        			const b = row[colBIndex];
+
+        			if (a == null || b == null) {
+            				return false;
+        			}
+
+        			return a.toLowerCase() === colAValue.toLowerCase() &&
+               			b.toLowerCase() === colBValue.toLowerCase();
+    			});
+		}
+<-----------FILTER 2: ONE COLUMN MATCHES A VALUE, AND ANOTHER COLUMN IS NOT A SPECIFIED VALUE---->
+		function filterRowsMatch1Not1(rows, colAName, colAValue, colBName, colBValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			const colBIndex = header.indexOf(colBName);
+
+    			if (colAIndex === -1 || colBIndex === -1) {
+        		console.error("Column name not found in header:", { header, colAName, colBName });
+        		return [];
+    			}
+
+    			const maxIndex = Math.max(colAIndex, colBIndex);
+
+    			return data.filter(row => {
+        			if (!row || row.length <= maxIndex) {
+            			// too short to safely read both columns → ignore
+            			return false;
+        		}
+
+        		const a = row[colAIndex];
+        		const b = row[colBIndex];
+
+        		if (a == null || b == null) {
+            			return false;
+        		}
+
+        		return a.toLowerCase() === colAValue.toLowerCase() &&
+               		b.toLowerCase() !== colBValue.toLowerCase();
+    			});
+		}
+<!-------------------------------FILTER 3: IF ONE COLUMN MATCHES ONE SPECIFIED VALUE--------------------------------->
+		function filterRowsMatch1(rows, colAName, colAValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			if (colAIndex === -1) return [];
+
+    			return data.filter(row => {
+        			if (!row || row.length <= colAIndex) return false;
+        			const a = row[colAIndex];
+        			return a != null && a.toLowerCase() === colAValue.toLowerCase();
+    			});
+		}
+<!--------------------FILTER 4: IF ONE COLUMN DOES NOT MATCH ONE SPECIFIED VALUE------------------------->
+		function filterRowsNotMatch1(rows, colAName, colAValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+    			if (colAIndex === -1) return [];
+
+    			return data.filter(row => {
+        			if (!row || row.length <= colAIndex) return false;
+        			const a = row[colAIndex];
+        			return a != null && a.toLowerCase() !== colAValue.toLowerCase();
+    			});
+		}
+		
+	var html = "";
+<!----------------------------------DO NOT EDIT ABOVE--------------------------->
+<!-----------------------TO SET UP MULTIPLE DISPLAYS COPY STARTS HERE----------------------->
+<!-----------FILTER SPECIFICATIONS BELOW | COPY PASTE FOR USING 2+ FILTERS-------------->
+	async function loadFilteredNAMEYOURDATA() {
+    			const url = "YOURSHEETCSVURLFULL";
+
+    			const csv = await fetchCSV(url);
+    			const rows = parseCSV(csv);
+
+    			const results = filterRowsTYPE(
+        			rows,
+        			"COL-A-NAME",  NEWVALUE#,
+        			"COL-NAME", "MATCHING-VALUE-IN-COL"
+    			);
+<!---------------------CHANGE ABOVE VALUE LIST TO MATCH CHOSEN FILTER------------------->
+    		
+    			console.log(results);
+			return results;
+		}
+		
+const DATANAME = await loadFilteredNAMEYOURDATA();
+
+<!-----------------------------------------CREATE HTML CODING------------------------------------>
+		 html = "";
+
+		for (let i = 0; i < DATANAME.length; i++) { 
+			const ONEDATA = DATANAME[i] 
+
+				html += `<div class="CLASSNAMEOFYOURCHOICE"> 
+				<img class="CLASS-FOR-IMAGES" src="${ONEDATA[COL#-1]}">
+				<h4 class="CLASS-FOR-TITLE">${capitalizeFirstWord(ONEDATA[COL#-1])}</h4>
+				<div class="CLASS-FOR-TEXT">
+					<p>text text text ${ONEDATA[COL#-1]} </p>
+				</div>
+				</div>
+			
+				`;
+		}
+<!----------------------------------COULD SET UP IF ELSE STATEMENTS IN THE HTML IF YOU WANT TO--------------->
+
+	const datagrid = document.getElementById("data-grid");
+
+<!------------------------------NONE FOUND MESSAGE---------------------------->
+		if(html == ""){
+			html = `<div class="message" style="width: 100%;"> 
+			<h4 class="CLASS-FOR-TITLE">
+			YOUR NONE FOUND MESSAGE HERE
+			</h4>
+			</div>`;
+			
+			<!------------grows the grid for error message----------->
+			datagrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+		}
+	
+	
+		var message = document.getElementById("DATA-loading");
+		message.style.display = "none";
+		datagrid.innerHTML = html;
+
+<!-----------------------TO SET UP MULTIPLE DISPLAYS COPY ENDS HERE----------------------->
+<!-------------------------------------------------SHEETS JAVA ENDS------------------------------------------------>
+}
+		main();
+	</script>
+</body>
+</html> 
+
+

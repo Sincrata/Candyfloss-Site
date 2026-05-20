@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="gridInputCSS.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community Gallery</title>
+    	<style>
+    		.collapsible {
+    		cursor: pointer;
+    		display: flex;
+    		align-items: center;
+    		gap: 0.5rem;
+		margin-left: 25px;
+		
+	}
+	.arrow {
+    		transition: transform 0.2s ease;
+	}
+	.collapsed .arrow {
+    		transform: rotate(-90deg);
+	}
+	.collapsible-content {
+    		display: block;
+	}
+	.collapsed + .collapsible-content {
+    		display: none;
+	}
+		.input {
+    			width: 25%;
+    			padding: 6px 16px;
+    			border: 2px solid #d9c5ff;
+    			border-radius: 8px;
+    			background: #f7f2ff;
+    			color: #471c81;
+    			font-size: 1rem;
+    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.input:focus {
+    			border-color: #8c6cff;
+    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+    			outline: none;
+		}
+		
+
+    	
+    	
+    	
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+			<center>
+<!-------------------------------------------------Page Content ------------------------------------------------------>
+ 
+ 
+< div id="fruit-display">
+html of stuff which appears after the user input is put in
+
+	< article id = "fruit-box">
+			<div id ="collapsible-box" class="collapsible-content">
+				<div id="fruits-loading">
+				<div id="datagrid">
+			</div>
+	</article>
+
+
+</div>	
+		 	
+	 
+	
+
+<!-------------------------------------------------Page Content ENDS------------------------------------------------------>
+		</center></main> 
+
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+<!-------------------------------------------------SHEETS JAVA ------------------------------------------------------>
+async function main() {
+<!---------MAIN FUNCTION----------------->
+		const params = new URLSearchParams(window.location.search);
+		
+  
+		}
+ <!---------------------------------------------MAKES SECTIONS COLLAPSE---------------------------------------------------->
+		document.querySelectorAll(".collapsible").forEach(header => {
+    			header.addEventListener("click", () => {
+        			header.classList.toggle("collapsed");
+    			});
+		});
+ 
+<!--------------------------------------------NECESSARY FUNCTION DONT CHANGE---------------------->
+		async function fetchCSV(url) {
+    			const res = await fetch(url);
+    			const text = await res.text();
+    			return text;
+		}
+
+		function parseCSV(text) {
+    			return text
+        		.trim()
+        		.split(/\r?\n/)
+        		.map(line =>
+            			line
+                	.split(",")
+                	.map(cell => cell.replace(/^"|"$/g, "")) 
+        		);
+		}
+
+    		
+ 
+const fruits = await loadFilteredFruits();
+
+<!-----------------------------------------CREATE HTML CODING------------------------------------>
+		 html = "";
+
+		for (let i = 0; i < fruits.length; i++) { 
+			const fruit = fruits[i] 
+
+				html += `<div class="CLASSNAMEOFYOURCHOICE"> 
+				<img class="fruit-image" src="${fruit[3]}">
+				<h4 class="fruit-title">${capitalizeFirstWord(fruit[0])}</h4>
+				<div class="fruit-info">
+					<p>This is a ${fruit[1]} ${fruit[2]}.</p>
+				</div>
+				</div>
+			
+				`;
+		}
+<!----------------------------------COULD SET UP IF ELSE STATEMENTS IN THE HTML IF YOU WANT TO--------------->
+
+	const datagrid = document.getElementById("ID OF ELEMENT WHICH CONTAINS INFO/GRID");
+
+<!------------------------------NONE FOUND MESSAGE---------------------------->
+		if(html == ""){
+			html = `<div class="message" style="width: 100%;"> 
+			<h4 class="fruit-title">
+			NO FRUIT HERE
+			</h4>
+			</div>
+			`;
+			
+			<!------------grows the grid for error message----------->
+			datagrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+		}
+	
+	
+		var message = document.getElementById("DATA-loading");
+		message.style.display = "none";
+		data-grid.innerHTML = html;
+
+<!-----------------------TO SET UP MULTIPLE DISPLAYS COPY ENDS HERE----------------------->
+<!-------------------------------------------------SHEETS JAVA ENDS------------------------------------------------>
+}
+		main();
+	</script>
+</body>
+</html> 

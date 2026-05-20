@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+	<link rel="stylesheet" href="AutomaticImagesTesting.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Automatic Image Testing</title>
+    	<style>
+    
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div class= "card" id="seasonal-box" style="max-width:60%;">
+				
+			</div>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+//------------------------------------- IMAGE ROTATION-----------------------------------------
+	  const currentMonth = new Date().getMonth();
+	  const monthlyContent = [
+    //JANUARY
+    {
+      img: "pool",
+      title: "January",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+     //FEBRUARY
+     {
+      img: "pool",
+      title: "February",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //MARCH
+    {
+       img: "pool",
+      title: "March",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //APRIL
+        {
+      img: "pool",
+      title: "April",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //MAY
+    {
+      img: "pool",
+      title: "May",
+      text: "This is the information for May",
+      link: "https://example.com"
+    },
+    //JUNE
+    {
+      img: "pool",
+      title: "June",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //JULY
+    {
+      img: "pool",
+      title: "July",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+        //AUGUST
+    {
+      img: "pool",
+      title: "August",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //SEPTEMBER
+        {
+      img: "pool",
+      title: "September",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //OCTOBER
+    {
+      img: "pool",
+      title: "October",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //NOVEMBER
+    {
+      img: "pool",
+      title: "November",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+    //DECEMBER
+    {
+      img: "pool",
+      title: "December",
+      text: "Welcome to January! Kick off your New Year goals.",
+      link: "https://example.com"
+    },
+  ];
+    const currentData = monthlyContent[currentMonth];
+
+  document.getElementById('seasonal-box').innerHTML = `
+    <div class="card-content">
+    <h1>${currentData.title}</h1>
+      <img src="Banners/${currentData.img}.png" alt="Seasonal Image" class="card-img">
+      <p class="card-text">${currentData.text}</p>
+      <br><br><a class = "button" href="${currentData.link}">Text on the button</a>
+    </div>
+  `;
+	
+	//----------------------------------------- NAV BAR ---------------------------------------------
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+    			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+    		link.addEventListener("click", (e) => {
+        			if (window.innerWidth > 700) return;
+
+        			e.preventDefault();
+        			const dropdown = link.nextElementSibling;
+        			dropdown.classList.toggle("open");
+    			});
+		});
+		async function main() {
+
+			async function fetchCSV(url) {
+    				const res = await fetch(url);
+    				const text = await res.text();
+    				return text;
+			}
+
+			function parseCSV(text) {
+    				return text
+        			.trim()
+        			.split(/\r?\n/)
+        			.map(line =>
+            				line
+                		.split(",")
+                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        			);
+			}
+
+			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
+    				const header = rows[0];
+    				const data = rows.slice(1);
+
+    				const colAIndex = header.indexOf(colAName);
+    				const colBIndex = header.indexOf(colBName);
+
+    				if (colAIndex === -1 || colBIndex === -1) {
+        			console.error("Column name not found in header:", { header, colAName, colBName });
+        			return [];
+    				}
+
+    				const maxIndex = Math.max(colAIndex, colBIndex);
+
+    				return data.filter(row => {
+        				if (!row || row.length <= maxIndex) {
+            				// too short to safely read both columns → ignore
+            				return false;
+        				}
+
+        				const a = row[colAIndex];
+        				const b = row[colBIndex];
+
+        				if (a == null || b == null) {
+            					return false;
+        				}
+
+        				return a.toLowerCase() === colAValue.toLowerCase() &&
+               				b.toLowerCase() === colBValue.toLowerCase();
+    				});
+			}
+
+		}
+		main();
+	</script>
+</body>
+</html> 
+

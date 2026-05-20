@@ -1,0 +1,121 @@
+#seasonal-box {
+background-color:#403175;
+border-color:#-color:#403175;
+border-radius:5px;
+border-size:0px;
+box-shadow: 5px 5px 5px 5px #140c38;
+min-width:100px;
+width:95%;width:95%;
+padding:15px;
+margin: auto;
+margin-top:2%;
+}
+ 
+
+   @media (max-width: 600px) {
+ 	.clangem{
+ 	max-height:40px;
+ 	}
+ 	.row{
+ 	display:block;
+ 	width:100%;
+ 	margin:0px;
+ 	padding:0px;
+ 	}
+ 	.card{
+ 	margin:0px;
+ 	min-width:80%;
+ 	}
+ 	.small-card{
+ 	margin:0px;
+ 	}
+ 	#rightcol{
+ 	width:100%;
+ 	}
+ 	.col-75{
+ 	min-width:100%;
+ 	}
+ 	#hide{
+ 	display:none;
+ 	}
+ 	.mobile{
+ 	display:block;
+ 	visibility:visible;
+ 	}
+ 	.mobile-card{
+ 	display:block;
+ 	}
+
+ 	#mo-text{
+ 	font-size:20px;
+ 	}
+ 	#event{
+ 	min-width:80%;
+ 	margin:auto;
+ 	}
+ 	.event-row{
+ 	width:100%;
+ 	padding:0px;
+ 	margin:0px;
+ 	box-sizing:content-box;
+ 	}
+ 	.event-img{
+ 	max-height:90%;
+ 	min-width:50%;
+ 	display:block;
+ 	border-radius:0px;
+ 	margin:0px;
+ 	box-shadow:0px;
+ 	padding:0px;
+ 	box-sizing:content-box;
+ 	}
+ 	#full{
+ 	width:100%;
+ 	}
+
+ 	.eventbox{
+ 	border-radius:0px;
+ 	height:90%;
+ 	box-sizing:border-box;
+ 	margin:0px; 	 	
+ 	display:block;
+ 	padding:5px;
+ 	box-shadow:0px;
+ 	overflow:auto;
+ 	 }
+ 	#e-title{
+ 	font-size:20px;
+ 	align:left;
+ 	}
+ 	.eventbox span{
+ 	font-size:15px;
+ 	}
+ 	.clanbox{
+ 	margin:0px;
+ 	border-radius: 5px 0px 0px 5px;
+ 	padding:15px;
+ 	}
+ 	 #mobileclanbox{
+ 	 height:fit-content;
+ 	 }
+ 	.top5{
+ 	display:none;
+ 	max-width:0%;}
+ 	
+ 	.top5-all{
+ 	height:10vw;
+ 	width:10vw;
+ 	}
+ 	#top5title{
+ 	display:none;}
+ 	#mobiletop5{
+ 	display:flex;
+ 	}
+ 	.row-art{
+	grid-template-columns:1fr 1fr;
+	display: grid;
+	align-items: flex-end; 
+	justify-content: space-between;
+	}
+}
+
