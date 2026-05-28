@@ -24,7 +24,7 @@ header{
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-background-color:#322265;
+background-image:url(Banners/balloons.png);
 height: 35vh;
 width:100%;
 background-size:cover;
