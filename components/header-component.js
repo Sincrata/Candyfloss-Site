@@ -53,8 +53,8 @@ customElements.define('main-header', Header);
     {
             imgPool: [
         { file: "epsilon3.png", position: "top center" },
-        { file: "epsilon1flip.png", position: "center" },
-        { file: "epsilon2.png", position: "top center" },
+        { file: "Epsilon2.png", position: "top center" },
+        { file: "Epsilon1flip.png", position: "center" },
         { file: "epsilon6flip.png", position: "top right" },
         { file: "bookclub.png", position: "center" },
         { file: "epsilon5flip.png", position: "top" }
