@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>The Candyfloss Species</title>
+<link rel="stylesheet" href="GeneralCSS.css">
+<link rel="stylesheet" href="homepage.css">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<script src="components/clangems-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Candyfloss</title>
+ <style>  @media (max-width: 600px) {
+ 	.clangem{
+ 	max-height:40px;
+ 	}
+ 	.row{
+ 	display:block;
+ 	width:100%;
+ 	margin:0px;
+ 	padding:0px;
+ 	}
+ 	.card{
+ 	margin:0px;
+ 	min-width:80%;
+ 	}
+ 	.small-card{
+ 	margin:0px;
+ 	}
+ 	#rightcol{
+ 	width:100%;
+ 	}
+ 	.col-75{
+ 	min-width:100%;
+ 	}
+ 	#hide{
+ 	display:none;
+ 	}
+ 	.mobile{
+ 	display:block;
+ 	visibility:visible;
+ 	}
+ 	.mobile-card{
+ 	display:block;
+ 	}
+
+ 	#mo-text{
+ 	font-size:20px;
+ 	}
+ 	#event{
+ 	min-width:80%;
+ 	margin:auto;
+ 	}
+ 	.event-row{
+ 	width:100%;
+ 	padding:0px;
+ 	margin:0px;
+ 	box-sizing:content-box;
+ 	}
+ 	.event-img{
+ 	max-height:90%;
+ 	min-width:50%;
+ 	display:block;
+ 	border-radius:0px;
+ 	margin:0px;
+ 	box-shadow:0px;
+ 	padding:0px;
+ 	box-sizing:content-box;
+ 	}
+ 	#full{
+ 	width:100%;
+ 	}
+
+ 	.eventbox{
+ 	border-radius:0px;
+ 	height:90%;
+ 	box-sizing:border-box;
+ 	margin:0px; 	 	
+ 	display:block;
+ 	padding:5px;
+ 	box-shadow:0px;
+ 	overflow:auto;
+ 	 }
+ 	#e-title{
+ 	font-size:20px;
+ 	align:left;
+ 	}
+ 	.eventbox span{
+ 	font-size:15px;
+ 	}
+ 	.clanbox{
+ 	margin:0px;
+ 	border-radius: 5px 0px 0px 5px;
+ 	padding:15px;
+ 	}
+ 	 #mobileclanbox{
+ 	 height:fit-content;
+ 	 }
+ 	.top5{
+ 	display:none;
+ 	max-width:0%;}
+ 	
+ 	.top5-all{
+ 	height:10vw;
+ 	width:10vw;
+ 	}
+ 	#top5title{
+ 	display:none;}
+ 	#mobiletop5{
+ 	display:flex;
+ 	}
+ 	.row-art{
+	grid-template-columns:1fr 1fr;
+	display: grid;
+	align-items: flex-end; 
+	justify-content: space-between;
+	}
+}
+
+</style>
+</head>
+<body>
+<header>
+	<main-header></main-header>
+</header>
+<main>
+	<nav-bar></nav-bar>
+ 
+ 
+<center>
+<div class="banner-img"></div>
+</center>
+</main>
+<script>
+//------------------------------------- IMAGE ROTATION-----------------------------------------
+	  const currentMonth = new Date().getMonth();
+	  const monthlyContent = [
+    //JANUARY
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+     //FEBRUARY
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //MARCH
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //APRIL
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+        //MAY
+    {
+            imgPool: [
+        { file: "epsilon3.png", position: "top center" },
+        { file: "epsilon1flip.png", position: "center" },
+        { file: "epsilon2.png", position: "top center" },
+        { file: "epsilon6flip.png", position: "top right" },
+        { file: "bookclub.png", position: "center" },
+        { file: "epsilon5flip.png", position: "top" }
+      ],
+    },
+       //JUNE
+     {
+            imgPool: [
+        { file: "rho1flip.png", position: "center right" },
+        { file: "zero-gravity-edit.png", position: "top center" },
+        { file: "rho2flip.png", position: "top 65%" },
+        { file: "lambda1flip.png", position: "top 65%" },
+        { file: "rho3.png", position: "left" },
+        { file: "rho5flip.png", position: "top" },
+        { file: "lambda2flip.png", position: "center right" },
+        { file: "lambda3.png", position: "bottom right" },
+        { file: "lambda4flip.png", position: "left" },
+        { file: "lambda5flip.png", position: "right" },
+        { file: "lambda7.png", position: "top" },
+        { file: "lastsurvivor.png", position: "right" },
+      ],
+
+    },
+
+     //JULY
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+        //AUGUST
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //SEPTEMBER
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //OCTOBER
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //NOVEMBER
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+    //DECEMBER
+    {
+      imgPool: [
+        { file: "EXAMPLE", position: "100%" },
+      ],
+    },
+  ];
+
+  const currentData = monthlyContent[currentMonth];
+  const randomIndex = Math.floor(Math.random() * currentData.imgPool.length);
+  const chosenImage = currentData.imgPool[randomIndex];
+
+   document.getElementById('banner-img').innerHTML = `
+   
+    <div class="card" style="background-image: url('Banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
+    </div>
+    </div>
+    </div>
+    </div>
+  `;
+</script>
+</body>
+</html> 

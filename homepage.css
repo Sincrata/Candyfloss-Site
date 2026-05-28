@@ -142,21 +142,7 @@ background-position:center;
 background-size:100%;
 background-color:#584894;
 }
-.top5-1{
-background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/4344317?1715386700);
-}
-.top5-2{
-background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/10273794?1616717466);
-}
-.top5-3{
-background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/12989614?1690408197);
-}
-.top5-4{
-background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/7007063?1675918461);
-}
-.top5-5{
-background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/13393269?1650168371);
-}
+
 .row-art{
 grid-template-columns:1fr 1fr 1fr 1fr;
 display: grid;

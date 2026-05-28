@@ -22,6 +22,73 @@
 	<main>
 		<nav-bar></nav-bar>
 		<center>
+			<div id="mobiletop5">
+			<a href="https://toyhou.se/4344317.kei-fen"><div class="top5-all top5-1"></div></a>
+			<a href="https://toyhou.se/10273794.friday-e"><div class="top5-all top5-2"></div></a>
+			<a href="https://toyhou.se/12989614.tbn"><div class="top5-all top5-3"></div></a>
+			<a href="https://toyhou.se/7007063.levi-abezeth"><div class="top5-all top5-4"></div></a>
+			<a href="https://toyhou.se/13393269.metatron-lumiere-graves"><div class="top5-all top5-5"></div></a> 
+</div><div class="clanrow" id="clanofthemonth" >
+	<div class="top5">
+	<h2 id="top5title" style="margin-top:2px;"> Top 5<br>Floss</h2>
+			<a href="https://toyhou.se/4344317.kei-fen"><div class="top5-all top5-1"></div></a>
+			<a href="https://toyhou.se/10273794.friday-e"><div class="top5-all top5-2"></div></a>
+			<a href="https://toyhou.se/12989614.tbn"><div class="top5-all top5-3"></div></a>
+			<a href="https://toyhou.se/7007063.levi-abezeth"><div class="top5-all top5-4"></div></a>
+			<a href="https://toyhou.se/13393269.metatron-lumiere-graves"><div class="top5-all top5-5"></div></a>
+ 
+	</div>
+<div class="clanbox">
+    <a href="${currentData.page}"class="shrink">
+    	<img class="clangem" src="gems/${currentData.gem}.png" style="display:block;height:15%;margin:auto;">
+    </a>
+    
+    <h2 id="hide" style="margin:2px;">${currentData.title}</h2>
+    
+    <div class="inner-card">
+    <span>${currentData.text} </span>
+    </div> 
+  
+    <br><br>
+  
+    <a class="event-link" href="${currentData.page}">Read more about the ${currentData.title} Clan!</a>
+    
+    <span>and look out for ${currentData.title} discounts across the site this month, like clothing, bases, and petpets found in this clan!</span>
+    
+    </div> <br><br>
+    </div>
+    <div class="clanimg" style="background-image: url('Banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
+      </div>
+    </div>
+    </div>
+    </div>
+  `;
+  
+   const uniqueArt = new Set();
+while (uniqueArt.size < 4 && uniqueArt.size < communityArt.length) {
+  const randomItem = communityArt[Math.floor(Math.random() * communityArt.length)];
+  uniqueArt.add(randomItem);
+}
+const [communityArt1, communityArt2, communityArt3, communityArt4] = uniqueArt;
+   
+     document.getElementById('com-art').innerHTML = `
+   
+   <img src="logos/art.png" style="width:60%;">
+<div id="comart" class="small-card">
+	<div class="row-art" >
+		<div class ="image-col" >
+			<img id="art1" src="${communityArt1.artlink}" ><br>Art by <span id="artist1"><a id="artist1link" href="https://toyhou.se/${communityArt1.artist}">${communityArt1.artist}</a><br>${communityArt1.prompt}</span>
+		</div>
+		<div class ="image-col"  >
+			<img id="art2" src="${communityArt2.artlink}" ><br>Art by <span id="artist2"><a id="artist2link" href="https://toyhou.se/${communityArt2.artist}">${communityArt2.artist}</a><br>${communityArt2.prompt}</span>			</div>
+		<div class ="image-col" >
+
+			<img id="art3" src="${communityArt3.artlink}" ><br>Art by <span id="artist3"><a id="artist3link" href="https://toyhou.se/${communityArt3.artist}">${communityArt3.artist}</a><br>${communityArt3.prompt}</span>			</div>
+		<div class ="image-col" >
+
+			<img id="art4" src="${communityArt4.artlink}"><br>Art by <span id="artist4"><a id="artist4link" href="https://toyhou.se/${communityArt4.artist}">${communityArt4.artist}</a><br>${communityArt4.prompt}</span>
+		</div>
+	</div>
 			<div id="rotating-clan" style="max-width:60%;">
 				
 			</div>

@@ -12,9 +12,9 @@ justify-content: flex-end;
 height: 35vh;
 width:100%;
 background-size:cover;
-background-position:${chosenImage.position};
+background-position:${chosenImage2.position};
 margin:0px;
-background-image:url('Banners/${chosenImage.file}')">
+background-image:url('Banners/${chosenImage2.file}')">
  <a href="index.html"><img src="logos/logo.gif"></a>
 </div>
 `;
@@ -23,8 +23,8 @@ background-image:url('Banners/${chosenImage.file}')">
 customElements.define('main-header', Header);
 
 //------------------------------------- IMAGE ROTATION-----------------------------------------
-	  const currentMonth = new Date().getMonth();
-	  const monthlyContent = [
+	  const currentMonth2 = new Date().getMonth();
+	  const monthlyContent2 = [
     //JANUARY
     {
       imgPool: [
@@ -117,13 +117,13 @@ customElements.define('main-header', Header);
     },
   ];
 
-  const currentData = monthlyContent[currentMonth];
-  const randomIndex = Math.floor(Math.random() * currentData.imgPool.length);
-  const chosenImage = currentData.imgPool[randomIndex];
+  const currentData2 = monthlyContent2[currentMonth2];
+  const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
+  const chosenImage2 = currentData2.imgPool[randomIndex2];
 
    document.getElementById('banner-img').innerHTML = `
    
-    <div class="card" style="background-image: url('Banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
+    <div class="card" style="background-image: url('Banners/${chosenImage2.file}'); background-position: ${chosenImage2.position};">
     </div>
     </div>
     </div>

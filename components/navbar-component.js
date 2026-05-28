@@ -31,6 +31,7 @@ class Nav extends HTMLElement {
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10546.redesign-center">Redesign Your Floss</a>
+								<a href="gallery.html">Community Art Gallery</a>
             			</div>
             		</div>
             	</li> 
