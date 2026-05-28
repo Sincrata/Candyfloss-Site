@@ -24,9 +24,9 @@ header{
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
+background-color:#322265;
 height: 35vh;
 width:100%;
-background-image:url("images/Epsilon2.png");
 background-size:cover;
 background-position:top center;
 margin:0px;
@@ -516,3 +516,37 @@ html, body{
 	}
 
 
+<!------------------BACK TO TOP------------------>
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;  
+  right: 10px;      
+  z-index: 99;    
+  
+  width: 75px;      
+  height: 75px;    
+  display: block;
+  
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+.back-to-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
+
+
+.back-to-top:hover {
+  transform: translateY(-5px); 
+  opacity: 0.8;               
+}
