@@ -101,3 +101,6 @@ color:white;
   height:auto;
   object-fit: contain;
 }
+.art-card:hover { 
+opacity: 0.8;
+}

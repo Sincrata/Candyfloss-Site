@@ -123,6 +123,9 @@ nav a:hover {
 background-color:rgba(52,35,104,0.4);
 }
 
+.image-col:hover { 
+opacity: 0.8;
+}
 <!--------------Drop down menu---------------->
 .dropdown {
   position: relative;

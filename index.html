@@ -416,21 +416,21 @@ const [communityArt1, communityArt2, communityArt3, communityArt4] = uniqueArt;
    
      document.getElementById('com-art').innerHTML = `
    
-   <img src="logos/art.png" style="width:60%;">
+  <a href="gallery.html" class="shrink"> <img src="logos/art.png" style="width:60%;"></a>
 <div id="comart" class="small-card">
 	<div class="row-art" >
 		<div class ="image-col" >
-			<img id="art1" src="${communityArt1.artlink}" ><br>Art by <span id="artist1"><a id="artist1link" href="https://toyhou.se/${communityArt1.artist}">${communityArt1.artist}</a><br>${communityArt1.prompt}</span>
+			<a href="${communityArt1.artlink}"><img id="art1" src="${communityArt1.artlink}" style="max-height:200px;width:auto;" ></a><br>Art by <span id="artist1"><a id="artist1link" href="https://toyhou.se/${communityArt1.artist}">${communityArt1.artist}</a><br>${communityArt1.prompt}</span>
 		</div>
 		<div class ="image-col"  >
-			<img id="art2" src="${communityArt2.artlink}" ><br>Art by <span id="artist2"><a id="artist2link" href="https://toyhou.se/${communityArt2.artist}">${communityArt2.artist}</a><br>${communityArt2.prompt}</span>			</div>
+			<a href="${communityArt2.artlink}"><img id="art2" src="${communityArt2.artlink}" style="max-height:200px;width:auto;" ></a><br>Art by <span id="artist2"><a id="artist2link" href="https://toyhou.se/${communityArt2.artist}">${communityArt2.artist}</a><br>${communityArt2.prompt}</span>
+		 </div>
 		<div class ="image-col" >
-
-			<img id="art3" src="${communityArt3.artlink}" ><br>Art by <span id="artist3"><a id="artist3link" href="https://toyhou.se/${communityArt3.artist}">${communityArt3.artist}</a><br>${communityArt3.prompt}</span>			</div>
+			<a href="${communityArt3.artlink}"><img id="art3" src="${communityArt3.artlink}" style="max-height:200px;width:auto;" ></a><br>Art by <span id="artist3"><a id="artist3link" href="https://toyhou.se/${communityArt3.artist}">${communityArt3.artist}</a><br>${communityArt3.prompt}</span>
+			</div>
 		<div class ="image-col" >
-
-			<img id="art4" src="${communityArt4.artlink}"><br>Art by <span id="artist4"><a id="artist4link" href="https://toyhou.se/${communityArt4.artist}">${communityArt4.artist}</a><br>${communityArt4.prompt}</span>
-		</div>
+			<a href="${communityArt4.artlink}"><img id="art4" src="${communityArt4.artlink}" style="max-height:200px;width:auto;" ></a><br>Art by <span id="artist4"><a id="artist4link" href="https://toyhou.se/${communityArt4.artist}">${communityArt4.artist}</a><br>${communityArt4.prompt}</span>
+ </div>
 	</div>
  `;
 
