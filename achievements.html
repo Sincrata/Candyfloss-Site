@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="GeneralCSS.css">
+    <link rel="stylesheet" href="achievements.css">
+	<link rel="preload" href="logos/logo.gif" as="image">
+	<script src="components/header-component.js"></script>
+	<script src="components/footer-component.js"></script>
+	<script src="components/navbar-component.js"></script>
+	<link rel="icon" href="icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CF Achievements</title>
+    	<style>
+@media (max-width: 800px) {
+			.past-ach-container {
+				margin: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
+
+			.past-ach-box {
+				padding: 15px;
+				width: 100%;
+			}
+
+			.past-ach-entry {
+				overflow: auto;
+				max-height: 20vh;
+			}
+
+			.past-ach-container {
+				margin: 0px;
+				margin-top: 0px;
+				grid-template-columns: 25% 50% 25%;
+			}
+
+			#three-columns {
+				grid-template-columns: 1fr;
+				max-width: 350px;
+			}
+		}
+
+		@media (max-width: 700px) {
+			.past-ach-container {
+				margin: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
+
+			.past-ach-box {
+				padding: 15px;
+				width: 100%;
+			}
+
+			.past-ach-entry {
+				overflow: auto;
+				max-height: 20vh;
+			}
+
+			.past-ach-container {
+				margin: 0px;
+				margin-top: 0px;
+				grid-template-columns: 25% 50% 25%;
+			}
+
+			.card,
+			#current-achievements {
+				width: 90%;
+			}
+
+			#fotmbox img {
+				max-width: 35px;
+			}
+
+			#fotm-badge {
+				margin: 0px;
+			}
+
+			#current-achievements {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			.past-ach-container {
+				margin: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
+
+			.past-ach-box {
+				padding: 15px;
+				width: 100%;
+			}
+
+			.past-ach-entry {
+				overflow: auto;
+				max-height: 20vh;
+			}
+
+			.past-ach-container {
+				margin: 0px;
+				margin-top: 0px;
+				grid-template-columns: 25% 50% 25%;
+			}
+
+			.card,
+			#current-achievements,
+			#fotm {
+				width: 90%;
+			}
+
+			#current-achievements {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media (max-width: 500px) {
+			#current-achievements {
+				grid-template-columns: 1fr;
+			}
+
+			.past-ach-container {
+				margin: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
+
+			.past-ach-box {
+				padding: 15px;
+				width: 100%;
+			}
+
+			.past-ach-entry {
+				overflow: auto;
+				max-height: 20vh;
+			}
+
+			.past-ach-container {
+				margin: 0px;
+				margin-top: 0px;
+				grid-template-columns: 25% 50% 25%;
+			}
+		}
+
+		@media (max-width: 300px) {
+			#current-achievements {
+				grid-template-columns: 1fr;
+			}
+
+			.past-ach-container {
+				margin: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
+
+			.past-ach-box {
+				padding: 15px;
+				width: 100%;
+			}
+
+			.past-ach-entry {
+				overflow: auto;
+				max-height: 20vh;
+			}
+
+			.past-ach-container {
+				margin: 0px;
+				margin-top: 0px;
+				grid-template-columns: 25% 50% 25%;
+			}
+		}
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<img id="achievement-logo" src="logos/achievements.png" style="max-width:100%;">
+			<div class="card" id="achievement-info">
+				<p>
+ <h1>Rules!</h1>
+ These rules are universal for all achievement entries.<br>
+By submitting entry, you are agreeing to these terms.<br><br>
+The use of AI in your entry in ANY way, theft in general, or other misconduct will disqualify you and revoke your right to entry into achievements in the future.
+<br><br>
+To qualify your entry must-<br>
+
+- prominently feature one or more approved Candyfloss<br>
+- follow the theme/requirements for the specific achievement<br>
+- abide by the Candyfloss TOS<br>
+- be completely made by you, aside from credited assets. You cannot collaborate on your entry.<br>
+- be made specifically for this achievement.<br>
+- accurately portray Candyfloss anatomy and cannon lore to the best of your abilities.<br>
+				<br><br>
+				<div id="three-columns" "style="display: block;">
+					<div>
+						<h2>Art Entries</h2>
+						<span> 
+						
+- must be completed past the line art stage<br>
+- provide credits to all assets used, bases are okay as long as its obviously credited!<br>
+-comic panels are ok but not needed<br>
+- By submitting for an Achievement you consent to your art and or stories to be displayed on the homepage, your achievement page or the CF official discord with proper credit.<br>
+ 						</span>
+					</div>
+					<div>
+						<h2>Chains</h2>
+						<span> 
+							Chain games are taking place on toyhou.se threads! More specific rules and guides for the chain can be found there!<br>
+							<br>
+						</span>
+					</div>
+					<div>
+						<h2>Stories</h2>
+						<span> 
+						- be between 1000 and 5000 words<br>
+						- be written in English <br>
+						-be posted to a google doc or in a toyhou.se literature post<br>
+</span>
+					</div>
+				</div>
+			</div>
+			<div id="current-achievements">
+                				
+                <div class="current-info">
+					<div class="img-box"><img class="current-img" src="Banners/clean.png"></div>
+					<div class="small-card">
+						<h2>Spring Cleaning Art Prompt</h2>
+						<span>Art Prompt</span>
+						<img class="current-badge" src="badge/clean.png">
+						<p>
+							Spring is here! The Candyfloss are celebrating the start of a new season by cleaning their homes, ridding themselves of the junk they've accumulated and washing clean their chakras with some good old fashion scrubbing bubbles! Draw your Candyfloss getting clean or cleaning their space for this prompt! Whether it's hoovering up a storm, or frothing up some bubbles in the bath, the Candyfloss are getting clean in the Spring Cleaning Prompt!
+						</p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
+					
+					</div>
+					
+				</div>				
+                <div class="current-info">
+					<div class="img-box"><img class="current-img" src="Banners/plant.png"></div>
+					<div class="small-card">
+						<h2>House Plants Art Prompt</h2>
+						<span>Art Prompt</span>
+						<img class="current-badge" src="badge/plant.png">
+						<p>
+							Let it grow! Candyfloss with green thumbs unite in this prompt! Floss of all sorts adore gardening!
+Whether they are the type to burn through potted plants faster than a Kappafloss can sprint, or if they are a respectable plant-mom and have a house filled with greenery, we want to see their beloved potted plants!
+Enter the House plants Art Prompt
+						</p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
+					
+					</div>
+					
+				</div>				
+                <div class="current-info">
+					<div class="img-box"><img class="current-img" src="Banners/dog.png"></div>
+					<div class="small-card">
+						<h2>Dog Days Chain Game</h2>
+						<span>Art Chain</span>
+						<img class="current-badge" src="badge/dog.png">
+						<p>
+							From Paizo pups, to Anijuru, to Rushounds and more! The Candyfloss just adore their loyal companions!
+We are giving some love to our Dog type petpets this month with the Dog Days chain game! Join the chain to draw the above floss with their furry companion! Come jump into the Chain game to give some pats and paws and see those tails wag!
+Join the Dog Days Chain game!
+						</p><a class="button" href="x">Enter</a>
+					
+					</div>
+					
+				</div>				
+                <div class="current-info">
+					<div class="img-box"><img class="current-img" src="Banners/school.png"></div>
+					<div class="small-card">
+						<h2>First Day of School Story Prompt</h2>
+						<span>Lit Prompt</span>
+						<img class="current-badge" src="badge/school.png">
+						<p>
+							School is in session! So many exciting things can happen when a young floss sets out to their first day of school!
+Whether it's the exciting new world of kindergarten, the drama filled high school days, or the party-filled adventure of college, anything can happen when a floss steps into a new life in a new school! Write a short story about your candyfloss' first day at a new school! What wacky shinnanigans or prospective love stories await them? Maybe they're joining a super hero school to learn to use their powers for good, or maybe they're joining a sensei to learn the ways of the Thetan Shinobi or the Epsilonion monks! We want to hear all about their chaotic first day!
+Enter the First Day of School Short Story Prompt!
+						</p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
+					
+					</div>
+					
+				</div>
+			</div>
+
+ 			<div id="fotm">
+				<div id="fotm-container">
+					<a href="https://toyhou.se/3758313.nyree"><img id="fotm-img"
+							src="Banners/nyree.jpg"></a>
+				</div>
+				<div id="fotmbox">
+					<div id="fotm-info">
+						<h2>Floss of the Month</h2>
+						<span>
+							Nyree is a young adult born to an Iotan father and his Lambdan sweetheart, raised in the comfort of luxury in Iota. Her father came from generational wealth as well as his father’s ties to mafioso, which comes back to haunt him. She met her best friend, a Theta girl named Posey, when she was a youth, and despite being raised as a typical Betan, she became Posey’s number one defender against Thetan and trufflephobes. When Nyree turned 15 eyo, she lost her father in a car accident and she became closed off for a while, in the meantime her mother decided to move from clan to clan for work, where she met many different floss of different clans and became friends. She even met a girl named Isobel and started dating her long distance until she bought a cottage in Delta and moved in with her. There, Nyree created a beautiful garden, using her passion to create a living by beekeeping and painting. Her relationship with Isobel fell apart after a year and a half eyo and she moved back to Beta and lived with her best friend Posey. She met a Betafloss named Junko and the two hit it off and are now dating. Nyree’s mother gave birth to her half-sister during her time back in Beta, thrilling her as she always wanted to be a big sister. A year later, war broke out in Theta, changing Nyree’s best friend irreparably and changing her views on her homeland of Beta forever. She moved to Lambda alongside her mother and baby sister, where she now has another blossoming garden, resuming her life as a botanist and artist as best she can after all the uncertainty of the world around her.
+Nyree belongs to the ever so lovely FadedFaeble! Faeble has been a longtime member of the candyfloss community, often seen in the discord and participating in our events. Faeble is a wonderful designer and artist, you’ve probably seen one of their petpets! She’s friendly and always excited to see what our other members are doing. Thank you for being part of the Candyfloss community, Faeble! 
+						</span>
+						<a class="button"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
+					</div>
+					<div id="fotm-badge">
+						<img src="badge/fotm-may26.png">
+					</div>
+				</div>
+
+			</div>
+			<H1> All Achievements!</h1>
+			<p>
+				Check out all the achievements you can complete! You can see which achievements you have already
+				completed by checking your <a href="https://thecandyflossspecies.com/UserAchievements.html"
+					style="color:#ae97da;">personal Achievements List!<a><br>You can earn 1 coin for completing an
+						achievement for the first time!</p>
+			<div id="prev-achievements">
+				<div class="past-ach-box">
+					
+                    
+
+				</div>
+
+			</div>
+			</div>
+		</center>
+	</main>
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+			link.addEventListener("click", (e) => {
+				if (window.innerWidth > 700) return;
+
+				e.preventDefault();
+				const dropdown = link.nextElementSibling;
+				dropdown.classList.toggle("open");
+			});
+		});
+	</script>
+</body>
+
+</html>
