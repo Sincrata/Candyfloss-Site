@@ -53,6 +53,8 @@ customElements.define('main-header', Header);
     {
             imgPool: [
         { file: "epsilon3.png", position: "top center" },
+        { file: "epsilon1flip.png", position: "center" },
+        { file: "epsilon2.png", position: "top center" },
         { file: "Epsilon2.png", position: "top center" },
         { file: "Epsilon1flip.png", position: "center" },
         { file: "epsilon6flip.png", position: "top right" },
@@ -120,16 +122,3 @@ customElements.define('main-header', Header);
   const currentData2 = monthlyContent2[currentMonth2];
   const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
   const chosenImage2 = currentData2.imgPool[randomIndex2];
-<<<<<<< Updated upstream
-
-   document.getElementById('banner-img').innerHTML = `
-   
-    <div class="card" style="background-image: url('Banners/${chosenImage2.file}'); background-position: ${chosenImage2.position};">
-    </div>
-    </div>
-    </div>
-    </div>
-  `;
-=======
-;
->>>>>>> Stashed changes
