@@ -1,0 +1,103 @@
+body{
+background-image:url("https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png");
+background-size:200px;
+margin:0px;
+background-color:#7f77ff;
+background-blend-mode: multiply;
+padding:0px;
+font-family:calibri;
+color:white;
+}
+.button{
+    background-color:#8e92db;
+}
+
+.pet-grid{
+    max-width:100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; 
+}
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pet-card img {
+  width: auto;
+  max-width: 250px; 
+  height:auto;
+  min-height:150px;
+  max-height:200px;
+  object-fit: contain;
+}
+
+.page-grid {
+    max-width:100%;
+    display:grid;
+    grid-template-columns: 40% 60% ; 
+    gap: 3px;
+}
+.page-box {
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.page-box #chart {
+  max-width: 500px;
+  width:100%;
+  margin:auto;
+  height:auto;
+  object-fit: contain;
+}
+
+.button-grid {
+    max-width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
+
+.page-box #example {
+  width:300px;
+  height:auto;
+  float:right;
+}
+
+.page-box #size {
+  width:auto;
+  height:300px;
+  float:right;
+  }
+
+  .art-grid{
+    max-width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; 
+}
+.art-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+} 
+.art-card img {
+  width: 100%; 
+  height:auto;
+  object-fit: contain;
+}

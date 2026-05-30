@@ -151,6 +151,33 @@ background-color:rgba(52,35,104,0.4);
 }
 
 <!----------- PAGE CONTENT ---------------->
+.blank{
+  display:block;
+}
+.capsule {
+  display: block;
+  background-color:#403175;
+  min-height:100px;
+  border-radius: 0px 0px 5px 5px ;
+  max-width:70%;
+  padding:10px;
+  margin:auto;
+  margin-top:-15px;
+  margin-bottom:15px;
+  box-sizing: border-box;
+}
+.capsuleimg {
+  display: block;
+  background-size:cover;
+  background-position:center;
+  min-height:100px;
+  height:25vh;
+  border-radius:5px 5px 0px 0px;
+  max-width:70%;
+  margin:auto;
+  margin-bottom:-15px;
+  margin-top:15px;
+}
  
 .box { 
 background-color:#582a98;
@@ -528,7 +555,6 @@ html {
   bottom: 20px;  
   right: 10px;      
   z-index: 99;    
-  
   width: 75px;      
   height: 75px;    
   display: block;
