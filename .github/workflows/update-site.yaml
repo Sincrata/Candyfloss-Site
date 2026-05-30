@@ -1,0 +1,36 @@
+name: Update Site
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Midnight CST (winter)
+    - cron: "0 6 * * *"
+    # Midnight CDT (summer)
+    - cron: "0 5 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run generator
+        run: node scripts/update-site.mjs
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Automated site update" || echo "No changes to commit"
+          git push
