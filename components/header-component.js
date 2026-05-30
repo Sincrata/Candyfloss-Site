@@ -120,6 +120,7 @@ customElements.define('main-header', Header);
   const currentData2 = monthlyContent2[currentMonth2];
   const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
   const chosenImage2 = currentData2.imgPool[randomIndex2];
+<<<<<<< Updated upstream
 
    document.getElementById('banner-img').innerHTML = `
    
@@ -129,3 +130,6 @@ customElements.define('main-header', Header);
     </div>
     </div>
   `;
+=======
+;
+>>>>>>> Stashed changes

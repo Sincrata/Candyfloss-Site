@@ -244,9 +244,10 @@ Nyree belongs to the ever so lovely
 <footer>
 	<main-footer></main-footer>
 </footer>
-<script>
+<script type="module">
 //------------------------------------- IMAGE ROTATION-----------------------------------------
 	  const currentMonth = new Date().getMonth();
+	  import { communityArt } from "./scripts/CommunityArt.js";
 	  
 	  const monthlyContent = [
     //JANUARY
@@ -357,65 +358,12 @@ Nyree belongs to the ever so lovely
     },
   ];
   
-    const communityArt = [ 
-        {
-		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/118409142_xkRbGmWTd9E2T2H.png",
-		position:"center",
-		prompt: "Downpour",
-		artist: "Countless"
-	},
-        {
-		artlink: "https://64.media.tumblr.com/48597f58bf78b79a401daa025b4be72f/ef9fbc954cccebe3-c8/s2048x3072/af0d51e4f2c7e35317530d7507ec050f1237ad87.pnj",
-		prompt: "Downpour",
-		position:"center",
-		artist: "UsernameRedacted"
-	},
-        {
-		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/35df47f5-0dbc-4d53-b0e0-329322e32473/dlvv5q8-13333b8b-2101-49ef-8aaa-299ca2940db7.png/v1/fill/w_894,h_894,q_70,strp/untitled465_20260418213132_by_echospirit1234_dlvv5q8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi8zNWRmNDdmNS0wZGJjLTRkNTMtYjBlMC0zMjkzMjJlMzI0NzMvZGx2djVxOC0xMzMzM2I4Yi0yMTAxLTQ5ZWYtOGFhYS0yOTljYTI5NDBkYjcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mFqlqW8wMOOxpeeTGhSrf1njuqx4ZoMK0D_AfAkiWSI",
-		prompt: "Downpour",
-		position: "center",
-		artist: "Echospirit1234"
-	},
-        {
-		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/802de623-7e16-41a8-8ef5-a05fcecfd731/dluuae3-249de13f-63c9-4e8a-a6e2-2b295d041796.png/v1/fill/w_1280,h_995/fotm_by_sha3min_dluuae3-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTk1IiwicGF0aCI6Ii9mLzgwMmRlNjIzLTdlMTYtNDFhOC04ZWY1LWEwNWZjZWNmZDczMS9kbHV1YWUzLTI0OWRlMTNmLTYzYzktNGU4YS1hNmUyLTJiMjk1ZDA0MTc5Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kV0WsNf6Owa4sfvruorE-6LbMXAwRLVQM2kLui1gzd8",
-		prompt: "Floss of the Month",
-		position:"center",
-		artist: "CursedFreak"
-	},
-        {
-		artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dab1e960-5cb3-4067-894a-acf431fd38a1/dlysit3-aeb3c4cf-c43a-4ae7-aa77-cb3652a0c4a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kYWIxZTk2MC01Y2IzLTQwNjctODk0YS1hY2Y0MzFmZDM4YTEvZGx5c2l0My1hZWIzYzRjZi1jNDNhLTRhZTctYWE3Ny1jYjM2NTJhMGM0YTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XZwacvflF5xlS7tTqfHZJqTFmBaKdoYGZwIjuVEuY3s",
-		prompt: "Dog Days",
-		position:"center",
-		artist: "Nifewoofy"
-	},
- 	{
-		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119465082_dHxZuzmEu9nNlpV.png",
-		prompt: "House Plants",
-		position:"center",
-		artist: "Nifewoofy"
-	},
-	 	{
-		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119671530_64cdYFriNNHxEWJ.png",
-		prompt: "Spring Cleaning",
-		position:"center",
-		artist: "KrissySempaiArt"
-	},
-
- 	{
-		artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119999691_sNFry1ElA3UO7OD.png",
-		prompt: "Dog Days",
-		position:"center",
-		artist: "KrissySempaiArt"
-	},
-
-
-
-];
  
   const currentData = monthlyContent[currentMonth];
   const randomIndex = Math.floor(Math.random() * currentData.imgPool.length);
   const chosenImage = currentData.imgPool[randomIndex];
-  
+  console.log("Got here");
+
   document.getElementById('rotating-clan').innerHTML = `
     <div id="mobiletop5">
 			<a href="https://toyhou.se/4344317.kei-fen"><div class="top5-all top5-1"></div></a>
@@ -458,7 +406,7 @@ Nyree belongs to the ever so lovely
     </div>
     </div>
   `;
-  
+  console.log("Got here 2");
    const uniqueArt = new Set();
 while (uniqueArt.size < 4 && uniqueArt.size < communityArt.length) {
   const randomItem = communityArt[Math.floor(Math.random() * communityArt.length)];

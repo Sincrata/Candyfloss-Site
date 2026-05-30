@@ -1,0 +1,11 @@
+{
+  "name": "site-updater",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-site.mjs"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "papaparse": "^5.5.3"
+  }
+}
