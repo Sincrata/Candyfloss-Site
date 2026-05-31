@@ -127,6 +127,7 @@ background-color:rgba(52,35,104,0.4);
 opacity: 0.8;
 }
 <!--------------Drop down menu---------------->
+ 
 .dropdown {
   position: relative;
   width:100%;
@@ -134,24 +135,64 @@ opacity: 0.8;
 .dropdown-content {
   position: absolute;
   top: 100%;
-  overflow: hidden;
-  max-height:0px;
-  transition: all 0.3s ease-in-out;
-  transition-delay: 0.06s;
   left:0px;
   box-sizing:border-box;
   background-color: #a867b7;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0px;
+  overflow: hidden; 
+  max-height: 0px;
+  visibility: hidden;
 }
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.dropdown:hover .dropdown-content {
   max-height: 1000px;
   visibility: visible;
+  overflow: visible;
 }
+ 
+
+.dropdown-content a, 
+.dropdown-content .submenu {
+  display: block;
+  width: 100%;
+  opacity: 100%;
+}
+.dropdown-content .submenu {
+    position: relative;
+}
+ 
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    min-width: 160px;
+    background-color: #88d68e; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+ 
+.submenu-content a {
+    color: #ffffff
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ 
+.submenu-content a:hover {
+    background-color:#6fc076;
+    color: #b7dfc9;
+}
+
+ 
+.submenu:hover .submenu-content {
+    display: block;
+}
+
 
 <!----------- PAGE CONTENT ---------------->
 .blank{
