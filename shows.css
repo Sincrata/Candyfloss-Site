@@ -1,0 +1,25 @@
+ .pet-grid{
+    margin:auto;
+    max-width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; 
+}
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pet-card img {
+  width: auto;
+  max-width: 250px; 
+  height:auto;
+  min-height:150px;
+  max-height:200px;
+  object-fit: contain;
+}
