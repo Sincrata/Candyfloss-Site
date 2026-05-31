@@ -26,12 +26,12 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Your Floss</a>
 				<div class="dropdown-content" id="nav2">
-            			      	<a href="inventory.html">Inventory</a>
-            			      	<a href="UserAchievements.html">My Achievements</a>
+            			      	<a href="/inventory.html">Inventory</a>
+            			      	<a href="/UserAchievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10546.redesign-center">Redesign Your Floss</a>
-								<a href="gallery.html">Community Art Gallery</a>
+								<a href="/gallery.html">Community Art Gallery</a>
             			</div>
             		</div>
             	</li> 
@@ -39,8 +39,8 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Activities</a>
 				<div class="dropdown-content" id="nav3">
-            			      	<a href="Achievements.html">Achievements</a>
-            			      	<a href="GachaponMachine.html">Floss Gachapon</a>
+            			      	<a href="/Achievements.html">Achievements</a>
+            			      	<a href="/GachaponMachine.html">Floss Gachapon</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12732.july-event">Event</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12731.july-holiday-opens-on-the-1st">Featured Clans</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
@@ -57,7 +57,7 @@ class Nav extends HTMLElement {
             			      		<div class="submenu">
               							<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Petpet Shop <span>&raquo;</span></a>
               							<div class="submenu-content">
-                    					 <a href="petpets/Lambda.html">Lambda Pets</a>
+                    					 <a href="/petpets/Lambda.html">Lambda Pets</a>
               						    </div>
          						    </div>  
             			      	<a href="https://toyhou.se/~forums/36602.prompt-prizes/286717.prompt-prize-counter">Prize Counter</a>
@@ -102,11 +102,11 @@ class Nav extends HTMLElement {
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega">Omega Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan">Mu Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10532.psi-clan">Psi Clan</a>
-           			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/120070.eta">Eta Clan</a>
+           			      		<a href="https://toyhou.se/~world/53663.the-candyfloss/page/120070.eta">Eta Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10520.alpha-clan">Alpha Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10521.gamma-clan">Gamma Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10525.delta-clan">Delta Clan</a>
-           			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10529.nu-clan">Nu Clan</a>
+           			      		<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10529.nu-clan">Nu Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/70294.chi-clan">Chi Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10522.beta-clan">Beta Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10530.phi-clan">Phi Clan</a>
