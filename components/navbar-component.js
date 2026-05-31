@@ -41,7 +41,7 @@ class Nav extends HTMLElement {
 				<div class="dropdown-content" id="nav3">
             			      	<a href="/Achievements.html">Achievements</a>
             			      	<a href="/GachaponMachine.html">Floss Gachapon</a>
-            			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12732.july-event">Event</a>
+            			      	<a href="/shows.html">Show Events</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/12731.july-holiday-opens-on-the-1st">Featured Clans</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/96567.dollmakers">Dollmakers Randomizers Quizzes</a>		      	
