@@ -83,4 +83,14 @@ export const communityArt = [{
 		    prompt: "Dress Up Dollie",
 		    position:"center",
 		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120753608_1l0vnsu6Kvfrub0.png",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "DressRibboness"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120768505_zUVGPliRuRTVgzq.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "DressRibboness"
 	    }];
