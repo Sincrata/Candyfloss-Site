@@ -1,0 +1,159 @@
+.calendar-card{
+background-color:#f7edf0;
+border-radius:5px;
+box-shadow: 5px 5px 5px 5px #291e52;
+height:1500px; 
+width:70%;
+margin-top:15px;
+}
+.title p{
+margin:0px;
+box-sizing:border-box;
+padding:0px;
+margin-top:0px;
+}
+.paw{
+    mask: url('paw.png') no-repeat center / contain;
+    -webkit-mask: url('paw.png') no-repeat center / contain;
+}
+.little{
+    height:28px;
+    display:flex;
+    position: absolute;
+    z-index: 2;
+    opacity:50%;
+    margin-left:-13px;
+    margin-top:-15px;
+}
+.cal-paw{
+    height:28px;
+    display:flex;
+    position: absolute;
+    z-index: 2;
+    opacity:50%;
+    margin-left:-8px;
+    margin-top:-9px;
+}
+.right{
+    transform: rotate(15deg);
+    aspect-ratio: 1 / 1;
+}
+.left{
+    transform: rotate(-15deg);
+    aspect-ratio: 1 / 1;
+}
+ 
+/*--------------COLORS-------------*/
+    #berry{
+        color:#eb91c7;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px #97316f;
+    }
+    #pank{
+        color:#ffc6d5;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px  #d34771;
+    }
+    #purple{
+        color:#f2cafe;
+        font-family: comic sans ms, sans-serif; 
+          -webkit-text-stroke: 2px #803896;
+    }
+    #blue{
+        color:#c1e5e9;
+        font-family: comic sans ms, sans-serif; 
+          -webkit-text-stroke: 2px #227e88;
+    }
+    #green{
+        color:#a3efd1;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px #2a835f;
+    }
+    #yellow{
+        color:#fee7b0;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px #aa8122;
+    }
+    #gold{
+        color:#e7e6ad;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px #818034;
+    }
+    #silver{
+        color:#dcdcdc;
+        font-family: comic sans ms, sans-serif; 
+        -webkit-text-stroke: 2px #656e85;
+    }
+/*-------------- PAW COLORS-------------*/
+    #paw-berry{
+        background-color: #eb91c7;
+     }
+    #paw-pank{
+        background-color:#ffc6d5;
+     }
+    #paw-purple{
+        background-color:#f2cafe;
+     }
+    #paw-blue{
+        background-color:#c1e5e9;
+     }
+    #paw-green{
+        background-color:#a3efd1;
+     }
+    #paw-yellow{
+        background-color:#fee7b0;
+     }
+    #paw-gold{
+        background-color:#e7e6ad;
+     }
+    #paw-silver{
+        background-color:#dcdcdc;
+     }
+ 
+    .cal-grid{
+        max-width:100%;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+	}
+    .month {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        padding: 5px;
+        border-radius: 8px;
+        text-align: center;
+    } 
+    .month p{
+        font-size:20px;
+    } 
+    .small{
+       margin-top:2px;
+       -webkit-text-stroke: 0.5px !important;
+       text-align:left;
+       margin:none;
+    }
+    .date-grid{
+        color:#97316f;
+        max-width:100%;
+        display:grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 7px;
+        margin-top:-7%;
+	}
+    .date-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    } 
+    .day-list p{
+       margin-top:-5px !important;
+       -webkit-text-stroke: 0.5px #481a6d !important;
+       font-size:15px !important;
+       text-align:left;
+       margin:none;
+       font-weight: bold;
+     }
