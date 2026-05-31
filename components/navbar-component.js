@@ -59,14 +59,14 @@ class Nav extends HTMLElement {
               							<div class="submenu-content">
                     					 <a href="petpets/Lambda.html">Lambda Pets</a>
               						    </div>
-         						    </div>
+         						    </div>  
             			      	<a href="https://toyhou.se/~forums/36602.prompt-prizes/286717.prompt-prize-counter">Prize Counter</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10547.base-shop">Base Shop</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/86288.bt">Clothing Boutique</a>
             			       	<a href="https://toyhou.se/~forums/20970.community-commissions">Community Commissions</a>
             			</div>
             		</div>
-            	</li> 
+            	</li>  
 		<li id="nav5">
 			<div class="dropdown" >
 				<a>General Traits</a>
