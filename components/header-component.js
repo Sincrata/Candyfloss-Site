@@ -14,8 +14,8 @@ width:100%;
 background-size:cover;
 background-position:${chosenImage2.position};
 margin:0px;
-background-image:url('Banners/${chosenImage2.file}')">
- <a href="index.html"><img src="logos/logo.gif"></a>
+background-image:url('/Banners/${chosenImage2.file}')">
+ <a href="index.html"><img src="/logos/logo.gif"></a>
 </div>
 `;
   }
