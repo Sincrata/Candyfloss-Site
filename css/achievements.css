@@ -22,7 +22,7 @@
 		#current-achievements{
 			display: grid;
 			grid-auto-rows: stretch;
-    			grid-template-columns: repeat(4, 1fr);
+    			grid-template-columns: repeat(2, 1fr);
 			gap: 20px;
 			width: 80%;
 			justify-content: center;
@@ -164,6 +164,9 @@
 			padding:0px;
 			background-color: #584894;
 			border-radius: 0px 5px 5px 0px  ;
+		}
+		#fotm-info a{
+			color: white;
 		}
 
 
