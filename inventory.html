@@ -3,12 +3,12 @@
 <head>
  	 <meta charset="UTF-8" />
   	<title>My Inventory</title>
-	<link rel="stylesheet" href="GeneralCSS.css">
-	<link rel="preload" href="logos/logo.gif" as="image">
-	<script src="components/header-component.js"></script>
-	<script src="components/footer-component.js"></script>
-	<script src="components/navbar-component.js"></script>
-  	<link rel="icon" href="icons/Planet.ico">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="preload" href="images/logos/logo.gif" as="image">
+	<script src="scripts/components/header-component.js"></script>
+	<script src="scripts/components/footer-component.js"></script>
+	<script src="scripts/components/navbar-component.js"></script>
+  	<link rel="icon" href="images/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 	#myo-grid, #trait-grid, #voucher-grid, #event-grid, #petpet-grid{
@@ -141,11 +141,11 @@
 	<main>
 		<nav-bar></nav-bar>
 		<div id="onto-inventory" class="card" style="display: none;">
-			<img src="logos/inventory.png" alt="Inventory" style="display:inline-block; max-width: 100%;">
+			<img src="images/logos/inventory.png" alt="Inventory" style="display:inline-block; max-width: 100%;">
 			<br>
 			<span> Enter your username below to check out what goodies you have access to! </span>
 			<br>
-			<input class="input" id="username" type="text" placeholder="Enter Username..." style=""></input>
+			<input class="input" id="username" type="text" placeholder="Enter Username..."></input>
 			<br>
 			<button id="inventory-button" class="button" style="width: 75%; margin: auto;" disabled>Go To Inventory</button>
 		</div>
@@ -157,7 +157,7 @@
 				<div class="title-row">
 					<h1 id="title"> X's Inventory</h1>
 					<div style="display: flex;flex-direction: row;align-items: center;">
-						<img src="icons/coin.gif" style="height:30px; display: inline-block;">
+						<img src="images/icons/coin.gif" style="height:30px; display: inline-block;">
 						<h1 id="coin-count">Loading Coins</h1>
 					</div>
 				</div>

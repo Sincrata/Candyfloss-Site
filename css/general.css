@@ -24,7 +24,7 @@ header{
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-background-image:url(Banners/balloons.png);
+background-image:url(../images/banners/balloons.png);
 height: 35vh;
 width:100%;
 background-size:cover;
@@ -73,9 +73,7 @@ color:#271d4c;
 footer a:hover{
 color:#d9c5ff;
 }
-<!-------------Navigation Bar-------------->
-nav { 
-}
+/*-------------Navigation Bar-------------->*/
 
 nav ul { 
 background-image:url("https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png");
@@ -176,7 +174,7 @@ opacity: 0.8;
 
  
 .submenu-content a {
-    color: #ffffff
+    color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;

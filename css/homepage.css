@@ -56,24 +56,24 @@ float:left;
  }
  
  .event-1{
- background-image:url("Banners/clean.png");
+ background-image:url("/images/banners/achievements/clean.png");
  background-position:100%;
  }
  
   .event-2{
- background-image:url("Banners/dog.png");
+ background-image:url("/images/banners/achievements/dog.png");
  background-position:60%;
  }
 
 
  .event-3{
- background-image:url("Banners/plant.png");
+ background-image:url("/images/banners/achievements/plant.png");
  background-position:20%;
  }
 
 
  .event-4{
- background-image:url("Banners/school.png");
+ background-image:url("/images/banners/achievements/school.png");
  background-position:50%;
  }
  

@@ -27,7 +27,7 @@ class Nav extends HTMLElement {
 				<a>Your Floss</a>
 				<div class="dropdown-content" id="nav2">
             			      	<a href="/inventory.html">Inventory</a>
-            			      	<a href="/UserAchievements.html">My Achievements</a>
+            			      	<a href="/my-achievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10546.redesign-center">Redesign Your Floss</a>
@@ -39,8 +39,8 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Activities</a>
 				<div class="dropdown-content" id="nav3">
-            			      	<a href="/Achievements.html">Achievements</a>
-            			      	<a href="/GachaponMachine.html">Floss Gachapon</a>
+            			      	<a href="/achievements.html">Achievements</a>
+            			      	<a href="/gachapon.html">Floss Gachapon</a>
             			      	<a href="/shows.html">Show Events</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/96567.dollmakers">Dollmakers Randomizers Quizzes</a>		      	

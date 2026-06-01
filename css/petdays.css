@@ -13,8 +13,8 @@ padding:0px;
 margin-top:0px;
 }
 .paw{
-    mask: url('paw.png') no-repeat center / contain;
-    -webkit-mask: url('paw.png') no-repeat center / contain;
+    mask: url('../images/paw.png') no-repeat center / contain;
+    -webkit-mask: url('../images/paw.png') no-repeat center / contain;
 }
 .little{
     height:28px;

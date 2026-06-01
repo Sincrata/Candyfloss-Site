@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="GeneralCSS.css">
-	<link rel="preload" href="logos/logo.gif" as="image">
-	<script src="components/header-component.js"></script>
-	<script src="components/footer-component.js"></script>
-	<script src="components/navbar-component.js"></script>
-	<link rel="icon" href="icons/Planet.ico">
+	<link rel="preload" href="/logos/logo.gif" as="image">
+	<script src="/components/header-component.js"></script>
+	<script src="/components/footer-component.js"></script>
+	<script src="/components/navbar-component.js"></script>
+	<link rel="icon" href="/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CF (title)</title>
     	<style>
@@ -121,4 +121,3 @@
 	</script>
 </body>
 </html> 
-

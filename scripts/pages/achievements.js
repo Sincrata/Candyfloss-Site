@@ -79,11 +79,11 @@ export default function generateAchievementPage(data) {
         const currentEvent = current[i];
         currentHtml += `				
                 <div class="current-info">
-					<div class="img-box"><img class="current-img" src="Banners/${currentEvent[4]}"></div>
+					<div class="img-box"><img class="current-img" src="images/banners/achievements/${currentEvent[4]}"></div>
 					<div class="small-card">
 						<h2>${currentEvent[0]}</h2>
 						<span>${currentEvent[2]} ${currentEvent[1]}</span>
-						<img class="current-badge" src="badge/${currentEvent[7]}">
+						<img class="current-badge" src="images/badge/${currentEvent[7]}">
 						<p>
 							${currentEvent[5]}
 						</p>`;
@@ -108,7 +108,7 @@ export default function generateAchievementPage(data) {
         pastHtml +=
             `<div class="past-ach-container">
 						<div class="past-ach-img"
-							style="background-image:url(Banners/${pastEvent[4]});background-size:cover;background-position:50%;">
+							style="background-image:url(images/banners/achievements/${pastEvent[4]});background-size:cover;background-position:50%;">
 						</div>
 						<div class="past-ach-entry">
 							<h2>${pastEvent[0]}</h2>
@@ -128,14 +128,14 @@ export default function generateAchievementPage(data) {
         pastHtml += `
 						</div>
 						<div class="past-ach-badge"
-							style="background-image:url(badge/${pastEvent[7]});background-size:contain;background-position:center;background-repeat:no-repeat;">
+							style="background-image:url(images/badge/${pastEvent[7]});background-size:contain;background-position:center;background-repeat:no-repeat;">
 						</div>
 					</div>
 					<br></br>`;
 
     }
 
-    //get two current acheivements
+    //get two current achievements
     //get current fotm
     //get any old ahcievements, excluding fotm
 
@@ -143,13 +143,13 @@ export default function generateAchievementPage(data) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="GeneralCSS.css">
-    <link rel="stylesheet" href="achievements.css">
-	<link rel="preload" href="logos/logo.gif" as="image">
-	<script src="components/header-component.js"></script>
-	<script src="components/footer-component.js"></script>
-	<script src="components/navbar-component.js"></script>
-	<link rel="icon" href="icons/Planet.ico">
+	<link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/achievements.css">
+	<link rel="preload" href="images/logos/logo.gif" as="image">
+	<script src="scripts/components/header-component.js"></script>
+	<script src="scripts/components/footer-component.js"></script>
+	<script src="scripts/components/navbar-component.js"></script>
+	<link rel="icon" href="images/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CF Achievements</title>
     	<style>
@@ -321,7 +321,7 @@ export default function generateAchievementPage(data) {
 	<main>
 		<nav-bar></nav-bar>
 		<center>
-			<img id="achievement-logo" src="logos/achievements.png" style="max-width:100%;">
+			<img id="achievement-logo" src="images/logos/achievements.png" style="max-width:100%;">
 			<div class="card" id="achievement-info">
 				<p>
  <h1>Rules!</h1>
@@ -373,7 +373,7 @@ To qualify your entry must-<br>
  			<div id="fotm">
 				<div id="fotm-container">
 					<a href="${fotm[11]}"><img id="fotm-img"
-							src="Banners/${fotm[4]}"></a>
+							src="images/banners/achievements/${fotm[4]}"></a>
 				</div>
 				<div id="fotmbox">
 					<div id="fotm-info">
@@ -385,7 +385,7 @@ To qualify your entry must-<br>
 							href="https://docs.google.com/forms/d/e/1FAIpQLSdvHN9u2eAO7-OU0uCR7PIsvI-jgBELtclpMKEbAE8Z3iFCaw/viewform">Submit</a>
 					</div>
 					<div id="fotm-badge">
-						<img src="badge/${fotm[7]}">
+						<img src="images/badge/${fotm[7]}">
 					</div>
 				</div>
 
@@ -393,7 +393,7 @@ To qualify your entry must-<br>
 			<H1> All Achievements!</h1>
 			<p>
 				Check out all the achievements you can complete! You can see which achievements you have already
-				completed by checking your <a href="https://thecandyflossspecies.com/UserAchievements.html"
+				completed by checking your <a href="my-achievements.html"
 					style="color:#ae97da;">personal Achievements List!<a><br>You can earn 1 coin for completing an
 						achievement for the first time!</p>
 			<div id="prev-achievements">
