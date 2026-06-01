@@ -9,7 +9,83 @@
 	<link rel="icon" href="../images/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lambda Petpets</title>
- <style>  @media (max-width: 600px) { 
+ <style>  
+ @media (min-width: 1200px) { 
+	.back-to-top{
+		display:visible;
+	}
+	.back-to-top-mobile{
+		display:none;
+	}
+ }
+   @media (max-width: 1700px) {
+		.back-to-top{
+		display:visible;
+	}
+	.back-to-top-mobile{
+		display:none;
+	}
+  #chart{
+		min-width:100%;
+	} 
+  .pet-grid{
+     grid-template-columns: repeat(3, 1fr);
+ }
+ .button-grid{
+     grid-template-columns: repeat(3, 1fr);
+ }
+  .page-grid{
+     grid-template-columns: repeat(1, 1fr);
+ }
+	}
+ }
+ @media (max-width: 1000px) { 
+	#chart{
+		min-width:100%;
+	}
+	.back-to-top{
+		display:none;
+	}
+	.back-to-top-mobile{
+		display:visible;
+	}
+	#top{
+		max-height:25vh;
+		height:auto;
+		min-width:auto;
+		margin:auto;
+		margin-top:20px;
+	}
+	.capsuleimg{
+		max-width:100%;
+		max-height:25vh;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+	.capsule{
+		max-width:100%;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+	.button{
+		min-width:85% !important;
+		display:block;
+	}
+ .pet-grid{
+     grid-template-columns: repeat(3, 1fr);
+ }
+ .button-grid{
+     grid-template-columns: repeat(3, 1fr);
+ }
+  .page-grid{
+     grid-template-columns: repeat(1, 1fr);
+ }
+ .page-box{
+	max-width:100%;
+ 	display:block;
+}
+ 
+ @media (max-width: 600px) { 
 	.back-to-top{
 		display:none;
 	}
@@ -53,6 +129,15 @@
 
 	}
   @media (max-width: 800px) { 
+	 .pet-grid{
+     grid-template-columns: repeat(2, 1fr);
+ }
+ .button-grid{
+     grid-template-columns: repeat(2, 1fr);
+ }
+  .page-grid{
+     grid-template-columns: repeat(1, 1fr);
+ }
  
 	}
 
