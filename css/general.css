@@ -590,7 +590,24 @@ html, body{
 html {
   scroll-behavior: smooth;
 }
-
+.back-to-top-mobile {
+  position: fixed;
+  bottom: 0px;  
+  right: 0px;      
+  z-index: 100;    
+  padding:0px;  
+  width: 100%;      
+  display: invisible;
+  background-color: #584894;
+	height:5%;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.back-to-top-mobile a{
+  color:#d9c5ff;
+  text-decoration: none;
+  font-size:20px;
+margin:auto;
+}
 
 .back-to-top {
   position: fixed;
@@ -600,8 +617,6 @@ html {
   width: 75px;      
   height: 75px;    
   display: block;
-  
-
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
