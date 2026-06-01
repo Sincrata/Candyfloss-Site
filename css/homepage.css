@@ -55,34 +55,6 @@ float:left;
  
  }
  
- .event-1{
- background-image:url("/images/banners/achievements/clean.png");
- background-position:100%;
- }
- 
-  .event-2{
- background-image:url("/images/banners/achievements/dog.png");
- background-position:60%;
- }
-
-
- .event-3{
- background-image:url("/images/banners/achievements/plant.png");
- background-position:20%;
- }
-
-
- .event-4{
- background-image:url("/images/banners/achievements/school.png");
- background-position:50%;
- }
- 
-  .event-5{
- background-image:url("https://f2.toyhou.se/file/f2-toyhou-se/images/107562374_5nAv31T24GPiGrM.jpg?1758422025");
- background-position:100%;
- }
-
-
  .event-link{
  color:#dbd0fd;
  display:block;
@@ -97,6 +69,7 @@ float:left;
  .eventbox{
 box-sizing:border-box;
 width:70%;
+max-height:500px;
 padding:5px;
 margin-top:0px;
 background-color:#403175;
