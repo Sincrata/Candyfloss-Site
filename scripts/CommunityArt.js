@@ -93,4 +93,29 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "DressRibboness"
+	    },{
+		    artlink: "https://cdn.discordapp.com/attachments/1404608566312173739/1510656420939300956/Fotm_may.png?ex=6a1d9bed&is=6a1c4a6d&hm=265611ad78babf4b7015581f34ad1be894824c6e6a155899346b1bbd15f464f1&",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120856032_HrnAIbxX4pzAVAk.png",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120578176_dz0CiSs7MmAECKc.png",
+		    prompt: "Dress Up Dollie",
+		    position:"center",
+		    artist: "Donutdoggy"
+	    },{
+		    artlink: "https://postimg.cc/WqTDRj5N",
+		    prompt: "Dress Up Dollie",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120860326_MThQ397TM8TbZla.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "Katsumi-draws"
 	    }];
