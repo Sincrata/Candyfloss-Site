@@ -2,7 +2,6 @@
 background-color:#f7edf0;
 border-radius:5px;
 box-shadow: 5px 5px 5px 5px #291e52;
-height:1500px; 
 width:70%;
 margin-top:15px;
 }
@@ -44,73 +43,72 @@ margin-top:0px;
 }
  
 /*--------------COLORS-------------*/
-    #berry{
+    #berry, .berry{
         color:#eb91c7;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #97316f;
     }
-    #pank{
+    #pank, .pank{
         color:#ffc6d5;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px  #d34771;
     }
-    #purple{
+    #purple, .purple{
         color:#f2cafe;
         font-family: comic sans ms, sans-serif; 
           -webkit-text-stroke: 2px #803896;
     }
-    #blue{
+    #blue, .blue{
         color:#c1e5e9;
         font-family: comic sans ms, sans-serif; 
           -webkit-text-stroke: 2px #227e88;
     }
-    #green{
+    #green, .green{
         color:#a3efd1;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #2a835f;
     }
-    #yellow{
+    #yellow, .yellow{
         color:#fee7b0;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #aa8122;
     }
-    #gold{
+    #gold, .gold{
         color:#e7e6ad;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #818034;
     }
-    #silver{
+    #silver, .silver{
         color:#dcdcdc;
         font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #656e85;
     }
 /*-------------- PAW COLORS-------------*/
-    #paw-berry{
+    #paw-berry, .paw-berry{
         background-color: #eb91c7;
      }
-    #paw-pank{
+    #paw-pank, .paw-pank{
         background-color:#ffc6d5;
      }
-    #paw-purple{
+    #paw-purple, .paw-purple{
         background-color:#f2cafe;
      }
-    #paw-blue{
+    #paw-blue, .paw-blue{
         background-color:#c1e5e9;
      }
-    #paw-green{
+    #paw-green, .paw-green{
         background-color:#a3efd1;
      }
-    #paw-yellow{
+    #paw-yellow, .paw-yellow{
         background-color:#fee7b0;
      }
-    #paw-gold{
+    #paw-gold, .paw-gold{
         background-color:#e7e6ad;
      }
-    #paw-silver{
+    #paw-silver, .paw-silver{
         background-color:#dcdcdc;
      }
- 
-    .cal-grid{
+     .cal-grid{
         max-width:100%;
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -121,9 +119,9 @@ margin-top:0px;
         flex-direction: column;
         align-items: center; 
         justify-content: center; 
-        padding: 5px;
         border-radius: 8px;
         text-align: center;
+        padding: 1rem;
     } 
     .month p{
         font-size:20px;

@@ -118,4 +118,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Katsumi-draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120975394_J2RXW1FTtjhxiph.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Build-a-banshee-arts"
 	    }];
