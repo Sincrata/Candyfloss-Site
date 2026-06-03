@@ -94,7 +94,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "DressRibboness"
 	    },{
-		    artlink: "https://cdn.discordapp.com/attachments/1404608566312173739/1510656420939300956/Fotm_may.png?ex=6a1d9bed&is=6a1c4a6d&hm=265611ad78babf4b7015581f34ad1be894824c6e6a155899346b1bbd15f464f1&",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863805_A56uTxHWnNnHS0t.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "KrissySempaiArt"
@@ -109,7 +109,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Donutdoggy"
 	    },{
-		    artlink: "https://postimg.cc/WqTDRj5N",
+		    artlink: "https://i.postimg.cc/1XNDq36q/Fashion-event.png",
 		    prompt: "Dress Up Dollie",
 		    position:"center",
 		    artist: "Ninjagomonster"
