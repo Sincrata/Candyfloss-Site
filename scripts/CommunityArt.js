@@ -119,6 +119,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Katsumi-draws"
 	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863846_VhCsenU1ICoLH4M.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "FadedFaeble"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120975394_J2RXW1FTtjhxiph.png",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",

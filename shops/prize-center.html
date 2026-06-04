@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="prize-center.css">
+    <link rel="preload" href="/images/logos/logo.gif" as="image">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/images/icons/Planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Prize Center</title>
+    <style>
+        @media (max-width: 800px) {
+            .card {
+                /*card needs to be a bit bigger*/
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="card">
+                <img src="/images/logos/prizecounter.png" alt="Prize Counter" id="main-logo">
+                <p style="font-size: 18px;">Welcome to the Prize Counter!</p>
+                <div class="inner-card">
+                    <p>
+                        Here you can spend your Floss Coins on all sorts of goodies! <br>
+                        The prizes change each month so make sure to come back to check out what being offered each
+                        time!
+                    </p>
+                </div>
+                <p style="font-size: 18px;">Pick a prize to redeem your Coins!</p>
+                <div id="prizes"></div>
+
+                <a class="button" href="https://toyhou.se/~forums/36602.prize-counter/286717.prize-counter">Place Order
+                    Here</a>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+    <script type="module" src="/scripts/prize-center.js"></script>
+</body>
+
+</html>

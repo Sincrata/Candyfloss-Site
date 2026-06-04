@@ -1,177 +1,198 @@
+#achievement-logo {
+	margin: auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
 
-		#achievement-logo{
-			margin: auto;
-			margin-top: 15px;
-			box-sizing: border-box;
-			max-width:100%;
-		}
-		#achievement-info p{
-			max-width: 75%;
-		}
-		#three-columns {
-    			display: grid;
-    			grid-template-columns: repeat(3, 1fr);
-    			gap: 20px;
-		}
+#achievement-info p {
+	max-width: 75%;
+}
 
-		#three-columns > div {
-    			background-color: #584894;
-    			border-radius: 5px;
-			padding-bottom: 15px;
-		}
-		#current-achievements{
-			display: grid;
-			grid-auto-rows: stretch;
-    			grid-template-columns: repeat(2, 1fr);
-			gap: 20px;
-			width: 80%;
-			justify-content: center;
-			margin: auto;
-			margin-top: 35px;
-			overflow: hidden;
-		}
-		#current-achievements .small-card{
-			box-sizing: border-box;
-			width: 100%;
-    			flex: 1;
-    			display: flex;
-    			flex-direction: column;
-			align-items: center;
-			margin-top: 0px;
-			box-shadow: 5px 5px 5px 5px #140c38;
-		}
-		.current-info{
-			height: 100%;
-			display: flex;
-    			flex-direction: column;
-		}
-		.current-badge{
-			width: 30%;
-		}
-		.img-box {
-   	 		width: 100%;
-    			aspect-ratio: 1606 / 538;
-    			overflow: hidden;
-			z-index: 2;
-			border-radius: 5px 5px 0px 0px;
-		}
-		.img-box img, #fotm-img{
-    			width: 100%;
-    			height: 100%;
-    			object-position: right;
-    			object-fit: cover;
-    			 
-		}
-		#current-achievements .button{
-			min-width: 50%;
-		}
-		#fotm{
-			margin-top: 15px;
-			width: 60%;
-			height: 35vh;
-			display: flex;
-			flex-direction: row;
-			align-items: stretch;
-			background-color: #403175;
-			margin-top: 35px;
-			border-radius: 5px;
-		}
-		#fotm-container{
-			min-width: 200px;
-			height: 100%;
-			flex: 0 0 40%;
-    			overflow: hidden;
-    			align:right;
-			border-radius: 5px 0px 0px 5px;
-		}
-		#fotmbox{
-			height: 35vh;
-			overflow: auto;
-			display: flex;
-			flex-direction: row;
-			box-sizing: border-box;
-		}
-		#fotm-info{
-			margin: 0px 20px;
-			border-radius: 0px 5px 5px 0px;
-		}
-		#fotm-info span{
-			background-color: #584894;
-			display: block;
-			padding: 10px;
-			border-radius: 5px;
-		}
-		#fotm-info .button{
-			width: 50%;
-		}
-		#fotm-badge{
-			margin: 10px;
-		}
-		#fotm-badge img{
-			margin: 10px;
-		}
-		h2{
-			margin-bottom: 5px;
-		}
-		
-		.past-ach-box{
-		background-color:#403175;
-		border-radius:5px;
-		box-shadow: 5px 5px 5px 5px #140c38;
-		min-width:100px;
-		width:70%;
-		padding:55px;
-		height:auto;
-		margin: auto;
-		margin-top:0px;
-		}
-		.past-ach-container{
-		margin-bottom:5px;
-		display: grid;
-		min-height: 15vh;
-    		height: auto; 
-		margin:1%;
-		margin-bottom:0.5%;
-    		grid-template-columns: 15% 77% 8%;
-    		gap: 0px;
-		}
-		.past-ach-entry{
-		background-color:#584894;
-		flex-direction: row;
-		height:auto;
-		overflow-y: auto;
-		min-width:100%;
-		padding:1px;
-		box-sizing:border-box;
-		margin-top:0px;
-		}
-		.past-ach-entry p{
-		margin:5px;
-		margin-top:0px;
-		}
+#three-columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
 
-		.past-ach-img{
-			min-width:100%;
-			padding:0px;
-			height:100%;
-			flex-direction: row;
-			align-items: stretch;
-			background-color: #fbb278;
-			border-radius: 5px 0px 0px 5px;
-			margin-top:0px;
-		}
-		.past-ach-badge{
-			min-width:100%;
-			flex-direction: row;
-			height:100%;
-			align-items: stretch;
-			padding:0px;
-			background-color: #584894;
-			border-radius: 0px 5px 5px 0px  ;
-			margin-right:10px;
-		}
-		#fotm-info a{
-			color: white;
-		}
+#three-columns>div {
+	background-color: #584894;
+	border-radius: 5px;
+	padding-bottom: 15px;
+}
 
+#current-achievements {
+	display: grid;
+	grid-auto-rows: stretch;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	width: 80%;
+	justify-content: center;
+	margin: auto;
+	margin-top: 35px;
+	overflow: hidden;
+}
 
+#current-achievements .small-card {
+	box-sizing: border-box;
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0px;
+	box-shadow: 5px 5px 5px 5px #140c38;
+}
+
+.current-info {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.current-badge {
+	width: 30%;
+}
+
+.img-box {
+	width: 100%;
+	aspect-ratio: 1606 / 538;
+	overflow: hidden;
+	z-index: 2;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.img-box img,
+#fotm-img {
+	width: 100%;
+	height: 100%;
+	object-position: right;
+	object-fit: cover;
+
+}
+
+#current-achievements .button {
+	min-width: 50%;
+}
+
+#fotm {
+	margin-top: 15px;
+	width: 60%;
+	height: 35vh;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	background-color: #403175;
+	margin-top: 35px;
+	border-radius: 5px;
+}
+
+#fotm-container {
+	min-width: 200px;
+	height: 100%;
+	flex: 0 0 40%;
+	overflow: hidden;
+	align: right;
+	border-radius: 5px 0px 0px 5px;
+}
+
+#fotmbox {
+	height: 35vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+#fotm-info {
+	margin: 0px 20px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+#fotm-info span {
+	background-color: #584894;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#fotm-info .button {
+	width: 50%;
+}
+
+#fotm-badge {
+	margin: 10px;
+}
+
+#fotm-badge img {
+	margin: 10px;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+
+.past-ach-box {
+	background-color: #403175;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px #140c38;
+	min-width: 100px;
+	width: 70%;
+	padding: 55px;
+	height: auto;
+	margin: auto;
+	margin-top: 0px;
+}
+
+.past-ach-container {
+	margin-bottom: 5px;
+	display: grid;
+	min-height: 15vh;
+	height: auto;
+	margin: 1%;
+	margin-bottom: 0.5%;
+	grid-template-columns: 15% 77% 8%;
+	gap: 0px;
+}
+
+.past-ach-entry {
+	background-color: #584894;
+	flex-direction: row;
+	height: auto;
+	overflow-y: auto;
+	min-width: 100%;
+	padding: 1px;
+	box-sizing: border-box;
+	margin-top: 0px;
+}
+
+.past-ach-entry p {
+	margin: 5px;
+	margin-top: 0px;
+}
+
+.past-ach-img {
+	min-width: 100%;
+	padding: 0px;
+	height: 100%;
+	flex-direction: row;
+	align-items: stretch;
+	background-color: #fbb278;
+	border-radius: 5px 0px 0px 5px;
+	margin-top: 0px;
+}
+
+.past-ach-badge {
+	min-width: 100%;
+	flex-direction: row;
+	height: 100%;
+	align-items: stretch;
+	padding: 0px;
+	background-color: #584894;
+	border-radius: 0px 5px 5px 0px;
+	margin-right: 10px;
+}
+
+#fotm-info a {
+	color: white;
+}
