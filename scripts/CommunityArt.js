@@ -128,4 +128,9 @@ export const communityArt = [{
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "Build-a-banshee-arts"
+	    },{
+		    artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/802de623-7e16-41a8-8ef5-a05fcecfd731/dm6f3sp-23b2102c-33ef-47c3-8521-5d71501c982e.png/v1/fill/w_1280,h_1273/breakfeast_prompt_by_sha3min_dm6f3sp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3MyIsInBhdGgiOiIvZi84MDJkZTYyMy03ZTE2LTQxYTgtOGVmNS1hMDVmY2VjZmQ3MzEvZG02ZjNzcC0yM2IyMTAyYy0zM2VmLTQ3YzMtODUyMS01ZDcxNTAxYzk4MmUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.j95oBZGbdeKiL0FvXfbtJfk-XEXRmPqGBTIzKDrS6hI",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "CursedFreak"
 	    }];
