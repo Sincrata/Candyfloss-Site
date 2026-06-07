@@ -273,7 +273,7 @@ export const petpetDays = [{
 		    day: "6",
 		    petpet: "Cyutoway Calf",
 		    class: "berry",
-            upcoming: "Today"
+            upcoming: "No"
 	    },{
 		    month: "6",
 		    day: "10",
@@ -285,7 +285,7 @@ export const petpetDays = [{
 		    day: "14",
 		    petpet: "Stella Pi",
 		    class: "blue",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "6",
 		    day: "16",
