@@ -143,4 +143,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121990005_xhWdISk40cm7lhq.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "JubLubDubs"
 	    }];
