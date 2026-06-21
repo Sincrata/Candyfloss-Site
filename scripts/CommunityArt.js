@@ -94,7 +94,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "DressRibboness"
 	    },{
-		    artlink: "https://cdn.discordapp.com/attachments/1404608566312173739/1510656420939300956/Fotm_may.png?ex=6a1d9bed&is=6a1c4a6d&hm=265611ad78babf4b7015581f34ad1be894824c6e6a155899346b1bbd15f464f1&",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863805_A56uTxHWnNnHS0t.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "KrissySempaiArt"
@@ -109,7 +109,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Donutdoggy"
 	    },{
-		    artlink: "https://postimg.cc/WqTDRj5N",
+		    artlink: "https://i.postimg.cc/1XNDq36q/Fashion-event.png",
 		    prompt: "Dress Up Dollie",
 		    position:"center",
 		    artist: "Ninjagomonster"
@@ -118,4 +118,49 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Katsumi-draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863846_VhCsenU1ICoLH4M.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "FadedFaeble"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120975394_J2RXW1FTtjhxiph.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Build-a-banshee-arts"
+	    },{
+		    artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/802de623-7e16-41a8-8ef5-a05fcecfd731/dm6f3sp-23b2102c-33ef-47c3-8521-5d71501c982e.png/v1/fill/w_1280,h_1273/breakfeast_prompt_by_sha3min_dm6f3sp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3MyIsInBhdGgiOiIvZi84MDJkZTYyMy03ZTE2LTQxYTgtOGVmNS1hMDVmY2VjZmQ3MzEvZG02ZjNzcC0yM2IyMTAyYy0zM2VmLTQ3YzMtODUyMS01ZDcxNTAxYzk4MmUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.j95oBZGbdeKiL0FvXfbtJfk-XEXRmPqGBTIzKDrS6hI",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "CursedFreak"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121881853_ZrOF4Vdx4he62dI.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://i.imgur.com/rxMxxHa.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121990005_xhWdISk40cm7lhq.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "JubLubDubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121143719_mAodRZZEBTwaKZc.png?1780719843",
+		    prompt: "Petpet Show",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
+		    prompt: "Fashion Show",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
+		    prompt: "Fashion Show",
+		    position:"center",
+		    artist: "Axototlduck"
 	    }];

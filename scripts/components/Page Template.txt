@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="GeneralCSS.css">
-	<link rel="preload" href="/logos/logo.gif" as="image">
-	<script src="/components/header-component.js"></script>
-	<script src="/components/footer-component.js"></script>
-	<script src="/components/navbar-component.js"></script>
-	<link rel="icon" href="/icons/Planet.ico">
+	<link rel="stylesheet" href="/css/general.css">
+	<link rel="preload" href="/assets/logos/logo.gif" as="image">
+	<script src="/scripts/components/header-component.js"></script>
+	<script src="/scripts/components/footer-component.js"></script>
+	<script src="/scripts/components/navbar-component.js"></script>
+	<link rel="icon" href="/assets/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CF (title)</title>
     	<style>
@@ -51,20 +51,8 @@
 	<footer>
 		<main-footer></main-footer>
 	</footer>
+	<script type="module" src="/scripts/nav-bar.js"></script>
 	<script>
-		document.getElementById("nav-toggle").addEventListener("click", () => {
-    			document.getElementById("nav-wrapper").classList.toggle("open");
-		});
-
-		document.querySelectorAll(".dropdown > a").forEach(link => {
-    		link.addEventListener("click", (e) => {
-        			if (window.innerWidth > 700) return;
-
-        			e.preventDefault();
-        			const dropdown = link.nextElementSibling;
-        			dropdown.classList.toggle("open");
-    			});
-		});
 		async function main() {
 
 			async function fetchCSV(url) {
