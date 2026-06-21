@@ -139,7 +139,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
-		    artlink: "https://cdn.discordapp.com/attachments/1404608566312173739/1517042395500511304/Better_not_have_a_white_bg_.png?ex=6a34d754&is=6a3385d4&hm=6e865b05ad0e630eb576be9c058a8d1aaaed5cea6fa0ac57da63de0c6014b10f&",
+		    artlink: "https://i.imgur.com/rxMxxHa.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "KrissySempaiArt"
@@ -148,4 +148,19 @@ export const communityArt = [{
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "JubLubDubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121143719_mAodRZZEBTwaKZc.png?1780719843",
+		    prompt: "Petpet Show",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
+		    prompt: "Fashion Show",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
+		    prompt: "Fashion Show",
+		    position:"center",
+		    artist: "Axototlduck"
 	    }];
