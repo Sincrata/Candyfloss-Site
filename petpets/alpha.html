@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css/general.css">
+<link rel="stylesheet" href="../css/petpet.css">
+	<script src="../scripts/components/header-component.js"></script>
+	<script src="../scripts/components/footer-component.js"></script>
+	<script src="../scripts/components/navbar-component.js"></script>
+	<link rel="icon" href="../images/icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alpha Petpets</title>
+ <style> 
+
+
+ @media (max-width: 600px) { 
+	.back-to-top{
+		display:none;
+	}
+	.back-to-top-mobile{
+		display:visible;
+	}
+	#top{
+		max-height:18vh;
+		height:auto;
+		min-width:100%;
+		margin:auto;
+	}
+	.capsuleimg{
+		max-width:100%;
+		max-height:18vh;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+	.capsule{
+		max-width:100%;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+	.button{
+		min-width:85% !important;
+		display:block;
+	}
+ 	.pet-grid{
+   		grid-template-columns: repeat(1, 1fr);
+ 	}
+	.button-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.page-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.page-box{
+		margin:auto;
+		max-width:100%;
+		display:block;
+	}
+	.pet-card{
+		margin:auto;
+		max-width:100%;
+		display:block;
+	}
+	.pet-card img{
+		max-width:100%;
+		display:block;
+	}
+	#chart{
+		min-width:100% !important;
+		max-width:100% !important;
+		height:auto;
+	}
+ 
+	}
+@media (max-width: 900px) { 	
+		.back-to-top{
+			display:none;
+		}
+		.back-to-top-mobile{
+			display:block !important;
+		}
+		#top{
+			max-height:30vh;
+			height:auto;
+			min-width:50%;
+			min-width:80%;
+			margin:auto;
+		}
+		.capsuleimg{
+			max-width:100%;
+			max-height:30vh;
+			margin-bottom:0px;
+			margin-top:0px;
+		}
+		.capsule{
+			max-width:100%;
+			margin-bottom:0px;
+			margin-top:0px;
+		}
+		.button{
+			min-width:85% !important;
+			display:block;
+		}
+		.pet-grid{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.button-grid{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.page-grid{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.page-box{
+			margin:auto;
+			max-width:100%;
+			display:block;
+		}
+		.pet-card{
+			margin:auto;
+			max-width:100%;
+			display:block;
+		}
+		.pet-card img{
+			max-width:100%;
+			display:block;
+		}
+		#chart{
+			min-width:100% !important;
+			max-width:100% !important;
+			height:auto;
+		}
+	}
+@media (max-width: 1500px) { 
+		#top{
+			max-height:30vh;
+			height:auto;
+			min-width:50%;
+			min-width:80%;
+			margin:auto;
+		}
+		.capsuleimg{
+	
+			max-height:30vh;
+			margin-bottom:0px;
+			margin-top:0px;
+		}
+		.capsule{
+	
+			margin-bottom:0px;
+			margin-top:0px;
+		}
+		.button{
+			min-width:85% !important;
+			display:block;
+		}
+		.pet-grid{
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.button-grid{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.page-grid{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.page-box{
+			margin:auto;
+			max-width:100%;
+			display:block;
+		}
+		.pet-card{
+			margin:auto;
+			max-width:100%;
+			display:block;
+		}
+		.pet-card img{
+			max-width:100%;
+			display:block;
+		}
+		#chart{
+			min-width:100% !important;
+			max-width:100% !important;
+			height:auto;
+		}
+
+	}
+</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+<main>
+	<nav-bar></nav-bar>
+<center><div class="back-to-top-mobile" style="display:none;"><a href="#top"><p style="margin-top:10px;">Back to Top</p></a></div><div class="back-to-top"><a href="#top"><img title="Back to Top" src="../images/icons/uparrow.png"></a></div>
+ <div class="capsuleimg" style="height:300px;background-image:url(../images/banners/lava.png);"><img id="top" src="../images/logos/alpha.png" style="max-width:40%;"></div><div class="capsule" style="background-color:#ff5583;">
+<h1>Alpha Clan Petpet Guide</h1><p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Alpha clan!</p>
+<div class="inner-card" style="background-color:#A53755;max-width:90%;">Click on a petpet to view their information!
+	<div class="pet-grid">
+		<div class="pet-card"><a href="#floga" class="shrink"><img title="Floga Drakai" src="pets/images/floga.png"></a>Floga Drakai</div>
+		<div class="pet-card"><a href="#rex" class="shrink"><img title="Flogasaurous Rex" src="pets/images/rex.png"></a>Flogasaurous Rex</div>
+		<div class="pet-card"><a href="#skipper" class="shrink"><img title="Ammos Skipper" src="pets/images/skipper.png"></a>Ammos Skipper</div>
+		<div class="pet-card"><a href="#spitter" class="shrink"><img title="Ammos Spitter" src="pets/images/spitter.png"></a>Ammos Spitter</div>
+		<div class="pet-card"><a href="#anijuru" class="shrink"><img title="Anijuru" src="pets/images/anijuru.png"></a>Anijuru</div>
+		<div class="pet-card"><a href="#anibold" class="shrink"><img title="Anibold" src="pets/images/anibold.png"></a>Anibold</div>
+		<div class="pet-card"><a href="#muflickah" class="shrink"><img title="Muflickah" src="pets/images/muflickah.png"></a>Muflickah</div>
+
+	</div>
+</div>
+<!------------------Floga Drakai-------------------->
+<div id="floga" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Floga Drakai</h1><p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/floga.png"><img id="chart" title="click for full sized chart" src="pets/charts/floga.png"></a>
+	Check out this Community Art of Floss and their Floga Drakai!
+	<div id="floga-art"></div> 
+	The Floga Drakais Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Floga Drakai on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>	Often referred to as Sand Lizards, the Flóga Drákai love to run and play in the sand dunes of Alpha! <img id="example" src="pets/charts/floga-size.png"> These burning heaps of love are littered all over the Alpha region and love to flock to the Oasis during the hot July days. When an adorable Drákon begs by the barbecue, the Candyfloss just can't help but give them some roasted marshmallow scraps. However, watch out! If you feed the Flóga too much it will never leave you alone!  Better make room on the couch cause these flaming buddies to love and cuddle.
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#rex" style="width:10vw;min-width:100px;">Evolution</a>
+			<a class="button alpha" href="pets/bases/floga.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Flogasaurous Rex-------------------->
+<div id="rex" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Flogasaurous Rex</h1><p style="margin-top:-12px;">2010 . 1st Wave . Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/rex.jpg"><img id="chart" title="click for full sized chart" src="pets/charts/rex.jpg"></a>
+	Check out this Community Art of Floss and their Flogasaurous Rexs!
+	<div id="rex-art"></div>  
+	The Flogasaurous Rexs Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Flogasaurous Rex on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>	The evolved form to the rambunctious Floga Drakon of Alpha! born from the flames of the mighty ashen Volcanoes the Flogasaurus Rex is a massive, mighty beast!  In the wild the Floga Rex is a very dangerous   predator that rules over the deserts of Alpha! These beasts can lift up to ten tons of weight on their backs and can run up to 93 Kilometers per hour at their top speed, kicking up clouds of sand behind them. The  Flogasaurus holds fire in their gut and can force flames from their mouths at temperatures high enough to sear through solid rock. Many believe the stranger landscapes on Alpha were formed from great Floga  battles!   <br><br><img id="example" src="pets/images/rex2.png">Though they do have wings the Flogasaurus  cannot and rather tends to flap their small wings to cool themselves off to catch their  balance. When a Floga Drakon reached peak happiness and experiences true love from their floss companions they can evolve into a   Flogasaurus Rex! This is the only known way to tame a Flogasaurus! Even   when evolved from the most temperate Drakon a Rex struggles with its   impulses and carnivorous nature, so it's best to take precaution if you   tame one! The fires on top of the Rex's spine, like with its prior   evolution, can be turned on and off at will, and Alphafloss are immune   to the effects of the flames. Floss who have an extremely deep bond with  their Rex can ride atop them, and the Rex will listen to their orders and directions. <br><br>Flogarex can sometimes be spotted devouring their own children! But don't panic! They are simply holding their young in their   mouths for warmth and protection! If a Rex is particularly  fond of  it's  Alpha rider it may attempt to hold you in the safety of  it's jaws  as  well, if this happens remain calm and simply ask to be put  down!  The  Floga will usually oblige! 
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#floga" style="width:10vw;min-width:100px;">Pre-Evolution</a>
+			<a class="button alpha" href="pets/bases/rex.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Ammos Skipper-------------------->
+<div id="skipper" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Ammos Skipper</h1><p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/skipper.jpeg"><img id="chart" title="click for full sized chart" src="pets/charts/skipper.jpeg"></a>
+	Check out this Community Art of Floss and their Ammos Skippers!
+	<div id="skipper-art"></div> 
+	The Ammos Skippers Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Ammos Skipper on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>The Ammos Skipper is native to the northern, volcanic region of Alpha and found nowhere else on the planet. They swim through the magma and lava but make their nests outside in the rocks where they can camouflage themselves. The Ammos Skippers are thin and small, usually around 2 feet in length with a hard shell armoring their backs. They move in a serpentine pattern and skip across the surface of magma and lava, earning them their name.  <img id="example" src="pets/charts/skipper-size.png"><br><br>Being skittish, they don't like confronting larger creatures, including Floss, making them hard to tame since they curl up into a ball when spooked and are very fast to getaway. They are sensitive to the cold and are recommended to be kept only in Alpha or under heat lamps. The Ammos Skippers are omnivores and like to eat bugs and desert grass when they can find it. They are choice meals for the Flogasaurus Rex and do not get along with Floga Drakai because if they have enough stamina to complete the chase, they will also eat the Ammos Skippers.<img id="example" src="pets/images/skipper1.png">
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#spitter" style="width:10vw;min-width:100px;">Evolution</a>
+			<a class="button alpha" href="pets/bases/skipper.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Ammos Spitter-------------------->
+<div id="spitter" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Ammos Spitter</h1><p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/spitter.png"><img id="chart" title="click for full sized chart" src="pets/charts/spitter.png"></a>
+	Check out this Community Art of Floss and their Ammos Spitters!
+	<div id="spitter-art"></div> 
+	The Ammos Spitters Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Ammos Spitter on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>	At home in the volcanic heat of the Alpha region, the Ammos Spitters live in rivers of magma and lava. Their bodies are impervious to heat to a ridiculous degree and the Spitter is able to stay submerged in Lava for several hours at a time. They swallow magma rocks and lava and hold it in a belly pouch, where they can launch it from their mouths. This allows them to use the magma to terraform their biome, building nests, moving lava rivers, and corroding rocks to suit their needs.<br><br>They are also known to use their Lava to fight off predators and to protect their territories. The magma filling their bodies often seep out from their mouths, and pores on their tails when overfilled, and can start fires through vents on their bodies, similar to some Alphafloss. The Ammos Spitter are about the size of a Great Dane and can crawl and stick on vertical surfaces and ceilings.<img id="example" src="pets/images/spitter2.png"><br><br>They are quick, agile, and viscous. They are extremely difficult to train unless raised from an egg and are tough to take care of. They are illegal to own in several clans but aren't uncommon to see in northern Alpha. They live in large family groups and protect one another's' young and egg clutches. The limited habitat of the Ammos causes them to be rarer than most Petpets, and they are protected by the Alpha clan as an endangered species. Their largest habitats are watched over and guarded against poachers and hunters by the military.
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#skipper" style="width:10vw;min-width:100px;">Pre-Evolution</a>
+			<a class="button alpha" href="pets/bases/spitter.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Anijuru-------------------->
+<div id="anijuru" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Anijuru</h1><p style="margin-top:-12px;">2023 . 3rd Wave . Un-Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/anijuru.png"><img id="chart" title="click for full sized chart" src="pets/charts/anijuru.png"></a>
+	Check out this Community Art of Floss and their Anijurus!
+	<div id="anijuru-art"></div> 
+	The Anijurus Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Anijuru on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>The Anijuru are adorable little pups who call the dunes of Alpha their home. Since ancient times Alphans have had these petpets as loyal companions, and flock herders. They are sleek and nimble and are resilient against the heat and rough terrains of the arid region.<br><br> <img id="example" src="pets/images/anijuru1.png"><br><br>These energetic pups are eager to please and love to follow their owner floss around at their heels. The metallic breast plates and face markings are key to the Anijuru's heat resistance and is useful for them to defend themselves against other creatures in the Alpha region. These fire-breathing doggos can be dangerous to own outside of Alpha, so they breeders of Anijuru will often ask for a pretty penny in other clans. This scarcity and their often-golden accents have given them a prestigious reputation for being the ideal pet for the wealthy and extravagant.   
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#anibold" style="width:10vw;min-width:100px;">Evolution</a>
+			<a class="button alpha" href="pets/bases/anijuru.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Anibold-------------------->
+<div id="anibold" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Anibold</h1><p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/anibold.png"><img id="chart" title="click for full sized chart" src="pets/charts/anibold.png"></a>
+	Check out this Community Art of Floss and their Anibolds!
+	<div id="anibold-art"></div> 
+	The Anibolds Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Anibold on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>The Anibolds are thigh high bipedal pets Like many pets they are quite smart and able to do simple tasks and understand speech to some degree.  They are often used as guards in Alpha and are often found in dungeons and temples in East Alpha. The Anibolds make great protectors for families, and other pets. They are brave, bold and fierce. While they prefer to walk on their back legs it's not uncommon to see one run on all 6 when trying to move quickly.
+<br><br>
+		<img id="example" src="pets/images/anibold2.png">
+		They move in packs in the wild with a leader Anibold that governs its pack and the Anijuru under them. The leader Anibold is often challenged by the others in fights to determine new leadership. When trained by a family, they are amazing pets. Their soft fur and obedient nature make them great for any home. They are gentle with children and tend to treat other pets well if they are given a place of authority over them. They are known to discipline other pets when they act out of line. In the wild, Anibolds often fight one another for dominance.<br><br>
+		Even if they are well trained, they will fight another Anibold or aggressive petpets when they come across them. To help them get their wiggles out while being safe about it - some places in Alpha have Anibold tournaments. This is a safe place where the Anibolds and other pets can fight one another without killing or mortally wounding each other. A lot of them train to be the best and actively strive to win these tournaments. It's rare but sometimes wild Anibolds are known to wander into the tournaments to fight without a Candyfloss representing them.
+		  
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#anijuru" style="width:10vw;min-width:100px;">Pre-Evolution</a>
+			<a class="button alpha" href="pets/bases/anibold.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+
+<!------------------Muflickah-------------------->
+<div id="muflickah" class="inner-card" style="background-color:#A53755;max-width:90%;">
+<h1>Muflickah</h1><p style="margin-top:-12px;">2025 . 4th Wave . Un-Evolved . Pyrokenesis</p>
+<div class="page-grid">
+<div class="page-box">
+	<a href="pets/charts/muflickah.png"><img id="chart" title="click for full sized chart" src="pets/charts/muflickah.png"></a>
+	Check out this Community Art of Floss and their Muflickahs!
+	<div id="muflickah-art"></div> 
+	The Muflickahs Celebrate their Pet Day on <b>DATE</b><br>You can claim a free Muflickah on that day in our discord server!
+</div>
+<div class="page-box">
+	<p>The vast, sun-baked expanse of the Alpha Deserts is home to a unique and fascinating creature: the Muflickah. This small desert rodent, despite its unassuming appearance, possesses a remarkable survival strategy that sets it apart from its arid-dwelling counterparts.
+		<img id="example" src="pets/images/muflickah.png"><Br><br>Physically, the Muflickah is characterized by its wide ears and remarkably long legs. These slender limbs are perfectly evolved for traversing the scorching desert sands, allowing the creature to make impressive leaps and swift sprints with minimal contact with the hot sands. This agility is crucial for escaping predators and navigating the often-treacherous terrain. In response to the extreme heat of its habitat, or when feeling threatened, the Muflickah can ignite specific parts of its body. This controlled combustion releases excess body heat, providing a unique form of thermoregulation.
+			<br><br>The Muflickah's diet is as sparse as the desert landscape it inhabits. It subsists on very little, diligently rooting around oases for seeds and the sweet fruits of cacti. As a prey creature, the Muflickah plays a vital role in the Alpha Deserts' ecosystem. Its speed and heat-releasing defense are primarily employed to evade predators, predominantly the various reptiles that roam the arid plains. The Muflickah serves as a primary food source for these desert reptiles, forming a crucial link in the food chain.
+			<img id="example" src="pets/charts/muflickah-size.png"><br><br>Beyond its ecological importance, the Muflickah also possesses a naturally cute and friendly disposition. This gentle nature has led to it being considered a desirable pet among floss who understand the specific care requirements.
+			<br><br>Prospective Muflickah owners must be diligent about maintaining a clean environment, particularly their sandboxes, which require frequent changing to ensure the creature's health and well-being. The Muflickah, with its unique fiery adaptations and charming personality, is a true marvel of Caramella.
+
+	</p>
+		<div class="button-grid">
+			<a class="button alpha" href="#" style="width:10vw;min-width:100px; display:none;">Pre-Evolution</a>
+			<a class="button alpha" href="pets/bases/muflickah.psd" style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+			<a class="button alpha" href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop" style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+		</div>
+</div></div>
+</div>
+ 
+
+</div>
+</center>
+</main>	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+//-------------------COMMUNITY ART SHUFFLER-------------------
+           const communityArt = [ 
+		
+	//Floga
+     {
+       flogaPool: [
+        {  file: "placeholder.png", artist: "Your art could be featured here!"  },
+        {  file: "placeholder.png", artist: "Your art could be featured here!"  },
+        {  file: "placeholder.png", artist: "Your art could be featured here!" },
+        { file: "placeholder.png", artist: "Your art could be featured here!" },
+     			 ]
+    }, 
+	//Rex
+     {
+       rexPool: [
+        { file: "rex1.png", artist: "Tenshilove" },
+        { file: "rex2.png", artist: "Axototlduck" },
+        { file: "placeholder.png", artist: "Your art could be featured here!"  },
+     			 ]
+    }, 
+	//Skipper
+     {
+       skipperPool: [
+        { file: "skipper1.png", artist: "Dxrk-incxrnxte" },
+		{ file: "skipper2.png", artist: "axototlduck" },
+		{ file: "placeholder.png", artist: "Your art could be featured here!" },
+     			 ]
+    }, 
+	//Spitter
+     {
+       spitterPool: [
+        { file: "spitter1.png", artist: "Perry2012Draws" },
+		{ file: "placeholder.png", artist: "Your art could be featured here!" },
+		{ file: "placeholder.png", artist: "Your art could be featured here!" },
+     			 ]
+    }, 
+
+		//Anijuru
+     {
+       anijuruPool: [
+        { file: "anijuru1.png", artist: "Axototlduck" },
+		{ file: "anijuru2.png", artist: "Perry2012draws" },
+		{ file: "anijuru3.png", artist: "UsernameRedacted" },
+		 			 ]
+    }, 
+
+			//Anibold
+     {
+       aniboldPool: [
+        { file: "anibold1.png", artist: "KrissySempaiArt" },
+		{ file: "anibold2.png", artist: "Moth" },
+		{ file: "anibold3.png", artist: "FadedFaeble" },
+		{ file: "anibold4.png", artist: "Axototlduck" },
+		{ file: "anibold5.png", artist: "Build-A-Banshee-Arts" },
+     			 ]
+    }, 
+
+		//Muflickah
+     {
+       muflickahPool: [
+        { file: "muflickah1.png", artist: "Aquilapurr" },
+		{ file: "muflickah2.png", artist: "EchoSpirit" },
+		{ file: "muflickah3.png", artist: "Axototlduck" },
+		{ file: "muflickah4.png", artist: "LilbeeDraws" },
+		{ file: "muflickah5.jpg", artist: "Countless" },
+     			 ]
+    }, 
+
+];
+// --- FLOGA ART ---
+const flogaPool = communityArt[0].flogaPool;  
+const flogaSet = new Set();  
+
+while (flogaSet.size < 3 && flogaSet.size < flogaPool.length) {
+  const randomItem = flogaPool[Math.floor(Math.random() * flogaPool.length)];
+  flogaSet.add(randomItem);
+}
+const selectedFlogaArt = Array.from(flogaSet);
+const flogaArt1 = selectedFlogaArt[0];
+const flogaArt2 = selectedFlogaArt[1];
+const flogaArt3 = selectedFlogaArt[2];
+
+
+// --- REX ART ---
+const rexPool = communityArt[1].rexPool;
+const rexSet = new Set();
+
+while (rexSet.size < 3 && rexSet.size < rexPool.length) {
+  const randomItem = rexPool[Math.floor(Math.random() * rexPool.length)];
+  rexSet.add(randomItem);
+}
+const selectedRexArt = Array.from(rexSet);
+const rexArt1 = selectedRexArt[0];
+const rexArt2 = selectedRexArt[1];
+const rexArt3 = selectedRexArt[2];
+
+// --- SKIPPER ART ---
+const skipperPool = communityArt[2].skipperPool; 
+const skipperSet = new Set(); 
+
+while (skipperSet.size < 3 && skipperSet.size < skipperPool.length) {
+  const randomItem = skipperPool[Math.floor(Math.random() * skipperPool.length)];
+  skipperSet.add(randomItem);
+}
+const selectedskipperArt = Array.from(skipperSet);
+const skipperArt1 = selectedskipperArt[0];
+const skipperArt2 = selectedskipperArt[1];
+const skipperArt3 = selectedskipperArt[2];
+
+// --- SPITTER ART ---
+const spitterPool = communityArt[3].spitterPool; 
+const spitterSet = new Set(); 
+
+while (spitterSet.size < 3 && spitterSet.size < spitterPool.length) {
+  const randomItem = spitterPool[Math.floor(Math.random() * spitterPool.length)];
+  spitterSet.add(randomItem);
+}
+const selectedspitterArt = Array.from(spitterSet);
+const spitterArt1 = selectedspitterArt[0];
+const spitterArt2 = selectedspitterArt[1];
+const spitterArt3 = selectedspitterArt[2];
+
+// --- ANIJURU ART ---
+const anijuruPool = communityArt[4].anijuruPool; 
+const anijuruSet = new Set(); 
+
+while (anijuruSet.size < 3 && anijuruSet.size < anijuruPool.length) {
+  const randomItem = anijuruPool[Math.floor(Math.random() * anijuruPool.length)];
+  anijuruSet.add(randomItem);
+}
+const selectedanijuruArt = Array.from(anijuruSet);
+const anijuruArt1 = selectedanijuruArt[0];
+const anijuruArt2 = selectedanijuruArt[1];
+const anijuruArt3 = selectedanijuruArt[2];
+
+// --- ANIBOLD ART ---
+const aniboldPool = communityArt[5].aniboldPool; 
+const aniboldSet = new Set(); 
+
+while (aniboldSet.size < 3 && aniboldSet.size < aniboldPool.length) {
+  const randomItem = aniboldPool[Math.floor(Math.random() * aniboldPool.length)];
+  aniboldSet.add(randomItem);
+}
+const selectedaniboldArt = Array.from(aniboldSet);
+const aniboldArt1 = selectedaniboldArt[0];
+const aniboldArt2 = selectedaniboldArt[1];
+const aniboldArt3 = selectedaniboldArt[2];
+
+// --- MUFLICKAH ART ---
+const muflickahPool = communityArt[6].muflickahPool; 
+const muflickahSet = new Set(); 
+
+while (muflickahSet.size < 3 && muflickahSet.size < muflickahPool.length) {
+  const randomItem = muflickahPool[Math.floor(Math.random() * muflickahPool.length)];
+  muflickahSet.add(randomItem);
+}
+const selectedmuflickahArt = Array.from(muflickahSet);
+const muflickahArt1 = selectedmuflickahArt[0];
+const muflickahArt2 = selectedmuflickahArt[1];
+const muflickahArt3 = selectedmuflickahArt[2];
+
+
+// --- INJECT INTO HTML ---
+document.getElementById('floga-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${flogaArt1.file}"><img src="pets/pdart/${flogaArt1.file}" title="Art by ${flogaArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${flogaArt2.file}"><img src="pets/pdart/${flogaArt2.file}" title="Art by ${flogaArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${flogaArt3.file}"><img src="pets/pdart/${flogaArt3.file}" title="Art by ${flogaArt3.artist}"></a></div>
+  </div>
+`
+document.getElementById('rex-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${rexArt1.file}"><img src="pets/pdart/${rexArt1.file}" title="Art by ${rexArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${rexArt2.file}"><img src="pets/pdart/${rexArt2.file}" title="Art by ${rexArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${rexArt3.file}"><img src="pets/pdart/${rexArt3.file}" title="Art by ${rexArt3.artist}"></a></div>
+  </div>
+`
+document.getElementById('skipper-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${skipperArt1.file}"><img src="pets/pdart/${skipperArt1.file}" title="Art by ${skipperArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${skipperArt2.file}"><img src="pets/pdart/${skipperArt2.file}" title="Art by ${skipperArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${skipperArt3.file}"><img src="pets/pdart/${skipperArt3.file}" title="Art by ${skipperArt3.artist}"></a></div>
+  </div>
+`
+document.getElementById('spitter-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${spitterArt1.file}"><img src="pets/pdart/${spitterArt1.file}" title="Art by ${spitterArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${spitterArt2.file}"><img src="pets/pdart/${spitterArt2.file}" title="Art by ${spitterArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${spitterArt3.file}"><img src="pets/pdart/${spitterArt3.file}" title="Art by ${spitterArt3.artist}"></a></div>
+  </div>
+`
+document.getElementById('anijuru-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${anijuruArt1.file}"><img src="pets/pdart/${anijuruArt1.file}" title="Art by ${anijuruArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${anijuruArt2.file}"><img src="pets/pdart/${anijuruArt2.file}" title="Art by ${anijuruArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${anijuruArt3.file}"><img src="pets/pdart/${anijuruArt3.file}" title="Art by ${anijuruArt3.artist}"></a></div>
+  </div>
+`
+document.getElementById('anibold-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${aniboldArt1.file}"><img src="pets/pdart/${aniboldArt1.file}" title="Art by ${aniboldArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${aniboldArt2.file}"><img src="pets/pdart/${aniboldArt2.file}" title="Art by ${aniboldArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${aniboldArt3.file}"><img src="pets/pdart/${aniboldArt3.file}" title="Art by ${aniboldArt3.artist}"></a></div>
+  </div>
+`
+
+document.getElementById('muflickah-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${muflickahArt1.file}"><img src="pets/pdart/${muflickahArt1.file}" title="Art by ${muflickahArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${muflickahArt2.file}"><img src="pets/pdart/${muflickahArt2.file}" title="Art by ${muflickahArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${muflickahArt3.file}"><img src="pets/pdart/${muflickahArt3.file}" title="Art by ${muflickahArt3.artist}"></a></div>
+  </div>
+`
+
+;
+ 
+	</script>
+</body>
+</html>

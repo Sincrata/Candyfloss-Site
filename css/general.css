@@ -166,10 +166,11 @@ opacity: 0.8;
     position: absolute;
     top: 0;
     left: 100%; 
-    min-width: 160px;
+    min-width: 150px;
     background-color: #88d68e; 
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 10;
+    white-space: nowrap; 
 }
 
  
@@ -177,13 +178,14 @@ opacity: 0.8;
     color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: block; 
 }
 
  
 .submenu-content a:hover {
     background-color:#6fc076;
     color: #b7dfc9;
+     
 }
 
  

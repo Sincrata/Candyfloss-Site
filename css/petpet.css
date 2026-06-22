@@ -8,8 +8,22 @@ padding:0px;
 font-family:calibri;
 color:white;
 }
-.button{
-    background-color:#8e92db;
+.eataf{
+    background-color:#1e181c;
+    box-shadow:1px 3px 3px 3px #0f0c0e;
+    color:white;
+}
+.eataf:hover{
+    background-color:#2b2a2a;
+}
+
+.alpha{
+    background-color:#882741;
+    box-shadow:1px 3px 3px 3px #641c30;
+    color:white;
+}
+.alpha:hover{
+    background-color:#e04f76;
 }
 
 .pet-grid{

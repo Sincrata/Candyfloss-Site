@@ -56,7 +56,9 @@ class Nav extends HTMLElement {
             			      		<div class="submenu">
               							<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Petpet Shop <span>&raquo;</span></a>
               							<div class="submenu-content">
-                    					 <a href="/petpets/lambda2.html">Lambda Pets</a>
+                    					 <a href="/petpets/alpha.html">Alpha Pets</a>
+										 <a href="/petpets/lambda2.html">Lambda Pets</a>
+										 <a href="/petpets/eataf.html">Eataf Pets</a>
               						    </div>
          						    </div>  
             			      	<a href="https://toyhou.se/~forums/36602.prompt-prizes/286717.prompt-prize-counter">Prize Counter</a>
