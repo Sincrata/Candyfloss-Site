@@ -62,6 +62,23 @@ customElements.define('main-header', Header);
         { file: "epsilon5flip.png", position: "top" }
       ],
     },
+           //JUNE
+     {
+            imgPool: [
+        { file: "rho1flip.png", position: "center right" },
+        { file: "zero-gravity-edit.png", position: "top center" },
+        { file: "rho2flip.png", position: "top 65%" },
+        { file: "lambda1flip.png", position: "top 65%" },
+        { file: "rho3.png", position: "left" },
+        { file: "rho5flip.png", position: "top" },
+        { file: "lambda2flip.png", position: "center right" },
+        { file: "lambda3.png", position: "bottom right" },
+        { file: "lambda4flip.png", position: "left" },
+        { file: "lambda5flip.png", position: "right" },
+        { file: "lambda7.png", position: "top" },
+        { file: "lastsurvivor.png", position: "right" },
+      ],
+    },
 
 
      //JULY
@@ -83,26 +100,11 @@ customElements.define('main-header', Header);
         { file: "alpha3-wide.png", position: "center 100%" },
       ],
     },
-           //JUNE
-     {
-            imgPool: [
-        { file: "rho1flip.png", position: "center right" },
-        { file: "zero-gravity-edit.png", position: "top center" },
-        { file: "rho2flip.png", position: "top 65%" },
-        { file: "lambda1flip.png", position: "top 65%" },
-        { file: "rho3.png", position: "left" },
-        { file: "rho5flip.png", position: "top" },
-        { file: "lambda2flip.png", position: "center right" },
-        { file: "lambda3.png", position: "bottom right" },
-        { file: "lambda4flip.png", position: "left" },
-        { file: "lambda5flip.png", position: "right" },
-        { file: "lambda7.png", position: "top" },
-        { file: "lastsurvivor.png", position: "right" },
-      ],
 
-    },
+    
         //AUGUST
     {
+      
       imgPool: [
         { file: "EXAMPLE", position: "100%" },
       ],
