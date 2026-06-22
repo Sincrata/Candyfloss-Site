@@ -414,7 +414,18 @@
 				title: "Lambda",
 				text: "The Lambda Clan is the islander clan. The Lambdas are carefree and live in a bright, beautiful environment. The air is warm and mild, and the breezes pass through tall strong palm trees throughout the entire clan. Floss in Lambda enjoy a perpetual summer. </span> <div id='hide'></span> Located on the Northern section of the Karpos Island, the clan is long and thin, with over 50% of their landmass being tropical beach land.  They love to throw large feasts and parties by the water and are always ready to sit back and relax in a hammock. Unlike most clans the Lambda are strong believers in relaxation and happiness over the notion of hard work and success. You will often hear the Lambdafloss say 'Alualu i kou hauʻoli' to one another, this is a common greeting or send off in their culture that means 'Pursue your Happiness'. They believe that the most important thing in life is true happiness, not monetary success. ",
 				page: "https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan",
-				gem: "lambda"
+				gem: "lambda",
+				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628",
+				toplink1: "https://toyhou.se/8504270.lady",
+				topimage2:"https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797",
+				toplink2:"https://toyhou.se/9179322.pagliacci",
+				topimage3:"https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982",
+				toplink3:"https://toyhou.se/11685624.jelle-love-yurself-lubell",
+				topimage4:"https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652",
+				toplink4:"https://toyhou.se/4918167.hysteria-l",
+				topimage5:"https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923",
+				toplink5:"https://toyhou.se/10792519.aziraphale-norin",
+
 			},
 			//JULY
 			{
@@ -431,14 +442,35 @@
 				title: "Eataf",
 				text: " <span>The Eataf Clan is the Desert Clan.  In the arid expanse of North Glykos, amidst shifting sands and harsh winds, lies the clan of Eataf – a testament to resilience, faith, and the transformative power of a second chance. </span>   <div id='hide'> <span>Eataf represents a profound philosophy, a clan built upon an unwavering promise of forgiveness and grace from their revered Goddess.<br><br>Once under oppressive regime of the Alpha, the people who would become the Eataf clan found their spiritual and moral compass in the teachings of the Eataf Church.  </span>  ",
 				page: "https://toyhou.se/~world/53663.the-candyfloss/page/160622.eataf-clan",
-				gem: "eataf"
+				gem: "eataf",
+				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/34638042?1755044790",
+				toplink1: "https://toyhou.se/34638042.kh-null",
+				topimage2:"https://f2.toyhou.se/file/f2-toyhou-se/characters/15942241?1757882421",
+				toplink2:"https://toyhou.se/15942241.zacharias-serafim",
+				topimage3:"https://f2.toyhou.se/file/f2-toyhou-se/characters/3843279?1775602041",
+				toplink3:"https://toyhou.se/3843279.christina-matthews",
+				topimage4:"https://f2.toyhou.se/file/f2-toyhou-se/characters/4072794?1761259129",
+				toplink4:"https://toyhou.se/4072794.cashus",
+				topimage5:"https://f2.toyhou.se/file/f2-toyhou-se/characters/33170288?1777332551",
+				toplink5:"https://toyhou.se/33170288.republic-snow"
+
 			},
 			//AUGUST
 			{
 				img: "pool",
 				title: "August",
 				text: "Welcome to January! Kick off your New Year goals.",
-				link: "https://example.com"
+				link: "https://example.com",
+								topimage1: "",
+				toplink1: "",
+				topimage2:"",
+				toplink2:"",
+				topimage3:"",
+				toplink3:"",
+				topimage4:"",
+				toplink4:"",
+				topimage5:"",
+				toplink5:""
 			},
 			//SEPTEMBER
 			{
@@ -478,19 +510,19 @@
 
 		document.getElementById('rotating-clan').innerHTML = `
     <div id="mobiletop5">
-			<a href="https://toyhou.se/8504270.lady"><div class="top5-all top5-1" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628);"></div></a>
-			<a href="https://toyhou.se/9179322.pagliacci"><div class="top5-all top5-2" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797);"></div></a>
-			<a href="https://toyhou.se/11685624.jelle-love-yurself-lubell"><div class="top5-all top5-3" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982);"></div></a>
-			<a href="https://toyhou.se/4918167.hysteria-l"><div class="top5-all top5-4" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652);"></div></a>
-			<a href="https://toyhou.se/10792519.aziraphale-norin"><div class="top5-all top5-5" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923);"></div></a> 
+			<a href="${currentData.toplink1}"><div class="top5-all top5-1" style="background-image:url(${currentData.topimage1});"></div></a>
+			<a href="${currentData.toplink2}"><div class="top5-all top5-2" style="background-image:url(${currentData.topimage2});"></div></a>
+			<a href="${currentData.toplink3}"><div class="top5-all top5-3" style="background-image:url(${currentData.topimage3});"></div></a>
+			<a href="${currentData.toplink4}"><div class="top5-all top5-4" style="background-image:url(${currentData.topimage4});"></div></a>
+			<a href="${currentData.toplink5}"><div class="top5-all top5-5" style="background-image:url(${currentData.topimage5});"></div></a> 
 </div><div class="clanrow" id="clanofthemonth" >
 	<div class="top5">
 	<h2 id="top5title" style="margin-top:2px;"> Top 5<br>Floss</h2>
-			<a href="https://toyhou.se/8504270.lady"><div class="top5-all top5-1" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628);"></div></a>
-			<a href="https://toyhou.se/9179322.pagliacci"><div class="top5-all top5-2" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797);"></div></a>
-			<a href="https://toyhou.se/11685624.jelle-love-yurself-lubell"><div class="top5-all top5-3" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982);"></div></a>
-			<a href="https://toyhou.se/4918167.hysteria-l"><div class="top5-all top5-4" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652);"></div></a>
-			<a href="https://toyhou.se/10792519.aziraphale-norin"><div class="top5-all top5-5" style="background-image:url(https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923);"></div></a> 
+			<a href="${currentData.toplink1}"><div class="top5-all top5-1" style="background-image:url(${currentData.topimage1});"></div></a>
+			<a href="${currentData.toplink2}"><div class="top5-all top5-2" style="background-image:url(${currentData.topimage2});"></div></a>
+			<a href="${currentData.toplink3}"><div class="top5-all top5-3" style="background-image:url(${currentData.topimage3});"></div></a>
+			<a href="${currentData.toplink4}"><div class="top5-all top5-4" style="background-image:url(${currentData.topimage4});"></div></a>
+			<a href="${currentData.toplink5}"><div class="top5-all top5-5" style="background-image:url(${currentData.topimage5});"></div></a> 
 
 	</div>
 <div class="clanbox">

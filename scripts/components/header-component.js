@@ -62,7 +62,28 @@ customElements.define('main-header', Header);
         { file: "epsilon5flip.png", position: "top" }
       ],
     },
-       //JUNE
+
+
+     //JULY
+    {
+      imgPool: [
+        { file: "lastsurvivor.png", position: "right" },
+        { file: "lake-wide.png", position: "bottom 100%" },
+        { file: "zero-gravity-edit.png", position: "top center" },
+        { file: "lakeside-wide.png", position: "top 100%" },
+        { file: "playground.png", position: "top 100%" },
+        { file: "Summer1-wide.png", position: "top100%" },
+        { file: "war1.png", position: "top 100%" },
+        { file: "paint-wide.png", position: "top 100%" },
+        { file: "battlebanner.png", position: "top 100%" },
+        { file: "lava.png", position: "top 100%" },
+        { file: "eataf1-wide.png", position: "top 100%" },
+        { file: "alpha1.png", position: "center 100%" },
+        { file: "alpha2.png", position: "top 100%" },
+        { file: "alpha3-wide.png", position: "center 100%" },
+      ],
+    },
+           //JUNE
      {
             imgPool: [
         { file: "rho1flip.png", position: "center right" },
@@ -79,13 +100,6 @@ customElements.define('main-header', Header);
         { file: "lastsurvivor.png", position: "right" },
       ],
 
-    },
-
-     //JULY
-    {
-      imgPool: [
-        { file: "EXAMPLE", position: "100%" },
-      ],
     },
         //AUGUST
     {
