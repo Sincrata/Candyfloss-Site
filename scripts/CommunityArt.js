@@ -163,4 +163,9 @@ export const communityArt = [{
 		    prompt: "Fashion Show",
 		    position:"center",
 		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://i.postimg.cc/L8NmPN74/Untitled915-20260621214625.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "JubLubDubs"
 	    }];
