@@ -315,7 +315,7 @@ export const petpetDays = [{
 		    day: "24",
 		    petpet: "Synthlotte",
 		    class: "silver",
-            upcoming: "Upcoming"
+            upcoming: "Today"
 	    },{
 		    month: "6",
 		    day: "27",
