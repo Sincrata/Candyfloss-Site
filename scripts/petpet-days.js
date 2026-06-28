@@ -24,27 +24,33 @@ export const petpetDays = [{
             upcoming: "No"
 	    },{
 		    month: "1",
+		    day: "17",
+		    petpet: "Afeaa Snek",
+		    class: "green",
+            upcoming: "No"
+	    },{
+		    month: "1",
 		    day: "19",
 		    petpet: "Ponnbuki",
-		    class: "green",
+		    class: "yellow",
             upcoming: "No"
 	    },{
 		    month: "1",
 		    day: "23",
 		    petpet: "Kinnantas",
-		    class: "yellow",
+		    class: "silver",
             upcoming: "No"
 	    },{
 		    month: "1",
 		    day: "27",
 		    petpet: "Mousiki Monkey",
-		    class: "silver",
+		    class: "pank",
             upcoming: "No"
 	    },{
 		    month: "1",
 		    day: "30",
 		    petpet: "Floga Draki",
-		    class: "pank",
+		    class: "purple",
             upcoming: "No"
 	    },{
 		    month: "2",
@@ -309,19 +315,19 @@ export const petpetDays = [{
 		    day: "24",
 		    petpet: "Synthlotte",
 		    class: "silver",
-            upcoming: "Upcoming"
+            upcoming: "No"
 	    },{
 		    month: "6",
 		    day: "27",
 		    petpet: "Wyrmkorr",
 		    class: "pank",
-            upcoming: "Upcoming"
+            upcoming: "No"
 	    },{
 		    month: "7",
 		    day: "3",
 		    petpet: "Dyopaw",
 		    class: "pank",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "7",
 		    day: "6",

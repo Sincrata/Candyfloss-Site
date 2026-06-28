@@ -154,12 +154,12 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
 		    prompt: "Fashion Show",
 		    position:"center",
 		    artist: "Countless"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
 		    prompt: "Fashion Show",
 		    position:"center",
 		    artist: "Axototlduck"
