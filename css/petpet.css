@@ -17,6 +17,13 @@ color:white;
     background-color:#2b2a2a;
 }
 
+.size{
+   display:flex;
+    width:30%;
+    height:auto;
+    float:left; 
+}
+
 .alpha{
     background-color:#882741;
     box-shadow:1px 3px 3px 3px #641c30;
