@@ -178,4 +178,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "tenshilove"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122592326_WSH2BwVk3NjO1Ci.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "axototlduck"
 	    }];
