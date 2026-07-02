@@ -168,4 +168,39 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "JubLubDubs"
+	    },{
+		    artlink: "https://toyhou.se/~images/122341316",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519212_xEQZQRIFfWNlEVh.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "tenshilove"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122592326_WSH2BwVk3NjO1Ci.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122629917_uiSdhxPjQYqZy80.png",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://postimg.cc/8J3521zD",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "NInjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122683714_nvJ0bLPS0l5o5TB.png?1782871498",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122685521_1dbzioW6UD83cbI.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "Katsumi-Draws"
 	    }];
