@@ -339,7 +339,7 @@ export const petpetDays = [{
 		    day: "9",
 		    petpet: "Bahyetiko",
 		    class: "purple",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "7",
 		    day: "12",
@@ -361,7 +361,7 @@ export const petpetDays = [{
 	    },{
 		    month: "7",
 		    day: "20",
-		    petpet: "Bala-Mega",
+		    petpet: "Nookouda",
 		    class: "gold",
             upcoming: "No"
 	    },{
@@ -414,21 +414,27 @@ export const petpetDays = [{
             upcoming: "No"
 	    },{
 		    month: "8",
+		    day: "19",
+		    petpet: "Mega-Bala",
+		    class: "gold",
+            upcoming: "No"
+	    },{
+		    month: "8",
 		    day: "21",
 		    petpet: "Ponneli",
-		    class: "gold",
+		    class: "silver",
             upcoming: "No"
 	    },{
 		    month: "8",
 		    day: "25",
 		    petpet: "Vounos Trogon",
-		    class: "silver",
+		    class: "pank",
             upcoming: "No"
 	    },{
 		    month: "8",
 		    day: "29",
 		    petpet: "Pu'uwai Mantis",
-		    class: "pank",
+		    class: "berry",
             upcoming: "No"
 	    },{
 		    month: "9",

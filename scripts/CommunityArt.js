@@ -203,4 +203,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "Katsumi-Draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122691347_u7Zn3M62EXfCMsR.png?1782878752",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Countless"
 	    }];
