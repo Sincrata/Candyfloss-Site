@@ -83,7 +83,7 @@ export default function generateAchievementPage(data) {
 					<div class="small-card">
 						<h2>${currentEvent[0]}</h2>
 						<span>${currentEvent[2]} ${currentEvent[1]}</span>
-						<img class="current-badge" src="images/badge/${currentEvent[7]}">
+						<img class="current-badge" src="images/badge/${currentEvent[7]}" style="max-width:50%;">
 						<p>
 							${currentEvent[5]}
 						</p>`;
@@ -373,7 +373,7 @@ To qualify your entry must-<br>
  			<div id="fotm">
 				<div id="fotm-container">
 					<a href="${fotm[11]}"><img id="fotm-img"
-							src="images/banners/achievements/${fotm[4]}"></a>
+							src="images/banners/achievements/${fotm[4]}" style="object-position: 40%;"></a>
 				</div>
 				<div id="fotmbox">
 					<div id="fotm-info">
