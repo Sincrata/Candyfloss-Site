@@ -169,7 +169,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "JubLubDubs"
 	    },{
-		    artlink: "https://toyhou.se/~images/122341316",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122341316_Dra1SupivWzIK6P.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "Nifewoofy"
@@ -208,4 +208,9 @@ export const communityArt = [{
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "tenshilove"
 	    }];
