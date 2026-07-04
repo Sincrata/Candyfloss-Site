@@ -189,7 +189,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
-		    artlink: "https://postimg.cc/8J3521zD",
+		    artlink: "https://i.postimg.cc/L541Z5dq/FOTM-Chase.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "NInjagomonster"
@@ -213,4 +213,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
 		    artist: "tenshilove"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122789638_bKds7iJy31kFc6z.png?1782997619",
+		    prompt: "Pool Floaties Chain Game",
+		    position:"center",
+		    artist: "KrissySempaiArt"
 	    }];
