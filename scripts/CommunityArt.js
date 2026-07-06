@@ -218,4 +218,9 @@ export const communityArt = [{
 		    prompt: "Pool Floaties Chain Game",
 		    position:"center",
 		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/123041123_iZCMHtcNeN65lex.png?1783291953",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "Countless"
 	    }];
