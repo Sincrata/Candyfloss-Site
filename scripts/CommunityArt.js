@@ -223,4 +223,9 @@ export const communityArt = [{
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
 		    artist: "Countless"
+	    },{
+		    artlink: "https://i.imgur.com/Ofn3Eai.png",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "g0thieg0re"
 	    }];
