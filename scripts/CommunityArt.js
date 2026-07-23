@@ -209,11 +209,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
-		    prompt: "Floss of the Month: Medha",
-		    position:"center",
-		    artist: "tenshilove"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122789638_bKds7iJy31kFc6z.png?1782997619",
 		    prompt: "Pool Floaties Chain Game",
 		    position:"center",
@@ -228,4 +223,9 @@ export const communityArt = [{
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
 		    artist: "g0thieg0re"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "tenshilove"
 	    }];
