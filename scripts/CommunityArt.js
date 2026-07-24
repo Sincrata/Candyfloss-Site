@@ -224,6 +224,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "g0thieg0re"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-07-24_073041895.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
