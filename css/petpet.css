@@ -90,7 +90,7 @@ color:white;
     gap: 3px;
 }
 
-.page-box #example {
+.page-box #example, .page-box .example {
   width:300px;
   height:auto;
   float:right;

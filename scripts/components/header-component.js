@@ -89,7 +89,7 @@ customElements.define('main-header', Header);
         { file: "zero-gravity-edit.png", position: "top center" },
         { file: "lakeside-wide.png", position: "top 100%" },
         { file: "playground.png", position: "top 100%" },
-        { file: "Summer1-wide.png", position: "top100%" },
+        { file: "Summer1-wide.png", position: "top 100%" },
         { file: "war1.png", position: "top 100%" },
         { file: "paint-wide.png", position: "top 100%" },
         { file: "battlebanner.png", position: "top 100%" },
@@ -102,11 +102,19 @@ customElements.define('main-header', Header);
     },
 
     
-        //AUGUST
+    //AUGUST
     {
-      
       imgPool: [
-        { file: "EXAMPLE", position: "100%" },
+        { file: "kittens1flip.png", position: "100%" },
+        { file: "kittens2.png", position: "100%" },
+        { file: "kittens3flip.png", position: "100%" },
+        { file: "omicron1flip.png", position: "100%" },
+        { file: "phi1.png", position: "100%" },
+        { file: "phi2flip.png", position: "100%" },
+        { file: "phi3flip.png", position: "100%" },
+        { file: "phi4 cropped.png", position: "top 100%" },
+        { file: "omicron2flip.png", position: "100%" },
+        { file: "phi5flipcrop.png", position: "top 100%" }
       ],
     },
     //SEPTEMBER

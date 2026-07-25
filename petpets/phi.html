@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/images/icons/Planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phi Petpets</title>
+    <style>
+        .section {
+            background-color: #5b9832;
+            max-width: 90%;
+        }
+
+        .phi {
+            background-color: #882741;
+            box-shadow: 1px 3px 3px 3px #641c30;
+            color: white;
+        }
+
+        .phi:hover {
+            background-color: #e04f76;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .centered {
+            margin: auto;
+            justify-content: center;
+            align-content: center;
+            place-content: center;
+            place-items: center;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+            .button-grid {
+                width: 90%;
+                margin: auto;
+            }
+
+            #monkey2 {
+                float: none;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/images/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/images/banners/phi3.png);"><img id="top"
+                    src="/images/logos/phi.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#8ceb4d;">
+                <h1>Phi Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Phi clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid center">
+                        <div class="pet-card"><a href="#monkey" class="shrink"><img title="Mousiki Monkey"
+                                    src="pets/images/monkey.png"></a>Mousiki Monkey</div>
+                        <div class="pet-card"><a href="#kong" class="shrink"><img title="Mousiki Kong"
+                                    src="pets/images/kong.png"></a>Mousiki Kong</div>
+                        <div class="pet-card"><a href="#caipeito" class="shrink"><img title="Caipeito Gator"
+                                    src="pets/images/caipeito.png"></a>Caipeito Gator</div>
+                        <div class="pet-card"><a href="#konfetti" class="shrink"><img title="Konfetti Gator"
+                                    src="pets/images/konfetti.png"></a>Konfetti Gator</div>
+                        <div class="pet-card"><a href="#starlotte" class="shrink"><img title="Starlotte"
+                                    src="pets/images/starlotte2.png"></a>Starlotte</div>
+                        <div class="pet-card"><a href="#synthlotte" class="shrink"><img title="synthlotte"
+                                    src="pets/images/synthlotte.png"></a>Synthlotte</div>
+                    </div>
+                </div>
+                <!------------------Mousiki Monkey-------------------->
+                <div id="monkey" class="inner-card section">
+                    <h1>Mousiki Monkey</h1>
+                    <p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/monkey.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/monkey.png"></a>
+                            Check out this Community Art of Floss and their Mousiki Monkeys!
+                            <div id="monkey-art"></div>
+                            The Mousiki Monkeys Celebrate their Pet Day on <b>January 27th</b><br>You can claim a free
+                            Mousiki Monkey on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Mousiki monkeys are mischievous and playful. They like to eat anything they can get
+                                their hands on and use their multiplication abilities to play tricks on people. These
+                                cute mischief-makers are found all over the Phi region and love to gather wherever
+                                crowds of Floss are found. Once bonded with a floss they become very protective and
+                                loving but are still likely to pick on you once in a while. Get ready for a new dance
+                                partner because these energetic buddies love to be active.
+
+
+                            </p>
+                            <br><br><img id="monkey2" class="left example" src="pets/images/monkey2.png">
+                            <div class="button-grid">
+                                <a class="button phi" href="#kong" style="width:10vw;min-width:100px;">Evolution</a>
+                                <a class="button phi" href="pets/bases/monkey.psd" style="width:10vw;min-width:100px;"
+                                    download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Mousiki Kong-------------------->
+                <div id="kong" class="inner-card section">
+                    <h1>Mousiki Kong</h1>
+                    <p style="margin-top:-12px;">2010 . 1st Wave . Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/kong.jpg"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/kong.png"></a>
+                            Check out this Community Art of Floss and their Mousiki Kongs!
+                            <div id="kong-art"></div>
+                            The Mousiki Kongs Celebrate their Pet Day on <b>December 21st</b><br>You can claim a
+                            free Mousiki Kong on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> They're bigger! They're Faster! They're stronger too! The Mousiki Kongs are bringing
+                                down the house this Rythmos! The Mousiki Monkeys can transform into their 2nd form, the
+                                Mousiki Kong. These apes are coming to party, and they know how to have a good time!
+                                <br>
+                                <br>
+                                <img id="kong2" src="pets/images/kong2.png" class="left example">
+                                They stand shoulder high to a Trufflefloss normally but when they rear back on their
+                                hind legs they can get up to 8 feet in height. They are top heavy beasts with huge
+                                pectoral and upper arm muscles that have been known to rival the strength of a
+                                Flogasaurus Rex! When these boys want to party hard, they gather together and beat their
+                                palms on the ground making the planet their drums. The Kongs also love to dance! It's
+                                said that the art of breakdancing was taught to floss by the Mousiki Kongs!
+                                <br>
+                                <br>
+                                Candyfloss
+                                who take care of Mousiki Kongs know they are not like other petpets! They're loud and
+                                stubborn and can be difficult to train so watch out! If your Mousiki Kong wants
+                                something they'll let you know! However difficult, training a Mousiki Kong can be very
+                                rewarding! These apes are known as the smartest of all petpets and have a ton of
+                                personality, and if you befriend one they will be there for you for life! Mousiki Kongs
+                                are protective of their owners and with their ability to multiply themselves they are a
+                                force to be reckoned with! <br>
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button phi" href="#monkey"
+                                    style="width:10vw;min-width:100px;">Pre-Evolution</a>
+                                <a class="button phi" href="pets/bases/kong.psd" style="width:10vw;min-width:100px;"
+                                    download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Caipeito Gator-------------------->
+                <div id="caipeito" class="inner-card section">
+                    <h1>Caipeito Gator</h1>
+                    <p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/caipeito.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/caipeito.png"></a>
+                            Check out this Community Art of Floss and their Caipeito Gators!
+                            <div id="caipeito-art"></div>
+                            The Caipeito Gators Celebrate their Pet Day on <b>Febuary 26th</b><br>You can claim a free
+                            Caipeito Gator on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>Caipeito Gators live high in the jungles of Phi. With their wings they soar above the
+                                trees and nest in the lush green canopy. They are semi-aquatic and like to hunt and rest
+                                in the cool waters of the Phi rivers.
+                                <br>
+                                <br>
+                                <img id="caipeito2" src="pets/images/caipeito.png" class="left example">
+                                Caipeito Gators are excellent hunters that usually
+                                go after small game and fish. When hunting in the wild they will sit still for a very
+                                long time waiting for prey. They gather lots of bugs on them in this way and tropical
+                                jawbreakers will take advantage of this for the meal it provides. It is not uncommon to
+                                see a flock of Caipeito with jawbreakers mixed in. However, Caipeito are known to get in
+                                fights with Mousiki Monkeys and will eat them if the opportunity arises, seeing the two
+                                fight with their duplication powers is quite terrifying.
+                                <br><br>
+                                They can be tamed as long as they are properly conditioned from a young age to rely on
+                                Candyfloss for food and affection. They like having access to a swimming pool and high
+                                shelves to fly up to and sleep. Many owners of the Caipeito Gators set up netting in
+                                high corners of their home for them to nest in. Domestic Caipeito are rather lazy and
+                                like to flop about on their big claws and snap their jaws for attention. The Phi capitol
+                                Mercury City has named the Caipeito Gator as their city mascot and the streets of the
+                                city can see countless flocking to the sunniest areas. The city bans any harm to come to
+                                the wild Caipeito and people are encouraged to feed or take them into a loving home.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button phi" href="#konfetti" style="width:10vw;min-width:100px;">Evolution</a>
+                                <a class="button phi" href="pets/bases/caipeito.psd" style="width:10vw;min-width:100px;"
+                                    download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Konfetti Gator-------------------->
+                <div id="konfetti" class="inner-card section">
+                    <h1>Konfetti Gator</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/konfetti.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/konfetti.png"></a>
+                            Check out this Community Art of Floss and their Konfetti Gators!
+                            <div id="konfetti-art"></div>
+                            The Konfetti Gators Celebrate their Pet Day on <b>April 21st</b><br>You can claim a free
+                            Konfetti Gator on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> The Konfetti Gators are fierce yet surprisingly mellow beasts. They are long and heavy
+                                with incredibly thick skin and usually large wings. They sleep high in the trees and
+                                like to hunt and rest in the many swamps of the Phi jungle. These lazy lizards are well
+                                known for letting prey hang around them and even rest on their bodies. As long as other
+                                food is nearby, they will resist gobbling up anyone in their posse. This includes
+                                Candyfloss!<br>
+                                <br><img id="konfetti2" class="left example" src="pets/images/konfetti.png">
+                                Konfetti Gators are a force to be reckoned with when they're angry, but if you're on
+                                their good side and keep them fed and happy then they can be very loyal - albeit lazy-
+                                pets!
+                                <br>
+                                It's said that a resting Konfetti Gator can sit so still that it appears to be dead for
+                                hours at a time!
+                                <br>
+                                <br>
+                                Though their wings are powerful, they tend to not soar too much higher than the tops of
+                                the Phi Jungle trees and building tops. They wont go out of their way to hunt prey that
+                                is too much trouble unless they're desperate.
+                                <br>
+                                <br>
+                                These beasts loooooove music! Like most of the jungle dwellers the Konfetti gators love
+                                to groove to music and can even be found making their own beats in their family groups
+                                or with their Candyfloss Companions. Though they are big enough for a Floss to mount,
+                                these lazy boys will flop down and refuse to move if anyone heavier than a kitten floss
+                                hops on. The Konfetti Gators mate for life, and tend to hang around their mates and
+                                children while their young. A clutch of eggs usually gives 5-7 Caipeito Gators and they
+                                are known to lay on each other in a big dog pile under the protective wings of their
+                                parents.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button phi" href="#caipeito"
+                                    style="width:10vw;min-width:100px;">Pre-Evolution</a>
+                                <a class="button phi" href="pets/bases/konfetti.psd" style="width:10vw;min-width:100px;"
+                                    download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Starlotte-------------------->
+                <div id="starlotte" class="inner-card section">
+                    <h1>Starlotte</h1>
+                    <p style="margin-top:-12px;">2023 . 3rd Wave . Un-Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/starlotte.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/starlotte.png"></a>
+                            Check out this Community Art of Floss and their Starlottes!
+                            <div id="starlotte-art"></div>
+                            The Starlottes Celebrate their Pet Day on <b>March 26th</b><br>You can claim a free
+                            Starlotte on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The Starlotte are tiny, squishy creatures that float about and flock to floss that have
+                                extraordinary talent! They chirp in adorable tones that sound like autotuned kitties,
+                                and each Starlotte has a particular melody they latch onto and sing frequently
+                                throughout their lives. If you place several Starlottes in the same area, they will
+                                harmonize and begin to synchronize their personal tunes to make a sick beat.
+                                <br>
+                                <br>
+                                <img id="starlotte2" class="example left" src="pets/images/starlotte.png">
+                                The heads of the Starlottes are not connected to their bodies though, somehow. They
+                                float just above the neck and while things can be passed through the empty space, the
+                                head cannot be pulled further from its resting place. It can be spun around however, and
+                                it's common for the owners of Starlotte to spin their heads around idly like fidget
+                                spinners. The Starlotte don't mind and tend to giggle when their heads are spun.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button phi" href="#synthlotte"
+                                    style="width:10vw;min-width:100px;">Evolution</a>
+                                <a class="button phi" href="pets/bases/starlotte.psd"
+                                    style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Synthlotte-------------------->
+                <div id="synthlotte" class="inner-card section">
+                    <h1>Synthlotte</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Duplication</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/synthlotte.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/synthlotte.png"></a>
+                            Check out this Community Art of Floss and their Synthlottes!
+                            <div id="synthlotte-art"></div>
+                            The Synthlottes Celebrate their Pet Day on <b>June 24th</b><br>You can claim a free
+                            Synthlotte on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>These little fairies live all over Caramella but originate on the Island of Karpos. They
+                                are very musical creatures who will always be humming and singing and harmonizing. They
+                                are easy prey for the creatures of the Phi jungles and are extremely docile and stupid.
+                                They will gladly sit on the head of a Konfetti Gator and sing a little tune, unaware of
+                                the danger they put themselves in. However, despite their bad habits these little
+                                tricksters can be hard to catch. They flutter and fly at high speeds and can shoot up
+                                into the air very quickly while twirling and giggling.
+                                <br><br>
+                                <img id="synthlotte2" class="example left" src="pets/images/synthlotte.png">
+                                The sounds that the Synthlotte make sound like autotune, and they often make calls that
+                                sound like a theremins. They are known to repeat melodies they hear and sounds that can
+                                even sound like lyrics. They can retain the songs they hear for years. Synthlottes make
+                                great pets for floss, and they are very chill and easy to care for, as long as you don't
+                                mind all the noise they make.
+                                <br>
+                                <br>
+                                When they are lonely the Synthlotte will duplicate itself to harmonize with its own
+                                voice. Though they are docile they can be destructive and prone to running away - they
+                                don't mean to, they just get easily distracted and can't find their way home - so when
+                                they're not being handled or closely monitored by their floss companions, it's common to
+                                keep a Synthlotte in a cage or on a harness. The Synthlottes are egg laying critters,
+                                and to protect their eggs from predators they will build nests in tall trees and
+                                hollows. In the home, they love to cozy up in their little enclosures and nest in
+                                blankets and towels. They eat berries, fruits, and nuts and will take food from wherever
+                                they can. City dwelling Synths are known to pick from the garbage, but this is very bad
+                                for their health. Some floss will build Synthhouses in their backyards to encourage
+                                these singing creatures to nest in their yard and provide them with beautiful music in
+                                exchange for a safe home. The Synthlotte and the Kappan Smolvolaki are natural enemies
+                                and will go out of their way to fight and kill each other in the wild.
+                                <br>
+                                <br>
+                                Warning! Never get a Smolvolaki and a Synthlotte in the same room or you will have a
+                                madhouse on your hands.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button phi" href="#starlotte"
+                                    style="width:10vw;min-width:100px;">Pre-Evolution</a>
+                                <a class="button phi" href="pets/bases/synthlotte.psd"
+                                    style="width:10vw;min-width:100px;" download>Download Base PSD</a>
+                                <a class="button phi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop"
+                                    style="width:10vw;min-width:100px;">Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script>
+        //-------------------COMMUNITY ART SHUFFLER-------------------
+        const communityArt = [
+
+            //Monkey
+            {
+                monkeyPool: [
+                    { file: "monkey1.png", artist: "Gypsi-izzy" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                ]
+            },
+            //Kong
+            {
+                kongPool: [
+                    { file: "kong1.png", artist: "Rachelneko" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                ]
+            },
+            //Caipeito
+            {
+                caipeitoPool: [
+                    { file: "caipeito1.png", artist: "Donutdoggy" },
+                    { file: "caipeito2.png", artist: "Axototlduck" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                ]
+            },
+            //Konfetti
+            {
+                konfettiPool: [
+                    { file: "konfetti1.png", artist: "Axototlduck" },
+                    { file: "konfetti2.png", artist: "Echospirit" },
+                    { file: "konfetti3.png", artist: "Ninjagomonster" },
+                    { file: "konfetti4.png", artist: "FairyreS" },
+                    { file: "konfetti5.png", artist: "FadedFaeble" },
+                ]
+            },
+
+            //Starlotte
+            {
+                starlottePool: [
+                    { file: "starlotte1.png", artist: "Axototlduck" },
+                    { file: "starlotte2.png", artist: "Vikarosnova" },
+                    { file: "starlotte3.png", artist: "Risingsun98" },
+                    { file: "starlotte4.png", artist: "Cursedfreak" },
+                ]
+            },
+
+            //Synthlotte
+            {
+                synthlottePool: [
+                    { file: "synthlotte1.png", artist: "Echospirit" },
+                    { file: "synthlotte2.png", artist: "Krissysempaiart" },
+                    { file: "synthlotte3.png", artist: "Dressribboness" },
+                    { file: "synthlotte4.png", artist: "Ninjagomonster" },
+                    { file: "synthlotte5.png", artist: "Axototlduck" },
+                ]
+            },
+
+        ];
+        // --- MONKEY ART ---
+        const monkeyPool = communityArt[0].monkeyPool;
+        const monkeySet = new Set();
+
+        while (monkeySet.size < 3 && monkeySet.size < monkeyPool.length) {
+            const randomItem = monkeyPool[Math.floor(Math.random() * monkeyPool.length)];
+            monkeySet.add(randomItem);
+        }
+        const selectedMonkeyArt = Array.from(monkeySet);
+        const monkeyArt1 = selectedMonkeyArt[0];
+        const monkeyArt2 = selectedMonkeyArt[1];
+        const monkeyArt3 = selectedMonkeyArt[2];
+
+
+        // --- KONG ART ---
+        const kongPool = communityArt[1].kongPool;
+        const kongSet = new Set();
+
+        while (kongSet.size < 3 && kongSet.size < kongPool.length) {
+            const randomItem = kongPool[Math.floor(Math.random() * kongPool.length)];
+            kongSet.add(randomItem);
+        }
+        const selectedKongArt = Array.from(kongSet);
+        const kongArt1 = selectedKongArt[0];
+        const kongArt2 = selectedKongArt[1];
+        const kongArt3 = selectedKongArt[2];
+
+        // --- CAIPEITO ART ---
+        const caipeitoPool = communityArt[2].caipeitoPool;
+        const caipeitoSet = new Set();
+
+        while (caipeitoSet.size < 3 && caipeitoSet.size < caipeitoPool.length) {
+            const randomItem = caipeitoPool[Math.floor(Math.random() * caipeitoPool.length)];
+            caipeitoSet.add(randomItem);
+        }
+        const selectedcaipeitoArt = Array.from(caipeitoSet);
+        const caipeitoArt1 = selectedcaipeitoArt[0];
+        const caipeitoArt2 = selectedcaipeitoArt[1];
+        const caipeitoArt3 = selectedcaipeitoArt[2];
+
+        // --- KONFETTI ART ---
+        const konfettiPool = communityArt[3].konfettiPool;
+        const konfettiSet = new Set();
+
+        while (konfettiSet.size < 3 && konfettiSet.size < konfettiPool.length) {
+            const randomItem = konfettiPool[Math.floor(Math.random() * konfettiPool.length)];
+            konfettiSet.add(randomItem);
+        }
+        const selectedkonfettiArt = Array.from(konfettiSet);
+        const konfettiArt1 = selectedkonfettiArt[0];
+        const konfettiArt2 = selectedkonfettiArt[1];
+        const konfettiArt3 = selectedkonfettiArt[2];
+
+        // --- STARLOTTE ART ---
+        const starlottePool = communityArt[4].starlottePool;
+        const starlotteSet = new Set();
+
+        while (starlotteSet.size < 3 && starlotteSet.size < starlottePool.length) {
+            const randomItem = starlottePool[Math.floor(Math.random() * starlottePool.length)];
+            starlotteSet.add(randomItem);
+        }
+        const selectedstarlotteArt = Array.from(starlotteSet);
+        const starlotteArt1 = selectedstarlotteArt[0];
+        const starlotteArt2 = selectedstarlotteArt[1];
+        const starlotteArt3 = selectedstarlotteArt[2];
+
+        // --- SYNTHLOTTE ART ---
+        const synthlottePool = communityArt[5].synthlottePool;
+        const synthlotteSet = new Set();
+
+        while (synthlotteSet.size < 3 && synthlotteSet.size < synthlottePool.length) {
+            const randomItem = synthlottePool[Math.floor(Math.random() * synthlottePool.length)];
+            synthlotteSet.add(randomItem);
+        }
+        const selectedsynthlotteArt = Array.from(synthlotteSet);
+        const synthlotteArt1 = selectedsynthlotteArt[0];
+        const synthlotteArt2 = selectedsynthlotteArt[1];
+        const synthlotteArt3 = selectedsynthlotteArt[2];
+
+
+        // --- INJECT INTO HTML ---
+        document.getElementById('monkey-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${monkeyArt1.file}"><img src="pets/pdart/${monkeyArt1.file}" title="Art by ${monkeyArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${monkeyArt2.file}"><img src="pets/pdart/${monkeyArt2.file}" title="Art by ${monkeyArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${monkeyArt3.file}"><img src="pets/pdart/${monkeyArt3.file}" title="Art by ${monkeyArt3.artist}"></a></div>
+  </div>
+`
+        document.getElementById('kong-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${kongArt1.file}"><img src="pets/pdart/${kongArt1.file}" title="Art by ${kongArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${kongArt2.file}"><img src="pets/pdart/${kongArt2.file}" title="Art by ${kongArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${kongArt3.file}"><img src="pets/pdart/${kongArt3.file}" title="Art by ${kongArt3.artist}"></a></div>
+  </div>
+`
+        document.getElementById('caipeito-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${caipeitoArt1.file}"><img src="pets/pdart/${caipeitoArt1.file}" title="Art by ${caipeitoArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${caipeitoArt2.file}"><img src="pets/pdart/${caipeitoArt2.file}" title="Art by ${caipeitoArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${caipeitoArt3.file}"><img src="pets/pdart/${caipeitoArt3.file}" title="Art by ${caipeitoArt3.artist}"></a></div>
+  </div>
+`
+        document.getElementById('konfetti-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${konfettiArt1.file}"><img src="pets/pdart/${konfettiArt1.file}" title="Art by ${konfettiArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${konfettiArt2.file}"><img src="pets/pdart/${konfettiArt2.file}" title="Art by ${konfettiArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${konfettiArt3.file}"><img src="pets/pdart/${konfettiArt3.file}" title="Art by ${konfettiArt3.artist}"></a></div>
+  </div>
+`
+        document.getElementById('starlotte-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${starlotteArt1.file}"><img src="pets/pdart/${starlotteArt1.file}" title="Art by ${starlotteArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${starlotteArt2.file}"><img src="pets/pdart/${starlotteArt2.file}" title="Art by ${starlotteArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${starlotteArt3.file}"><img src="pets/pdart/${starlotteArt3.file}" title="Art by ${starlotteArt3.artist}"></a></div>
+  </div>
+`
+        document.getElementById('synthlotte-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${synthlotteArt1.file}"><img src="pets/pdart/${synthlotteArt1.file}" title="Art by ${synthlotteArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${synthlotteArt2.file}"><img src="pets/pdart/${synthlotteArt2.file}" title="Art by ${synthlotteArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${synthlotteArt3.file}"><img src="pets/pdart/${synthlotteArt3.file}" title="Art by ${synthlotteArt3.artist}"></a></div>
+  </div>
+`
+            ;
+
+    </script>
+</body>
+
+</html>

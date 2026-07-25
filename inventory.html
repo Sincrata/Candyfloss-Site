@@ -199,19 +199,6 @@
 				<hr>
 			</div>
 
-			<article id="event">
-				<div id="event-header" class="collapsible"><span class="arrow">▼</span>
-					<h2>Ascension</h2>
-				</div>
-				<div id="event-body" class="collapsible-content">
-					<div id="event-loading" class="loading">
-						<h4>Loading Event</h4>
-					</div>
-					<div id="event-grid">
-					</div>
-				</div>
-			</article>
-
 
 			<article id="myos">
 				<div id="myo-header" class="collapsible"><span class="arrow">▼</span>
@@ -490,60 +477,7 @@
 
 
 
-
-			const events = await loadFilteredEventData();
-
 			var htmlev = "";
-			const eventgrid = document.getElementById("event-grid");
-
-			for (let i = 0; i < events.length; i++) {
-				const event = events[i]
-				if (event[5] == "pending fixes") {
-					htmlev += `<div class="event"> 
-				<img class="event-image" src="${event[3]}">
-				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
-				<div class="event-info">
-					<p>Used: <a style="color: white;"href="${event[6]}">Pending</a></p>`;
-
-
-					if (event[4].includes("Event")) {
-						htmlev += "<p>Expires: 7/1/26</p>"
-					} else {
-						htmlev += "<p>Expires: 6/1/26</p>"
-					}
-					htmlev += `</div>
-				</div>
-				`;
-				} else {
-					htmlev += `<div class="event"> 
-				<img class="event-image" src="${event[3]}">
-				<h4 class="event-title">#${event[0]} ${capitalizeFirstWord(event[4])}</h4>
-				<div class="event-info">
-					<p>Used: Unused</p>`;
-
-
-					if (event[4].includes("Event")) {
-						htmlev += "<p>Expires: 6/1/26</p>"
-					} else {
-						htmlev += "<p>Expires: 5/1/26</p>"
-					}
-
-					htmlev += `</div>
-				</div>
-
-				`;
-				}
-			}
-
-			if (htmlev == "") {
-				htmlev = `<div class="loading" style="width: 100%;"> <h4 class="event-title">No Unused Ascension Vouchers Found</h4></div>`;
-				eventgrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-			}
-
-			var eloading = document.getElementById("event-loading");
-			eloading.style.display = "none";
-
-			eventgrid.innerHTML = htmlev;
 
 
 
