@@ -233,4 +233,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
 		    artist: "tenshilove"
+	    },{
+		    artlink: "https://postimg.cc/qNXYVMMD",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Ninjagomonster"
 	    }];
