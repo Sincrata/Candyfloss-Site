@@ -13,6 +13,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Candyfloss</title>
 	<style>
+		.event-badge {
+			display:flex;
+			float:right;
+			max-height:100px;
+		}
+
 		@media (max-width: 600px) {
 			.clangem {
 				max-height: 40px;
@@ -97,9 +103,8 @@
 				overflow: auto;
 			}
 
-			#e-title {
+			#e-title, .e-title {
 				font-size: 20px;
-				align: left;
 			}
 
 			.eventbox span {
@@ -215,10 +220,9 @@
 					<!-------- EVENTS------------>
 					<!-------- Hey Ali, this is the part where the background images are changing with the sheet. the bg images are in the CSS not the html----------->
 
-
-					<div id="current-events">
+					<div id="actual-events" style="display: none;">
 						<div class="row" style="text-align:center;">
-							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/achievements.png"
+							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/events.png"
 									style="width:70%;display:inline-block;"> </div>
 						</div>
 						<div class="event-row">
@@ -238,65 +242,12 @@
 									href="achievements.html">Enter the Pool Floaties Chain Game</a><br>&nbsp;
 							</div>
 						</div>
-						<div class="event-row">
-							<div class="event-img event-2"
-								style="background-image:url(images/banners/cupid.png);background-position:70%;"></div>
-							<div class="eventbox"> <img src="images/badge/cupid.png"
-									style="display:flex;float:right;max-height:100px;">
-								<h1 id="e-title">Love Arrow Story Prompt</h1><span>Cupidfloss are in the air looking to
-									give some unsuspecting Floss a love bug! </span>
-								<div id="hide">But their aim isn't always straight. What happens when a rogue love arrow
-									strikes your Candyfloss right in the heart!? Will this sudden accident lead to
-									absolute chaos, or is it the start of a beautiful romance? Write a story from the
-									perspective of a cupidfloss (can be one of your floss or an npc) or from the
-									perspective of the sudden lovers!
-								</div> </span><a class="event-link" href="achievements.html">Enter the Love Arrow Story
-									Prompt</a><br>&nbsp;
-							</div>
-						</div>
+					</div>
 
-						<div class="event-row">
-							<div class="event-img event-5"
-								style="background-image:url(images/banners/achievements/medha.png);background-position:20%;">
-							</div>
-							<div class="eventbox"> <img src="images/badge/medha.png"
-									style="display:flex;float:right;max-height:100px;">
-
-								<h1 id="e-title">Floss of the Month</h1>
-
-								<p><span><a href="https://toyhou.se/39579935.medha" style="color:#d9c5ff;">Medha<a>
-
-												is this month's Floss of the month!</span>
-								<div id="hide"><span> She's a Sourfloss student living in the Epsilon region.
-									</span></div>
-
-								<span>She's a bright and social floss who cares a lot about philosophy and ethics. Never
-									fully identifying with the technology centric culture of the Sigma region, she moved
-									to the Epsilon region to be more in touch with her epsilon telepathic abilities.
-								</span>
-
-								<div id="hide"><span> She's currently living in with Rosemary, a sweet old Honeyfloss
-										librarian that was her mother's college professor back in the day! </span></div>
-
-								<span><br><br>Medha belongs to
-									<a href="https://toyhou.se/JubLubDubs" style="color:#d9c5ff;">JubLubDubs!</a>
-									JubLubs is a recent member of the Candyfloss community, but she's already been a
-									delight to be around! </span>
-
-								<div id="hide"><span>She has a very fun and unique art style that's always nice to see
-										in the art channels! We're glad you've been enjoying Candyfloss, both in lore
-										and the community!
-									</span></div>
-
-								<span> Thank you for being a part of Candyfloss, JubLub!
-									<br><br>
-								</span></p>
-
-								<a class="event-link" href="achievements.html">Create gift art for the Floss of the
-									Month to earn coins!</a><br>&nbsp;
-
-
-							</div>
+					<div id="current-events">
+						<div class="row" style="text-align:center;">
+							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/achievements.png"
+									style="width:70%;display:inline-block;"> </div>
 						</div>
 					</div>
 					<!-------- FEATURES------------>
@@ -366,6 +317,7 @@
 	<footer>
 		<main-footer></main-footer>
 	</footer>
+
 	<script type="module">
 		//------------------------------------- IMAGE ROTATION-----------------------------------------
 		const currentMonth = new Date().getMonth();
@@ -463,14 +415,14 @@
 				gem: "eataf",
 				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/34638042?1755044790",
 				toplink1: "https://toyhou.se/34638042.kh-null",
-				topimage2:"https://f2.toyhou.se/file/f2-toyhou-se/characters/15942241?1757882421",
-				toplink2:"https://toyhou.se/15942241.zacharias-serafim",
-				topimage3:"https://f2.toyhou.se/file/f2-toyhou-se/characters/3843279?1775602041",
-				toplink3:"https://toyhou.se/3843279.christina-matthews",
-				topimage4:"https://f2.toyhou.se/file/f2-toyhou-se/characters/4072794?1761259129",
-				toplink4:"https://toyhou.se/4072794.cashus",
-				topimage5:"https://f2.toyhou.se/file/f2-toyhou-se/characters/33170288?1777332551",
-				toplink5:"https://toyhou.se/33170288.republic-snow"
+				topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/15942241?1757882421",
+				toplink2: "https://toyhou.se/15942241.zacharias-serafim",
+				topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/3843279?1775602041",
+				toplink3: "https://toyhou.se/3843279.christina-matthews",
+				topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4072794?1761259129",
+				toplink4: "https://toyhou.se/4072794.cashus",
+				topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/33170288?1777332551",
+				toplink5: "https://toyhou.se/33170288.republic-snow"
 
 			},
 			//AUGUST
@@ -620,6 +572,8 @@
 			});
 		});
 	</script>
+
+	<script type="module" src="/scripts/index.js"></script>
 
 </body>
 
