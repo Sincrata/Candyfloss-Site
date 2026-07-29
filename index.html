@@ -14,9 +14,9 @@
 	<title>Candyfloss</title>
 	<style>
 		.event-badge {
-			display:flex;
-			float:right;
-			max-height:100px;
+			display: flex;
+			float: right;
+			max-height: 100px;
 		}
 
 		@media (max-width: 600px) {
@@ -103,7 +103,8 @@
 				overflow: auto;
 			}
 
-			#e-title, .e-title {
+			#e-title,
+			.e-title {
 				font-size: 20px;
 			}
 
@@ -281,12 +282,10 @@
 								src="images/live/Katsumi.png"></a><br>Want
 						updates when streams go live? Grab the Ping Streams role in the discord to get alerts!
 					</div><Br>
-					<div class="small-card"><img src="images/logos/petshop.png" style="width:80%;">
+					<div class="small-card" id="petpet-box"><img src="images/logos/petshop.png" style="width:80%;">
 						<h2>New Petpet!</h2>
-						<div class="inner-card">Check out the newest Petpet from the clan of Eataf: the Afeaa Snek! <a
-								class="shrink" href="petpets/eataf.html#afeaa-snek"><img
-									src="petpets/pets/images//afeaa-snek.png" style="max-width:80%;"></a></div>
-					</div><Br>
+					</div>
+					<Br>
 					<div class="small-card"><img src="images/logos/activities.png">Check out these awesome
 						activities!<br><br>
 						<div class="inner-card">
@@ -321,6 +320,70 @@
 	<script type="module">
 		//------------------------------------- IMAGE ROTATION-----------------------------------------
 		const currentMonth = new Date().getMonth();
+		const currentYear = new Date().getFullYear();
+		const even = currentYear % 2 == 0 ? "even" : "odd";
+		const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
+		const month = String(currentMonth + 1);
+
+		//update petpet
+		async function loadClanList() {
+			try {
+				const res = await fetch('/scripts/monthly-content/clans.json');
+				return await res.json();
+			} catch (error) {
+				throw new Error("Unable to load clans.");
+			}
+		}
+		async function petList() {
+			try {
+				const res = await fetch('/scripts/monthly-content/petpets.json');
+				return await res.json();
+			} catch (error) {
+				throw new Error("Unable to load pets.");
+			}
+		}
+
+		async function initialize() {
+			const clans = await loadClanList();
+			const clan = clans[month][even];
+			const clanCap = clan.charAt(0).toUpperCase() + clan.slice(1);
+			const secondaryClan = clans[month][even_opposite];
+			const petpets = await petList();
+
+			let pets = [...petpets[clan]["unevolved"], ...petpets[clan]["evolved"], ...petpets[secondaryClan]["unevolved"], ...petpets[secondaryClan]["evolved"]];
+			let new_pet = false;
+			for (let i = 0; i < pets.length; i++) {
+				let pet = pets[i];
+				if (pet.year == currentYear) {
+					const petpetBox = document.getElementById("petpet-box");
+					const card = document.createElement("div");
+					card.classList = "inner-card";
+					card.appendChild(document.createTextNode(`Check out the newest Petpet from the clan of ${pet.clan.charAt(0).toUpperCase() + pet.clan.slice(1)}: the ${pet.name}!`));
+					const link = document.createElement("a");
+					link.classList = "shrink";
+					link.href = `petpets/${pet.clan}.html#${pet.key}`;
+
+					const img = document.createElement("img");
+					img.src = `petpets/pets/images/${pet.key}.png`;
+					img.style.maxWidth = "80%";
+
+					link.appendChild(img);
+					card.appendChild(link);
+					petpetBox.appendChild(card);
+
+					new_pet = true;
+				}
+			}
+			if(!new_pet){
+				const petpetBox = document.getElementById("petpet-box");
+				petpetBox.style.display = "none";
+			}
+			console.log(pets);
+		}
+		initialize();
+
+
+
 		import { communityArt } from "./scripts/CommunityArt.js";
 
 		const monthlyContent = [

@@ -1,0 +1,762 @@
+{
+    "beta": {
+        "unevolved": [
+            {
+                "name": "Charicat",
+                "key": "charicat",
+                "year": "2020",
+                "clan": "beta"
+            },
+            {
+                "name": "PiaoFu Ci",
+                "key": "piaofu-ci",
+                "year": "2022",
+                "clan": "beta"
+            },
+            {
+                "name": "Doubear",
+                "key": "doubear",
+                "year": "2024",
+                "clan": "beta"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Charion",
+                "key": "charion",
+                "year": "2021",
+                "clan": "beta"
+            },
+            {
+                "name": "Longfu-Yu",
+                "key": "longfu-yu",
+                "year": "2023",
+                "clan": "beta"
+            },
+            {
+                "name": "Doubunni",
+                "key": "doubunni",
+                "year": "2026",
+                "clan": "beta"
+            }
+        ]
+    },
+    "sigma": {
+        "unevolved": [
+            {
+                "name": "Glorbit",
+                "key": "glorbit",
+                "year": "2023",
+                "clan": "sigma"
+            },
+            {
+                "name": "Stella Pi",
+                "key": "stella-pi",
+                "year": "2025",
+                "clan": "sigma"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Glorbeast",
+                "key": "glorbeast",
+                "year": "2024",
+                "clan": "sigma"
+            }
+        ]
+    },
+    "mu": {
+        "unevolved": [
+            {
+                "name": "Eros Moro",
+                "key": "eros-moro",
+                "year": "2021",
+                "clan": "mu"
+            },
+            {
+                "name": "Amouille Mourve",
+                "key": "amouille-mourve",
+                "year": "2023",
+                "clan": "mu"
+            },
+            {
+                "name": "Pettiplume",
+                "key": "pettiplume",
+                "year": "2025",
+                "clan": "mu"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Eros Mythos",
+                "key": "eros-mythos",
+                "year": "2022",
+                "clan": "mu"
+            },
+            {
+                "name": "Amoure Pog",
+                "key": "amoure-pog",
+                "year": "2024",
+                "clan": "mu"
+            }
+        ]
+    },
+    "nu": {
+        "unevolved": [
+            {
+                "name": "Dyopaw",
+                "key": "dyopaw",
+                "year": "2020",
+                "clan": "nu"
+            },
+            {
+                "name": "Macho Almaroo",
+                "key": "macho-almaroo",
+                "year": "2022",
+                "clan": "nu"
+            },
+            {
+                "name": "Bala-Bala",
+                "key": "bala-bala",
+                "year": "2024",
+                "clan": "nu"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Tryopaw",
+                "key": "tryopaw",
+                "year": "2021",
+                "clan": "nu"
+            },
+            {
+                "name": "Greater Almaroo",
+                "key": "greater-almaroo",
+                "year": "2023",
+                "clan": "nu"
+            },
+            {
+                "name": "Bala-Mega",
+                "key": "bala-mega",
+                "year": "2026",
+                "clan": "nu"
+            }
+        ]
+    },
+    "gamma": {
+        "unevolved": [
+            {
+                "name": "Petrinos Trogon",
+                "key": "petrinos-trogon",
+                "year": "2019",
+                "clan": "gamma"
+            },
+            {
+                "name": "Chimecabra",
+                "key": "chimecabra",
+                "year": "2021",
+                "clan": "gamma"
+            },
+            {
+                "name": "Cyutoway Calf",
+                "key": "cyutoway-calf",
+                "year": "2024",
+                "clan": "gamma"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Vounos Trogon",
+                "key": "vounos-trogon",
+                "year": "2020",
+                "clan": "gamma"
+            },
+            {
+                "name": "Chimecayote",
+                "key": "chimecayote",
+                "year": "2023",
+                "clan": "gamma"
+            },
+            {
+                "name": "Cyutoway Taura",
+                "key": "cyutoway-taura",
+                "year": "2026",
+                "clan": "gamma"
+            }
+        ]
+    },
+    "omega": {
+        "unevolved": [
+            {
+                "name": "Mimotari",
+                "key": "mimotari",
+                "year": "2022",
+                "clan": "omega"
+            },
+            {
+                "name": "Nerafligh",
+                "key": "nerafligh",
+                "year": "2024",
+                "clan": "omega"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Grimotari",
+                "key": "grimotari",
+                "year": "2023",
+                "clan": "omega"
+            },
+            {
+                "name": "Spirifligh",
+                "key": "spirifligh",
+                "year": "2025",
+                "clan": "omega"
+            }
+        ]
+    },
+    "theta": {
+        "unevolved": [
+            {
+                "name": "Anosia Dragon",
+                "key": "anosia-dragon",
+                "year": "2019",
+                "clan": "theta"
+            },
+            {
+                "name": "Ponneli",
+                "key": "ponneli",
+                "year": "2021",
+                "clan": "theta"
+            },
+            {
+                "name": "Tama Tori",
+                "key": "tama-tori",
+                "year": "2023",
+                "clan": "theta"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Anosia Kirin",
+                "key": "anosia-kirin",
+                "year": "2020",
+                "clan": "theta"
+            },
+            {
+                "name": "Ponnbuki",
+                "key": "ponnbuki",
+                "year": "2022",
+                "clan": "theta"
+            },
+            {
+                "name": "Dai Tori",
+                "key": "dai-tori",
+                "year": "2024",
+                "clan": "theta"
+            }
+        ]
+    },
+    "eta": {
+        "unevolved": [
+            {
+                "name": "Makke Ongu",
+                "key": "makke-ongu",
+                "year": "2025",
+                "clan": "eta"
+            }
+        ],
+        "evolved": [
+        ]
+    },
+    "epsilon": {
+        "unevolved": [
+            {
+                "name": "Paizo Dog",
+                "key": "paizo-dog",
+                "year": "2019",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Kinnantas",
+                "key": "kinnantas",
+                "year": "2021",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Poulance",
+                "key": "poulance",
+                "year": "2023",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Leoryx",
+                "key": "leoryx",
+                "year": "2025",
+                "clan": "epsilon"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Paizo Beast",
+                "key": "paizo-beast",
+                "year": "2020",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Kinmaerifas",
+                "key": "kinmaerifas",
+                "year": "2022",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Phoelance",
+                "key": "phoelance",
+                "year": "2024",
+                "clan": "epsilon"
+            },
+            {
+                "name": "Geolynx",
+                "key": "geolynx",
+                "year": "2026",
+                "clan": "epsilon"
+            }
+        ]
+    },
+    "miden": {
+        "unevolved": [
+        ],
+        "evolved": [
+        ]
+    },
+    "lambda": {
+        "unevolved": [
+            {
+                "name": "Nenero",
+                "key": "nenero",
+                "year": "2019",
+                "clan": "lambda"
+            },
+            {
+                "name": "Pu'uwai Agapi",
+                "key": "puuwai-agapi",
+                "year": "2021",
+                "clan": "lambda"
+            },
+            {
+                "name": "Puwala",
+                "key": "puwala",
+                "year": "2023",
+                "clan": "lambda"
+            },
+            {
+                "name": "Kumimic",
+                "key": "kumimic",
+                "year": "2026",
+                "clan": "lambda"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Falanero",
+                "key": "falanero",
+                "year": "2020",
+                "clan": "lambda"
+            },
+            {
+                "name": "Pu'uwai Mantis",
+                "key": "puuwai-mantis",
+                "year": "2022",
+                "clan": "lambda"
+            },
+            {
+                "name": "Puorc",
+                "key": "puorc",
+                "year": "2024",
+                "clan": "lambda"
+            }
+        ]
+    },
+    "rho": {
+        "unevolved": [
+            {
+                "name": "Kyma Kee'ihtty",
+                "key": "kyma-keeihtty",
+                "year": "2022",
+                "clan": "rho"
+            },
+            {
+                "name": "Se'eh Khoar",
+                "key": "seeh-khoar",
+                "year": "2024",
+                "clan": "rho"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Kyma Nee'Lio",
+                "key": "kyma-neelio",
+                "year": "2023",
+                "clan": "rho"
+            },
+            {
+                "name": "Se'eh Ihoa'ohn",
+                "key": "seeh-ihoaohn",
+                "year": "2025",
+                "clan": "rho"
+            }
+        ]
+    },
+    "alpha": {
+        "unevolved": [
+            {
+                "name": "Ammos Skipper",
+                "key": "skipper",
+                "year": "2021",
+                "clan": "alpha"
+            },
+            {
+                "name": "Floga Drakai",
+                "key": "floga",
+                "year": "2019",
+                "clan": "alpha"
+            },
+            {
+                "name": "Anijuru",
+                "key": "anijuru",
+                "year": "2023",
+                "clan": "alpha"
+            },
+            {
+                "name": "Muflickah",
+                "key": "muflickah",
+                "year": "2025",
+                "clan": "alpha"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Flogasaurous Rex",
+                "key": "rex",
+                "year": "2020",
+                "clan": "alpha"
+            },
+            {
+                "name": "Ammos Spitter",
+                "key": "spitter",
+                "year": "2022",
+                "clan": "alpha"
+            },
+            {
+                "name": "Anibold",
+                "key": "anibold",
+                "year": "2024",
+                "clan": "alpha"
+            }
+        ]
+    },
+    "eataf": {
+        "unevolved": [
+            {
+                "name": "Afeaa Snek",
+                "key": "afeaa-snek",
+                "year": "2026",
+                "clan": "eataf"
+            }
+        ],
+        "evolved": []
+    },
+    "phi": {
+        "unevolved": [
+            {
+                "name": "Mousiki Monkey",
+                "key": "monkey",
+                "year": "2019",
+                "clan": "phi"
+            },
+            {
+                "name": "Caipeito Gator",
+                "key": "caipeito",
+                "year": "2021",
+                "clan": "phi"
+            },
+            {
+                "name": "Starlotte",
+                "key": "starlotte",
+                "year": "2023",
+                "clan": "phi"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Mousiki Kong",
+                "key": "kong",
+                "year": "2020",
+                "clan": "phi"
+            },
+            {
+                "name": "Konfetti Gator",
+                "key": "konfetti",
+                "year": "2022",
+                "clan": "phi"
+            },
+            {
+                "name": "Synthlotte",
+                "key": "synthlotte",
+                "year": "2024",
+                "clan": "phi"
+            }
+        ]
+    },
+    "omicron": {
+        "unevolved": [
+            {
+                "name": "Brilla Murcie",
+                "key": "brilla",
+                "year": "2025",
+                "clan": "phi"
+            }
+        ],
+        "evolved": []
+    },
+    "iota": {
+        "unevolved": [
+            {
+                "name": "Mikro Oplo",
+                "key": "mikro",
+                "year": "2019",
+                "clan": "iota"
+            },
+            {
+                "name": "Knan Nibble",
+                "key": "nibble",
+                "year": "2021",
+                "clan": "iota"
+            },
+            {
+                "name": "Ioneshark",
+                "key": "ioneshark",
+                "year": "2024",
+                "clan": "iota"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Makro Oplo",
+                "key": "makro",
+                "year": "2020",
+                "clan": "iota"
+            },
+            {
+                "name": "Knan Snap",
+                "key": "snap",
+                "year": "2022",
+                "clan": "iota"
+            }
+        ]
+    },
+    "chi": {
+        "unevolved": [
+            {
+                "name": "Spraoiling",
+                "key": "spraoiling",
+                "year": "2023",
+                "clan": "chi"
+            },
+            {
+                "name": "Bumblegrinn",
+                "key": "bumblegrinn",
+                "year": "2025",
+                "clan": "chi"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Skoikling",
+                "key": "skoikling",
+                "year": "2024",
+                "clan": "chi"
+            }
+        ]
+    },
+    "delta": {
+        "unevolved": [
+            {
+                "name": "Psyhokythi",
+                "key": "psyhokythi",
+                "year": "2019",
+                "clan": "delta"
+            },
+            {
+                "name": "Ostomagi",
+                "key": "ostomagi",
+                "year": "2021",
+                "clan": "delta"
+            },
+            {
+                "name": "Wykorr",
+                "key": "wykorr",
+                "year": "2023",
+                "clan": "delta"
+            },
+            {
+                "name": "Crow Scurry",
+                "key": "crow-scurry",
+                "year": "2025",
+                "clan": "delta"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Psyhoecho",
+                "key": "psyhoecho",
+                "year": "2020",
+                "clan": "delta"
+            },
+            {
+                "name": "Ostoreaper",
+                "key": "ostoreaper",
+                "year": "2022",
+                "clan": "delta"
+            },
+            {
+                "name": "Wyrmkorr",
+                "key": "wyrmkorr",
+                "year": "2024",
+                "clan": "delta"
+            }
+        ]
+    },
+    "kappa": {
+        "unevolved": [
+            {
+                "name": "Kappbear",
+                "key": "kappabear",
+                "year": "2019",
+                "clan": "kappa"
+            },
+            {
+                "name": "Smolnneffo",
+                "key": "smolnnefo",
+                "year": "2021",
+                "clan": "kappa"
+            },
+            {
+                "name": "Galapip",
+                "key": "galapip",
+                "year": "2023",
+                "clan": "kappa"
+            },
+            {
+                "name": "Rushound",
+                "key": "rushound",
+                "year": "2025",
+                "clan": "kappa"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Papabear",
+                "key": "papabear",
+                "year": "2020",
+                "clan": "kappa"
+            },
+            {
+                "name": "Smolvolaki",
+                "key": "smolvolaki",
+                "year": "2022",
+                "clan": "kappa"
+            },
+            {
+                "name": "Hiyapip",
+                "key": "hiyapip",
+                "year": "2024",
+                "clan": "kappa"
+            }
+        ]
+    },
+    "zeta": {
+        "unevolved": [
+            {
+                "name": "Snow Altis",
+                "key": "snow-altis",
+                "year": "2019",
+                "clan": "zeta"
+            },
+            {
+                "name": "Linook",
+                "key": "linook",
+                "year": "2021",
+                "clan": "zeta"
+            },
+            {
+                "name": "Frompot",
+                "key": "frompot",
+                "year": "2023",
+                "clan": "zeta"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Cloud Altis",
+                "key": "cloud-altis",
+                "year": "2020",
+                "clan": "zeta"
+            },
+            {
+                "name": "Nookouda",
+                "key": "nookouda",
+                "year": "2022",
+                "clan": "zeta"
+            },
+            {
+                "name": "Frompot 2.0",
+                "key": "frompot-2",
+                "year": "2024",
+                "clan": "zeta"
+            }
+        ]
+    },
+    "psi": {
+        "unevolved": [
+            {
+                "name": "Dorokin",
+                "key": "dorokin",
+                "year": "2020",
+                "clan": "psi"
+            },
+            {
+                "name": "Xoyetiko",
+                "key": "xoyetiko",
+                "year": "2022",
+                "clan": "psi"
+            },
+            {
+                "name": "Chippermink",
+                "key": "chippermink",
+                "year": "2024",
+                "clan": "psi"
+            }
+        ],
+        "evolved": [
+            {
+                "name": "Doroking",
+                "key": "doroking",
+                "year": "2021",
+                "clan": "psi"
+            },
+            {
+                "name": "Bahyetiko",
+                "key": "bahyetiko",
+                "year": "2023",
+                "clan": "psi"
+            },
+            {
+                "name": "Frettermink",
+                "key": "frettermink",
+                "year": "2025",
+                "clan": "psi"
+            }
+        ]
+    }
+}

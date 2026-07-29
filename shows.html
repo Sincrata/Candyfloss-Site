@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/shows.css">
+	<link rel="stylesheet" href="/css/general.css">
+	<link rel="stylesheet" href="/css/shows.css">
 	<link rel="preload" href="images/logos/logo.gif" as="image">
-	<script src="scripts/components/header-component.js"></script>
-	<script src="scripts/components/footer-component.js"></script>
-	<script src="scripts/components/navbar-component.js"></script>
-	<link rel="icon" href="images/icons/Planet.ico">
+	<script src="/scripts/components/header-component.js"></script>
+	<script src="/scripts/components/footer-component.js"></script>
+	<script src="/scripts/components/navbar-component.js"></script>
+	<link rel="icon" href="/images/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Show Events</title>
-    	<style>
-  @media (max-width: 1300px) { 
- .pill{
-	min-width:100%;
- }
-  .card{
-	min-width:100%;
- }
-  	.pet-grid{
-   		grid-template-columns: repeat(2, 1fr);
- 	}
+	<style>
+		@media (max-width: 1300px) {
+			.pill {
+				min-width: 100%;
+			}
 
-}
-@media (max-width: 700px) { 
- .pill{
-	min-width:100%;
- }
-  .card{
-	min-width:100%;
- }
-  	.pet-grid{
-   		grid-template-columns: repeat(1, 1fr);
- 	}
+			.card {
+				min-width: 100%;
+			}
 
-}
+			.pet-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
 
-    	</style>
+		}
+
+		@media (max-width: 700px) {
+			.pill {
+				min-width: 100%;
+			}
+
+			.card {
+				min-width: 100%;
+			}
+
+			.pet-grid {
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.pet-card img {
+				max-width: 250px;
+				max-height: 200px;
+			}
+
+		}
+	</style>
 </head>
+
 <body>
 	<header loading="eager">
 		<main-header></main-header>
@@ -45,234 +56,97 @@
 	<main>
 		<nav-bar></nav-bar>
 		<center>
-				<div id="showdata"></div>
+			<div id="showdata"></div>
 		</center>
-	</main> 
+	</main>
 	<footer>
 		<main-footer>
 		</main-footer>
 	</footer>
-	<script>//------------------------------------- IMAGE ROTATION-----------------------------------------
-	  const currentMonth = new Date().getMonth();
-	  const monthlyContent = [
-    //JANUARY
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-	},
-     //FEBRUARY
-     {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //MARCH
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //APRIL
-        {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
+	<script>
+		const currentMonth = new Date().getMonth();
+		const currentYear = new Date().getFullYear();
+		const even = currentYear % 2 == 0 ? "even" : "odd";
+		const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
+		const month = String(currentMonth + 1);
 
-	    //MAY
-    {
-	  banner:"epsilon3",
-	  color: "#3e7361",
-	  color2: "#549881",
-      clancap: "Epsilon",
-	  clan:"epsilon",
-	  clanpage:"https://toyhou.se/~world/53663.the-candyfloss/page/10524.epsilon-clan",
-	  month: "May",
-      pet1:"paizodog",
-	  pet1name:"Paizo Dog",
-	  pet2:"kinnantas",
-	  pet2name:"Kinnantas",
-	  pet3:"poulance",
-	  pet3name:"Poulance",
-    },
 
-	    //JUNE
-    {
-	  banner:"lambda5flip",
-	  color: "#7f77ff",
-	  color2: "#45418c",
-      clancap: "Lambda",
-	  clan:"lambda",
-	  clanpage:"https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan",
-	  month: "June",
-      pet1:"nenero",
-	  pet1name:"Nenero",
-	  pet2:"puwala",
-	  pet2name:"Puwala",
-	  pet3:"puuwai-agapi",
-	  pet3name:"Pu'Uwai Agapi",
-    },
+		let selected = [];
 
-    //JULY
-     {
-	  banner:"eataf1",
-	  color: "#574f53",
-	  color2: "#474044",
-      clancap: "Eataf",
-	  clan:"eataf",
-	  clanpage:"https://toyhou.se/~world/53663.the-candyfloss/page/160622.eataf-clan",
-	  month: "July",
-      pet1:"floga",
-	  pet1name:"Floga Drakai",
-	  pet2:"anijuru",
-	  pet2name:"Anijuru",
-	  pet3:"muflickah",
-	  pet3name:"Muflickah",
-    },
-        //AUGUST
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //SEPTEMBER
-        {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //OCTOBER
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //NOVEMBER
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-    //DECEMBER
-    {
-	  banner:"",
-	  color: "",
-	  color2: "",
-      clancap: "",
-	  clan:"",
-	  clanpage:"",
-	  month: "",
-      pet1:"",
-	  pet1name:"",
-	  pet2:"",
-	  pet2name:"",
-	  pet3:"",
-	  pet3name:"",
-    },
-  ];
-    const currentData = monthlyContent[currentMonth];
+		async function loadClanList() {
+			try {
+				const res = await fetch('/scripts/monthly-content/clans.json');
+				return await res.json();
+			} catch (error) {
+				throw new Error("Unable to load clans.");
+			}
+		}
+		async function petList() {
+			try {
+				const res = await fetch('/scripts/monthly-content/petpets.json');
+				return await res.json();
+			} catch (error) {
+				throw new Error("Unable to load pets.");
+			}
+		}
+		async function clanInfo() {
+			try {
+				const res = await fetch('/scripts/monthly-content/clanInfo.json');
+				return await res.json();
+			} catch (error) {
+				throw new Error("Unable to load pets.");
+			}
+		}
+		async function initialize() {
+			const clans = await loadClanList();
+			const clan = clans[month][even];
+			const clanCap = clan.charAt(0).toUpperCase() + clan.slice(1);
+			const secondaryClan = clans[month][even_opposite];
+			const petpets = await petList();
+			const info = await clanInfo();
 
-  document.getElementById('showdata').innerHTML = `
 
-  				<div class="pill" style="background-image:url(images/banners/${currentData.banner}.png);height:25vh;background-size:cover;max-width:70%;margin-bottom:-15px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;">
-				<img src="images/logos/${currentData.clan}holiday.png" style="max-width:30%;max-height:80%;margin:auto;margin-top:15px;"></div>
-				<div class= "card" style="background-color:${currentData.color};padding-top:5px;width:70%;;margin-top:0px;margin-bottom:30px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;">
-				  	<div class="inner-card" style="background-color:${currentData.color2};max-width:75%;margin-bottom:15px;"><h1 style="margin-bottom:0px;">Show Events</h1>
-						Welcome to the ${currentData.clancap} Clan Show events! <br>Check out the Petpet Show and Fashion Show below and snag some goodies to celebrate the ${currentData.clancap}'s holiday month!'
+			const clan_petpets = petpets[clan]["unevolved"]; //current unevolved ones
+			for (let i = clan_petpets.length - 1; i >= 0; i--) {
+				const pet = clan_petpets[i];
+				if (pet.year == currentYear) {
+					continue;
+				}
+				selected.push(pet);
+			}
+			if (selected.length < 3) {
+				const secondaryClan_petpets = petpets[secondaryClan]["unevolved"]; //alternate unevolved ones
+				for (let i = secondaryClan_petpets.length - 1; i >= 0; i--) {
+					const pet = secondaryClan_petpets[i];
+					if (pet.year == currentYear) {
+						continue;
+					}
+					selected.push(pet);
+				}
+			}
+
+			const currentData = info[clan];
+
+			document.getElementById('showdata').innerHTML = `
+
+  				<div class="pill" style="background-image:url(/images/banners/${currentData.banner});height:25vh;background-size:cover;max-width:70%;margin-bottom:-15px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;">
+				<img src="/images/logos/${clan}holiday.png" style="max-width:30%;max-height:80%;margin:auto;margin-top:15px;"></div>
+				<div class="card" style="background-color:${currentData["primary-color"]};padding-top:5px;width:70%;;margin-top:0px;margin-bottom:30px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;">
+				  	<div class="inner-card" style="background-color:${currentData["secondary-color"]};max-width:75%;margin-bottom:15px;"><h1 style="margin-bottom:0px;">Show Events</h1>
+						Welcome to the ${clanCap} Clan Show events! <br>Check out the Petpet Show and Fashion Show below and snag some goodies to celebrate the ${clanCap}'s holiday month!
 						<h2 style="margin-bottom:0px;"> Petpet Show</h2>
 						Grab a base for a petpet to the right, then design the petpet for your floss, by choosing their traits and coloring them to match your floss! 
 						Then draw a picture of your floss with their brand new buddy and submit the drawing and the pet design here to keep them for free! After you enter your pet you 
 						win them for free with no myo and also can snag their base that you used for future petpets you want to make! <br>You can  only enter the petpetshow once per month so be 
 						sure to choose your petpet wisely!
-						<br><a class="button" href="https://forms.gle/mSf1RxTSi8sd9Wyt7" style="background-color:${currentData.color};min-width:20%;color:white;">Enter Show</a>
+						<br><a class="button ${clan}" href="https://forms.gle/mSf1RxTSi8sd9Wyt7">Enter Show</a>
 
 						<div class="pet-grid" style="max-width:100%;max-height:100%;">
-							<div class="pet-card"><a  class="shrink" href="petpets/pets/bases/${currentData.pet1}.psd" download><img title="click to download editable base psd" src="petpets/pets/images/${currentData.pet1}.png" style="max-height:100%;height:250px;"></a><h2>${currentData.pet1name}</h2>
+							<div class="pet-card"><a  class="shrink" href="/petpets/pets/bases/${selected[0].key}.psd" download><img title="click to download editable base psd" src="/petpets/pets/images/${selected[0].key}.png" style="max-height:100%;height:250px;"></a><h2>${selected[0].name}</h2>
 							</div>
-							<div class="pet-card"><a  class="shrink" href="petpets/pets/bases/${currentData.pet2}.psd" download><img title="click to download editable base psd" src="petpets/pets/images/${currentData.pet2}.png" style="max-height:100%;height:250px;"></a><h2>${currentData.pet2name}</h2>
+							<div class="pet-card"><a  class="shrink" href="/petpets/pets/bases/${selected[1].key}.psd" download><img title="click to download editable base psd" src="/petpets/pets/images/${selected[1].key}.png" style="max-height:100%;height:250px;"></a><h2>${selected[1].name}</h2>
 							</div>
-							<div class="pet-card"><a  class="shrink" href="petpets/pets/bases/${currentData.pet3}.psd" download><img title="click to download editable base psd" src="petpets/pets/images/${currentData.pet3}.png" style="max-height:100%;height:250px;"></a><h2>${currentData.pet3name}</h2>
+							<div class="pet-card"><a  class="shrink" href="/petpets/pets/bases/${selected[2].key}.psd" download><img title="click to download editable base psd" src="/petpets/pets/images/${selected[2].key}.png" style="max-height:100%;height:250px;"></a><h2>${selected[2].name}</h2>
 							</div>
 						</div>
 						<h2 style="margin-bottom:0px;"> Fashion Show</h2>
@@ -281,9 +155,9 @@
 						Your drawing cannot be on a base so adding  them to the outfit base wont count! <br> Small edits like adding accessories is ok but major edits wont pass for  the show!<br>
 						You can only enter the fashion show once per month so be sure to choose which outfit you'd like wisely!<br>
 						the full set of outfits will be available in the Prize Counter this month and the boutique~
-						<br><a class="button" href="https://forms.gle/mSf1RxTSi8sd9Wyt7" style="background-color:${currentData.color};min-width:20%;color:white;">Enter Show</a>
-						<a class="shrink" href="images/clothes/${currentData.clan}-lines.png" download>
-						<img id="outfits" title="click to access transparent line png file" src="images/clothes/${currentData.clan}.png" style="max-height:100%;max-width:100%; ">
+						<br><a class="button ${clan}" href="https://forms.gle/mSf1RxTSi8sd9Wyt7">Enter Show</a>
+						<a class="shrink" href="images/clothes/${clan}-lines.png" download>
+						<img id="outfits" title="click to access transparent line png file" src="/images/clothes/${clan}.png" style="max-height:100%;max-width:100%; ">
 						</a>Click the outfit above for the transparent png.
 							
 			
@@ -294,74 +168,27 @@
 					</div>				
 				</div>
   `;
-	
-//----------------------------------------- NAV BAR ---------------------------------------------
-			document.getElementById("nav-toggle").addEventListener("click", () => {
-					document.getElementById("nav-wrapper").classList.toggle("open");
+
+			console.log(selected);
+		}
+		initialize();
+
+
+
+		//----------------------------------------- NAV BAR ---------------------------------------------
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+			link.addEventListener("click", (e) => {
+				if (window.innerWidth > 700) return;
+
+				e.preventDefault();
+				const dropdown = link.nextElementSibling;
+				dropdown.classList.toggle("open");
 			});
-			document.querySelectorAll(".dropdown > a").forEach(link => {
-				link.addEventListener("click", (e) => {
-						if (window.innerWidth > 700) return;
-
-						e.preventDefault();
-						const dropdown = link.nextElementSibling;
-						dropdown.classList.toggle("open");
-					});
-			});
-			async function main() {
-
-				async function fetchCSV(url) {
-						const res = await fetch(url);
-						const text = await res.text();
-						return text;
-				}
-
-				function parseCSV(text) {
-						return text
-						.trim()
-						.split(/\r?\n/)
-						.map(line =>
-								line
-							.split(",")
-							.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
-						);
-				}
-
-				function filterRows(rows, colAName, colAValue, colBName, colBValue) {
-						const header = rows[0];
-						const data = rows.slice(1);
-
-						const colAIndex = header.indexOf(colAName);
-						const colBIndex = header.indexOf(colBName);
-
-						if (colAIndex === -1 || colBIndex === -1) {
-						console.error("Column name not found in header:", { header, colAName, colBName });
-						return [];
-						}
-
-						const maxIndex = Math.max(colAIndex, colBIndex);
-
-						return data.filter(row => {
-							if (!row || row.length <= maxIndex) {
-								// too short to safely read both columns → ignore
-								return false;
-							}
-
-							const a = row[colAIndex];
-							const b = row[colBIndex];
-
-							if (a == null || b == null) {
-									return false;
-							}
-
-							return a.toLowerCase() === colAValue.toLowerCase() &&
-								b.toLowerCase() === colBValue.toLowerCase();
-						});
-				}
-
-			}
-			main();
+		});
 	</script>
 </body>
-</html> 
 
+</html>
