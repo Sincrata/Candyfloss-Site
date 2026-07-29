@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gachapon</title>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/gacha.css">
+	<script src="scripts/components/header-component.js"></script>
+	<script src="scripts/components/footer-component.js"></script>
+	<script src="scripts/components/navbar-component.js"></script>
+	<link rel="preload" href="https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png" as="image">
+	<link rel="preload" href="images/logos/logo.gif" as="image">
+	<link rel="icon" href="images/icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<style>
+		#gacha-mobile{
+			display: none;
+		}
+		#intro{
+			width: 80%;
+		}
+		.input {
+    			width: 25%;
+    			padding: 6px 16px;
+    			border: 2px solid #d9c5ff;
+    			border-radius: 8px;
+    			background: #f7f2ff;
+    			color: #471c81;
+    			font-size: 1rem;
+    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.input:focus {
+    			border-color: #8c6cff;
+    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+    			outline: none;
+		}
+		.img-col.inner-card{
+			width: 70%;
+		}
+		#submit-stock{
+			width:50%;
+		}
+		#ball{
+			width: 100%;
+			max-width: 200px;
+			display: inline-block;
+			margin: auto;
+		}
+		@media (max-width: 1000px) {
+ 			#gacha{
+ 				display:none;
+ 			}
+ 			#gacha-mobile{
+ 				display: block;
+ 				width: 60%;
+				margin: auto;
+ 			}
+			#img-col{
+				display: none;
+			}
+			.inner-card{
+				width: 90%;
+			}
+ 		}
+		@media (max-width: 800px) {
+ 			#gacha{
+ 				display:none;
+ 			}
+ 			#gacha-mobile{
+ 				display: inline;
+ 				width: 80%;
+ 			}
+			#img-col{
+				display: none;
+			}
+			.inner-card{
+				width: 90%;
+			}
+			#gacha-pic{
+				max-width: 100%;
+			}
+			#bottom-cards{
+				flex-direction: column;
+				align-items: center;
+				width: 90%;
+			}
+			#submit-stock{
+				width: 100%;
+			}
+			.col-5{
+				width: 100%;
+			}
+ 		}
+		@media (max-width: 500px) {
+
+ 			#gacha-mobile{
+ 				width: 80%;
+ 			}
+ 		}
+
+		
+    	</style>
+</head>
+<body>
+<header loading="eager">
+	<main-header></main-header>
+</header>
+<main>
+	<nav-bar></nav-bar>
+	<center><img src="images/kittenseason/banner.png" style="max-width:80%;margin-bottom:-5px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;"><div class= "card" id="intro" style="margin:0px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;"><br><img id="gacha-pic" src="images/logos/gacha.png" alt="Gachapon">
+
+		<div class="row">
+					<div class="img-col inner-card"><br>
+                        <span><h2>Welcome to the Candyfloss Gachapon Machine! </h2>
+				Here you use your Floss Coins to spin the machine and receive a randomized Candyfloss! 
+				Who will you get! Only one way to find out!
+			</span>
+			<br>
+			&nbsp;
+			<br>
+			<img id="gacha-mobile" loading="eager" fetchpriority="high" src="images/gachamachine2.png">
+			
+                        <a class = "button" href="https://toyhou.se/~forums/68831.may-2026/789018.gpc">Spin for a Floss!</a>
+			<br>
+                        <span><h2>Check your current coin total!</h2>Input a username below to check your current coin total before you spin!
+				<br>
+				<br>
+                        	<div class="display-row">
+                                	<img src="images/icons/coin.gif" style="height:40px; margin-right: 0;">
+					<input class="input" type="text" id="username" placeholder="Username"></input>
+                                        <button class="button" id="submit" disabled>Submit</button>
+                                </div>
+                        </span>
+			<br> 
+                        <div id="coin-box" style="display: none;">
+                        	<div class="inner-card" style="max-width:100%;">
+					<h1 id="coin-count">[Username] has 000 coins!</h1>
+				</div>
+                       	</div>
+			<br>	
+			<br>
+                </div><div id="img-col" class="img-col" style="float:right;margin-left:15%;"><img id="gacha" loading="eager" fetchpriority="high" src="images/gachamachine2.png" style="margin:auto;max-width:100%;">
+			</div>
+</div></div>
+<!-----------------------BOTTOM CARDS----------------------->
+		<div class="row" id="bottom-cards">
+			<div class = "ImageCol" id="submit-stock">
+	 			<div class="small-card">
+				<div class="inner-card">	<h2>Submit a Floss!</h2>
+					The Gachapon machine is stocked by STAFF and the Community! 
+					Have a Floss you aren't vibing with? You can submit them to the Gachapon machine in exchange coins! 
+					Submitting a dollfloss will get you 3 coins and submitting any other type of floss will earn you 5 coins! 
+				<br>	<br>Remember!! You cannot submit a floss to the Gacha if they have been in it any time in the last 6 months!
+					<br>	<br>	Do you want notifications when new floss are added to the machine? 
+					Grab the Gachapon ping role in our Discord to get an alert on there when new stock is added in!!
+					<br>
+					<a class = "button" id="user-submit" href="https://toyhou.se/~forums/68831.may-2026/789017.gpd ">Submit a Floss</a></div><br>
+		 
+				<div class="inner-card"><h2> Stock</h2>
+				Check out which floss are currently stocked in the machine! 
+				Click the button below to take a sneaky peak into the Gachapon machine to see what floss are currently stocked in the machine and able to be rolled! 
+				If you see a cutie you want, you just might get them! But if no one strikes your fancy, best to wait for later! 
+				New floss are added regularly so check back for a dreamie later!
+				<br>
+				<a class = "button" href="gachapon-stock.html">Check the Stock</a>
+			 	</div></div>
+	</div>
+			<div class = "col-5"><img id="ball" src="images/ball.png">
+				<h2>How does the machine work?</h2> <div class="inner-card">
+				By cashing in Floss Coins, you will spin the machine and receive a random floss from the stock. 
+				There are 2 tiers: tier 1, which is 3 coins and includes the entire stock, or tier 2, which is 5 coins and includes only non-dollfloss from the stock in your roll.
+				There is no weights, which means all floss have an equal chance of being rolled.
+				That said, you can remove all dollfloss from the roll by choosing the higher tier.
+				<br>
+				<br>
+				The machine is run by our staff member Lilbee! When you submit a floss for the machine, Lilbee will review it and accept it. 
+				After being acceted you'll receive a message saying that you can transfer the character to <a id="link" href="https://toyhou.se/Lilbeedraws/">Lilbeedraws</a> on toyhou.se. 
+				Once transfered Lilbee will give you the coins for it into your inventory. 
+				<br>
+				<br>
+				If you roll, Lilbee will see your roll request, remove your coins and send you the floss you won on Toyhou.se! 
+				<br>
+				<br>
+				Because the machine is rolled by a human, please be patient with us and allow at least 48 hours for a response on rolls and submission! 
+				Thank you!
+			</div></div>
+		</div>
+
+
+	</center>
+</main> 
+<footer>
+	<main-footer></main-footer>
+</footer>
+<script>
+	document.getElementById("nav-toggle").addEventListener("click", () => {
+    		document.getElementById("nav-wrapper").classList.toggle("open");
+	});
+
+	document.querySelectorAll(".dropdown > a").forEach(link => {
+    	link.addEventListener("click", (e) => {
+        	if (window.innerWidth > 700) return;
+
+        	e.preventDefault();
+        	const dropdown = link.nextElementSibling;
+        	dropdown.classList.toggle("open");
+    	});
+	});
+
+
+async function main() {
+	var username = "";
+	const button = document.getElementById("submit");
+	const input = document.getElementById("username");
+	const box = document.getElementById("coin-box"); //need to add revealed class
+	const count = document.getElementById("coin-count");
+
+		function capitalizeFirstWord(str) {
+    			if (!str) return "";
+    			const [first, ...rest] = str.trim().split(/\s+/);
+    			return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() + 
+           			(rest.length ? " " + rest.join(" ") : "");
+		}
+
+
+
+
+		async function fetchCSV(url) {
+    			const res = await fetch(url);
+    			const text = await res.text();
+    			return text;
+		}
+
+		function parseCSV(text) {
+    			return text
+        		.trim()
+        		.split(/\r?\n/)
+        		.map(line =>
+            			line
+                	.split(",")
+                	.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+        		);
+		}
+
+		function filterRows(rows, colAName, colAValue) {
+    			const header = rows[0];
+    			const data = rows.slice(1);
+
+    			const colAIndex = header.indexOf(colAName);
+
+    			if (colAIndex === -1) {
+        		console.error("Column name not found in header:", { header, colAName});
+        		return [];
+    			}
+
+    			const maxIndex = colAIndex;
+
+    			return data.filter(row => {
+        			if (!row || row.length <= maxIndex) {
+            			// too short to safely read both columns → ignore
+            			return false;
+        			}
+
+        			const a = row[colAIndex];
+
+        			if (a == null) {
+            				return false;
+        			}
+
+        			return a.toLowerCase() === colAValue.toLowerCase();
+    			});
+		}
+
+		async function loadFilteredCoinData() {
+    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=913397617&single=true&output=csv";
+
+    			const csv = await fetchCSV(url);
+    			const rows = parseCSV(csv);
+
+    			const results = filterRows(
+        			rows,
+        			"Username",  username
+    			);
+
+    			console.log(results);
+			return results;
+		}
+
+
+	input.addEventListener("keyup", () => {
+		if(input.value.length > 0){
+			button.disabled = false;
+			input.value = capitalizeFirstWord(input.value)
+		}else{
+			button.disabled = true;
+		}
+		username = input.value;
+	});
+
+
+	button.addEventListener("click",  async () => {
+		username = input.value;
+		box.style.display = "block";
+		count.innerHTML = `Loading Coins`;
+		const coin = await loadFilteredCoinData();
+		var coins = 0;
+		console.log(coin.length);
+		if (coin.length > 0){
+			coins = coin[0][12];
+		}
+		count.innerHTML = `${username} has ${coins} coins!`;
+
+		
+	});
+}
+main();
+	
+</script>
+</body>
+</html> 
