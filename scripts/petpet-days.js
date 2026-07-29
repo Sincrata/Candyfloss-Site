@@ -327,13 +327,13 @@ export const petpetDays = [{
 		    day: "3",
 		    petpet: "Dyopaw",
 		    class: "pank",
-            upcoming: "Upcoming"
+            upcoming: "No"
 	    },{
 		    month: "7",
 		    day: "6",
 		    petpet: "Hiyapip",
 		    class: "berry",
-            upcoming: "Upcoming"
+            upcoming: "No"
 	    },{
 		    month: "7",
 		    day: "9",
@@ -361,7 +361,7 @@ export const petpetDays = [{
 	    },{
 		    month: "7",
 		    day: "20",
-		    petpet: "Bala-Mega",
+		    petpet: "Nookouda",
 		    class: "gold",
             upcoming: "No"
 	    },{
@@ -375,19 +375,19 @@ export const petpetDays = [{
 		    day: "29",
 		    petpet: "Paizo Beast",
 		    class: "pank",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "8",
 		    day: "2",
 		    petpet: "Piao-fu Ci",
 		    class: "pank",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "8",
 		    day: "4",
 		    petpet: "Se-eh Ihoa'ohn",
 		    class: "berry",
-            upcoming: "No"
+            upcoming: "Upcoming"
 	    },{
 		    month: "8",
 		    day: "8",
@@ -414,21 +414,27 @@ export const petpetDays = [{
             upcoming: "No"
 	    },{
 		    month: "8",
+		    day: "19",
+		    petpet: "Mega-Bala",
+		    class: "gold",
+            upcoming: "No"
+	    },{
+		    month: "8",
 		    day: "21",
 		    petpet: "Ponneli",
-		    class: "gold",
+		    class: "silver",
             upcoming: "No"
 	    },{
 		    month: "8",
 		    day: "25",
 		    petpet: "Vounos Trogon",
-		    class: "silver",
+		    class: "pank",
             upcoming: "No"
 	    },{
 		    month: "8",
 		    day: "29",
 		    petpet: "Pu'uwai Mantis",
-		    class: "pank",
+		    class: "berry",
             upcoming: "No"
 	    },{
 		    month: "9",

@@ -139,11 +139,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
-		    artlink: "https://i.imgur.com/rxMxxHa.png",
-		    prompt: "Floss of the Month: Chase",
-		    position:"center",
-		    artist: "KrissySempaiArt"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121990005_xhWdISk40cm7lhq.png",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
@@ -169,7 +164,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "JubLubDubs"
 	    },{
-		    artlink: "https://toyhou.se/~images/122341316",
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122341316_Dra1SupivWzIK6P.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "Nifewoofy"
@@ -189,11 +184,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
-		    artlink: "https://postimg.cc/8J3521zD",
-		    prompt: "Floss of the Month: Chase",
-		    position:"center",
-		    artist: "NInjagomonster"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122683714_nvJ0bLPS0l5o5TB.png?1782871498",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
@@ -203,4 +193,34 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "Katsumi-Draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122691347_u7Zn3M62EXfCMsR.png?1782878752",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122789638_bKds7iJy31kFc6z.png?1782997619",
+		    prompt: "Pool Floaties Chain Game",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/123041123_iZCMHtcNeN65lex.png?1783291953",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "Countless"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-07-24_073041895.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "tenshilove"
+	    },{
+		    artlink: "https://postimg.cc/qNXYVMMD",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Ninjagomonster"
 	    }];

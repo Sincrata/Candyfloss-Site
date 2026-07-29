@@ -13,6 +13,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Candyfloss</title>
 	<style>
+		.event-badge {
+			display:flex;
+			float:right;
+			max-height:100px;
+		}
+
 		@media (max-width: 600px) {
 			.clangem {
 				max-height: 40px;
@@ -97,9 +103,8 @@
 				overflow: auto;
 			}
 
-			#e-title {
+			#e-title, .e-title {
 				font-size: 20px;
-				align: left;
 			}
 
 			.eventbox span {
@@ -171,8 +176,8 @@
 								planet filled with Candyfloss- four armed fuzzy creatures from outer space!</span><br><a
 								class="shrink"
 								href="https://toyhou.se/~world/53663.the-candyfloss/page/10511.what-is-candyfloss"><img
-									id="hide" src="images/logos/what.png" style="margin-top:20px;"></a></div><img id="hide"
-							src="images/dj.png" style="float:right;width:50%;">
+									id="hide" src="images/logos/what.png" style="margin-top:20px;"></a></div><img
+							id="hide" src="images/dj.png" style="float:right;width:50%;">
 					</div>
 
 					<!---------adopt a floss----------->
@@ -190,7 +195,8 @@
 								<div class="inner-card" style="width:50%;padding:3px;margin:3px;"><b>Adopt a Floss!</b>
 									<br>Check out awesome hand designed Candyfloss Characters that our STAFF have put up
 									for sale!<a href="https://toyhou.se/~world/53663.the-candyfloss/bulletins"> Check
-										out the newest posts on toyhou.se</a> or in the discord!</div>
+										out the newest posts on toyhou.se</a> or in the discord!
+								</div>
 							</div>
 							<div class="row-big">
 								<div class="inner-card" style="width:50%;padding:3px;margin:3px;"><b>Earn Floss
@@ -214,67 +220,34 @@
 					<!-------- EVENTS------------>
 					<!-------- Hey Ali, this is the part where the background images are changing with the sheet. the bg images are in the CSS not the html----------->
 
-
-					<div id="current-events">
+					<div id="actual-events" style="display: none;">
 						<div class="row" style="text-align:center;">
-							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/achievements.png"
+							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/events.png"
 									style="width:70%;display:inline-block;"> </div>
 						</div>
 						<div class="event-row">
 
-							<div class="event-img event-1" style="background-image:url(images/banners/pool.png);background-position:10%;"></div>
+							<div class="event-img event-1"
+								style="background-image:url(images/banners/pool.png);background-position:10%;"></div>
 							<div class="eventbox"><img src="images/badge/pool.png"
 									style="display:flex;float:right;max-height:100px;">
 								<h1 id="e-title">Pool Floaties Chain Game!</h1>
 								<div id="hide"><span>
 									</span></div><span>Splash into our summer time chain game! </span>
-								<div id="hide">Dive in to the chain and draw the Candyfloss before you beating the heat and catching some rays in the pool. Whether they are blasting water guns or lounging on a giant flamingo floatie, the choice is yours! Just depict a Floss floating their worries away, and the next artist will draw yours! Pass the torch, give a gift, and get in on the sunny poolside fun!</span></div><br><a
-									class="event-link" href="achievements.html">Enter the Pool Floaties Chain Game</a><br>&nbsp;
+								<div id="hide">Dive in to the chain and draw the Candyfloss before you beating the heat
+									and catching some rays in the pool. Whether they are blasting water guns or lounging
+									on a giant flamingo floatie, the choice is yours! Just depict a Floss floating their
+									worries away, and the next artist will draw yours! Pass the torch, give a gift, and
+									get in on the sunny poolside fun!</span></div><br><a class="event-link"
+									href="achievements.html">Enter the Pool Floaties Chain Game</a><br>&nbsp;
 							</div>
 						</div>
-						<div class="event-row"  >
-							<div class="event-img event-2" style="background-image:url(images/banners/cupid.png);background-position:70%;"></div>
-							<div class="eventbox"> <img src="images/badge/cupid.png"
-									style="display:flex;float:right;max-height:100px;">
-								<h1 id="e-title">Love Arrow Story Prompt</h1><span>Cupidfloss are in the air looking to give some unsuspecting Floss a love bug!  </span>
-								<div id="hide">But their aim isn't always straight. What happens when a rogue love arrow strikes your Candyfloss right in the heart!? Will this sudden accident lead to absolute chaos, or is it the start of a beautiful romance?   Write a story from the perspective of a cupidfloss (can be one of your floss or an npc) or from the perspective of the sudden lovers!
-								</div> </span><a class="event-link" href="achievements.html">Enter the Love Arrow Story Prompt</a><br>&nbsp;
-							</div>
-						</div>
-						
-						<div class="event-row">
-							<div class="event-img event-5" style="background-image:url(images/banners/achievements/medha.png);background-position:20%;"></div>
-							<div class="eventbox"> <img src="images/badge/medha.png"
-									style="display:flex;float:right;max-height:100px;">
+					</div>
 
-								<h1 id="e-title">Floss of the Month</h1>
-
-								<p><span><a href="https://toyhou.se/39579935.medha" style="color:#d9c5ff;">Medha<a>
-
-												is this month's Floss of the month!</span>
-								<div id="hide"><span> She's a Sourfloss student living in the Epsilon region.
-									 </span></div>
-
-								<span>She's a bright and social floss who cares a lot about philosophy and ethics. Never fully identifying with the technology centric culture of the Sigma region, she moved to the Epsilon region to be more in touch with her epsilon telepathic abilities.  
-									 </span>
-
-								<div id="hide"><span> She's currently living in with Rosemary, a sweet old Honeyfloss librarian that was her mother's college professor back in the day! </span></div>
-
-								<span><br><br>Medha belongs to
-									   <a href="https://toyhou.se/JubLubDubs" style="color:#d9c5ff;">JubLubDubs!</a> JubLubs is a recent member of the Candyfloss community, but she's already been a delight to be around!  </span>
-
-								<div id="hide"><span>She has a very fun and unique art style that's always nice to see in the art channels! We're glad you've been enjoying Candyfloss, both in lore and the community! 
-									  </span></div>
-
-								<span>  Thank you for being a part of Candyfloss, JubLub!
-									<br><br>
-									</span></p>
-
-								<a class="event-link" href="achievements.html">Create gift art for the Floss of the
-									Month to earn coins!</a><br>&nbsp;
-
-
-							</div>
+					<div id="current-events">
+						<div class="row" style="text-align:center;">
+							<div class="hold" style="margin:auto;"><img id="event" src="images/logos/achievements.png"
+									style="width:70%;display:inline-block;"> </div>
 						</div>
 					</div>
 					<!-------- FEATURES------------>
@@ -304,7 +277,8 @@
 							commissions being made in real time! Early claim adopts and order customs live from the
 							streams! Talk directly to our STAFF and get in touch with the community!</div> <br> <a
 							class="shrink" href="#"><img style="display:none;" src="images/live/Tenshi.png"></a><a
-							class="shrink" href="#"><img style="display:none;" src="images/live/Katsumi.png"></a><br>Want
+							class="shrink" href="#"><img style="display:none;"
+								src="images/live/Katsumi.png"></a><br>Want
 						updates when streams go live? Grab the Ping Streams role in the discord to get alerts!
 					</div><Br>
 					<div class="small-card"><img src="images/logos/petshop.png" style="width:80%;">
@@ -313,7 +287,8 @@
 								class="shrink" href="petpets/eataf.html#afeaa-snek"><img
 									src="petpets/pets/images//afeaa-snek.png" style="max-width:80%;"></a></div>
 					</div><Br>
-					<div class="small-card"><img src="images/logos/activities.png">Check out these awesome activities!<br><br>
+					<div class="small-card"><img src="images/logos/activities.png">Check out these awesome
+						activities!<br><br>
 						<div class="inner-card">
 							<h2 style="margin:0px;">Randomizers</h2> Nifty for creating randomized floss bios, designs,
 							challenges, and kittenfloss!<Br><Br>
@@ -342,6 +317,7 @@
 	<footer>
 		<main-footer></main-footer>
 	</footer>
+
 	<script type="module">
 		//------------------------------------- IMAGE ROTATION-----------------------------------------
 		const currentMonth = new Date().getMonth();
@@ -411,14 +387,14 @@
 				gem: "lambda",
 				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628",
 				toplink1: "https://toyhou.se/8504270.lady",
-				topimage2:"https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797",
-				toplink2:"https://toyhou.se/9179322.pagliacci",
-				topimage3:"https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982",
-				toplink3:"https://toyhou.se/11685624.jelle-love-yurself-lubell",
-				topimage4:"https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652",
-				toplink4:"https://toyhou.se/4918167.hysteria-l",
-				topimage5:"https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923",
-				toplink5:"https://toyhou.se/10792519.aziraphale-norin",
+				topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797",
+				toplink2: "https://toyhou.se/9179322.pagliacci",
+				topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982",
+				toplink3: "https://toyhou.se/11685624.jelle-love-yurself-lubell",
+				topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652",
+				toplink4: "https://toyhou.se/4918167.hysteria-l",
+				topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923",
+				toplink5: "https://toyhou.se/10792519.aziraphale-norin",
 
 			},
 			//JULY
@@ -439,32 +415,39 @@
 				gem: "eataf",
 				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/34638042?1755044790",
 				toplink1: "https://toyhou.se/34638042.kh-null",
-				topimage2:"https://f2.toyhou.se/file/f2-toyhou-se/characters/15942241?1757882421",
-				toplink2:"https://toyhou.se/15942241.zacharias-serafim",
-				topimage3:"https://f2.toyhou.se/file/f2-toyhou-se/characters/3843279?1775602041",
-				toplink3:"https://toyhou.se/3843279.christina-matthews",
-				topimage4:"https://f2.toyhou.se/file/f2-toyhou-se/characters/4072794?1761259129",
-				toplink4:"https://toyhou.se/4072794.cashus",
-				topimage5:"https://f2.toyhou.se/file/f2-toyhou-se/characters/33170288?1777332551",
-				toplink5:"https://toyhou.se/33170288.republic-snow"
+				topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/15942241?1757882421",
+				toplink2: "https://toyhou.se/15942241.zacharias-serafim",
+				topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/3843279?1775602041",
+				toplink3: "https://toyhou.se/3843279.christina-matthews",
+				topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4072794?1761259129",
+				toplink4: "https://toyhou.se/4072794.cashus",
+				topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/33170288?1777332551",
+				toplink5: "https://toyhou.se/33170288.republic-snow"
 
 			},
 			//AUGUST
 			{
-				img: "pool",
+				imgPool: [
+					{ file: "phi1.png", position: "40%" },
+					{ file: "phi2.png", position: "20%" },
+					{ file: "phi3.png", position: "30%" },
+					{ file: "phi4.png", position: "56%" },
+					{ file: "phi5.png", position: "37%" }
+				],
 				title: "August",
-				text: "Welcome to January! Kick off your New Year goals.",
-				link: "https://example.com",
-								topimage1: "",
-				toplink1: "",
-				topimage2:"",
-				toplink2:"",
-				topimage3:"",
-				toplink3:"",
-				topimage4:"",
-				toplink4:"",
-				topimage5:"",
-				toplink5:""
+				text: "<span>The Phi Clan is the performance clan. Phi's are the most physically attractive of all the clans and they tend to get everything they want to the point of excess. </span>   <div id='hide'> <span>They are usually very talented and most become celebrities among the other Candyfloss. Being a Phi, comes with certain expectations that can be hard to uphold. Phi’s are often judged directly by their physical appearance and skills in various media. Phi’s who do not excel are often ostracized and ridiculed. Popular Phi’s are partiers and spend vast amounts of money. Wealth is often coveted by Phifloss, but it does not mean much if it wasn't earned through entertainment and hard work.</span>",
+				page: "https://toyhou.se/~world/53663.the-candyfloss/page/10530.phi-clan",
+				gem: "phi",
+				topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4142358?1771399614",
+				toplink1: "https://toyhou.se/4142358.-candyfloss-feng-ri-",
+				topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/5704751?1577930831",
+				toplink2: "https://toyhou.se/5704751.candy-pop",
+				topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4662612?1687911268",
+				toplink3: "https://toyhou.se/4662612.keira-kei-dale",
+				topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/3870152?1622905429",
+				toplink4: "https://toyhou.se/3870152.hiyami-f",
+				topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/14571738?1643653485",
+				toplink5: "https://toyhou.se/14571738.dorian-aero"
 			},
 			//SEPTEMBER
 			{
@@ -589,6 +572,8 @@
 			});
 		});
 	</script>
+
+	<script type="module" src="/scripts/index.js"></script>
 
 </body>
 
