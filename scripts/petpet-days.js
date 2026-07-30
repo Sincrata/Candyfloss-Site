@@ -247,7 +247,7 @@ export const petpetDays = [{
 	    },{
 		    month: "5",
 		    day: "18",
-		    petpet: "Brilla Murice",
+		    petpet: "Brilla Murcie",
 		    class: "yellow",
             upcoming: "No"
 	    },{
@@ -375,7 +375,7 @@ export const petpetDays = [{
 		    day: "29",
 		    petpet: "Paizo Beast",
 		    class: "pank",
-            upcoming: "Today"
+            upcoming: "No"
 	    },{
 		    month: "8",
 		    day: "2",
@@ -582,15 +582,21 @@ export const petpetDays = [{
             upcoming: "No"
 	    },{
 		    month: "11",
+		    day: "22",
+		    petpet: "Brilla Oso",
+		    class: "pank",
+            upcoming: "No"
+	    },{
+		    month: "11",
 		    day: "26",
 		    petpet: "Poulance",
-		    class: "pank",
+		    class: "berry",
             upcoming: "No"
 	    },{
 		    month: "11",
 		    day: "29",
 		    petpet: "Ammos Spitter",
-		    class: "berry",
+		    class: "purple",
             upcoming: "No"
 	    },{
 		    month: "12",
