@@ -125,3 +125,8 @@ color:white;
 .art-card:hover { 
 opacity: 0.8;
 }
+
+.button{
+  width:10vw;
+  min-width:100px;
+}

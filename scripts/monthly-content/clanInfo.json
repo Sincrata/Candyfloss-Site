@@ -1,0 +1,134 @@
+{
+    "beta": {
+        "banner": "beta2.png",
+        "primary-color": "#e6d28d",
+        "secondary-color": "#9f844d",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10522.beta-clan"
+    },
+    "sigma": {
+        "banner": "sigma1.png",
+        "primary-color": "#3643bf",
+        "secondary-color": "#121c58",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/47752.sigma-clan"
+    },
+    "mu": {
+        "banner": "mu4.png",
+        "primary-color": "#ffa6bc",
+        "secondary-color": "#c0536a",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan"
+    },
+    "nu": {
+        "banner": "nu4.png",
+        "primary-color": "#ffa647",
+        "secondary-color": "#cf732e",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10529.nu-clan"
+    },
+    "gamma": {
+        "banner": "gamma1.png",
+        "primary-color": "#cf8c51",
+        "secondary-color": "#d3a370",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10521.gamma-clan"
+    },
+    "omega": {
+        "banner": "omega1.png",
+        "primary-color": "#bb4289",
+        "secondary-color": "#6f2e64",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega"
+    },
+    "theta": {
+        "banner": "theta1.png",
+        "primary-color": "#339232",
+        "secondary-color": "#215f20",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10523.theta-clan"
+    },
+    "eta": {
+        "banner": "eta1.png",
+        "primary-color": "#610913",
+        "secondary-color": "#91434c",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/120070.eta"
+    },
+    "epsilon": {
+        "banner": "epsilon3.png",
+        "primary-color": "#3e7361",
+        "secondary-color": "#549881",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10524.epsilon-clan"
+    },
+    "miden": {
+        "banner": "miden2.png",
+        "primary-color": "#d2d4d6",
+        "secondary-color": "#898d94",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/181918.mi"
+    },
+    "lambda": {
+        "banner": "lambda5flip.png",
+        "primary-color": "#7f77ff",
+        "secondary-color": "#45418c",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan"
+    },
+    "rho": {
+        "banner": "rho1.png",
+        "primary-color": "#90c0c6",
+        "secondary-color": "#678d9c",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/11451.rho-clan"
+    },
+    "alpha": {
+        "banner": "alpha2.png",
+        "primary-color": "#ff5583",
+        "secondary-color": "#a53755",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10520.alpha-clan"
+    },
+    "eataf": {
+        "banner": "eataf1.png",
+        "primary-color": "#574f53",
+        "secondary-color": "#474044",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/160622.eataf-clan"
+    },
+    "phi": {
+        "banner": "phi1.png",
+        "primary-color": "#8ceb4d",
+        "secondary-color": "#5b9832",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10530.phi-clan"
+    },
+    "omicron": {
+        "banner": "omicron2.png",
+        "primary-color": "#6a1f7e",
+        "secondary-color": "#451452",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/128717.xxxxxxxxxxxomi"
+    },
+    "iota": {
+        "banner": "iota1.png",
+        "primary-color": "#6a60a3",
+        "secondary-color": "#353051",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10527.iota-clan"
+    },
+    "chi": {
+        "banner": "chi1.png",
+        "primary-color": "#f2da7d",
+        "secondary-color": "#8d6937",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/70294.chi-clan"
+    },
+    "delta": {
+        "banner": "halloween1.png",
+        "primary-color": "#4a4960",
+        "secondary-color": "#2c2b3a",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10525.delta-clan"
+    },
+    "kappa": {
+        "banner": "kappa2.png",
+        "primary-color": "#db82f7",
+        "secondary-color": "#784787",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10531.kappa-clan"
+    },
+    "zeta": {
+        "banner": "zeta1.png",
+        "primary-color": "#8caa84",
+        "secondary-color": "#405c54",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10526.zeta-clan"
+    },
+    "psi": {
+        "banner": "psi1.png",
+        "primary-color": "#87ffd2",
+        "secondary-color": "#4b856f",
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10532.psi-clan"
+    }
+}

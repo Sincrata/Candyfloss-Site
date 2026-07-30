@@ -17,9 +17,13 @@
 
 .pet-card img {
   width: auto;
-  max-width: 250px; 
+  max-width: 100%; 
   height:auto;
   min-height:150px;
-  max-height:200px;
+  max-height:100%;
   object-fit: contain;
+}
+
+.button{
+			min-width:20%;
 }

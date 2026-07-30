@@ -1,0 +1,50 @@
+{
+    "1": {
+        "even": "beta",
+        "odd": "sigma"
+    },
+    "2": {
+        "even": "nu",
+        "odd": "mu"
+    },
+    "3": {
+        "even": "gamma",
+        "odd": "omega"
+    },
+    "4": {
+        "even": "theta",
+        "odd": "eta"
+    },
+    "5": {
+        "even": "epsilon",
+        "odd": "miden"
+    },
+    "6": {
+        "even": "lambda",
+        "odd": "rho"
+    },
+    "7": {
+        "even": "eataf",
+        "odd": "alpha"
+    },
+    "8": {
+        "even": "phi",
+        "odd": "omicron"
+    },
+    "9": {
+        "even": "iota",
+        "odd": "chi"
+    },
+    "10": {
+        "even": "delta",
+        "odd": "delta"
+    },
+    "11": {
+        "even": "kappa",
+        "odd": "kappa"
+    },
+    "12": {
+        "even": "zeta",
+        "odd": "psi"
+    }
+}

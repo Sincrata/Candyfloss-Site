@@ -96,7 +96,9 @@ const monthlyContent2 = [
       { file: "Epsilon1flip.png", position: "center" },
       { file: "epsilon6flip.png", position: "top right" },
       { file: "bookclub.png", position: "center" },
-      { file: "epsilon5flip.png", position: "top" }
+      { file: "epsilon5flip.png", position: "top" },
+      { file: "miden1.png", position: "100%" },
+      { file: "miden2.png", position: "100%" }
     ],
   },
   //JUNE
