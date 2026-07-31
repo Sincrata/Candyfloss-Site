@@ -3,132 +3,341 @@
         "banner": "beta2.png",
         "primary-color": "#e6d28d",
         "secondary-color": "#9f844d",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10522.beta-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10522.beta-clan",
+        "bannerPool": [
+					{ "file": "craft.png", "position": "18%" },
+                    { "file": "craft2.jpg", "position": "22%" },
+                    { "file": "beta1.png", "position": "60%" },
+                    { "file": "beta2.png", "position": "75%" },
+                    { "file": "beta2.png", "position": "38%" },
+                    { "file": "beta3.png", "position": "76%" },
+                    { "file": "beta4.png", "position": "92%" }
+				],
+        "text": "The Beta Clan was the artisan clan. They were a clan of regality whom sought perfection. Betas preferred things clean and put in their proper place. They were precise and attentive while still being caring and thoughtful.<div id='hide'><br><br> They were innovative and intricate in their chosen art forms, clothing, pottery, paintings, and their writings and calligraphy rivaled those of the Epsilon Clan. They once took pride at being excellent at everything they apply themselves to. <br><br> Following the events of the War of Pnevma, the Beta Royals were betrayed and killed by their own officials. This led Beta to becoming a territory of Alpha Clan and under the strict ruling of the Alpha King.</div>"
     },
     "sigma": {
         "banner": "sigma1.png",
         "primary-color": "#3643bf",
         "secondary-color": "#121c58",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/47752.sigma-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/47752.sigma-clan",
+        "bannerPool": [
+					{ "file": "sigma1.png", "position": "89%" },
+                    { "file": "sigma1.png", "position": "15%" },
+                    { "file": "sigma2.png", "position": "95%" },
+                    { "file": "sigma2.png", "position": "12%" },
+                    { "file": "sigma3.png", "position": "60%" },
+                    { "file": "sigma4.png", "position": "67%" }
+				],
+        "text": "The Sigma clan is the Space Age Clan. The Sigma are the original clan of the Sourfloss Flavor. They live on the fallen Thymono, half sunk in the sea between Glylos and Psakazi. Their clan is a bright one, filled to the brim with technology and cool inventions. <div id='hide'><br>The Sigma have become masters of their lightning ability, using it to power their cities and bodies. Sigmafloss  are always looking for ways to leave their moon, Thymono, to get below to Caramella to be with their kind, building all kinds of technology and performing experiments to try and escape their atmosphere. They are all about good vibes and do everything they can to stay happy and pleasant.</div>"
     },
     "mu": {
         "banner": "mu4.png",
         "primary-color": "#ffa6bc",
         "secondary-color": "#c0536a",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan",
+        "bannerPool": [
+					{ "file": "mu1.png", "position": "93%" },
+                    { "file": "mu2.png", "position": "0%" },
+                    { "file": "mu3.png", "position": "7%" },
+                    { "file": "mu4.png", "position": "75%" },
+                    { "file": "mu5.png", "position": "88%" },
+                    { "file": "mu5.png", "position": "35%" }
+				],
+        "text": "The Mu Clan is the romantic clan. Their sister clan is Nu and they are intertwined and ruled over by the same royal family. These two clans rely on each other for resources and protection, and one cannot be talked about without mentioning the other. <div id='hide'><br>The Mu clan are reserved and well kept, quiet and modest. They are health focused and as a result tend to keep things clean and safe. They are kind and reliable but have been known to keep to themselves. They take care of minor injuries and illness in their small practices and also are the caretakers of children, elderly, and domestic animals.</div>"
     },
     "nu": {
         "banner": "nu4.png",
         "primary-color": "#ffa647",
         "secondary-color": "#cf732e",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10529.nu-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10529.nu-clan",
+        "bannerPool": [
+					{ "file": "nu1.png", "position": "54%" },
+                    { "file": "nu2.jpg", "position": "50%" },
+                    { "file": "nu3.png", "position": "26%" },
+                    { "file": "nu4.png", "position": "43%" },
+                    { "file": "nu5.png", "position": "56%" }
+				],
+        "text": "The Nu Clan is the athletic clan. Their sister clan is Mu, and they are intertwined and ruled over by the same royal family. These two clans rely on each other for resources and protection, and one cannot be talked about without mentioning the other. <div id='hide'><br>The Northern region of Nu is a drier land, with small brush and shrubbery and dry grasses over vast plains and cliffs. The Nu clan are rough and tumble and aren't afraid to get dirty. They often hold grand sporting events that rake in all the revenue that the Nu need since they are mostly athletic, strong and fast, and provide great entertainment in a way that the Phi Clan cannot.</div>"
     },
     "gamma": {
         "banner": "gamma1.png",
         "primary-color": "#cf8c51",
         "secondary-color": "#d3a370",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10521.gamma-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10521.gamma-clan",
+        "bannerPool": [
+					{ "file": "gamma1.png", "position": "15%" },
+                    { "file": "gamma2.png", "position": "44%" },
+                    { "file": "gamma3.png", "position": "95%" }
+				],
+        "text": "The Gamma Clan is the stonemason clan. They are incredibly hard working, and every clan depends on them for the livestock and crops they raise. They are docile people and stalwart in friendship. Gammas are incredibly powerful and danger but are also brought up from a young age to be gentle and modest due to their strength and the other clans' reliance on them. <div id='hide'><br>Gamma is one of the three oldest and most influential clans. Gamma is always quick to defend the weak and those in need, even if they are not a part of the same alliance. They are hesitant to go to war and prefer diplomacy. The Gamma have special bonds with the Omega and Chi clans and have a long historical partnership with the Alpha clan.</div>"
     },
     "omega": {
         "banner": "omega1.png",
         "primary-color": "#bb4289",
         "secondary-color": "#6f2e64",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega",
+        "bannerPool": [
+					{ "file": "omega1.png", "position": "10%" },
+                    { "file": "omega1.png", "position": "82%" },
+                    { "file": "omega2.png", "position": "8%" },
+                    { "file": "omega3.png", "position": "52%" },
+                    { "file": "omega3.png", "position": "100%" }
+				],
+        "text": "The Omega Clan are the crystal clan. The Omegas live deep underground in vast cave systems all around Caramella. Their clan is a curious one, always looking for new inventions and discoveries to help aid them in their struggle for survival. The Omega have become masters of the underground, using their Crystallokinetic abilities to warp the tunnels and caves they call their home. <div id='hide'><br>Omega are always looking for ways to benefit from their environments, turning animal hides into clothing and tools, and harvesting plants and animals to cultivate, and turning something that may be considered trash into something beautiful. They see the potential in all things and people and are always looking to improve themselves.</div>"
     },
     "theta": {
         "banner": "theta1.png",
         "primary-color": "#339232",
         "secondary-color": "#215f20",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10523.theta-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10523.theta-clan",
+        "bannerPool": [
+					{ "file": "theta1.png", "position": "14%" },
+                    { "file": "theta2.png", "position": "55%" },
+                    { "file": "theta3.png", "position": "48%" },
+                    { "file": "war2.png", "position": "30%" }
+				],
+        "text": "The Theta Clan is the resourceful clan. They are strong and capable people, who are quick to win over those who meet them with a display of their unwavering morals and willingness to lend a hand to those in need. Theta are noble people who worship many spirits and believe that training and discipline will bring happy lives. <div id='hide'><br>They are skilled in many martial arts and swordplay and use their skills to hunt the chocolate predators of their territory. Each Theta village has a number of blacksmiths and armories that work with precious metals to create ornate bladed weapons and armor for their shinobi soldiers. Every settlement has a dojo that houses the young men and women who protect their village.</div>"
     },
     "eta": {
         "banner": "eta1.png",
         "primary-color": "#610913",
         "secondary-color": "#91434c",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/120070.eta"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/120070.eta",
+        "bannerPool": [
+					{ "file": "eta1.png", "position": "22%" },
+                    { "file": "eta1.png", "position": "48%" },
+                    { "file": "eta2.png", "position": "100%" },
+                    { "file": "eta3.png", "position": "32%" },
+                    { "file": "eta3.png", "position": "51%" },
+                    { "file": "eta3.png", "position": "80%" },
+                    { "file": "war2.png", "position": "35%" }
+				],
+        "text": "The Eta Clan is the red moon clan. The people here are strong willed, fearless and bold. Scarred by the dredges of recent war, the Eta clan is a place built on the hardships and resilience of it's founders. The people here hold strong hopes for a better future that fill it's people with determination and power. <div id='hide'><br> Left in the ashes of the war, the Eta clan trudges forward with Haruka Hiyashiko as it's leader. After the War of Pnevma, the Thetan Civil War, the Theta clan was split in two, with their Western half becoming the Eta clan. The war torn clans have both suffered greatly because of the conflict, and are on the road to recovery.</div>"
     },
     "epsilon": {
         "banner": "epsilon3.png",
         "primary-color": "#3e7361",
         "secondary-color": "#549881",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10524.epsilon-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10524.epsilon-clan",
+        "bannerPool": [
+					{ "file": "Epsilon1.png", "position": "15%" },
+                    { "file": "Epsilon1.png", "position": "80%" },
+                    { "file": "Epsilon2.png", "position": "100%" },
+                    { "file": "epsilon3.png", "position": "35%" },
+                    { "file": "epsilon5.png", "position": "10%" },
+                    { "file": "epsilon6.png", "position": "10%" }
+				],
+        "text": "The Epsilon Clan is the spiritual clan. It is made up of a modern monk-like people who put great stock into their physical, mental, and emotional well being. <div id='hide'><br> Religion is an ever present part of the Epsilon culture and even those who do not believe in higher power tend to take on many of the religious practices like feng shui, meditation and spiritual centering that the Epsilon believe in for mental and physical health purposes. Many meditate for hours at a time and all strive to find inner peace. Epsilons put very little importance on material things and instead advocate for kindness and patience above all else.</div>"
     },
     "miden": {
         "banner": "miden2.png",
         "primary-color": "#d2d4d6",
         "secondary-color": "#898d94",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/181918.mi"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/181918.mi",
+        "bannerPool": [
+					{ "file": "miden1.png", "position": "75%" },
+                    { "file": "miden1.png", "position": "40%" },
+                    { "file": "miden2.png", "position": "26%" },
+                    { "file": "miden2.png", "position": "53%" },
+                    { "file": "miden2.png", "position": "5%" }
+				],
+        "text": "The Miden Clan is the heavenly clan. They are a clan that was created with a divine purpose to protect a celestial artifact- the Trinity Mirror. Miden consists of a number of floating islands that orbit the planet slowly. They are close with the mystical powers that exist on Caramella and make use of their celestial abilities in their day to day lives. <div id='hide'><br>The Miden clan is split between three distinct political powers and the citizens can switch allegiances based on which ruler aligns with their personal needs and beliefs as they please. This division in their leadership does lead to a constant tension between opposing sides for some floss, but others find the back and forth to be too much trouble and prefer to live their lives more peacefully.</div>"
     },
     "lambda": {
         "banner": "lambda5flip.png",
         "primary-color": "#7f77ff",
         "secondary-color": "#45418c",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10589.lambda-clan",
+        "bannerPool": [
+					{ "file": "lambda1.png", "position": "65%" },
+					{ "file": "lambda1.png", "position": "95%" },
+					{ "file": "lambda3.png", "position": "75%" },
+                    { "file": "lambda3.png", "position": "90%" },
+					{ "file": "lambda4.png", "position": "75%" },
+                    { "file": "lambda4.png", "position": "15%" },
+					{ "file": "lambda5.png", "position": "100%" },
+                    { "file": "lambda5.png", "position": "25%" },
+					{ "file": "lambda6.png", "position": "15%" },
+					{ "file": "lambda7.pngg", "position": "5%" }
+				],
+        "text": "The Lambda Clan is the islander clan. The Lambdas are carefree and live in a bright, beautiful environment. The air is warm and mild, and the breezes pass through tall strong palm trees throughout the entire clan. Floss in Lambda enjoy a perpetual summer. <div id='hide'> <br> Located on the Northern section of the Karpos Island, the clan is long and thin, with over 50% of their landmass being tropical beach land.  They love to throw large feasts and parties by the water and are always ready to sit back and relax in a hammock. Unlike most clans the Lambda are strong believers in relaxation and happiness over the notion of hard work and success. You will often hear the Lambdafloss say 'Alualu i kou hau'oli' to one another, this is a common greeting or send off in their culture that means 'Pursue your Happiness'. They believe that the most important thing in life is true happiness, not monetary success. </div>"
     },
     "rho": {
         "banner": "rho1.png",
         "primary-color": "#90c0c6",
         "secondary-color": "#678d9c",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/11451.rho-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/11451.rho-clan",
+        "bannerPool": [
+					{ "file": "rho1.png", "position": "2%" },
+                    { "file": "rho2.png", "position": "2%" },
+                    { "file": "rho2.png", "position": "27%" },
+                    { "file": "rho3.png", "position": "49%" },
+                    { "file": "rho3.png", "position": "30%" },
+                    { "file": "rho4.png", "position": "30%" },
+                    { "file": "rho4.png", "position": "75%" }
+				],
+        "text": "The Rho Clan is the undersea clan. Deep in the vast ocean, lies a beautiful metropolis! The Rho clan consists of a number of cities and smaller villages made up of towers and houses constructed from shell materials and formed to mirror the shells and corals that grow in their undersea landscape. <div id='hide'><br>Rho’s travel freely through the water but inside their buildings they force the water out using their abilities, creating pockets of air inside their homes. This semi aquatic lifestyle is ideal for Rho Taffyfloss. Rhofloss vary in their aptitudes, from the gentle Rho who love the sea creatures and care for each other softly, to the ravenous shark-like Rhos who want to battle and conquer the ocean. Much like the Sea they call their home, Rhofloss are vast, sometimes calm and serene, other times turbulent and dangerous, and remain a mysterious enigma to the surface Candyfloss</div>"
     },
     "alpha": {
         "banner": "alpha2.png",
         "primary-color": "#ff5583",
         "secondary-color": "#a53755",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10520.alpha-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10520.alpha-clan",
+        "bannerPool": [
+					{ "file": "lava.png", "position": "80%" },
+					{ "file": "lava.png", "position": "45%" },
+					{ "file": "battlebanner.png", "position": "25%" },
+					{ "file": "battlebanner.png", "position": "80%" },
+					{ "file": "war1.png", "position": "88%" },
+                    { "file": "alpha1.png", "position": "88%" },
+                    { "file": "alpha1.png", "position": "30%" },
+                    { "file": "alpha2.png", "position": "43%" },
+                    { "file": "alpha3.png", "position": "33%" }
+				],
+        "text": "The Alpha Clan is the military clan. They are the protectors and the most dependable of the Floss. They are the law keepers and help to regulate the other clans. The Alpha Clan members are among the most physically powerful of the Floss and have a lot of aggression, and use their assertion to their advantage in battle. <div id='hide'><br>Due to the hot climate and infertile land of the Alpha Clan’s territory, they don’t contribute much in terms of goods. Instead, their expertise in combat and vast military power provide security and order to the other clans. Their protection is an invaluable resource and has been since the earliest days of the Candyfloss.</div>"
     },
     "eataf": {
         "banner": "eataf1.png",
         "primary-color": "#574f53",
         "secondary-color": "#474044",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/160622.eataf-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/160622.eataf-clan",
+        "bannerPool": [
+					{ "file": "eataf1.png", "position": "10%" },
+					{ "file": "eataf1.png", "position": "87%" },
+					{ "file": "eataf1.png", "position": "41%" },
+					{ "file": "lava.png", "position": "80%" },
+					{ "file": "lava.png", "position": "45%" },
+					{ "file": "battlebanner.png", "position": "25%" },
+					{ "file": "battlebanner.png", "position": "80%" },
+					{ "file": "war1.png", "position": "65%" }
+				],
+        "text": "The Eataf Clan is the Desert Clan.  In the arid expanse of North Glykos, amidst shifting sands and harsh winds, lies the clan of Eataf - a testament to resilience, faith, and the transformative power of a second chance. <div id='hide'><br>Eataf represents a profound philosophy, a clan built upon an unwavering promise of forgiveness and grace from their revered Goddess.<br><br>Once under oppressive regime of the Alpha, the people who would become the Eataf clan found their spiritual and moral compass in the teachings of the Eataf Church.  </div>"
     },
     "phi": {
         "banner": "phi1.png",
         "primary-color": "#8ceb4d",
         "secondary-color": "#5b9832",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10530.phi-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10530.phi-clan",
+        "bannerPool": [
+					{ "file": "phi1.png", "position": "40%" },
+					{ "file": "phi2.png", "position": "20%" },
+					{ "file": "phi3.png", "position": "30%" },
+					{ "file": "phi4.png", "position": "56%" },
+					{ "file": "phi5.png", "position": "37%" }
+				],
+        "text": "The Phi Clan is the performance clan. Phi's are the most physically attractive of all the clans and they tend to get everything they want to the point of excess. <div id='hide'> <br>They are usually very talented and most become celebrities among the other Candyfloss. Being a Phi, comes with certain expectations that can be hard to uphold. Phi's are often judged directly by their physical appearance and skills in various media. Phi's who do not excel are often ostracized and ridiculed. Popular Phi's are partiers and spend vast amounts of money. <br><br>Wealth is often coveted by Phifloss, but it does not mean much if it wasn't earned through entertainment and hard work.</div>"
     },
     "omicron": {
         "banner": "omicron2.png",
         "primary-color": "#6a1f7e",
         "secondary-color": "#451452",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/128717.xxxxxxxxxxxomi"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/128717.xxxxxxxxxxxomi",
+        "bannerPool": [
+                    { "file": "omicron1.png", "position": "13%" },
+                    { "file": "omicron1.png", "position": "51%" },
+                    { "file": "omicron2.png", "position": "51%" },
+                    { "file": "omicron2.png", "position": "33%" }
+				],
+        "text": "The Omicron Clan is the indomitable clan. They a clan that hid away from society in the Great Maltese Jungle near Phi for many generations. They are a people who prefer to stay to themselves and live happily among the creatures of nature. <div id='hide'><br>The Omicron are a proud people with a rich culture of festivity, strength, and comradery. The Omicron value bravery, and the protection of their youth. . The Omicron pride themselves on their loyalty and determination to thrive as a people despite their hardships. They relish in their victories and refuse to live in fear of their circumstances. They are a happy people who value their home and community above all else.</div>"
     },
     "iota": {
         "banner": "iota1.png",
         "primary-color": "#6a60a3",
         "secondary-color": "#353051",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10527.iota-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10527.iota-clan",
+        "bannerPool": [
+                    { "file": "iota1.png", "position": "70%" },
+                    { "file": "iota2.png", "position": "70%" },
+					{ "file": "iota2.png", "position": "22%" },
+                    { "file": "iota3.png", "position": "22%" },
+                    { "file": "iota3.png", "position": "81%" },
+                    { "file": "iota4.png", "position": "75%" },
+                    { "file": "iota4.png", "position": "25%" },
+                    { "file": "poker.png", "position": "47%" }
+				],
+        "text": "The Iota Clan is the chance clan. They are a ruthless clan and are very intimidating to other Candyfloss but are extremely sentimental within their community. <div id='hide'> <br>As the old saying goes:  “Mess with one Iota, mess with them all.” They are a tight-knit posse and dance around the law to get their work done. They are weapons experts and develop all kinds of arms. They have full-scale production and testing as well as other sorts of nefarious manufacturing within their metropolitan territory. <br><br> In the busy downtown area of Iota, most floss are very self-concerned and care little about what's going on around them unless it's going to affect them. Most Iotafloss have somewhere to be and are always moving, hurrying to their destination. </div>"
     },
     "chi": {
         "banner": "chi1.png",
         "primary-color": "#f2da7d",
         "secondary-color": "#8d6937",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/70294.chi-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/70294.chi-clan",
+        "bannerPool": [
+					{ "file": "chi1.png", "position": "0%" },
+                    { "file": "chi1.png", "position": "67%" },
+                    { "file": "chi2.png", "position": "46%" },
+                    { "file": "chi3.png", "position": "64%" },
+                    { "file": "chi3.png", "position": "43%" }
+				],
+        "text": "The Chi clan is the miniature clan. On the top of a giant mountain and surrounded on all sides by tundra, the Chi region sits directly on top of the North Pole of Caramella. This mysterious region had been hiding in uncharted territory due to an ancient contraption created by the ancestors of our current clan leaders. The Chi region exists in a bubble, cut off from the outside world. <div id='hide'><br>Protected from the outside climate, the region is filled with greenery and strange mutated plant-life that grows up to hundreds of times their usual size. Because of this the Chi clan is very fantastical, with homes built into the sides of giant trees, nuts, fruits and mushrooms. It feels like a fairy land!</div>"
     },
     "delta": {
         "banner": "halloween1.png",
         "primary-color": "#4a4960",
         "secondary-color": "#2c2b3a",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10525.delta-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10525.delta-clan",
+        "bannerPool": [
+					{ "file": "halloween1.png", "position": "33%" },
+                    { "file": "halloween2.png", "position": "48%" },
+                    { "file": "halloween3.png", "position": "1%" },
+                    { "file": "halloween3.png", "position": "30%" },
+                    { "file": "halloween4.png", "position": "36%" },
+                    { "file": "halloween5.png", "position": "55%" },
+                    { "file": "halloween6.png", "position": "21%" },
+                    { "file": "halloween7.png", "position": "65%" },
+                    { "file": "occult1.png", "position": "68%" },
+                    { "file": "delta1.png", "position": "39%" },
+                    { "file": "delta2.png", "position": "70%" },
+                    { "file": "delta2.png", "position": "27%" },
+                    { "file": "delta3.png", "position": "28%" }
+				],
+        "text": "The Delta Clan is the superstitious clan. They are sensitive to the  possibility of otherworldly powers. They believe in spirits and a spirit  world and also believe in an afterlife for Candyfloss and other planes  of existence, both light and dark where they can draw power and strength  from. <div id='hide'><br>They maintain that there are spirits all around them from the  enormous spirit of the planet to the wispy spirits of the dead. <br><br> Spirits wander the Delta forests and hillsides and the Deltafloss believe that  communion with these spirits is quintessential to their culture. They  have very precise day-to-day rituals to aid in this. The other clans  deny that they spirits exist, however spending a lot of time in Delta has been known to change minds before.</div>"
     },
     "kappa": {
         "banner": "kappa2.png",
         "primary-color": "#db82f7",
         "secondary-color": "#784787",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10531.kappa-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10531.kappa-clan",
+        "bannerPool": [
+					{ "file": "heroes1.png", "position": "44%" },
+                    { "file": "kappa1.png", "position": "49%" },
+                    { "file": "kappa2.png", "position": "31%" },
+                    { "file": "kappa3.png", "position": "58%" },
+                    { "file": "kappa4.png", "position": "58%" },
+                    { "file": "kappa4.png", "position": "20%" }
+				],
+        "text": "The Kappa Clan is the lazy clan. Kappa is made up of the most laid back floss of all the clans and are very content with their place in the world as well as being bright and colorful. Their motto is don't worry, be happy and they use it in every part of their lives. They are sure to brighten up your day with games, food, and endless fun. <div id='hide'><br>Kappafloss prefer to take the winning side in a conflict and don't debate much, mostly going with the flow. The Kappa Clan runs the food industry making candies, soda, salty snack foods, and even gourmet chocolate products. <br><br> Their speed ability also allows them to complete tasks quickly, rushing through whatever responsibilities they have so they can relax and enjoy their downtime.</div>"
     },
     "zeta": {
         "banner": "zeta1.png",
         "primary-color": "#8caa84",
         "secondary-color": "#405c54",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10526.zeta-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10526.zeta-clan",
+        "bannerPool": [
+					{ "file": "winter1.png", "position": "15%" },
+                    { "file": "winter1.png", "position": "80%" },
+                    { "file": "winter2.png", "position": "16%" },
+                    { "file": "zeta1.png", "position": "12%" },
+                    { "file": "zeta3.png", "position": "61%" },
+                    { "file": "zeta4.png", "position": "81%" },
+                    { "file": "zeta5.png", "position": "91%" }
+				],
+        "text": "The Zeta Clan is the discovery clan, celebrated for its highly intelligent floss who thrive on complex mind games. As the source of most influential scientists, Zetas were responsible for countless scientific breakthroughs, most critically finding the cure to the catastrophic Great Rot. <div id='hide'>Their scientific advancements are the fundamental reason the entire Candyfloss society has survived this long. <br><br>Zetas naturally span the entire scientific spectrum, studying everything from advanced astronomy to fundamental zoology. The clan’s more inventive talents design and build the complex machines that engineers require for detailed experimentation. This perpetual commitment ensures they never stop learning; Zetas routinely teach or enroll in classes well into adulthood, shaped by a strict upbringing that demands maximum effort and constant forward motion. </div>"
     },
     "psi": {
         "banner": "psi1.png",
         "primary-color": "#87ffd2",
         "secondary-color": "#4b856f",
-        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10532.psi-clan"
+        "page": "https://toyhou.se/~world/53663.the-candyfloss/page/10532.psi-clan",
+        "bannerPool": [
+					{ "file": "psi1.png", "position": "43%" },
+                    { "file": "psi2.png", "position": "60%" },
+                    { "file": "psi5.png", "position": "60%" },
+                    { "file": "psi5.png", "position": "93%" },
+                    { "file": "winter1.png", "position": "15%" },
+                    { "file": "winter1.png", "position": "80%" },
+                    { "file": "winter2.png", "position": "81%" }
+				],
+        "text": "The Psi Clan is the jolly clan. They are a happy group of Floss, glad to have survived the ordeal that they did. They live in the ancient ruins of the Sugarfloss on Pagoto, one of the few places cold enough for them to inhabit due to their immunity to cold and inability to stand any heat. <div id='hide'><br> The Psi offer as much hospitality as they can and enjoy having visitors. They have founded a new industry and are the world’s leading ice cream excavators as the mountains surrounding them are full of the stuff. They package up and export the frozen delicacy to the delight of the other clans.</div>"
     }
 }

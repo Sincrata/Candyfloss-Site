@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/images/icons/Planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omicron Petpets</title>
+    <style>
+        .section {
+            background-color: #451452;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/images/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg centered" style="height:300px;background-image:url(/images/banners/omicron1.png);">
+                <img id="top" src="/images/logos/omicron.png" style="max-width:60%;">
+            </div>
+            <div class="capsule" style="background-color:#6a1f7e">
+                <h1>Omicron Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Omicron clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#brilla-murcie" class="shrink"><img title="Brilla Murcie"
+                                    src="pets/images/brilla-murcie.png"></a>Brilla Murcie</div>
+                        <div class="pet-card" style="display: none;"><a href="#brilla-oso" class="shrink"><img title="Brilla Oso"
+                                    src="pets/images/brilla-oso.png"></a>Brilla Oso</div>
+                    </div>
+                </div>
+                <!------------------Brilla Murcie-------------------->
+                <div id="brilla-murcie" class="inner-card section">
+                    <h1>Brilla Murcie</h1>
+                    <p style="margin-top:-12px;">2025 . 1st Wave . Pre-Evolved . Enhanced Vision</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/brilla-murcie.png">
+                                <img id="chart" title="click for full sized chart" src="pets/charts/brilla-murcie.png">
+                            </a>
+                            Check out this Community Art of Floss and their Brilla Murcie!
+                            <div id="brilla-murcie-art"></div>
+                            The Brilla Murcies Celebrate their Pet Day on <b>May 18th</b><br>You can claim a free
+                            Brilla Murcie on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+
+                                Deep within the vibrant Maltese Jungle of Omicron, a mesmerizing species takes to the
+                                skies each night: the Brilla Murcié. These colorful, bat-like creatures, renowned for
+                                their furry coats and friendly disposition, are an absolute delight to the Floss of
+                                Omicron, who cherish them as beloved companions.
+                                <br><br><img class="left example" src="pets/images/brilla-murcie2.png">
+                                Known affectionately as "furry flyers," the Brilla Murcié are not just beautiful; they
+                                are also noted for their charming, friendly, and curious nature, making them cherished
+                                residents across the Clan of Omicron.
+                                <br><br>
+                                When it's time to rest, Brilla Murcié exhibit a curious behavior, preferring to sleep
+                                upside down, suspended by the strong claws on their feet. For those who welcome a Brilla
+                                Murcié into their homes, specialized Brilla towers or perches hung from the ceiling are
+                                highly recommended. Providing these comfortable hanging spots prevents them from finding
+                                alternative, less desirable perches, such as your ceiling fans or delicate door frames.
+                                <br><br>
+
+                                Beyond their charming demeanor, the Brilla Murcié are adept predators, subsisting on
+                                small prey. They employ sharp fangs to inject venom into their targets, a capability
+                                strikingly similar to the Twizzlefloss. However, it's their unique interaction with
+                                Jawbreaker bats that truly sets the Brilla Murcié apart. Unlike the usual numbing
+                                effect, Brilla venom, when injected into a Jawbreaker bat, initiates a remarkable
+                                metamorphosis. This extraordinary process sees the Jawbreaker bat gradually transform
+                                into a Brilla Murcié! Described as relatively painless after the initial injection, this
+                                transformation mirrors the natural evolution processes observed in other petpets,
+                                offering a fascinating glimpse into Omicron's intricate biological wonders.
+                                <br><br>
+                                From their vibrant colors and friendly curiosity to their unparalleled infrared vision
+                                and the astounding ability to orchestrate metamorphosis, the Brilla Murcié stand as a
+                                testament to the incredible diversity of life in the Maltese Jungle. They are not just
+                                creatures of the night; they are vibrant, vital members of Omicron's ecosystem,
+                                continually captivating all who encounter them.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button omicron" href="#brilla-oso" style="display: none;">Evolution</a>
+                                <a class="button omicron" href="pets/bases/brilla-murcie.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button omicron"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Brilla Oso-------------------->
+                <div id="brilla-oso" class="inner-card section" style="display: none;">
+                    <h1>Brilla Oso</h1>
+                    <p style="margin-top:-12px;">2026 . 1nd Wave . Evolved . Enhanced Vision</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="pets/charts/brilla-oso.png"><img id="chart" title="click for full sized chart"
+                                    src="pets/charts/brilla-oso.png"></a>
+                            Check out this Community Art of Floss and their Brilla Osos!
+                            <div id="brilla-oso-art"></div>
+                            The Brilla Osos Celebrate their Pet Day on <b>November 22nd</b><br>You can claim a free
+                            Brilla Oso on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> The Brilla Oso is a massive, furry beast that lives in the deep jungles and caves of the
+                                oOmicron clan. This giant creature stands at least fifteen feet tall and evolves from
+                                the Brilla Murcie. While they can can be ferocious in the wild, they are actually
+                                peaceful if raised by a floss from a young age. They form very close bonds with their
+                                trainers and behave gently- if not stubborn and glutanous- around them.
+                                <br>
+                                <br>
+                                <img class="example" src="pets/images/brilla-oso2.png">
+                                These large creatures share the Omicron's special ability of advanced sight. Their
+                                extraordinary eyes allow them to see across incredible distances and look at the world
+                                in great detail. They can even see directly through solid objects like rock walls and
+                                thick trees. This powerful vision helps them hunt for food and live safely inside their
+                                dark cave homes.
+                                <br>
+                                <br>
+                                On their large bodies, the Brilla Oso have gigantic bat-like wings that can fold tightly
+                                against their sbodies. This physical feature works just like the wings of an Earth sugar
+                                glider or a flying squirrel. They rarely use these wings to fly high into the sky, but
+                                they use them to leap great distances into the jungle trees. They also glide down
+                                smoothly from high cave ceilings and float over dangerous gaps and gorges in the ground.
+                                <br>
+                                <br>
+                                <img class="size" style="width: 40%;" src="pets/charts/brilla-oso-size.png">
+                                The Twizzles of Omicron have a long history of taming these creatures and riding them
+                                through the thick forest. By nature, these giant beasts are very slow, lazy, and love to
+                                rest for long periods. A typical Brilla Oso sleeps for days at a time if nobody wakes it
+                                up, and wild ones can sleep for an entire month without stopping. Because they move so
+                                slowly, they do not make fast mounts for travel. However, they are incredibly strong, so
+                                the Omicron use them to pull heavy carriages, move giant boulders, and knock down trees.
+                                <br>
+                                <br>
+                                The local floss love them so much! There is an old legend about a Brilla Oso that once
+                                bit an uptight twizzlefloss. The bite transformed the twizzlefloss into an Oso, who
+                                learned how to relax and take life slow. According to the story, he enjoyed this
+                                peaceful lifestyle so much that he chose to stay an Oso for the rest of his days.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button omicron" href="#brilla-murcie">Pre-Evolution</a>
+                                <a class="button omicron" href="pets/bases/brilla-oso.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button omicron"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script>
+        //-------------------COMMUNITY ART SHUFFLER-------------------
+        const communityArt = [
+
+            //brilla-murcie
+            {
+                murciePool: [
+                    { file: "brilla-murcie1.png", artist: "AxototlDuck" },
+                    { file: "brilla-murcie2.png", artist: "Perry2012Draws" },
+                    { file: "brilla-murcie3.png", artist: "nifeWoofy" },
+                    { file: "brilla-murcie4.png", artist: "VikaRosnova" },
+                    { file: "brilla-murcie5.png", artist: "CursedFreak" },
+                    { file: "brilla-murcie6.png", artist: "Build-a-banshee-arts" },
+                    { file: "brilla-murcie7.png", artist: "sharkydaivdM" },
+                    { file: "brilla-murcie8.png", artist: "NinjagoMonster" },
+                    { file: "brilla-murcie9.png", artist: "DressRibboness" },
+                    { file: "brilla-murcie10.png", artist: "FadedFaeble" },
+                ]
+            },
+            //brilla-oso
+            {
+                osoPool: [
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                    { file: "placeholder.png", artist: "Your art could be featured here!" },
+                ]
+            }
+
+        ];
+        // --- FLOGA ART ---
+        const murciePool = communityArt[0].murciePool;
+        const murcieSet = new Set();
+
+        while (murcieSet.size < 3 && murcieSet.size < murciePool.length) {
+            const randomItem = murciePool[Math.floor(Math.random() * murciePool.length)];
+            murcieSet.add(randomItem);
+        }
+        const selectedMurcieArt = Array.from(murcieSet);
+        const murcieArt1 = selectedMurcieArt[0];
+        const murcieArt2 = selectedMurcieArt[1];
+        const murcieArt3 = selectedMurcieArt[2];
+
+
+        // --- REX ART ---
+        const osoPool = communityArt[1].osoPool;
+        const osoSet = new Set();
+
+        while (osoSet.size < 3 && osoSet.size < osoPool.length) {
+            const randomItem = osoPool[Math.floor(Math.random() * osoPool.length)];
+            osoSet.add(randomItem);
+        }
+        const selectedOsoArt = Array.from(osoSet);
+        const osoArt1 = selectedOsoArt[0];
+        const osoArt2 = selectedOsoArt[1];
+        const osoArt3 = selectedOsoArt[2];
+
+
+        // --- INJECT INTO HTML ---
+        document.getElementById('brilla-murcie-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${murcieArt1.file}"><img src="pets/pdart/${murcieArt1.file}" title="Art by ${murcieArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${murcieArt2.file}"><img src="pets/pdart/${murcieArt2.file}" title="Art by ${murcieArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${murcieArt3.file}"><img src="pets/pdart/${murcieArt3.file}" title="Art by ${murcieArt3.artist}"></a></div>
+  </div>`;
+        document.getElementById('brilla-oso-art').innerHTML = `
+  <div class="art-grid">
+    <div class="art-card"><a href="pets/pdart/${osoArt1.file}"><img src="pets/pdart/${osoArt1.file}" title="Art by ${osoArt1.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${osoArt2.file}"><img src="pets/pdart/${osoArt2.file}" title="Art by ${osoArt2.artist}"></a></div>
+    <div class="art-card"><a href="pets/pdart/${osoArt3.file}"><img src="pets/pdart/${osoArt3.file}" title="Art by ${osoArt3.artist}"></a></div>
+  </div>`;
+
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

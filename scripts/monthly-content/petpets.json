@@ -512,12 +512,19 @@
         "unevolved": [
             {
                 "name": "Brilla Murcie",
-                "key": "brilla",
+                "key": "brilla-murcie",
                 "year": "2025",
-                "clan": "phi"
+                "clan": "omicron"
             }
         ],
-        "evolved": []
+        "evolved": [
+            {
+                "name": "Brilla Oso",
+                "key": "brilla-oso",
+                "year": "2026",
+                "clan": "omicron"
+            }
+        ]
     },
     "iota": {
         "unevolved": [

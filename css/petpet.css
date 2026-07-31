@@ -1,49 +1,53 @@
-body{
-background-image:url("https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png");
-background-size:200px;
-margin:0px;
-background-color:#7f77ff;
-background-blend-mode: multiply;
-padding:0px;
-font-family:calibri;
-color:white;
-}
-.eataf{
-    background-color:#1e181c;
-    box-shadow:1px 3px 3px 3px #0f0c0e;
-    color:white;
-}
-.eataf:hover{
-    background-color:#2b2a2a;
+body {
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/78246034_RXM90nLk0IwTt2W.png");
+  background-size: 200px;
+  margin: 0px;
+  background-color: #7f77ff;
+  background-blend-mode: multiply;
+  padding: 0px;
+  font-family: calibri;
+  color: white;
 }
 
-.size{
-   display:flex;
-    width:30%;
-    height:auto;
-    float:left; 
+.eataf {
+  background-color: #1e181c;
+  box-shadow: 1px 3px 3px 3px #0f0c0e;
+  color: white;
 }
 
-.alpha{
-    background-color:#882741;
-    box-shadow:1px 3px 3px 3px #641c30;
-    color:white;
-}
-.alpha:hover{
-    background-color:#e04f76;
+.eataf:hover {
+  background-color: #2b2a2a;
 }
 
-.pet-grid{
-    max-width:100%;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px; 
+.size {
+  display: flex;
+  width: 30%;
+  height: auto;
+  float: left;
 }
+
+.alpha {
+  background-color: #882741;
+  box-shadow: 1px 3px 3px 3px #641c30;
+  color: white;
+}
+
+.alpha:hover {
+  background-color: #e04f76;
+}
+
+.pet-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
 .pet-card {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   border-radius: 8px;
   text-align: center;
@@ -51,25 +55,26 @@ color:white;
 
 .pet-card img {
   width: auto;
-  max-width: 250px; 
-  height:auto;
-  min-height:150px;
-  max-height:200px;
+  max-width: 250px;
+  height: auto;
+  min-height: 150px;
+  max-height: 200px;
   object-fit: contain;
 }
 
 .page-grid {
-    max-width:100%;
-    display:grid;
-    grid-template-columns: 40% 60% ; 
-    gap: 3px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3px;
 }
+
 .page-box {
   display: flex;
-  width:100%;
+  width: 100%;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   border-radius: 8px;
   text-align: center;
@@ -77,56 +82,76 @@ color:white;
 
 .page-box #chart {
   max-width: 500px;
-  width:100%;
-  margin:auto;
-  height:auto;
+  width: 100%;
+  margin: auto;
+  height: auto;
   object-fit: contain;
 }
 
 .button-grid {
-    max-width:100%;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
 }
 
-.page-box #example, .page-box .example {
-  width:300px;
-  height:auto;
-  float:right;
+.page-box #example,
+.page-box .example {
+  width: 300px;
+  height: auto;
+  float: right;
 }
 
 .page-box #size {
-  width:auto;
-  height:300px;
-  float:right;
-  }
-
-  .art-grid{
-    max-width:100%;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px; 
+  width: auto;
+  height: 300px;
+  float: right;
 }
+
+.art-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
 .art-card {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   border-radius: 8px;
   text-align: center;
-} 
-.art-card img {
-  width: 100%; 
-  height:auto;
-  object-fit: contain;
-}
-.art-card:hover { 
-opacity: 0.8;
 }
 
-.button{
-  width:10vw;
-  min-width:100px;
+.art-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.art-card:hover {
+  opacity: 0.8;
+}
+
+.button {
+  width: 10vw;
+  min-width: 100px;
+}
+
+.right {
+  float: right;
+}
+
+.page-box .left {
+  float: left;
+}
+
+.centered {
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  place-content: center;
+  place-items: center;
 }
