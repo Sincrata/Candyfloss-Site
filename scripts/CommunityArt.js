@@ -29,11 +29,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Aquilapurr"
 	    },{
-		    artlink: "https://i.imgur.com/GNk3xXB.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Eggface"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120239032_3SNmfwFC7fgyAcj.png",
 		    prompt: "Dress Up Dollie",
 		    position:"center",
@@ -64,7 +59,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{
-		    artlink: "images/brokenentry.png",
+		    artlink: "/images/brokenentry.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Nifewoofy"
@@ -219,8 +214,13 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "tenshilove"
 	    },{
-		    artlink: "https://postimg.cc/qNXYVMMD",
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071159778.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
-		    artist: "Ninjagomonster"
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071528493.png",
+		    prompt: "Pool Floaties Chain Game",
+		    position:"center",
+		    artist: "NifeWoofy"
 	    }];
