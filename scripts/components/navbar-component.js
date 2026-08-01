@@ -63,7 +63,7 @@ class Nav extends HTMLElement {
 										 <a href="/petpets/eataf.html">Eataf Pets</a>
               						    </div>
          						    </div>  
-            			      	<a href="https://toyhou.se/~forums/36602.prompt-prizes/286717.prompt-prize-counter">Prize Counter</a>
+            			      	<a href="/shops/prize-counter.html">Prize Counter</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10547.base-shop">Base Shop</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/86288.bt">Clothing Boutique</a>
             			       	<a href="https://toyhou.se/~forums/20970.community-commissions">Community Commissions</a>
