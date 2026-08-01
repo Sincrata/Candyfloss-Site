@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>KittenSeason2026</title>
 	<link rel="stylesheet" href="css/general.css">
@@ -11,339 +12,436 @@
 	<link rel="preload" href="images/logos/logo.gif" as="image">
 	<link rel="icon" href="images/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   	<style>
-		#gacha-mobile{
+	<style>
+		#gacha-mobile {
 			display: none;
 		}
-		#intro{
+
+		#intro {
 			width: 80%;
 		}
+
 		.input {
-    			width: 25%;
-    			padding: 6px 16px;
-    			border: 2px solid #d9c5ff;
-    			border-radius: 8px;
-    			background: #f7f2ff;
-    			color: #471c81;
-    			font-size: 1rem;
-    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			width: 25%;
+			padding: 6px 16px;
+			border: 2px solid #d9c5ff;
+			border-radius: 8px;
+			background: #f7f2ff;
+			color: #471c81;
+			font-size: 1rem;
+			transition: border-color 0.2s ease, box-shadow 0.2s ease;
 			margin-bottom: 15px;
 			margin-top: 15px;
 		}
 
 		.input:focus {
-    			border-color: #8c6cff;
-    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
-    			outline: none;
+			border-color: #8c6cff;
+			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+			outline: none;
 		}
-		.img-col.inner-card{
+
+		.img-col.inner-card {
 			width: 70%;
 		}
-		#submit-stock{
-			width:50%;
+
+		#submit-stock {
+			width: 50%;
 		}
-		#ball{
+
+		#ball {
 			width: 100%;
 			max-width: 200px;
 			display: inline-block;
 			margin: auto;
 		}
+
 		@media (max-width: 1000px) {
- 			#gacha{
- 				display:none;
- 			}
- 			#gacha-mobile{
- 				display: block;
- 				width: 60%;
+			#gacha {
+				display: none;
+			}
+
+			#gacha-mobile {
+				display: block;
+				width: 60%;
 				margin: auto;
- 			}
-			#img-col{
+			}
+
+			#img-col {
 				display: none;
 			}
-			.inner-card{
+
+			.inner-card {
 				width: 90%;
 			}
- 		}
+		}
+
 		@media (max-width: 800px) {
- 			#gacha{
- 				display:none;
- 			}
- 			#gacha-mobile{
- 				display: inline;
- 				width: 80%;
- 			}
-			#img-col{
+			#gacha {
 				display: none;
 			}
-			.inner-card{
+
+			#gacha-mobile {
+				display: inline;
+				width: 80%;
+			}
+
+			#img-col {
+				display: none;
+			}
+
+			.inner-card {
 				width: 90%;
 			}
-			#gacha-pic{
+
+			#gacha-pic {
 				max-width: 100%;
 			}
-			#bottom-cards{
+
+			#bottom-cards {
 				flex-direction: column;
 				align-items: center;
 				width: 90%;
 			}
-			#submit-stock{
+
+			#submit-stock {
 				width: 100%;
 			}
-			.col-5{
+
+			.col-5 {
 				width: 100%;
 			}
- 		}
+		}
+
 		@media (max-width: 500px) {
 
- 			#gacha-mobile{
- 				width: 80%;
- 			}
- 		}
-
-		
-    	</style>
+			#gacha-mobile {
+				width: 80%;
+			}
+		}
+	</style>
 </head>
+
 <body>
-<header loading="eager">
-	<main-header></main-header>
-</header>
-<main>
-	<nav-bar></nav-bar>
-	<center>
-		
-		<div class="card" style="margin:0px;padding:0px;box-sizing:border-box;background-image:url(images/kittenseason/banner.png);background-size:cover;background-position:top right;margin-bottom:-5px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;min-height:300px;">
-			<img src="images/kittenseason/logo.png" style="width:50%;margin-right: 12%;margin-top:5%;"></div>
-		<div class="card" id="intro" style="width:60%;margin:0px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;"><br>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
 
-		<div class="row">
-					<div class="img-col inner-card" style="min-width:100%;"><br>
-                        <span><h2>It's Kitten Season again on Caramella!</h2>
-				Floss families big and small are welcoming home new bundles of joy this season!<br>Register to participate and receive a kittenfloss based on your parents' designs as well as a bundle of goodies and a CYOA mini rp in a discord server exploring your floss' pregnancy journey!<br>Join in the fun and register for KS 2026!<br></span>
-			<br>
-			 
-                        <a class = "button" href="https://forms.gle/hWZBH1dr6MdmGo9LA">Register with a heterosexual couple</a> <a class = "button" href="https://forms.gle/h41SX8ndxXHHzxA29">Register with a homosexual couple</a> <a class = "button" href="https://forms.gle/kAdBR78QLz77n3n97">Register with a single parent</a>
-			 
-                
-			</div></div>
-			 		<div class="row">
-					<div class="img-col inner-card" style="min-width:50%;"><br>
-                        <span><h2>What's Kitten Season? </h2> A kittenfloss is what we call an infant Candyfloss! Do you have a Candyfloss ship who is ready to take the next step and start a family? Now's your chance!</span>
-			<br><span><h2>How does it work? </h2> 
-			 The Kitten Season event is a pay-to-play event where you receive several items: <br><br>A kittenfloss custom made by an admin to be born of your candyfloss couple, with a chance for twins <br><br>
-			  a set of brand new kittenfloss and family themed bases made by Tenshilove and Ink-palette,<br><br>
-			  a set of kittenfloss themed cyoa clothing lines to dress up your new little darling, <br><br>
-			  a raffle ticket to adopt one of fifteen specially drawn baby petpets for your kitten, and a playthrough of a customized CYOA adventure game!<br><br><br>
-			 You will spend a day or two in a specialized server with a DM to play the Kitten Season CYOA event where you will follow your floss on their journey 
-			 to parenthood! With your DM you will be presented prompts with multiple choice options, which will immediately give you the next part of the story which matches your response.
-			 This session should only take a few hours to a day if you are slow to respond or if it gets interrupted. An admin will begin working on your kittenfloss custom as soon as registration closes and deliver them directly to you in the server along with some randomized information about your kitten's health data! This can include health complications, specific birthday, weight, power levels at birth and more!
-			 </span>
-			 
-                        
-			<br> 
-			<br>
-                </div><div class="img-col" style="float:right;"><img src="images/kittenseason/baby2.png" style="margin:auto;max-width:100%;"><br>
-					<div class="img-col inner-card"> <h2>Secrecy </h2> 
- Because of the nature of our format, you may experience the Choose your own Adventure story before other members.
-  It is required that all members keep their stories a secret to prevent spoiling the story for those who are qeued up to play after you. 
-  When the month is over and all games have been completed you are free to post and share your stories and talk openly about them! 
-  However until you get the OK in the discord please refrain from spoiling the stories, or encouraging anyone to choose certain options in public forums. Thank you!</div>
-  </div>  </div>
-  <div class="inner-card" style="max-width:80%;"> 
-                        <span><h2> Packages </h2>  Kitten Season has alot of stuff that comes with it so you can choose a larger or smaller package that better fits with your budget. Take a look at the options  and choose the one that's right for you!<Br><br>
-							 1. <b> Full Package  60USD</b><br>
-							
-Includes the CYOA ( Choose your own Adventure) session that is DM'd by a staff member to give you a story customized by your choices! Now with 5 brand new scenerios for this year and a whole new ending! The routes to the next scenerio have been randomized to ensure a unique experience every time you play! Includes 7 YCH BASES which include parents, siblings, and kittens!  Includes the Kittenfloss at the end of the event with the full 3+ add on traits and detailed overhaul coat! Allows you to specify the flavor and  gender that you want for your kitten. Also includes a set of 3 brand new kitten character bases for you to use with your floss families! AND includes a cyop outfit set made just for kittenfloss to start your darling out with an adorable wardrobe! Includes a randomized birth chart with information about your kitten's health and  gives the option to exclude any negative outcomes!  Includes a chance of getting Twins! Includes a raffle ticket to win one of 15 one of a kind pre-made baby petpet adoptables by krissysempaiart!
-<br><br> 2.  <b> CYOA Package 55USD</b><br>
-Includes  the CYOA ( Choose your own Adventure) session that is DM'd by a staff  member to give you a story customized by your choices! Now with 5 brand new scenerios for this year and a whole new ending! The routes to the next scenerio have been randomized to ensure a unique experience every time you play! Includes the Kittenfloss at the end of the event with a max of 3 add on traits and simple coat!  Includes a chance of getting Twins!   Includes a randomized birth chart with information about your kitten's health!
-<br><br> 3. <b> Goodies Package  40USD</b><br>
- Includes 7 YCH BASES which include parents, siblings, and kittens! Includes the Kittenfloss at the end of the event with  the full 3+ add on traits and detailed overhaul coat!  Allows you to specify the flavor and  gender that you  want for your kitten.  AND includes a  cyop outfit set made just for kittenfloss to start your darling out with  an adorable wardrobe! Includes the Kittenfloss at the end  of the event with a max of 3 add  on  traits and simple coat!! Includes a randomized birth chart with information about your kitten's   health!
- <br><br> 4. <b>Basic Package 35 USD</b><br>
-No story or goodies but you still get a kitten!
-Includes the Kittenfloss with the minimum 1 add on trait and basic coat. Includes a randomized birth chart with information about your kitten's health!<br><br>
-<img src="images/kittenseason/chart.png" style="margin:auto;max-width:100%;">
-						 </span>
+			<div class="card"
+				style="margin:0px;padding:0px;box-sizing:border-box;background-image:url(images/kittenseason/banner.png);background-size:cover;background-position:top right;margin-bottom:-5px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;min-height:300px;">
+				<img src="images/kittenseason/logo.png" style="width:50%;margin-right: 12%;margin-top:5%;">
 			</div>
-			 
-                        	<div class="row">
-		 
-			 
-                
-			</div>		 		<div class="row">
+			<div class="card" id="intro"
+				style="width:60%;margin:0px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;"><br>
+
+				<div class="row">
+					<div class="img-col inner-card" style="min-width:100%;"><br>
+						<span>
+							<h2>It's Kitten Season again on Caramella!</h2>
+							Floss families big and small are welcoming home new bundles of joy this season!<br>Register
+							to participate and receive a kittenfloss based on your parents' designs as well as a bundle
+							of goodies and a CYOA mini rp in a discord server exploring your floss' pregnancy
+							journey!<br>Join in the fun and register for KS 2026!<br>
+						</span>
+						<br>
+
+						<a class="button" href="https://forms.gle/hWZBH1dr6MdmGo9LA">Register!</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="img-col inner-card" style="min-width:50%;"><br>
+						<span>
+							<h2>What's Kitten Season? </h2> A kittenfloss is what we call an infant Candyfloss! Do you
+							have a Candyfloss ship who is ready to take the next step and start a family? Now's your
+							chance!
+						</span>
+						<br><span>
+							<h2>How does it work? </h2>
+							The Kitten Season event is a pay-to-play event where you receive several items: <br><br>A
+							kittenfloss custom made by an admin to be born of your candyfloss couple, with a chance for
+							twins <br><br>
+							a set of brand new kittenfloss and family themed bases made by Tenshilove and
+							Ink-palette,<br><br>
+							a set of kittenfloss themed cyoa clothing lines to dress up your new little darling,
+							<br><br>
+							a raffle ticket to adopt one of fifteen specially drawn baby petpets for your kitten, and a
+							playthrough of a customized CYOA adventure game!<br><br><br>
+							You will spend a day or two in a specialized server with a DM to play the Kitten Season CYOA
+							event where you will follow your floss on their journey
+							to parenthood! With your DM you will be presented prompts with multiple choice options,
+							which will immediately give you the next part of the story which matches your response.
+							This session should only take a few hours to a day if you are slow to respond or if it gets
+							interrupted. An admin will begin working on your kittenfloss custom as soon as registration
+							closes and deliver them directly to you in the server along with some randomized information
+							about your kitten's health data! This can include health complications, specific birthday,
+							weight, power levels at birth and more!
+						</span>
+
+
+						<br>
+						<br>
+					</div>
+					<div class="img-col" style="float:right;"><img src="images/kittenseason/baby2.png"
+							style="margin:auto;max-width:100%;"><br>
+						<div class="img-col inner-card">
+							<h2>Secrecy </h2>
+							Because of the nature of our format, you may experience the Choose your own Adventure story
+							before other members.
+							It is required that all members keep their stories a secret to prevent spoiling the story
+							for those who are qeued up to play after you.
+							When the month is over and all games have been completed you are free to post and share your
+							stories and talk openly about them!
+							However until you get the OK in the discord please refrain from spoiling the stories, or
+							encouraging anyone to choose certain options in public forums. Thank you!
+						</div>
+					</div>
+				</div>
+				<div class="inner-card" style="max-width:80%;">
+					<span>
+						<h2> Packages </h2> Kitten Season has alot of stuff that comes with it so you can choose a
+						larger or smaller package that better fits with your budget. Take a look at the options and
+						choose the one that's right for you!<Br><br>
+						1. <b> Full Package 60USD</b><br>
+
+						Includes the CYOA ( Choose your own Adventure) session that is DM'd by a staff member to give
+						you a story customized by your choices! Now with 5 brand new scenerios for this year and a whole
+						new ending! The routes to the next scenerio have been randomized to ensure a unique experience
+						every time you play! Includes 7 YCH BASES which include parents, siblings, and kittens! Includes
+						the Kittenfloss at the end of the event with the full 3+ add on traits and detailed overhaul
+						coat! Allows you to specify the flavor and gender that you want for your kitten. Also includes a
+						set of 3 brand new kitten character bases for you to use with your floss families! AND includes
+						a cyop outfit set made just for kittenfloss to start your darling out with an adorable wardrobe!
+						Includes a randomized birth chart with information about your kitten's health and gives the
+						option to exclude any negative outcomes! Includes a chance of getting Twins! Includes a raffle
+						ticket to win one of 15 one of a kind pre-made baby petpet adoptables by krissysempaiart!
+						<br><br> 2. <b> CYOA Package 55USD</b><br>
+						Includes the CYOA ( Choose your own Adventure) session that is DM'd by a staff member to give
+						you a story customized by your choices! Now with 5 brand new scenerios for this year and a whole
+						new ending! The routes to the next scenerio have been randomized to ensure a unique experience
+						every time you play! Includes the Kittenfloss at the end of the event with a max of 3 add on
+						traits and simple coat! Includes a chance of getting Twins! Includes a randomized birth chart
+						with information about your kitten's health!
+						<br><br> 3. <b> Goodies Package 40USD</b><br>
+						Includes 7 YCH BASES which include parents, siblings, and kittens! Includes the Kittenfloss at
+						the end of the event with the full 3+ add on traits and detailed overhaul coat! Allows you to
+						specify the flavor and gender that you want for your kitten. AND includes a cyop outfit set made
+						just for kittenfloss to start your darling out with an adorable wardrobe! Includes the
+						Kittenfloss at the end of the event with a max of 3 add on traits and simple coat!! Includes a
+						randomized birth chart with information about your kitten's health!
+						<br><br> 4. <b>Basic Package 35 USD</b><br>
+						No story or goodies but you still get a kitten!
+						Includes the Kittenfloss with the minimum 1 add on trait and basic coat. Includes a randomized
+						birth chart with information about your kitten's health!<br><br>
+						<img src="images/kittenseason/chart.png" style="margin:auto;max-width:100%;">
+					</span>
+				</div>
+
+				<div class="row">
+
+
+
+				</div>
+				<div class="row">
 					<div class="img-col inner-card" style="min-width:50%;">
-                        
 
-			<span>
-<h2>Story Basics </h2> 
-			  
- Families come in all sorts of shapes and sizes, but sadly we have limited resources for the CYOA prompts. We can only prepare for so many variables and this year we were limited. 
- Think of the CYOA story like a base. It is a basic outline of what may have happened to your floss during their pregnancy, which you can add to, change, and use as a branching off point for your real 
- cannon story! Certain elements of the story are going to be assumed about your floss' lives and relationship just because its not possible to account for every variable. We put our efforts this year into
-  making sure we have different options for pronouns and for family types with focus on hetero, gay, lesbian, single mom and single dad. Maybe in future years we will have time to prepare more, but this year
-   you will have to fudge the stories a little to make it work with some floss. Thank you for understanding!
-				
-				
-				
- 
-			 </span>
-			 
-                        
-			<br> 
-			<br>
-                </div><div class="img-col" style="float:right;"><img src="images/kittenseason/baby.png" style="margin:auto;max-width:90%;"><br></div></div>
-					  <div class="img-col inner-card"
-					
-					  <span>
-						
-						<h2>Variables </h2>
 
- <b>What if my floss is homosexual?</b> <br>  We have options for homosexual couples to use donors and surrogates to  allow them to have a child! Just fill out the right form for your  couple!
+						<span>
+							<h2>Story Basics </h2>
 
- <br><br><b>Need a Donor?</b> <br>  We have some donors made just for this event that you can check out in the forums of the discord server!~
-<br> 
- Also! Tons of people are willing to let you use their floss as a sperm donor or surrogate mother for your single or homosexual floss families! Just head over to the Discord to poke around the available donors/surrogates and to offer your own floss to be used! Remember even if they are listed on the discord you must ask permission from the owner before using their floss as a donor or surrogate mother!
-<br><br><b> What if my floss is single but wants a kitten? </b><br> That works too! We have a special story track just for single mothers and fathers who are not in a relationship but want to have a kitten!
-<br><br>
- <b>What if my floss is in a polycule?</b> <br> Sadly we were unable to set up a story track for more than 2 floss. We recommend signing up with just 2 of your polycule members and editing your resulting story to include the others afterwards.
-<br><br>
-<b> What if my floss already has kids?</b> <br>Sadly we were unable to set up a story track for parents who already have children. We recommend signing up with them anyway, and altering the resulting story to include their other children afterwards.
-					</div><br></div></span>
-	 
-              
+							Families come in all sorts of shapes and sizes, but sadly we have limited resources for the
+							CYOA prompts. We can only prepare for so many variables and this year we were limited.
+							Think of the CYOA story like a base. It is a basic outline of what may have happened to your
+							floss during their pregnancy, which you can add to, change, and use as a branching off point
+							for your real
+							cannon story! Certain elements of the story are going to be assumed about your floss' lives
+							and relationship just because its not possible to account for every variable. We put our
+							efforts this year into
+							making sure we have different options for pronouns and for family types with focus on
+							hetero, gay, lesbian, single mom and single dad. Maybe in future years we will have time to
+							prepare more, but this year
+							you will have to fudge the stories a little to make it work with some floss. Thank you for
+							understanding!
+
+
+
+
+						</span>
+
+
+						<br>
+						<br>
+					</div>
+					<div class="img-col" style="float:right;"><img src="images/kittenseason/baby.png"
+							style="margin:auto;max-width:90%;"><br></div>
+				</div>
+				<div class="img-col inner-card" <span>
+
+					<h2>Variables </h2>
+
+					<b>What if my floss is homosexual?</b> <br> We have options for homosexual couples to use donors and
+					surrogates to allow them to have a child! Just fill out the right form for your couple!
+
+					<br><br><b>Need a Donor?</b> <br> We have some donors made just for this event that you can check
+					out in the forums of the discord server!~
+					<br>
+					Also! Tons of people are willing to let you use their floss as a sperm donor or surrogate mother for
+					your single or homosexual floss families! Just head over to the Discord to poke around the available
+					donors/surrogates and to offer your own floss to be used! Remember even if they are listed on the
+					discord you must ask permission from the owner before using their floss as a donor or surrogate
+					mother!
+					<br><br><b> What if my floss is single but wants a kitten? </b><br> That works too! We have a
+					special story track just for single mothers and fathers who are not in a relationship but want to
+					have a kitten!
+					<br><br>
+					<b>What if my floss is in a polycule?</b> <br> Sadly we were unable to set up a story track for more
+					than 2 floss. We recommend signing up with just 2 of your polycule members and editing your
+					resulting story to include the others afterwards.
+					<br><br>
+					<b> What if my floss already has kids?</b> <br>Sadly we were unable to set up a story track for
+					parents who already have children. We recommend signing up with them anyway, and altering the
+					resulting story to include their other children afterwards.
+				</div><br>
+			</div></span>
+
+
 
 			<br></div>
-</div>
-<!-----------------------BOTTOM CARDS----------------------->
-		
+			</div>
+			<!-----------------------BOTTOM CARDS----------------------->
 
 
-	</center>
-</main> 
-<footer>
-	<main-footer></main-footer>
-</footer>
-<script>
-	document.getElementById("nav-toggle").addEventListener("click", () => {
-    		document.getElementById("nav-wrapper").classList.toggle("open");
-	});
 
-	document.querySelectorAll(".dropdown > a").forEach(link => {
-    	link.addEventListener("click", (e) => {
-        	if (window.innerWidth > 700) return;
+		</center>
+	</main>
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script>
+		document.getElementById("nav-toggle").addEventListener("click", () => {
+			document.getElementById("nav-wrapper").classList.toggle("open");
+		});
 
-        	e.preventDefault();
-        	const dropdown = link.nextElementSibling;
-        	dropdown.classList.toggle("open");
-    	});
-	});
+		document.querySelectorAll(".dropdown > a").forEach(link => {
+			link.addEventListener("click", (e) => {
+				if (window.innerWidth > 700) return;
+
+				e.preventDefault();
+				const dropdown = link.nextElementSibling;
+				dropdown.classList.toggle("open");
+			});
+		});
 
 
-async function main() {
-	var username = "";
-	const button = document.getElementById("submit");
-	const input = document.getElementById("username");
-	const box = document.getElementById("coin-box"); //need to add revealed class
-	const count = document.getElementById("coin-count");
+		async function main() {
+			var username = "";
+			const button = document.getElementById("submit");
+			const input = document.getElementById("username");
+			const box = document.getElementById("coin-box"); //need to add revealed class
+			const count = document.getElementById("coin-count");
 
-		function capitalizeFirstWord(str) {
-    			if (!str) return "";
-    			const [first, ...rest] = str.trim().split(/\s+/);
-    			return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() + 
-           			(rest.length ? " " + rest.join(" ") : "");
+			function capitalizeFirstWord(str) {
+				if (!str) return "";
+				const [first, ...rest] = str.trim().split(/\s+/);
+				return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() +
+					(rest.length ? " " + rest.join(" ") : "");
+			}
+
+
+
+
+			async function fetchCSV(url) {
+				const res = await fetch(url);
+				const text = await res.text();
+				return text;
+			}
+
+			function parseCSV(text) {
+				return text
+					.trim()
+					.split(/\r?\n/)
+					.map(line =>
+						line
+							.split(",")
+							.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
+					);
+			}
+
+			function filterRows(rows, colAName, colAValue) {
+				const header = rows[0];
+				const data = rows.slice(1);
+
+				const colAIndex = header.indexOf(colAName);
+
+				if (colAIndex === -1) {
+					console.error("Column name not found in header:", { header, colAName });
+					return [];
+				}
+
+				const maxIndex = colAIndex;
+
+				return data.filter(row => {
+					if (!row || row.length <= maxIndex) {
+						// too short to safely read both columns → ignore
+						return false;
+					}
+
+					const a = row[colAIndex];
+
+					if (a == null) {
+						return false;
+					}
+
+					return a.toLowerCase() === colAValue.toLowerCase();
+				});
+			}
+
+			async function loadFilteredCoinData() {
+				const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=913397617&single=true&output=csv";
+
+				const csv = await fetchCSV(url);
+				const rows = parseCSV(csv);
+
+				const results = filterRows(
+					rows,
+					"Username", username
+				);
+
+				console.log(results);
+				return results;
+			}
+
+
+			input.addEventListener("keyup", () => {
+				if (input.value.length > 0) {
+					button.disabled = false;
+					input.value = capitalizeFirstWord(input.value)
+				} else {
+					button.disabled = true;
+				}
+				username = input.value;
+			});
+
+
+			button.addEventListener("click", async () => {
+				username = input.value;
+				box.style.display = "block";
+				count.innerHTML = `Loading Coins`;
+				const coin = await loadFilteredCoinData();
+				var coins = 0;
+				console.log(coin.length);
+				if (coin.length > 0) {
+					coins = coin[0][12];
+				}
+				count.innerHTML = `${username} has ${coins} coins!`;
+
+
+			});
 		}
+		main();
 
-
-
-
-		async function fetchCSV(url) {
-    			const res = await fetch(url);
-    			const text = await res.text();
-    			return text;
-		}
-
-		function parseCSV(text) {
-    			return text
-        		.trim()
-        		.split(/\r?\n/)
-        		.map(line =>
-            			line
-                	.split(",")
-                	.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
-        		);
-		}
-
-		function filterRows(rows, colAName, colAValue) {
-    			const header = rows[0];
-    			const data = rows.slice(1);
-
-    			const colAIndex = header.indexOf(colAName);
-
-    			if (colAIndex === -1) {
-        		console.error("Column name not found in header:", { header, colAName});
-        		return [];
-    			}
-
-    			const maxIndex = colAIndex;
-
-    			return data.filter(row => {
-        			if (!row || row.length <= maxIndex) {
-            			// too short to safely read both columns → ignore
-            			return false;
-        			}
-
-        			const a = row[colAIndex];
-
-        			if (a == null) {
-            				return false;
-        			}
-
-        			return a.toLowerCase() === colAValue.toLowerCase();
-    			});
-		}
-
-		async function loadFilteredCoinData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=913397617&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows(
-        			rows,
-        			"Username",  username
-    			);
-
-    			console.log(results);
-			return results;
-		}
-
-
-	input.addEventListener("keyup", () => {
-		if(input.value.length > 0){
-			button.disabled = false;
-			input.value = capitalizeFirstWord(input.value)
-		}else{
-			button.disabled = true;
-		}
-		username = input.value;
-	});
-
-
-	button.addEventListener("click",  async () => {
-		username = input.value;
-		box.style.display = "block";
-		count.innerHTML = `Loading Coins`;
-		const coin = await loadFilteredCoinData();
-		var coins = 0;
-		console.log(coin.length);
-		if (coin.length > 0){
-			coins = coin[0][12];
-		}
-		count.innerHTML = `${username} has ${coins} coins!`;
-
-		
-	});
-}
-main();
-	
-</script>
+	</script>
 </body>
-</html> 
+
+</html>
