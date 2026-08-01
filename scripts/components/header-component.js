@@ -84,6 +84,7 @@ const monthlyContent2 = [
       { file: "theta1flip.png", position: "100%" },
       { file: "theta2flip.png", position: "100%" },
       { file: "theta3flip.png", position: "100%" },
+      { file: "theta4flip.png", position: "100%" },
     ],
   },
   //MAY
@@ -151,7 +152,7 @@ const monthlyContent2 = [
       { file: "phi3flip.png", position: "100%" },
       { file: "phi4 cropped.png", position: "top 100%" },
       { file: "omicron2flip.png", position: "100%" },
-      { file: "phi5flipcrop.png", position: "top 100%" }
+      { file: "phi5flipcrop.png", position: "top 100%" },
     ],
   },
   //SEPTEMBER
