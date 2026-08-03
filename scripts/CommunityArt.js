@@ -29,6 +29,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Aquilapurr"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032238611.png",
+		    prompt: "Dress Up Dollie",
+		    position:"center",
+		    artist: "Eggface"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120239032_3SNmfwFC7fgyAcj.png",
 		    prompt: "Dress Up Dollie",
 		    position:"center",
@@ -134,6 +139,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031125660.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121990005_xhWdISk40cm7lhq.png",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
@@ -179,6 +189,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031843152.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "NInjagomonster"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122683714_nvJ0bLPS0l5o5TB.png?1782871498",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
@@ -204,6 +219,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031951386.png",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "g0thieg0re"
+	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-07-24_073041895.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
@@ -214,6 +234,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "tenshilove"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032211747.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071159778.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
@@ -223,4 +248,19 @@ export const communityArt = [{
 		    prompt: "Pool Floaties Chain Game",
 		    position:"center",
 		    artist: "NifeWoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/124747674_R5R1WrIAC8FthBZ.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Katsumi-draws"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032402514.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "FairyreS"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/124756092_5spIvtnDAkoKAXj.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Axototlduck"
 	    }];
