@@ -234,16 +234,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "tenshilove"
 	    },{
-		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032211747.png",
-		    prompt: "Floss of the Month: Medha",
-		    position:"center",
-		    artist: "Ninjagomonster"
-	    },{
-		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071159778.png",
-		    prompt: "Floss of the Month: Medha",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071528493.png",
 		    prompt: "Pool Floaties Chain Game",
 		    position:"center",
@@ -263,4 +253,19 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
 		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/125615222_enB8Cn5Qby4GF1F.jpg",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "JubLubDubs"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032211747.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071159778.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Nifewoofy"
 	    }];
