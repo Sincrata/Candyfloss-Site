@@ -127,7 +127,7 @@ export const petpetDays = [{
 	    },{
 		    month: "3",
 		    day: "13",
-		    petpet: "Smolneffo",
+		    petpet: "Smolnnefo",
 		    class: "blue",
             upcoming: "No"
 	    },{
@@ -229,7 +229,7 @@ export const petpetDays = [{
 	    },{
 		    month: "5",
 		    day: "8",
-		    petpet: "Pappabear",
+		    petpet: "Papabear",
 		    class: "purple",
             upcoming: "No"
 	    },{
@@ -241,7 +241,7 @@ export const petpetDays = [{
 	    },{
 		    month: "5",
 		    day: "16",
-		    petpet: "Psychoecho",
+		    petpet: "Psyhoecho",
 		    class: "green",
             upcoming: "No"
 	    },{
@@ -391,7 +391,7 @@ export const petpetDays = [{
 	    },{
 		    month: "8",
 		    day: "8",
-		    petpet: "Pheolance",
+		    petpet: "Phoelance",
 		    class: "purple",
             upcoming: "No"
 	    },{
@@ -423,7 +423,7 @@ export const petpetDays = [{
 		    day: "21",
 		    petpet: "Ponneli",
 		    class: "silver",
-            upcoming: "Upcoming"
+            upcoming: "Today"
 	    },{
 		    month: "8",
 		    day: "25",
@@ -577,7 +577,7 @@ export const petpetDays = [{
 	    },{
 		    month: "11",
 		    day: "18",
-		    petpet: "Mikro Oplo",
+		    petpet: "Makro Oplo",
 		    class: "gold",
             upcoming: "No"
 	    },{
