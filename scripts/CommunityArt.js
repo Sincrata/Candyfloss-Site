@@ -283,4 +283,9 @@ export const communityArt = [{
 		    prompt: "Movie Night Art Prompt",
 		    position:"center",
 		    artist: "Jublubdubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126332426_K2TNEkS5Mol3vtu.png",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
 	    }];
