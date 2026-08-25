@@ -643,7 +643,7 @@
                 "clan": "kappa"
             },
             {
-                "name": "Smolnneffo",
+                "name": "Smolnnefo",
                 "key": "smolnnefo",
                 "year": "2021",
                 "clan": "kappa"
@@ -764,6 +764,37 @@
                 "year": "2025",
                 "clan": "psi"
             }
+        ]
+    },
+    "common": {
+        "unevolved": [
+            {
+                "name": "Jawbreaker Bat",
+                "key": "jawbreaker-bat",
+                "year": "2019",
+                "clan": "common"
+            },
+            {
+                "name": "Rainblo",
+                "key": "rainblo",
+                "year": "2020",
+                "clan": "common"
+            },
+            {
+                "name": "Marsmallow",
+                "key": "chippermink",
+                "year": "2021",
+                "clan": "common"
+            }
+        ],
+        "evolved": [
+        ]
+    }
+    ,
+    "club": {
+        "unevolved": [
+        ],
+        "evolved": [
         ]
     }
 }

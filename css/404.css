@@ -1,0 +1,19 @@
+#main-logo{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.card{
+    min-height: 75vh;
+}
+
+h1{
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+#deco{
+    display: inline-block;
+    margin: 10px;
+    max-width: 80%;
+}
