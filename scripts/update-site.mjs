@@ -20,7 +20,7 @@ const repoRoot = path.resolve(__dirname, "..");
 
 
 const pages = [
-    { file: "achievements.html", generator: generateAchievements, url: achievementUrl },
+    { file: "activities/achievements.html", generator: generateAchievements, url: achievementUrl },
     { file: "scripts/CommunityArt.js", generator: generateCommunityArt, url: communityArtUrl },
     { file: "scripts/petpet-days.js", generator: generatePetpetDays, url: petpetDaysUrl },
     { file: "scripts/prize-center-list.js", generator: generatePrizeList, url: prizeListUrl },

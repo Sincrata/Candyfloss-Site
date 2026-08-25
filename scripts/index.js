@@ -43,7 +43,7 @@ function addEvent(object, fotm) {
     box.appendChild(document.createElement("br"));
 
     const link = document.createElement("a");
-    link.href = "achievements.html";
+    link.href = "activities/achievements.html";
     link.classList = "event-link";
     link.textContent = `Enter the ${object.title}`;
     if (fotm == "yes") {
@@ -96,10 +96,10 @@ async function initialize() {
             card.appendChild(document.createTextNode(`Check out the newest Petpet from the clan of ${pet.clan.charAt(0).toUpperCase() + pet.clan.slice(1)}: the ${pet.name}!`));
             const link = document.createElement("a");
             link.classList = "shrink";
-            link.href = `petpets/${pet.clan}.html#${pet.key}`;
+            link.href = `/info/petpets/${pet.clan}.html#${pet.key}`;
 
             const img = document.createElement("img");
-            img.src = `petpets/pets/images/${pet.key}.png`;
+            img.src = `/images/pets/images/${pet.key}.png`;
             img.style.maxWidth = "80%";
 
             link.appendChild(img);
