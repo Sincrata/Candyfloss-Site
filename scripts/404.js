@@ -31,13 +31,15 @@ const redirects = {
     "/petpets/omicron": "/info/petpets/omicron.html",
 };
 
-const currentUrl = window.location.href;
+const currentUrl = new URL(window.location.href);
 
 const path = currentUrl.pathname;
 const params = currentUrl.searchParams;
 
 for(const key in redirects){
     if(path.endsWith(key)){
-        window.location.replace(`${redirects[key]}?${params.toString()}`);
+        const query = params.toString();
+        const target = redirects[key] + (query ? `?${query}` : "");
+        window.location.replace(target);
     }
 }
