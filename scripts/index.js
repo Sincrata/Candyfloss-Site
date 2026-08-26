@@ -16,7 +16,7 @@ function addEvent(object, fotm) {
     row.classList = "event-row";
 
     const img = document.createElement("div");
-    img.style.backgroundImage = `url('/images/banners/achievements/${object.banner}')`;
+    img.style.backgroundImage = `url('/assets/banners/achievements/${object.banner}')`;
     img.style.backgroundPosition = object.position;
     img.classList = "event-img";
 
@@ -27,7 +27,7 @@ function addEvent(object, fotm) {
 
     const badge = document.createElement("img");
     badge.classList = "event-badge";
-    badge.src = `/images/badge/${object.badge}`;
+    badge.src = `/assets/badge/${object.badge}`;
     box.appendChild(badge);
 
     const h1 = document.createElement("h1");
@@ -99,7 +99,7 @@ async function initialize() {
             link.href = `/info/petpets/${pet.clan}.html#${pet.key}`;
 
             const img = document.createElement("img");
-            img.src = `/images/pets/images/${pet.key}.png`;
+            img.src = `/assets/pets/images/${pet.key}.png`;
             img.style.maxWidth = "80%";
 
             link.appendChild(img);
@@ -143,7 +143,7 @@ async function initialize() {
 			</div>
 			<div class="clanbox">
     			<a href="${currentClanInfo.page}"class="shrink">
-    			<img class="clangem" src="images/gems/${clan}.png" style="display:block;height:15%;margin:auto;">
+    			<img class="clangem" src="/assets/gems/${clan}.png" style="display:block;height:15%;margin:auto;">
     			</a>
     
     			<h2 id="hide" style="margin:2px;">${clanCap}</h2>
@@ -158,7 +158,7 @@ async function initialize() {
     			</div> 
 				<br><br>
     		</div>
-    		<div class="clanimg" style="background-image: url('images/banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
+    		<div class="clanimg" style="background-image: url('/assets/banners/${chosenImage.file}'); background-position: ${chosenImage.position};">
       		</div>
    		</div>`;
 }
@@ -174,7 +174,7 @@ const [communityArt1, communityArt2, communityArt3, communityArt4] = uniqueArt;
 
 document.getElementById('com-art').innerHTML = `
    
-  	<a href="gallery.html" class="shrink"> <img src="images/logos/art.png" style="width:60%;"></a>
+  	<a href="gallery.html" class="shrink"> <img src="/assets/logos/art.png" style="width:60%;"></a>
 	<div id="comart" class="small-card">
 		<div class="row-art" >
 			<div class ="image-col" >

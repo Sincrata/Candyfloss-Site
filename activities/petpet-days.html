@@ -3,14 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/petdays.css">
-    <link rel="preload" href="/images/logos/logo.gif" as="image">
+    <link rel="stylesheet" href="petdays.css">
+    <link rel="preload" href="/assets/logos/logo.gif" as="image">
     <script src="/scripts/components/header-component.js"></script>
     <script src="/scripts/components/footer-component.js"></script>
     <script src="/scripts/components/navbar-component.js"></script>
-    <link rel="icon" href="/images/icons/Planet.ico">
+    <link rel="icon" href="/assets/icons/Planet.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Days Calendar</title>
+    <title>CF PetPet Days</title>
     <style>
         #calendar {
             display: grid;
@@ -18,21 +18,51 @@
             justify-content: center;
             gap: 2rem;
             margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .picture{
+            width: 70%
+        }
+
+        .picture img{
+            max-width: 100%;
+            max-height: 50vh;
+        }
+        #current-petpet{
+            align-items: center;
+            justify-content: center;
+        }
+        .button-holder{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .date-grid {
             width: 100%;
             max-width: 250px;
         }
-
+        .card{
+            width: 70%;
+        }
+        .button{
+            width: 100px;
+        }
         @media (max-width: 800px) {
-            .calendar-card {
+            .card{
                 width: 90%;
             }
-
             #calendar {
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
+            .picture{
+                width: 60%;
+            }
+            
+
         }
     </style>
 </head>
@@ -44,10 +74,7 @@
     <main>
         <nav-bar></nav-bar>
         <center>
-            <div class="calendar-card" style="position:relative;z-index:1;">
-                <div class="paw right" id="paw-berry"
-                    style="height:50%;display:flex;margin-top:15px;margin-left:35%;position: absolute;z-index: 2;opacity:20%;">
-                </div>
+            <div class="card">
 
                 <div class="title row" style="position:relative;z-index:3;font-size:75px;margin-left:2px;">
                     <p id="pank">P</p>
@@ -56,7 +83,8 @@
                     <p id="blue">p</p>
                     <p id="green">e</p>
                     <p id="yellow">t</p>
-                    &nbsp;<p id="gold">D</p>
+                    &nbsp;
+                    <p id="gold">D</p>
                     <p id="silver">a</p>
                     <p id="pank">y</p>
                     <p id="berry">s</p>
@@ -69,9 +97,9 @@
                     <p id="purple">2</p>
                     <p id="blue">6</p>
                 </div>
-                <div class="title row"
-                    style="position:relative;z-index:3;font-size:15px;margin-top:-3%;margin-left:10px;">
-                    <p id="berry" class="small">Celebrate the petpets on their special day! For 24 hours you can submit
+
+                <div class="inner-card">
+                    <p >Celebrate the petpets on their special day! For 24 hours you can submit
                         a drawing of your floss with<br>
                         the designated petpet and their petpet ref, to receive a free pet myo and make them real!<br>
                         Check out which pets are coming soon so you can be ready!
@@ -80,6 +108,9 @@
                         Grab the Ping role for Petdays in Self Assigned Roles to get notified when a new pet days
                         starts!
                     </p>
+                </div>
+
+                <div class="inner-card" id="current-petday">
                 </div>
 
                 <div id="calendar">

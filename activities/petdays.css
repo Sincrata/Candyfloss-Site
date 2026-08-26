@@ -14,6 +14,11 @@ margin-top:0px;
 .paw{
     mask: url('/assets/paw.png') no-repeat center / contain;
     -webkit-mask: url('/assets/paw.png') no-repeat center / contain;
+    z-index: 1;   
+}
+.date-number{
+    z-index: 2;
+    position: relative;
 }
 .little{
     height:28px;
@@ -45,42 +50,34 @@ margin-top:0px;
 /*--------------COLORS-------------*/
     #berry, .berry{
         color:#eb91c7;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #97316f;
     }
     #pank, .pank{
         color:#ffc6d5;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px  #d34771;
     }
     #purple, .purple{
         color:#f2cafe;
-        font-family: comic sans ms, sans-serif; 
           -webkit-text-stroke: 2px #803896;
     }
     #blue, .blue{
         color:#c1e5e9;
-        font-family: comic sans ms, sans-serif; 
           -webkit-text-stroke: 2px #227e88;
     }
     #green, .green{
         color:#a3efd1;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #2a835f;
     }
     #yellow, .yellow{
         color:#fee7b0;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #aa8122;
     }
     #gold, .gold{
         color:#e7e6ad;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #818034;
     }
     #silver, .silver{
         color:#dcdcdc;
-        font-family: comic sans ms, sans-serif; 
         -webkit-text-stroke: 2px #656e85;
     }
 /*-------------- PAW COLORS-------------*/
@@ -122,6 +119,7 @@ margin-top:0px;
         border-radius: 8px;
         text-align: center;
         padding: 1rem;
+        background-color: #584894;
     } 
     .month p{
         font-size:20px;
@@ -133,7 +131,7 @@ margin-top:0px;
        margin:none;
     }
     .date-grid{
-        color:#97316f;
+        color: white;
         max-width:100%;
         display:grid;
         grid-template-columns: repeat(7, 1fr);
@@ -146,6 +144,8 @@ margin-top:0px;
         align-items: center; 
         justify-content: center; 
         text-align: center;
+        position: relative;
+        z-index: 2;
     } 
     .day-list p{
        margin-top:-5px !important;
@@ -154,4 +154,8 @@ margin-top:0px;
        text-align:left;
        margin:none;
        font-weight: bold;
+     }
+
+     .title.row{
+        width: 100%;
      }

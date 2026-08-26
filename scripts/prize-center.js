@@ -30,7 +30,7 @@ function buildPrizes(prizes) {
         const price = document.createElement("div");
         price.className = "price";
         const coin = document.createElement("img");
-        coin.src = "/images/icons/coin.gif";
+        coin.src = "/assets/icons/coin.gif";
         price.appendChild(coin);
         price.appendChild(document.createTextNode(prize.cost));
 

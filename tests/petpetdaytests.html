@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/css/general.css">
+	<link rel="preload" href="/images/logos/logo.gif" as="image">
+	<script src="/scripts/components/header-component.js"></script>
+	<script src="/scripts/components/footer-component.js"></script>
+	<script src="/scripts/components/navbar-component.js"></script>
+	<link rel="icon" href="/assets/icons/Planet.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CF (title)</title>
+    	<style>
+			#image-grid{
+				display: grid;
+				grid-template-columns: repeat(5, 100px);
+			}
+			.image-container{
+				max-width: 100px;
+			}
+			.image-container img{
+				max-width: 100%;
+			}
+    	</style>
+</head>
+<body>
+	<header loading="eager">
+		<main-header></main-header>
+	</header>
+	<main>
+		<nav-bar></nav-bar>
+		<center>
+			<div class= "card">
+				<div id="image-grid"></div>
+			</div>
+		</center>
+	</main> 
+	<footer>
+		<main-footer></main-footer>
+	</footer>
+	<script type="module" src="/scripts/nav-bar.js"></script>
+    <script type="module" src="/tests/petpetdaytests.js"></script>
+</body>
+</html> 

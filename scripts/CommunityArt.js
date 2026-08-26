@@ -64,7 +64,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{
-		    artlink: "/images/brokenentry.png",
+		    artlink: "/assets/brokenentry.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Nifewoofy"
