@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kappa Petpets</title>
+    <style>
+        .section {
+            background-color: #784787;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/kappa2.png);"><img id="top"
+                    src="/assets/logos/kappa.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#db82f7;">
+                <h1>Kappa Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Kappa clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#kappabear" class="shrink"><img title="Kappabear"
+                                    src="/assets/pets/images/kappabear.png"></a>Kappabear</div>
+                        <div class="pet-card"><a href="#papabear" class="shrink"><img title="Papabear"
+                                    src="/assets/pets/images/papabear.png"></a>Papabear</div>
+                        <div class="pet-card"><a href="#smolnnefo" class="shrink"><img title="Smolnnefo"
+                                    src="/assets/pets/images/smolnnefo.png"></a>Smolnnefo</div>
+                        <div class="pet-card"><a href="#smolvolaki" class="shrink"><img title="Smolvolaki"
+                                    src="/assets/pets/images/smolvolaki.png"></a>Smolvolaki</div>
+                        <div class="pet-card"><a href="#galapip" class="shrink"><img title="Galapip"
+                                    src="/assets/pets/images/galapip.png"></a>Galapip</div>
+                        <div class="pet-card"><a href="#hayapip" class="shrink"><img title="Hayapip"
+                                    src="/assets/pets/images/hayapip.png"></a>Hayapip</div>
+                        <div class="pet-card"><a href="#rushound" class="shrink"><img title="Rushound"
+                                    src="/assets/pets/images/rushound.png"></a>Rushound</div>
+
+                    </div>
+                </div>
+                <!------------------Kappabear-------------------->
+                <div id="kappabear" class="inner-card section">
+                    <h1>Kappabear</h1>
+                    <p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/kappabear.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/kappabear.png">
+                            </a>
+                            Check out this Community Art of Floss and their Kappabear!
+                            <div id="kappabear-art"></div>
+                            The Kappabears Celebrate their Pet Day on <b>February 15th</b><br>You can claim a free
+                            Kappabear on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="left example" src="/assets/pets/images/kappabear.png">
+                                So fluffy! The Kappabears are the cuddliest of all the petpets! But don't make them mad,
+                                or you'll have to face their super sharp retractable claws! The Kappbear are masters of
+                                strength, speed, and defense! If their claws don't do the trick the Kappabears can pull
+                                their bodies into their hard protective shells or use their massive running speeds to
+                                escape danger! But don't be scared, the Kappabears rarely attack Candyfloss, and much
+                                prefer to live their lives in luxury in the home of a floss than out in the rough
+                                environments! The Kappabears can be found all over the Kappa region, so much so, that
+                                the region (and the clan that lives there) were named after them!
+                                <br><br>
+                                The Floss love the Kappabears, they are so cute and cuddly but also are great for
+                                defense! Give your kitten a Kappabear to walk them to school and play with them at the
+                                park and you'll never have to worry about them! Once the Kappabear is in your family you
+                                can be sure they will be loyal and protective!
+                                <br><br>
+                                The Kappabear move very quickly when they want to but don't expect them to be energetic!
+                                These critters are very lazy when they're not playing and can spend hours sleeping in
+                                your lap or slowly kicking you out of your own bed. They also eat a lot! Keep the
+                                Kappabear out of the fridge if you can because they have no boundaries when it comes to
+                                yummy goodies! Don't miss your chance to grab an adorable Kappabear while you're in
+                                Kappa for the Park!
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#papabear">Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/kappabear.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Papabear-------------------->
+                <div id="papabear" class="inner-card section">
+                    <h1>Papabear</h1>
+                    <p style="margin-top:-12px;">2010 . 1st Wave . Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/papabear.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/papabear.png"></a>
+                            Check out this Community Art of Floss and their Papabears!
+                            <div id="papabear-art"></div>
+                            The Papabears Celebrate their Pet Day on <b>May 8th</b><br>You can claim a
+                            free Papabear on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> The Papabear are big lovable goofballs! These giant bears are extremely cuddly and love
+                                attention! They are easy to train and find joy in preforming! Papabear owners must
+                                devote a lot of time to training and loving on their big buddies to keep them happy and
+                                healthy!
+
+                                <img class="example left" src="/assets/pets/images/Papabear2.png">
+
+                                <img class="size example" src="/assets/pets/charts/Papabear-size.png"
+                                    style="max-width:30%;">
+                                Papabears are extremely docile and refuse to engage in any sort of battle in the wild
+                                unless absolutely cornered. They prefer instead to scoop up their cups in their
+                                seat-belt-esque middle arms and bolt!
+
+                                <br>
+                                <br>
+                                Papabears are the single fastest creature on caramella and can zoom passed bullet trains
+                                and fighter jets like no one's business. If not for the expanse of ocean surrounding
+                                them a Papabear could circle the planet in 24 hours easily! Though many have tried,
+                                riding a Papabear at such high speeds is lethal to a Candyfloss, only the most skilled
+                                Kappafloss can even attempt reaching such high velocities! Papabears love to lounge
+                                around with kittenfloss and cuddle for hours on end! Welcome one of these massive fluff
+                                monsters into your home today~
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#kappabear">Pre-Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/papabear.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Smolnnefo-------------------->
+                <div id="smolnnefo" class="inner-card section">
+                    <h1>Smolnnefo</h1>
+                    <p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/smolnnefo.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/smolnnefo.png"></a>
+                            Check out this Community Art of Floss and their Smolnnefos!
+                            <div id="smolnnefo-art"></div>
+                            The Smolnnefos Celebrate their Pet Day on <b>March 13th</b><br>You can claim a free
+                            Smolnnefo on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/smolnnefo.png">
+                                Nobody knows where the Smolnnefo come from, they just appear. Curiously, they seem to
+                                only appear to young girls with purity and justice in their hearts who are the only ones
+                                who can see or hear them speak to them. They are strange, bizarre creatures that hide
+                                themselves in the clouds they produce before they zip away super-fast to avoid being
+                                seen by those, they don’t want to see them.
+                                <br><br>
+                                The Smolnnefos are about the size of a grapefruit and feel like a rubber ball since they
+                                seem to be hollow and feel smooth. If they allowed someone to toss them down, they would
+                                bounce, though not many know that since they float in the air. If they choose to open
+                                their mouth, it looks like a puppet mouth with how wide it actually is. Smolnnefo seem
+                                to have one purpose and that is to single out girls who will one day become leaders and
+                                geniuses and will accomplish great things. They support these girls and make them feel
+                                stronger before leaving the girls when they get too old. Once this happens, the girls
+                                forget about their Smolnnefo and don’t have an answer when asked about them.
+                                <br><br>
+
+                                <img class="example" src="/assets/pets/images/smolnnefo2.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#smolvolaki">Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/smolnnefo.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Smolvolaki-------------------->
+                <div id="smolvolaki" class="inner-card section">
+                    <h1>Smolvolaki</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/smolvolaki.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/smolvolaki.png"></a>
+                            Check out this Community Art of Floss and their Smolvolakis!
+                            <div id="smolvolaki-art"></div>
+                            The Smolvolakis Celebrate their Pet Day on <b>June 2nd</b><br>You can claim a free
+                            Smolvolaki on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> 
+                                <img class="size" src="/assets/pets/images/smolvolaki.png">
+                                The Smolvolatki are devilish tricksters! These soft beans stand at between 1 and 2 feet tall and are extremely rare to see in the wild! Many floss believe them to be extinct but as soon as we believe they're gone, another one is spotted! 
+                                <br>
+                                <br>
+                                <img class="example" src="/assets/pets/images/smolvolaki2.png">
+                                They are extremely hard to get a hold of but when they do appear they tend to be accompanied by a rotten child. It's believed that in the same way the Smolneffo follow around good-hearted children, the Smolvolaki are drawn to spoiled children and encourage their bad behaviors. The Smolneffo has never been spotted evolving, so it is actually unconfirmed that these are the same species, but because of their looks and similar mysterious behavior it is assumed to be the case! 
+                                <br>
+                                <br>
+                                These naughty troublemakers love to giggle and cackle and play pranks on anyone who happens to get too close to one. They will quite literally rain on a parade if they get the chance. As such, the Candyfloss world wide have adopted phrases and idioms related the the Smolvolaki to express bouts of bad luck or misfortune. "I feel like i have a Smolvolaki on my shoulder today." or "I must have upset a Smolvolaki to be this unlucky." for example.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#smolnnefo">Pre-Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/smolvolaki.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Galapip-------------------->
+                <div id="galapip" class="inner-card section">
+                    <h1>Galapip</h1>
+                    <p style="margin-top:-12px;">2023 . 3rd Wave . Un-Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/galapip.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/galapip.png"></a>
+                            Check out this Community Art of Floss and their Galapips!
+                            <div id="galapip-art"></div>
+                            The Galapips Celebrate their Pet Day on <b>January 2nd</b><br>You can claim a free Galapip
+                            on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Galapip are adorable creatures from the land of Kappa. They are small, fuzzy hooved beasts that live in packs and run free in the colorful plains of Kappa. Their super speed makes them almost impossible to capture, and their fun-loving and carefree nature is unmatched. The Galapips love to jump, play and are always sporting a gleeful grin. 
+                                <br>
+                                <br>
+                                <img class="left example" src="/assets/pets/images/galapip.png" style="width: 30%;">
+                                <br>
+                                <br>
+                                The Galapip love Candyfloss and are perfect companions for those looking for a spunky companion. They are herbivores but they love sugar and sweets most. They would do just about anything for a sugar cube! 
+                                <br>
+                                <br>
+                                They are large enough for kittenfloss or Honeyfloss to ride but small enough to be good indoor or outdoor pets. They get along well with most anything, but can be known to get jealous of other pets if they get more attention than them. The Galapips are beloved Kappa petpets.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#hayapip">Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/galapip.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Hayapip-------------------->
+                <div id="hayapip" class="inner-card section">
+                    <h1>Hayapip</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/hayapip.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/hayapip.png"></a>
+                            Check out this Community Art of Floss and their Hayapips!
+                            <div id="hayapip-art"></div>
+                            The Hayapips Celebrate their Pet Day on <b>July 6th</b><br>You can claim a free Hayapip on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The Hayapip are one of the quickest creatures in all of Kappa and are known to rush through open fields and farm lands without looking. Theses beasts are often seen smashing into trees, one another, buildings, and the like with reckless abandon. Because of this, and their tendency to be rather silly, they are thought of as being very stupid critters. It's not uncommon to see a floss call someone 'As bright as a Hayapip" as a thinly veiled insult. It's used to express that someone acts before they think.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/hayapip.png" style="width:30%;">
+                                These large hooved creatures are very friendly herbivores and as such are often kept as pets by ranchers and farmers in Kappa and across Caramella. They move in packs and are often kept in family groups of 5 or more. They have long tongues that they use to pick leaves and fruits off of trees that are a bit too large for their mouth, so they are often seen with their tongues hanging out. They are by NO means graceful and are often seen fumbling over their own legs, stumbling into things and just being downright ridiculous. The wool grown from their necks and chests can be harvested and comes in a variety of materials. They are often shaved when kept in captivity. They are able to jump very high and love to leap and bound over fences, stumps, and obstacles in their way when they dash. It's common to see herds of running Hayapip leaping like frogs in the distance when traveling through Kappa.
+                                <br><br>
+                                The Hayapip is too small to be ridden by most floss, but the Honeyfloss in chi love to ride these silly steeds, as long as they listen to their rider and dont go galloping off to stick their head into somewhere it doesnt belong.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#galapip">Pre-Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/hayapip.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Rushound-------------------->
+                <div id="rushound" class="inner-card section">
+                    <h1>Rushound</h1>
+                    <p style="margin-top:-12px;">2025 . 4th Wave . Un-Evolved . Super Speed</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/rushound.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/rushound.png"></a>
+                            Check out this Community Art of Floss and their Rushounds!
+                            <div id="rushound-art"></div>
+                            The Rushounds Celebrate their Pet Day on <b>April 27th</b><br>You can claim a free
+                            Rushound on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/rushound.png">
+                                Native  to the vast, rolling hills of Kappa, the Rushound is a captivating  species of canine that has become a cherished, if demanding, companion  across Caramella. These dog-like critters are renowned for their incredible speed, a defining characteristic that  dictates nearly every aspect of their existence. When on a daily walk  with their owner, it is often the Rushound that sets the breakneck pace,  the leash transforming from a guiding tool into a tether to pull their owners along behind them.
+                                <br><br>
+                                Their intelligence is apparent in their bright, eager eyes, yet their boundless energy often supersedes their capacity for traditional obedience training. While they can understand complex commands, their bodies are rarely still long enough to consistently execute them, leading to a lovable, yet chaotic, presence in any household. This inherent loyalty, coupled with a perpetually sunny and friendly disposition, makes them excellent, albeit whirlwind, house pets for the truly active owner.
+                                <br><br>
+                                What truly sets the Rushound apart from their more sedentary canine counterparts is their virtually inexhaustible supply of energy. They are not dogs that understand the concept of a "nap," but rather exist in a constant, delightful state of zoomies. This persistent vitality means  that prospective owners must provide vast spaces for them to run and  exercise—a small yard simply will not suffice.
+                                <img class="example" src="/assets/pets/charts/rushound-size.png">
+                                <br><br>
+                                An ideal home for a  Rushound is near a large park, open field, or, better yet, the wide-open  expanse of the Kappa hills themselves. This need for constant motion is a physical necessity; without adequate exercise, they can become restless and even destructive. This makes them a dog not for the casual pet owner, but for someone seeking a partner in adventure and an endless fount of enthusiasm for the outdoors.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button kappa" href="#" style="display:none;">Pre-Evolution</a>
+                                <a class="button kappa" href="/assets/pets/bases/rushound.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button kappa"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            kappabearPool: [
+                { file: "kappabear1.png", artist: "Axototlduck" },
+                { file: "kappabear2.png", artist: "Ninjagomonster" },
+                { file: "kappabear3.png", artist: "Countless" },
+                { file: "kappabear4.png", artist: "CursedFreak" },
+                { file: "kappabear5.png", artist: "Echospirit" },
+            ],
+            papabearPool: [
+                { file: "papabear1.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            smolnnefoPool: [
+                { file: "smolnnefo1.png", artist: "Axototlduck" },
+                { file: "smolnnefo2.png", artist: "Perry2012Draws" },
+                { file: "smolnnefo3.png", artist: "Aquilapurr" },
+                { file: "smolnnefo4.png", artist: "Countless" },
+                { file: "smolnnefo5.png", artist: "CursedFreak" },
+            ],
+            smolvolakiPool: [
+                { file: "smolvolaki1.png", artist: "Axototlduck" },
+                { file: "smolvolaki2.png", artist: "Dressribboness" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            galapipPool: [
+                { file: "galapip1.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            hayapipPool: [
+                { file: "hayapip1.png", artist: "Zanixia" },
+                { file: "hayapip2.png", artist: "Dreamy_sand" },
+                { file: "hayapip3.png", artist: "Ninjagomonster" },
+                { file: "hayapip4.png", artist: "Chamalaeon" },
+                { file: "hayapip5.png", artist: "Countless" },
+                { file: "hayapip6.png", artist: "PuffinDoodle" },
+                { file: "hayapip7.png", artist: "FadedFaeble" },
+                { file: "hayapip8.png", artist: "-spaceman-" },
+                { file: "hayapip8.png", artist: "KrissySempaiArt" },
+            ],
+            rushoundPool: [
+                { file: "rushound1.png", artist: "Aquilapurr" },
+                { file: "rushound2.png", artist: "Axototlduck" },
+                { file: "rushound3.png", artist: "DonutDoggy" },
+                { file: "rushound4.png", artist: "Ninjagomonster" },
+                { file: "rushound5.png", artist: "FadedFaeble" },
+                { file: "rushound6.png", artist: "Trashcanakin" },
+            ]
+
+        };
+
+        insertArt(communityArt.kappabearPool, "kappabear-art");
+        insertArt(communityArt.papabearPool, "papabear-art");
+        insertArt(communityArt.smolnnefoPool, "smolnnefo-art");
+        insertArt(communityArt.smolvolakiPool, "smolvolaki-art");
+        insertArt(communityArt.galapipPool, "galapip-art");
+        insertArt(communityArt.hayapipPool, "hayapip-art");
+        insertArt(communityArt.rushoundPool, "rushound-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

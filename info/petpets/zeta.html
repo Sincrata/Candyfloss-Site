@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeta Petpets</title>
+    <style>
+        .section {
+            background-color: #405c54;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/zeta1.png);"><img id="top"
+                    src="/assets/logos/zeta.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#8caa84;">
+                <h1>Zeta Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Zeta clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#snow-altis" class="shrink"><img title="Snow Altis"
+                                    src="/assets/pets/images/snow-altis.png"></a>Snow Altis</div>
+                        <div class="pet-card"><a href="#cloud-altis" class="shrink"><img title="Cloud Altis"
+                                    src="/assets/pets/images/cloud-altis.png"></a>Cloud Altis</div>
+                        <div class="pet-card"><a href="#linook" class="shrink"><img title="Linook"
+                                    src="/assets/pets/images/linook.png"></a>Linook</div>
+                        <div class="pet-card"><a href="#nookouda" class="shrink"><img title="Nookouda"
+                                    src="/assets/pets/images/nookouda.png"></a>Nookouda</div>
+                        <div class="pet-card"><a href="#frompot" class="shrink"><img title="Frompot"
+                                    src="/assets/pets/images/frompot.png"></a>Frompot</div>
+                        <div class="pet-card"><a href="#frompot-2" class="shrink"><img title="Frompot 2.0"
+                                    src="/assets/pets/images/frompot-2.png"></a>Frompot 2.0</div>
+                    </div>
+                </div>
+                <!------------------Snow Altis-------------------->
+                <div id="snow-altis" class="inner-card section">
+                    <h1>Snow Altis</h1>
+                    <p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/snow-altis.png">
+                                <img id="chart" title="click for full sized chart" src="/assets/pets/charts/snow-altis.png">
+                            </a>
+                            Check out this Community Art of Floss and their Snow Altis!
+                            <div id="snow-altis-art"></div>
+                            The Snow Altises Celebrate their Pet Day on <b>June 16th</b><br>You can claim a free
+                            Snow Altis on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example" src="/assets/pets/charts/snow-altis-size.png">
+                                These skittish fur balls are knee-high on a Candyfloss and tend to stick to packs in the wild. They come off as timid at first, but once you garner their trust, they will quickly become playful and curious. If one of these darling creatures is taken into a hotter climate than they are used to, you will often find them creating beds of snow to cool off in.  Snow Altis are wonderful companions to have in the snowy areas of Zeta, Delta and Psi, go find one to befriend today!
+                                <br><br><img class="left example" src="/assets/pets/images/snow-altis2.png">
+                                
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#cloud-altis">Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/snow-altis.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Cloud Altis-------------------->
+                <div id="cloud-altis" class="inner-card section">
+                    <h1>Cloud Altis</h1>
+                    <p style="margin-top:-12px;">2010 . 1st Wave . Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/cloud-altis.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/cloud-altis.png"></a>
+                            Check out this Community Art of Floss and their Cloud Altis!
+                            <div id="cloud-altis-art"></div>
+                            The Cloud Altises Celebrate their Pet Day on <b>November 8th</b><br>You can claim a
+                            free Cloud Altis on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> 
+                                <img class="example left" src="/assets/pets/images/cloud-altis.png">
+                                The majestic Cloud Altis are hard to spot through most of the year, but around Chioni time they can be spotted scouting through the snow fields of Zeta and Pagoto. They're regal and proud creatures and will not usually let Floss get close to them. It's said they judge a floss by looking into their eyes and will only allow the pure of heart to come within reach of them. Cloud Altis  have powerful snow magics, and  it's said that the winter only comes because they bring it along with them. Even in warm climates a snow storm will form near a group of Cloud Altis, and snow can be found in their hoof prints.
+                                <br>
+                                <br>
+                                Cloud Altis get their name because of their extraordinary ability to leap upon snowflakes and frozen clouds making it appear as if they are galloping through the air. No Zetafloss has ever been able to replicate this ability. Cloud Altis can only be tamed if they are raised in captivity from childhood, and even then, they can be temperamental but tend to be very protective and loving to their trainers. They especially love  kittenfloss and some Altis will even permit a Kittenfloss to ride on their backs, however, keep close watch, or they may just soar away with your kitten when you're not looking.  Cloud Altis are Santafloss' very favorite petpet.
+                                <br>
+                                <br>
+
+                                <img class="size example" src="/assets/pets/charts/cloud-altis-size.png" style="max-width:30%;">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#snow-altis">Pre-Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/cloud-altis.psd" download>Download Base PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Linook-------------------->
+                <div id="linook" class="inner-card section">
+                    <h1>Linook</h1>
+                    <p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/linook.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/linook.png"></a>
+                            Check out this Community Art of Floss and their Linooks!
+                            <div id="linook-art"></div>
+                            The Linooks Celebrate their Pet Day on <b>April 19th</b><br>You can claim a free
+                            Linook on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>These thick furred mammals make their home in the wintry forests in northern Psekazi. The Linook is a curious creature that loves to forage and explore their forest homes.  They frolic and play in small family groups and sleep through the summer months in cold ice caverns they create using their Kryokenesis.
+                                <img class="example left" src="/assets/pets/images/linook.png">
+                                <br><br>
+                                The  Linooks unique middle legs allow them to run and play on soft paws, perfect for traveling over thin ice, and unstable snow, while their clawed front paws help them grab hold of trees for climbing, crack open nut shells, and pick berries from prickly bushes. The Linooks are most well known for their wreath-like manes that grow from their necks and sometimes their tails. These manes are perfect camouflage when the  Linooks want to hide in the trees but are mostly used for storage.  Linooks like to collect food, berries, and shiny things in their manes, and carry them back to their Ice caves. If a Linook is kept as a pet, most floss will give them a variety of lights, bulbs, cookies, and the like to store in their wreaths for fun.
+                                <br><br>
+                                They are a bit of a dangerous pet - much more so than something like a Kappabear, so it's best to not allow children to pick on them. But if you have a calm, loving home to welcome them into, the Linook will quickly accept you as part of its  family unit and love you forever.   
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#nookouda">Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/linook.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Nookouda-------------------->
+                <div id="nookouda" class="inner-card section">
+                    <h1>Nookouda</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/nookouda.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/nookouda.png"></a>
+                            Check out this Community Art of Floss and their Nookoudas!
+                            <div id="nookouda-art"></div>
+                            The Nookoudas Celebrate their Pet Day on <b>July 29th</b><br>You can claim a free
+                            Nookouda on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> 
+                                <img class="example" src="/assets/pets/images/nookouda.png">
+                                The abominable Nookouda are a rather rare sight to find in the thick alpine forests of north Pzekazi and Southern Pagoto! These large slow-moving beasts are generally lazy and will spend most of their time sleeping in large dome-like caves they forge out of snow and ice. If you see one in the wild watch out! They may appear docile and adorable, but they are strong powerful hunters and one of the most dangerous to floss who get too close to one of their dens. The Nookouda have thick manes that sprout from their necks and arms made of evergreen branches that make it easy for them to lay low and blend into the trees.
+                                <br>
+                                <br>
+                                They can easily climb up snowy cliffs and trees with their six clawed legs and are known to stand up to 15 feet tall on their hind legs. Despite all their dangerous attributes they have a unique cute face and soft fluffy fur that make them revered as being very adorable! They love to roll around in the slow, hug and cuddle with one another and their young Linook children, and swim around in the arctic waters in adorable ways.
+                                <br>
+                                <br>
+                                They are coveted as pets for the wealthy who can manage to take care of them, and those who manage to befriend young Linook are among the only floss able to come close to a Nookouda. If they are bonded with a floss they treat them gently like one of their own pack and mean them no harm, but their big lumbering forms, need for lots of space and food, and their violent tendencies to outsiders still make them difficult pets to take care of in a domestic setting.  
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#linook">Pre-Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/nookouda.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Frompot-------------------->
+                <div id="frompot" class="inner-card section">
+                    <h1>Frompot</h1>
+                    <p style="margin-top:-12px;">2023 . 3rd Wave . Un-Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/frompot.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/frompot.png"></a>
+                            Check out this Community Art of Floss and their Frompots!
+                            <div id="frompot-art"></div>
+                            The Frompots Celebrate their Pet Day on <b>August 16th</b><br>You can claim a free Frompot on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/frompot.png" style="width: 30%;">
+                                The Frompot were an invention of the Zeta leader Zachari in his youth. A small companion that runs on kinetic energy, the Frompots are useful and helpful critters. They're a very popular alternative to other petpets in Zeta and around all of Caramella. While they are fully robotic, however. the AI they run on is highly advanced to the point where they are indistinguishable from more organic petpets.
+                                <br>
+                                <br>
+                                They can learn and build personalities based on their environments and relationships and can often be silly, affectionate or even grumpy.
+                                <br>
+                                <br>
+                                They communicate with beeps, boops, and bleeps and are able to be personalized with different attachments or abilities like GPS, internet connection, and even projector eyes! Their back attachments can even allow them to hover, carry things, and some can allow them to use alternative power sources. The Frompots love to climb on things and grapple onto walls and floss' backs with their extendo-arms. It's common to see a floss walking around wearing a Frompot like a backpack.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#frompot-2">Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/frompot.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Frompot 2.0-------------------->
+                <div id="frompot-2" class="inner-card section">
+                    <h1>Frompot 2.0</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Cryokinesis</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/frompot-2.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/frompot-2.png"></a>
+                            Check out this Community Art of Floss and their Frompot 2.0s!
+                            <div id="frompot-2-art"></div>
+                            The Frompot 2.0s Celebrate their Pet Day on <b>March 11th</b><br>You can claim a free Frompot 2.0 on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example" src="/assets/pets/images/frompot-2.png" style="width:40%;">
+                                Since the invention of Frompot 1.0, our innovative Zeta engineers have worked tirelessly, day and night, to bring you the next best thing before anyone else! They’ve listened to your reviews and requests and are now proud to announce a more advanced, bigger and better version of the loyal companion we’ve all come to know and love.
+                                <br><br>
+                                Frompot 2.0 is a more resilient, customizable and longer lasting model than its current 1.0 predecessor. The versatile quadrupedal design allows Frompot to traverse greater distances, respond to more complex tasks, and with the new harness addition it has even more pull and carry possibilities to keep you and your pet moving forward together! Our 2.0 core battery has an even larger capacity and with new alternative power designs we will keep you doing more with less. And upgrading is a snap! Frompot 2.0 allows for a seamless integration, transferring all prior customizations and data so there’s no need to worry about losing your current pet’s experiences, disposition and playful personality. 
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button zeta" href="#frompot">Pre-Evolution</a>
+                                <a class="button zeta" href="/assets/pets/bases/frompot-2.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button zeta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            snow_altisPool: [
+                { file: "snow-altis1.png", artist: "VikaRosnova" },
+                { file: "snow-altis2.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            cloud_altisPool: [
+                { file: "cloud-altis1.png", artist: "Axototlduck" },
+                { file: "cloud-altis2.png", artist: "FadedFaeble" },
+                { file: "cloud-altis3.png", artist: "VikaRosnova" },
+            ],
+            linookPool: [
+                { file: "linook1.png", artist: "Axototlduck" },
+                { file: "linook2.png", artist: "FadedFaeble" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            nookoudaPool: [
+                { file: "nookouda1.png", artist: "KrissySempaiArt" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            frompotPool: [
+                { file: "frompot1.png", artist: "Aquilapurr" },
+                { file: "frompot2.png", artist: "Axototlduck" },
+                { file: "frompot3.png", artist: "Cursedfreak" },
+                { file: "frompot4.png", artist: "KrissySempaiArt" },
+                { file: "frompot5.png", artist: "Countless" },
+            ],
+            frompot_2Pool: [
+                { file: "frompot-21.png", artist: "Axototlduck" },
+                { file: "frompot-22.png", artist: "Countless" },
+                { file: "frompot-23.png", artist: "KrissySempaiArt" },
+            ]
+        };
+
+        insertArt(communityArt.snow_altisPool, "snow-altis-art");
+        insertArt(communityArt.cloud_altisPool, "cloud-altis-art");
+        insertArt(communityArt.linookPool, "linook-art");
+        insertArt(communityArt.nookoudaPool, "nookouda-art");
+        insertArt(communityArt.frompotPool, "frompot-art");
+        insertArt(communityArt.frompot_2Pool, "frompot-2-art");
+
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

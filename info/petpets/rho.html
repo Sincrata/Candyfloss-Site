@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rho Petpets</title>
+    <style>
+        .section {
+            background-color: #678d9c;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/rho1.png);"><img id="top"
+                    src="/assets/logos/rho.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#90c0c6;">
+                <h1>Rho Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Rho clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#kyma-keeihtty" class="shrink"><img title="Kyma Kee'ihtty"
+                                    src="/assets/pets/images/kyma-keeihtty.png"></a>Kyma Kee'ihtty</div>
+                        <div class="pet-card"><a href="#kyma-neelio" class="shrink"><img title="Kyma Nee'Lio"
+                                    src="/assets/pets/images/kyma-neelio.png"></a>Kyma Nee'Lio</div>
+                        <div class="pet-card"><a href="#seeh-khoar" class="shrink"><img title="Se'eh Khoar"
+                                    src="/assets/pets/images/seeh-khoar.png"></a>Se'eh Khoar</div>
+                        <div class="pet-card"><a href="#seeh-ihoaohn" class="shrink"><img title="Se'eh Ihoa'ohn"
+                                    src="/assets/pets/images/seeh-ihoaohn.png"></a>Se'eh Ihoa'ohn</div>
+                    </div>
+                </div>
+                <!------------------Kyma Kee'ihtty-------------------->
+                <div id="kyma-keeihtty" class="inner-card section">
+                    <h1>Kyma Kee'ihtty</h1>
+                    <p style="margin-top:-12px;">2019 . 2nd Wave . Pre-Evolved . Water Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/kyma-keeihtty.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/kyma-keeihtty.png">
+                            </a>
+                            Check out this Community Art of Floss and their Kyma Kee'ihtty!
+                            <div id="kyma-keeihtty-art"></div>
+                            The Kyma Kee'ihtties Celebrate their Pet Day on <b>September 16th</b><br>You can claim a
+                            free
+                            Kyma Kee'ihtty on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+
+                                The Kyma Kee'ihtty are a species of semi-aquatic mammal that are exclusively found in
+                                the Rho territory! These cuddly fishes are limber and quick on their long legs while in
+                                the air-filled settlements in Rho but are even more adept at movement through the deep
+                                sea. Their limber and thin bodies weave through the water with help from the fins on
+                                their back and legs. They can reach top speeds of over 60 MPH when zooming through the
+                                water and are known to leave trails of bubbles in their wake.
+                                <br><br><img class="left example" src="/assets/pets/images/kyma-keeihtty.png">
+                                The Kyma Kee-ihtty have long been a close and beloved companion to the Rhofloss. They
+                                are cuddly troublemakers but can make great house pets.
+                                They are energetic and love to play and hunt.Rhofloss for centuries have used the aide
+                                of the Kyma in hunting fish and defending their settlements from threats like sharks and
+                                rays.
+                                <br><br>
+                                Give a Kyma a belly rub and a scratch behind the fins and they will be a lifelong
+                                companion! Some Taffyfloss who have moved from the sea to the surface land have brought
+                                their Kyma along with them! The Kyma dont mind living in the air as long as they have a
+                                water pool available to get comfy in! Floss near the water have quickly learned to love
+                                these adorable fishies!
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button rho" href="#kyma-neelio">Evolution</a>
+                                <a class="button rho" href="/assets/pets/bases/kyma-keeihtty.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button rho"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Kyma Nee'Lio-------------------->
+                <div id="kyma-neelio" class="inner-card section">
+                    <h1>Kyma Nee'Lio</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Water Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/kyma-neelio.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/kyma-neelio.png"></a>
+                            Check out this Community Art of Floss and their Kyma Nee'Lios!
+                            <div id="kyma-neelio-art"></div>
+                            The Kyma Nee'Lios Celebrate their Pet Day on <b>January 7th</b><br>You can claim a
+                            free Kyma Nee'Lio on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> The Kyma Nee'Lio are majestic and confident creatures that can find comfort in just
+                                about any environment, land or sea. They originate from the land of Rho deep in the seas
+                                but quickly found their way to the surface alongside the Taffyfloss. Fiercely curious
+                                and playful the Nee'Lio can cause trouble when they want to but make up for it with
+                                cuddles and adorable mews.
+                                <br>
+                                <br>
+                                <img class="example right" src="/assets/pets/images/kyma-neelio.png">
+                                These aquatic beauties stand about knee high on a Candyfloss however are remarkably
+                                light compared to other petpets their size. They use this near weightlessness and the
+                                strength of their water manipulation abilities to shoot through the ocean waters at top
+                                speed.
+                                <br>
+                                <br>
+                                They are silent hunters who use hidden claws in their forepaws and hind paws to take
+                                down prey creatures in the water, as well as small critters they can get their hands on
+                                in the surface clans. They are especially well known for hunting down the blind
+                                jawbreakers so be sure to keep them separated if you own both!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button rho" href="#kyma-keeihtty">Pre-Evolution</a>
+                                <a class="button rho" href="/assets/pets/bases/kyma-neelio.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button rho"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Se'eh Khoar-------------------->
+                <div id="seeh-khoar" class="inner-card section">
+                    <h1>Se'eh Khoar</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Pre-Evolved . Water Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/seeh-khoar.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/seeh-khoar.png"></a>
+                            Check out this Community Art of Floss and their Se'eh Khoars!
+                            <div id="seeh-khoar-art"></div>
+                            The Se'eh Khoars Celebrate their Pet Day on <b>December 6th</b><br>You can claim a free
+                            Se'eh Khoar on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The Se'eh Khoar are small energetic semi-aquatic creatures. These little horse-fish can
+                                live above the sea so long as they have ample access to water, or completely underneath
+                                the ocean. They are playful and innocent and love to chase things and explore.
+                                <br><br>
+                                They mostly eat small fish and fruits and can swim at rapid speeds. They are found all
+                                over the oceans of Caramella and even some few river variants, leading to a number of
+                                unique body and fin types that help them to acclimate to various environments. These are
+                                easily trained, affectionate, silly pets that have been a staple of Rho households for
+                                generations. If you have one in your home its best to have a small pool for them to stay
+                                in most of the time or bathe them regularly if you don't have a wading pool. If they go
+                                too long without water their skin can become irritated and dried out leading to painful
+                                flaking and rashes! The Se'eh Khoar love to be pampered and are usually very eager to
+                                please. Because of their playful and passive nature, they are easy targets for predators
+                                and require the floss' love and protection to prevent them from going extinct. They can
+                                have some trouble moving on the surface however, needing to use their back legs to lift
+                                and drag their heavy tails across the beach. This slow movement makes them easy targets
+                                for hungry predators. Se'eh Khoar packs are often spotted on rocky beaches laying out in
+                                the sun to get warm or lay their eggs. The Se'eh Khoar are born of large scale textured
+                                eggs that are often sold at market. Some floss like to eat unfertilized Se'eh Khoar
+                                eggs! Yum!
+                                <br><br>
+                                The Se'eh Khoar love floss so much that they are known to come to the beaches to play
+                                and will follow ships around on the open ocean neighing playfully for scrap fish to be
+                                thrown overboard for them. The Se'eh Khoar are too small to be ridden by a candyfloss
+                                but a kitten or Honeyfloss could ride a big enough one under the water! Se'eh Khoar
+                                rides are a common attraction at water parks and zoos for small floss and kittens.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/seeh-khoar.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button rho" href="#seeh-ihoaohn">Evolution</a>
+                                <a class="button rho" href="/assets/pets/bases/seeh-khoar.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button rho"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Se'eh Ihoa'ohn-------------------->
+                <div id="seeh-ihoaohn" class="inner-card section">
+                    <h1>Se'eh Ihoa'ohn</h1>
+                    <p style="margin-top:-12px;">2025 . 3rd Wave . Evolved . Water Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/seeh-ihoaohn.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/seeh-ihoaohn.png"></a>
+                            Check out this Community Art of Floss and their Se'eh Ihoa'ohns!
+                            <div id="seeh-ihoaohn-art"></div>
+                            The Se'eh Ihoa'ohns Celebrate their Pet Day on <b>August 4th</b><br>You can claim a free
+                            Se'eh Ihoa'ohn on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> Se'eh  Ihoa'ohn are the rulers of the ocean. Majestic, fast, and powerful mounts for the Rho warriors, these sea horses are renown for being loyal companions and fierce warriors.
+                                <br>
+                                <br>
+                                <img class="example left" src="/assets/pets/images/seeh-ihoaohn2.png">
+                                The Ihoa'ohn are a symbol of freedom and power among the Rho. These versatile undersea creatures are known for their many variations across the sea. The large, strong beasts are able to pull very heavy things with their impressive swimming speed and power. They have been used by Taffyfloss for centuries to move carriages, tools for agriculture and to be ridden across the sea at impressive speeds.
+                                <br>
+                                <br>
+                                These friendly beasts are docile and herbivores which makes them the perfect companion to the Candyfloss. They are easy to please but very affectionate. They're known to play and speak in high pitched tones that carry thru the water. They love to peak at the top of the waves and leap up out of the water before diving down again. Riding a Ihoa'ohn when they do this is said to be an invaluable experience for a Rhofloss. The Ihoa'ohns are very social creatures and will get upset and sad if they don't have a playmate or two.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button rho" href="#seeh-khoar">Pre-Evolution</a>
+                                <a class="button rho" href="/assets/pets/bases/seeh-ihoaohn.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button rho"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            kyma_keeihttyPool: [
+                { file: "kyma-keeihtty1.png", artist: "VikaRosnova" },
+                { file: "kyma-keeihtty2.png", artist: "EchoSpirit" },
+                { file: "kyma-keeihtty3.png", artist: "Countless" },
+                { file: "kyma-keeihtty4.png", artist: "Axototlduck" },
+                { file: "kyma-keeihtty4.png", artist: "Ninjagomonster" },
+            ],
+            kyma_neelioPool: [
+                { file: "kyma-neelio1.png", artist: "Axototlduck" },
+                { file: "kyma-neelio2.png", artist: "KrissySempaiArt" },
+                { file: "kyma-neelio3.png", artist: "Build-A-Banshee-Arts" },
+            ],
+            seeh_khoarPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            seeh_ihoaohnPool: [
+                { file: "seeh-ihoaohn1.png", artist: "KrissySempaiArt" },
+                { file: "seeh-ihoaohn2.png", artist: "Tenshilove" },
+                { file: "seeh-ihoaohn3.png", artist: "Perry2012Draws" },
+                { file: "seeh-ihoaohn4.png", artist: "Cursedfreak" },
+                { file: "seeh-ihoaohn5.png", artist: "KrissySempaiArt" },
+                { file: "seeh-ihoaohn6.png", artist: "Gypsy-Izzy" },
+            ]
+        };
+
+        insertArt(communityArt.kyma_keeihttyPool, "kyma-keeihtty-art");
+        insertArt(communityArt.kyma_neelioPool, "kyma-neelio-art");
+        insertArt(communityArt.seeh_khoarPool, "seeh-khoar-art");
+        insertArt(communityArt.seeh_ihoaohnPool, "seeh-ihoaohn-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

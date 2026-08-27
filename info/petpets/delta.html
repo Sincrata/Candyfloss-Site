@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Petpets</title>
+    <style>
+        .section {
+            background-color: #2c2b3a;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/halloween1.png);"><img id="top"
+                    src="/assets/logos/delta.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#4a4960;">
+                <h1>Delta Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Delta clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#psyhokythi" class="shrink"><img title="Pyshokythi"
+                                    src="/assets/pets/images/psyhokythi.png"></a>Pyshokythi</div>
+                        <div class="pet-card"><a href="#psyhoecho" class="shrink"><img title="Psyhoecho"
+                                    src="/assets/pets/images/psyhoecho.png"></a>Psyhoecho</div>
+                        <div class="pet-card"><a href="#ostomagi" class="shrink"><img title="Ostomagi"
+                                    src="/assets/pets/images/ostomagi.png"></a>Ostomagi</div>
+                        <div class="pet-card"><a href="#ostoreaper" class="shrink"><img title="Ostoreaper"
+                                    src="/assets/pets/images/ostoreaper.png"></a>Ostoreaper</div>
+                        <div class="pet-card"><a href="#wykorr" class="shrink"><img title="Wykorr"
+                                    src="/assets/pets/images/wykorr.png"></a>Wykorr</div>
+                        <div class="pet-card"><a href="#wyrmkorr" class="shrink"><img title="Wyrmkorr"
+                                    src="/assets/pets/images/wyrmkorr.png"></a>Wyrmkorr</div>
+                        <div class="pet-card"><a href="#crow-scurry" class="shrink"><img title="Crow Scurry"
+                                    src="/assets/pets/images/crow-scurry.png"></a>Crow Scurry</div>
+
+                    </div>
+                </div>
+                <!------------------Pyshokythi-------------------->
+                <div id="psyhokythi" class="inner-card section">
+                    <h1>Pyshokythi</h1>
+                    <p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/psyhokythi.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/psyhokythi.png">
+                            </a>
+                            Check out this Community Art of Floss and their Pyshokythi!
+                            <div id="psyhokythi-art"></div>
+                            The Pyshokythis Celebrate their Pet Day on <b>July 12th</b><br>You can claim a free
+                            Pyshokythi on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/charts/psyhokythi-size.png">
+                                Revered by the Delta, the Psyhokythi are very special astral creatures. The Psyhokythi
+                                bring life to the planet and grow flowers in their wake. It's believed that the
+                                Psyhokythi can move freely between the mortal realm and the afterlife, and that they
+                                guide the souls of the deceased to the next life.
+                                <br><br>
+                                On the night of Vólta Stous Táfous the Floss pay tribute to these majestic creatures by
+                                leaving plastic pumpkins filled with Candies on the graves of their lost family members.
+                                <br><br>
+                                <img class="right example" src="/assets/pets/images/psyhokythi2.png">
+                                The Psyhokythi are very skittish and hate bright lights. Like a hermit crab, the
+                                Psyhokythi carry their homes around with them in the form of uniquely shaped gourds. No
+                                one quite knows why they take a liking to Pumpkins, but a Psyhokythi has never been seen
+                                without one. As far as the Floss are aware there's no way to separate a Psyhokythi from
+                                its gourd. Though they seem to be ethereal the Psyhokythi do have solid bodies beneath
+                                the mist they give and often give of wispy cooing sounds.
+                                <br><br>
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#psyhoecho">Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/psyhokythi.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Psyhoecho-------------------->
+                <div id="psyhoecho" class="inner-card section">
+                    <h1>Psyhoecho</h1>
+                    <p style="margin-top:-12px;">2010 . 1st Wave . Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/psyhoecho.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/psyhoecho.png"></a>
+                            Check out this Community Art of Floss and their Psyhoechos!
+                            <div id="psyhoecho-art"></div>
+                            The Psyhoechos Celebrate their Pet Day on <b>May 18th</b><br>You can claim a
+                            free Psyhoecho on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> Harbingers of change and spirits of the wild, calling a PsyhoEcho a petpet is pretty
+                                misleading. Its extremely rare for PsyhoEcho to appear to a Candyfloss let alone stick
+                                around long enough to be tamed. There have only been a select few ever recorded in
+                                history and some floss believe they are a myth.
+                                <img class="example left" src="/assets/pets/images/psyhoecho2.png">
+                                The Delta knows, however, how real and powerful the PsyhoEcho truly are.
+                                <br>
+                                <br>
+                                It is believed
+                                that a Psyhokythi evolves into a PsyhoEcho, but it hasn't been proven, as no floss has
+                                ever witnessed this happening, though it's been said that PsyhoEchos have been spotted
+                                toting around the decorated Pumpkin that once belonged to a local Psyhokythi.
+                                <br>
+                                <br>
+                                The ancient Delta texts describe the PsyhoEcho as great spirits of life and energy. It
+                                says that they are responsible for the changing of the seasons, the waning of the moon
+                                and even giving life itself to the creatures that inhabit Caramella. If a Floss is able
+                                to find and encounter a PsyhoEcho the experience will stick with them for their entire
+                                life.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#psyhokythi">Pre-Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/psyhoecho.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Ostomagi-------------------->
+                <div id="ostomagi" class="inner-card section">
+                    <h1>Ostomagi</h1>
+                    <p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/ostomagi.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/ostomagi.png"></a>
+                            Check out this Community Art of Floss and their Ostomagis!
+                            <div id="ostomagi-art"></div>
+                            The Ostomagis Celebrate their Pet Day on <b>August 12th</b><br>You can claim a free
+                            Ostomagi on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>These creatures are thought to be made of the bones of a kappa bear or other similar
+                                creatures. These bones are taken over by spirits who want a body. It is thought to be
+                                the same entity as the Psyhokythi and Psyhoecho. They are sacred, well respected, and
+                                thought to be able to curse you. The Delta believe that they gave them the earth that
+                                they live on and farm and therefore must be revered even though they cause mischief and
+                                have been known to abduct children.
+                                <br><br>
+                                Ostomagi are wandering spirits and love to travel around even if they don't have a
+                                destination in mind. They do actually like to be pets even if the Delta don't like to
+                                think of them like that. It is always obvious where one has been since they leave dead
+                                patches on the ground wherever they walk like they are sucking the energy from the very
+                                earth, which they are. They collect their energy from the plant life around them, even
+                                bothering their Deltafloss owners to grow them plants to “eat”.
+                                <img class="example" src="/assets/pets/images/ostomagi.png">
+                                They are always glowing and using spiritual energy like it never runs out. There are
+                                people who want to harness this energy, but Delta does not allow it due to the
+                                Ostomagi's holiness to them.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#ostoreaper">Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/ostomagi.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Ostoreaper-------------------->
+                <div id="ostoreaper" class="inner-card section">
+                    <h1>Ostoreaper</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/ostoreaper.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/ostoreaper.png"></a>
+                            Check out this Community Art of Floss and their Ostoreapers!
+                            <div id="ostoreaper-art"></div>
+                            The Ostoreapers Celebrate their Pet Day on <b>February 3rd</b><br>You can claim a free
+                            Ostoreaper on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/ostoreaper2.png">
+                                A massive skeleton makes up the base of the Ostoreaper. When it's sleeping or trying to
+                                hide it can collapse itself into a pile of bones and mute it's presence, blending itself
+                                in with its surroundings. Adventurers who pass through the Delta's The Plains of
+                                Charmont where they are known to gather, are often surprised by the Ostoreapers who lay
+                                in wait for their prey. Some Deltas consider these beasts to be the embodiment of
+                                spirits that are wandering Caramella and revere and fear them. They are rare creatures
+                                and are not likely to be seen in a lifetime, unless you travel to Delta's capital where
+                                one particular Hero is known to ride his Ostoreaper through the roads of Storlocke.
+                                <br>
+                                <br>
+                                The Ostoreapers get their name from an old Delta legend that claims these creatures come
+                                for the souls of the dying to take them into the afterlife. According to that tale they
+                                say that if you make eye contact with a Reaper for too long then it means they have
+                                marked you for death! Some who have come across and Ostoreaper and lived, claim that the
+                                sounds they make sound like the whispers of ghosts and the light in their chest cavities
+                                seems to swirl and move and can even appear like faces at times!
+                                <br>
+                                <br>
+                                Some think the light is composed of the souls the Osto has taken and uses for energy!
+                                Lots of tales tell of the Ostoreaper but the only way to know the truth is to tame one
+                                yourself... are you brave enough?
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#ostomagi">Pre-Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/ostoreaper.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Wykorr-------------------->
+                <div id="wykorr" class="inner-card section">
+                    <h1>Wykorr</h1>
+                    <p style="margin-top:-12px;">2023 . 3rd Wave . Un-Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/wykorr.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/wykorr.png"></a>
+                            Check out this Community Art of Floss and their Wykorrs!
+                            <div id="wykorr-art"></div>
+                            The Wykorrs Celebrate their Pet Day on <b>April 15th</b><br>You can claim a free Wykorr
+                            on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The Wykorr are gnarly beasts who rule the skies over the vast wilds of Delta. Wykorr
+                                stand chest high on a Trufflefloss and can easily take down an unsuspecting Candyfloss
+                                if they set their sights on them. Often hunted when they come too close to
+                                civilizations, Wykorr are not common pets in the slightest.
+                                <br>
+                                <br>
+                                These territorial, aggressive beasts can only be domesticated by the most fearless and
+                                strong floss who dare to capture and tame one. Wykorr are powerful creatures who can be
+                                useful as companions to Deltan adventurers. They are very high maintenance however and
+                                can only thrive in the Deltan region's temperate environment and unique fauna. With this
+                                fact, it's extremely rare to see one outside of their Clan territory. The Wykorr are
+                                covered in metallic plate like scaled on their stomachs that protect them from
+                                predators, and their winged arms can carry them from the ground to high in the clouds in
+                                seconds. They are dangerous foes and move in packs of up to 10 or 12 at a time. They
+                                communicate with their pack with a very distinct clicking noise that they make with
+                                their teeth called stridulating.
+
+                                <img class="example" src="/assets/pets/images/wykorr.png" style="width: 30%;">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#wyrmkorr">Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/wykorr.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Wyrmkorr-------------------->
+                <div id="wyrmkorr" class="inner-card section">
+                    <h1>Wyrmkorr</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/wyrmkorr.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/wyrmkorr.png"></a>
+                            Check out this Community Art of Floss and their Wyrmkorrs!
+                            <div id="wyrmkorr-art"></div>
+                            The Wyrmkorrs Celebrate their Pet Day on <b>June 27th</b><br>You can claim a free Wyrmkorr
+                            on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The Wyrmkorr are vicious, dangerous creatures. They are reptilian beasts that fly and run
+                                at high speeds on their four hoofed feet. Their upper arms are attached to web-like
+                                wings that allow them to gain height and fly for short periods of time. These heavy
+                                dragons are masters of defense, with hard metallic plating that grows naturally over
+                                their necks and bellies. The cross-shaped plate on their chest is a metallic plate that
+                                grows over top of their soul gem, further protecting them from enemies!
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/wyrmkorr.png" style="width:30%;">
+                                These are the only petpet that have a fully covered gem! Destroying their gem is still
+                                the most recommenced way to kill a Wyrmkorr but it takes a lot of skill and raw power to
+                                break off or through their protective covering! Knights of Delta have trained for many
+                                decades to fight Wyrmkorr to protect the citizens who live in Delta. The Wyrmkorr are
+                                floss-eaters and will attack and eat pretty much anything that moves! They are fast,
+                                sharp, and tough to defeat, but on top of all of that they are also poisonous! The claws
+                                that grow from the Wyrmkorr's wing-arms and their teeth secrete a toxic acid that will
+                                burn through metal and stone and if it gets on the skin it will poison the floss or
+                                other creature and slowly kill them! Thankfully the herbalists of Delta have a cure for
+                                the poison, but if you don't have it on hand, facing off with a Wyrmkorr is extremely
+                                deadly and best left to the adventurers and monster hunters!
+                                <br><br>
+                                <img class="size" src="/assets/pets/charts/wyrmkorr-size.png">
+                                Wyrmkorr are obsessed with shiny metals and will go out of their way to gather and hoard
+                                treasure, weapons and gold in their dens! They will spit acid onto the metal to melt it
+                                and shape it into nests, and they're known to coat their eggs in this melted metal to
+                                protect them from predators and the elements! The Wyrmkorr do not roar like most
+                                dragon-type creatures, but instead they make a very distinct clicking sound with their
+                                throats! If you ever hear this sinister clicking and whirring be sure to hide! Sometimes
+                                offering a sacrifice for the Wyrmkorr to eat will give you enough time to hide! Running
+                                and fighting may be futile but the Wyrmkorr are not especially good at tracking or
+                                hunting so the best thing to do is to get out of their line of sight and try to stay
+                                very quiet!
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#wykorr">Pre-Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/wyrmkorr.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Crow Scurry-------------------->
+                <div id="crow-scurry" class="inner-card section">
+                    <h1>Crow Scurry</h1>
+                    <p style="margin-top:-12px;">2025 . 4th Wave . Un-Evolved . Plant Manipulation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/crow-scurry.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/crow-scurry.png"></a>
+                            Check out this Community Art of Floss and their Crow Scurrys!
+                            <div id="crow-scurry-art"></div>
+                            The Crow Scurrys Celebrate their Pet Day on <b>March 23rd</b><br>You can claim a free
+                            Crow Scurry on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>The autumnal forests and wide plains of Delta are home to one of the region’s most
+                                beloved but fragile residents: the Crow Scurry. These small, furry creatures are
+                                inseparable from their environment, not just because they live off the land, but because
+                                their very survival depends on a unique, personal form of protection.
+                                The Crow Scurry is incredibly sensitive to the cold; even moderate room temperatures can
+                                prove fatal.
+                                <img class="example" src="/assets/pets/images/crow-scurry.png">
+                                <br><br>
+                                To combat this vulnerability, they have become master engineers of mobile warmth.
+                                Scurries are famous for weaving ingenious sack-like structures from materials gathered
+                                in their environment—showing a strong preference for dried plants and hay. Each sack is
+                                a meticulously crafted cocoon, which they stuff with leaves, soft fluff, and dried wheat
+                                to maximize insulation. Every design includes perfectly sized holes where the Scurry can
+                                press its face out, taking in the world while staying perfectly cozy inside its mobile
+                                home.
+                                <br><br>
+                                Given their love for hay and wheat, Crow Scurries thrive around the farms and fields of
+                                Delta, and the farmers couldn't be happier about it. The Scurries only eat dried, dead
+                                weeds and old vegetables, meaning they pose absolutely no threat to valuable crops. In
+                                fact, they are the loyal protectors of the harvest. Energetic and quick, they dedicate
+                                themselves to chasing away birds and other small critters that might threaten their
+                                territory. The local farmers, recognizing their dedication, often build high platforms
+                                specifically for Scurries to perch upon, offering them the best vantage point for
+                                guarding the fields. It's a charming local custom to place a tiny scarf or an old hat
+                                around the perched scurry and its sack, effectively turning the diligent little creature
+                                into a living, fuzzy scarecrow.
+                                <br><br>
+                                This dependence on their warm, woven home means that maintenance is critical. If a
+                                Scurry's sack rips or tears, the immediate loss of insulation can be deadly. Delta
+                                farmers frequently check on their tiny neighbors, taking the time to carefully sew up
+                                and patch any weak spots, ensuring the creature remains healthy and warm. Though they
+                                are generally energetic and docile when well-cared for, Scurries require immense
+                                devotion if kept as household pets, thriving only in the warmest of indoor environments.
+                                Strict rules apply to their care: the Scurry must remain in its mobile home at all
+                                times. It should only be taken out temporarily for necessary functions, such as cleaning
+                                the sack's fillings, swapping the creature to a new home, or for a quick bath, before
+                                being immediately placed back into its comfortable mobile cocoon.
+                                <br><br>
+                                Whether perched high above a wheat field, zealously guarding the season's yield, or
+                                tucked safely into a freshly repaired sack, the Crow Scurry remains the energetic,
+                                crucial, and entirely charming centerpiece of agricultural life in Delta.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button delta" href="#" style="display:none;">Pre-Evolution</a>
+                                <a class="button delta" href="/assets/pets/bases/crow-scurry.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button delta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            psyhokythiPool: [
+                { file: "psyhokythi1.png", artist: "Axototlduck" },
+                { file: "psyhokythi2.png", artist: "Donutdoggy" },
+                { file: "psyhokythi3.png", artist: "RisingSun98" },
+                { file: "psyhokythi4.png", artist: "CursedFreak" },
+                { file: "psyhokythi5.png", artist: "Echospirit" },
+                { file: "psyhokythi6.png", artist: "Build-A-Banshee-Arts" },
+                { file: "psyhokythi7.png", artist: "PuffinDoodle" },
+                { file: "psyhokythi8.png", artist: "Countless" },
+                { file: "psyhokythi9.png", artist: "Gypsi-Izzy" },
+                { file: "psyhokythi10.png", artist: "RisingSun98" },
+                { file: "psyhokythi11.png", artist: "Axototlduck" },
+                { file: "psyhokythi12.png", artist: "Donutdoggy" },
+                { file: "psyhokythi13.png", artist: "CursedFreak" },
+            ],
+            psyhoechoPool: [
+                { file: "psyhoecho1.png", artist: "Ninjagomonster" },
+                { file: "psyhoecho2.png", artist: "Dressribboness" },
+                { file: "psyhoecho3.png", artist: "DonutDoggy" },
+                { file: "psyhoecho4.png", artist: "Axototlduck" },
+            ],
+            ostomagiPool: [
+                { file: "ostomagi1.png", artist: "Zanixia" },
+                { file: "ostomagi2.png", artist: "Countless" },
+                { file: "ostomagi3.png", artist: "FluffehFangz" },
+                { file: "ostomagi4.png", artist: "Ninjagomonster" },
+                { file: "ostomagi5.png", artist: "KrissySempaiArt" },
+            ],
+            ostoreaperPool: [
+                { file: "ostoreaper1.png", artist: "FadedFaeble" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            wykorrPool: [
+                { file: "wykorr1.png", artist: "nifeWoofy" },
+                { file: "wykorr2.png", artist: "FadedFaeble" },
+                { file: "wykorr3.png", artist: "Axototlduck" },
+                { file: "wykorr4.png", artist: "KrissySempaiArt" },
+            ],
+            wyrmkorrPool: [
+                { file: "wyrmkorr1.png", artist: "Build-A-Banshee-Arts" },
+                { file: "wyrmkorr2.png", artist: "Axototlduck" },
+                { file: "wyrmkorr3.png", artist: "Ninjagomonster" },
+            ],
+            crow_scurryPool: [
+                { file: "crow-scurry1.png", artist: "Axototlduck" },
+                { file: "crow-scurry2.png", artist: "Ninjagomonster" },
+                { file: "crow-scurry3.png", artist: "Countless" },
+                { file: "crow-scurry4.png", artist: "CursedFreak" },
+            ]
+
+        };
+
+        insertArt(communityArt.psyhokythiPool, "psyhokythi-art");
+        insertArt(communityArt.psyhoechoPool, "psyhoecho-art");
+        insertArt(communityArt.ostomagiPool, "ostomagi-art");
+        insertArt(communityArt.ostoreaperPool, "ostoreaper-art");
+        insertArt(communityArt.wykorrPool, "wykorr-art");
+        insertArt(communityArt.wyrmkorrPool, "wyrmkorr-art");
+        insertArt(communityArt.crow_scurryPool, "crow-scurry-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>
