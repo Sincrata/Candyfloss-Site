@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Petpets</title>
+    <style>
+        .section {
+            background-color: #cf732e;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/nu4.png);"><img id="top"
+                    src="/assets/logos/nu.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#ffa647;">
+                <h1>Nu Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Nu clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#dyopaw" class="shrink"><img title="Dyopaw"
+                                    src="/assets/pets/images/dyopaw.png"></a>Dyopaw</div>
+                        <div class="pet-card"><a href="#tryopaw" class="shrink"><img title="Tryopaw"
+                                    src="/assets/pets/images/tryopaw.png"></a>Tryopaw</div>
+                        <div class="pet-card"><a href="#macho-almaroo" class="shrink"><img title="Macho Almaroo"
+                                    src="/assets/pets/images/macho-almaroo.png"></a>Macho Almaroo</div>
+                        <div class="pet-card"><a href="#greater-almaroo" class="shrink"><img title="Greater Almaroo"
+                                    src="/assets/pets/images/greater-almaroo.png"></a>Greater Almaroo</div>
+                        <div class="pet-card"><a href="#bala-bala" class="shrink"><img title="Bala-Bala"
+                                    src="/assets/pets/images/bala-bala.png"></a>Bala-Bala</div>
+                        <div class="pet-card"><a href="#bala-mega" class="shrink"><img title="Bala-Mega"
+                                    src="/assets/pets/images/bala-mega.png"></a>Bala-Mega</div>
+                    </div>
+                </div>
+                <!------------------Dyopaw-------------------->
+                <div id="dyopaw" class="inner-card section">
+                    <h1>Dyopaw</h1>
+                    <p style="margin-top:-12px;">2020 . 1st Wave . Pre-Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/dyopaw.png">
+                                <img id="chart" title="click for full sized chart" src="/assets/pets/charts/dyopaw.png">
+                            </a>
+                            Check out this Community Art of Floss and their Dyopaw!
+                            <div id="dyopaw-art"></div>
+                            The Dyopaws Celebrate their Pet Day on <b>July 3rd</b><br>You can claim a free
+                            Dyopaw on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Two personalities sharing one body - the Dyopaw are living embodiment of cooperation and
+                                unity. Each head of the Dyopaw has an incomplete face, relying on it's better half to
+                                survive. Some are born with mismatched faces, which require extra care from their
+                                Candyfloss owners.
+                                <br><br><img class="left example" src="/assets/pets/images/dyopaw.png">
+                                The Dyopaw are often at odds with themselves, struggling between laziness and
+                                hyperactivity, timidness and bravery, obedience and defiance.
+                                <br><br><img class="size right" src="/assets/pets/charts/dyopaw-size.png">
+                                Learning to find a common ground is the ultimate goal for these feisty puppies, and with
+                                the help of their Candyfloss friends and proper training they can reach peace. Dryopaw
+                                are able to produce forcefields and often use them to play and get around. They can be
+                                trained to be used as Service Animals for Floss with disabilities or for protection for
+                                weak or vulnerable floss. Dyopaws are chubby and small and make perfect lap cuddlers and
+                                adventure companions. They love to play and run and do tricks and make great pals for
+                                your Kittenfloss. Dont let them near the Charicat though, as these beasts are mortal
+                                enemies! If theres one thing both Dyopaw can agree on its the desire to capture a
+                                Charicat and foil it's devious intentions. Protectors by nature and lovers at heart the
+                                Dyopaw will stop at nothing to please it's Candyfloss family. Dont miss your chance to
+                                grab a rambunctious Dyopaw while you're in Nu for the big game!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#tryopaw">Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/dyopaw.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Tryopaw-------------------->
+                <div id="tryopaw" class="inner-card section">
+                    <h1>Tryopaw</h1>
+                    <p style="margin-top:-12px;">2021 . 1st Wave . Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/tryopaw.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/tryopaw.png"></a>
+                            Check out this Community Art of Floss and their Tryopaws!
+                            <div id="tryopaw-art"></div>
+                            The Tryopaws Celebrate their Pet Day on <b>June 19th</b><br>You can claim a
+                            free Tryopaw on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Stronger! Faster! More heads! These wrinkly beasts are a massive undertaking for any
+                                floss who chooses to raise one! The Tryopaw are glorious doggies that are extremely
+                                loyal and playful! Their three heads all have unique personalities and require different
+                                levels of training and attention from their floss companions!
+                                <img class="size" src="/assets/pets/charts/tryopaw-size.png">
+                                But once they bond with their floss owners, they will love you for life! The Tryopaw is
+                                found wild in the hills of Nu and run in packs but are most happy when in the company of
+                                Candyfloss!
+                                <br>
+                                <br>
+                                Standing about twice the height of a Trufflefloss the Dyopaw is the second largest known
+                                petpet behind the Flogasaurus Rex! With their strong jaws and sharp claws, they're a
+                                force to be reckoned with but they most likely would prefer cuddles and playtime over
+                                battle any day! Hard bone plating covers the shared chest of the Tryopaw and some heads
+                                lack certain features which leads them to rely on one another for all of their senses.
+                                <br>
+                                <br>
+                                The Tryopaw can summon strong force fields from their chests and often use them to
+                                protect their cubs or their floss family. If you have a Tryopaw be sure to take them
+                                often to run through the fields and give them lots of belly rubs.
+                                <img class="example" src="/assets/pets/images/tryopaw.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#dyopaw">Pre-Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/tryopaw.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Macho Almaroo-------------------->
+                <div id="macho-almaroo" class="inner-card section">
+                    <h1>Macho Almaroo</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Pre-Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/macho-almaroo.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/macho-almaroo.png"></a>
+                            Check out this Community Art of Floss and their Macho Almaroos!
+                            <div id="macho-almaroo-art"></div>
+                            The Macho Almaroos Celebrate their Pet Day on <b>May 30th</b><br>You can claim a free
+                            Macho Almaroo on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size right" src="/assets/pets/charts/macho-almaroo-size.png">
+                                The Macho Almaroo call the grasslands of Nu their home. There small marsupials leap and
+                                bound with their strong back legs through the brush and grasses that spot the hills. No
+                                larger than a Floga Drakai, the Macho Almaroo is a great companion and pet for the floss
+                                of Nu.
+                                <br><br>
+                                However they are a bit to handle at first, the Macho Almaroo is a tough opponent, and
+                                love to kick, tackle and claw at anything they deem a threat. Even the great Tryopaw
+                                stay away from a pack of Almaroo, or they'd walk away with three bloody snouts! Tame
+                                Macho Almaroo can even play ball! Incredibly smart, these petpets can be taught to
+                                bounce back balls and even kick them into goal nets if they're trained well, making them
+                                great buddies to the aspiring Omodaball players of Nu!
+                                <br><br>
+                                Their forcefields are not incredibly strong but they're known to use them as bouncing
+                                pads allowing them to take turns at high speeds and jump higher than they should be able
+                                to, almost like a double jump!
+                                <br><br>
+                                <img class="example left" src="/assets/pets/images/macho-almaroo.png">
+                                The pouch on their belly is used to carry small items like food, toys, shiny objects
+                                they find in the dust, and even their own babies! They have a tendency to steal food
+                                from floss and hide it away so be sure to keep an eye on them! They particularly like
+                                metal things so watch your coin purse! Though they can be a hand ful the Macho Almaroo
+                                is a great loyal companion and fluffy as can be! Their retractable claws and cuddly
+                                nature make them perfect protectors and playmates for floss of all ages.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#greater-almaroo">Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/macho-almaroo.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Greater Almaroo-------------------->
+                <div id="greater-almaroo" class="inner-card section">
+                    <h1>Greater Almaroo</h1>
+                    <p style="margin-top:-12px;">2023 . 2nd Wave . Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/greater-almaroo.png"><img id="chart"
+                                    title="click for full sized chart"
+                                    src="/assets/pets/charts/greater-almaroo.png"></a>
+                            Check out this Community Art of Floss and their Greater Almaroos!
+                            <div id="greater-almaroo-art"></div>
+                            The Greater Almaroos Celebrate their Pet Day on <b>October 11th</b><br>You can claim a free
+                            Greater Almaroo on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/greater-almaroo-size.png">
+                                The Greater Almaroo are tough opponents who love to pick fights with each other, other
+                                petpets or even unsuspecting floss that cross their paths. With their insane strength in
+                                their punches and kicks the Greater Almaroo is the master of hand-to-hand combat, and to
+                                put a cherry on top their mastery of force field generation makes their defenses just as
+                                impressive. Their thick, strong upper arms are used for boxing their foes and their
+                                powerful back legs allow them to leap and bound like there's no tomorrow.
+                                <br>
+                                <br>
+                                These powerful creatures tend to travel solo or in small family groups through the
+                                grasslands of Nu. They hold their young in the pouch on their bellies, supported by
+                                their middle arms, which are much gentler and softer than their other limbs specifically
+                                to care for their tender young. When they do not have a cub in their pouch, they often
+                                squirrel away things for later and are even known to give rides to other petpets like
+                                rainblo or jawbreakers that befriend them. As pets the Greater Almaroo can be a lot to
+                                handle, standing just a head under the height of a Sugarfloss and requiring a lot of
+                                exercise and proper obedience training they are not pets for the faint of heart.
+                                <br>
+                                <br>
+                                <img class="example" src="/assets/pets/images/greater-almaroo2.png">
+                                However, if you are able to properly care for one, they can be great companions and are
+                                very loyal. They are even known to allow kittenfloss that they belong to ride in their
+                                pouch and are said to be very protective of the kids in their families.
+                                <br>
+                                <br>
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#macho-almaroo">Pre-Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/greater-almaroo.psd" download>Download
+                                    Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Bala-Bala-------------------->
+                <div id="bala-bala" class="inner-card section">
+                    <h1>Bala-Bala</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Un-Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/bala-bala.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/bala-bala.png"></a>
+                            Check out this Community Art of Floss and their Bala-Balas!
+                            <div id="bala-bala-art"></div>
+                            The Bala-Balas Celebrate their Pet Day on <b>December 9th</b><br>You can claim a free
+                            Bala-Bala on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Bala-Bala is a playful Petpet! Thought to be relatives of the Mousiki, these
+                                creatures are energetic, curious and affectionate. The Bala-Bala's live in large family
+                                groups in the forests of the Nu outback.
+                                <br>
+                                <br>
+                                They love to swing from the trees, dig in the dirt and run through the arid grasslands
+                                that they call home.
+                                <img class="example" src="/assets/pets/images/bala-bala.png">
+                                <br>
+                                <br>
+                                These small gymnasts love to use their force shields to create platforms and ramps to
+                                help them navigate their environment and play on. It's not uncommon to see a Bala-Bala
+                                create a tall jungle-gym style structure for itself and its companions to swing and jump
+                                around on for no apparent reason besides from having fun.
+                                <br>
+                                <br>
+                                The Bala-Bala is highly
+                                intelligent when taught by a Candyfloss, and some have even been able to pick up light
+                                rudimentary sign language. They tend to create strong bonds with multiple floss and are
+                                very trusting. They are great pets for large families. They are omnivorous creatures,
+                                but prefer to eat fruit, bugs and small rodents, so be sure to keep them well fed if
+                                they share a space with a Jawbreaker Bat! You can even give a ball to a Bala-Bala and it
+                                will be entertained for ages. Bala-Bala pet owners are known to have large baskets
+                                overflowing with their pets' toys. These rambunctious scamps can be a handful, but their
+                                curious, silly, and affectionate nature make them beloved in all of Caramella.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#bala-mega">Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/bala-bala.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Bala-Mega-------------------->
+                <div id="bala-mega" class="inner-card section">
+                    <h1>Bala-Mega</h1>
+                    <p style="margin-top:-12px;">2026 . 3rd Wave . Evolved . Forcefield</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/bala-mega.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/bala-mega.png"></a>
+                            Check out this Community Art of Floss and their Bala-Megas!
+                            <div id="bala-mega-art"></div>
+                            The Bala-Megas Celebrate their Pet Day on <b>September 28th</b><br>You can claim a free
+                            Bala-Mega on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/bala-mega.png">
+                                The Bala Mega is a large primate home in the arid biomes of the Nu Outback. Standing roughly equal the height of an average popfloss, these  highly athletic creatures are characterized by their immense energy and  remarkably docile temperament. While they are primarily  omnivorous—subsisting on a diet of local fruits and insects—they are  opportunistic hunters known to forage for rodents and fish in rare  water sources. Their social structure is deeply familial, with  parents frequently seen transporting multiple infants who cling securely  to their thick fur during transit.
+                                <br><br>
+                                What truly distinguishes the Bala Mega is its adept ability to project solid force fields in midair. These  primates utilize this power to construct elaborate architectural feats known as Bala Towers,  which serve as both communal living quarters and massive jungle gyms.  By manifesting these platforms at high speeds, a pack can bound across  the landscape, leaping off force anchors, pipes and platforms to traverse great distances  without ever touching the grass. These structures are a  testament to their spatial intelligence and need for constant physical  engagement.
+                                <br><br>
+                                Beyond their survival tactics, Bala Mega are celebrated for their high intelligence and playfulness. They are  easily trained and possess a natural affinity for organized sports,  particularly those involving projectile coordination. They show a  distinct preference for games that require chasing, throwing, and  catching balls, often incorporating their force-field generation to  create vertical playing fields. Their ability to bond with candyfloss trainers and  their vibrant, spirited nature make them one of the most engaging  species in Caramella.
+                                <img class="example" src="/assets/pets/images/bala-mega2.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button nu" href="#bala-bala">Pre-Evolution</a>
+                                <a class="button nu" href="/assets/pets/bases/bala-mega.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button nu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            dyopawPool: [
+                { file: "dyopaw1.png", artist: "CursedFreak" },
+                { file: "dyopaw2.png", artist: "-spaceman-" },
+                { file: "dyopaw3.png", artist: "Chamalaeon" },
+                { file: "dyopaw4.png", artist: "KrissySempaiArt" },
+                { file: "dyopaw5.png", artist: "Dreamy_sand" },
+                { file: "dyopaw6.png", artist: "Crossesnbatwingz" },
+                { file: "dyopaw7.png", artist: "PuffinDoodle" },
+                { file: "dyopaw8.png", artist: "Tenshilove" },
+                { file: "dyopaw9.png", artist: "Portal-Oddities" },
+                { file: "dyopaw10.png", artist: "Mistake-Paradise" },
+                { file: "dyopaw11.png", artist: "Countless" },
+
+            ],
+            tryopawPool: [
+                { file: "tryopaw1.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            macho_almarooPool: [
+                { file: "macho-almaroo1.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            greater_almarooPool: [
+                { file: "greater-almaroo1.png", artist: "Perry2012draws" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            bala_balaPool: [
+                { file: "bala-bala1.png", artist: "Aquilapurr" },
+                { file: "bala-bala2.png", artist: "Teddybears-hearts" },
+                { file: "bala-bala3.png", artist: "Echospirit" },
+                { file: "bala-bala4.png", artist: "KrissySempaiArt" },
+            ],
+            bala_megaPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ]
+        };
+
+        insertArt(communityArt.dyopawPool, "dyopaw-art");
+        insertArt(communityArt.tryopawPool, "tryopaw-art");
+        insertArt(communityArt.macho_almarooPool, "macho-almaroo-art");
+        insertArt(communityArt.greater_almarooPool, "greater-almaroo-art");
+        insertArt(communityArt.bala_balaPool, "bala-bala-art");
+        insertArt(communityArt.bala_megaPool, "bala-mega-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

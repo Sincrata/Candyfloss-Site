@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psi Petpets</title>
+    <style>
+        .section {
+            background-color: #4b856f;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/psi2.png);"><img id="top"
+                    src="/assets/logos/psi.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#87ffd2">
+                <h1>Psi Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Psi clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#dorokin" class="shrink"><img title="Dorokin"
+                                    src="/assets/pets/images/dorokin.png"></a>Dorokin</div>
+                        <div class="pet-card"><a href="#doroking" class="shrink"><img title="Doroking"
+                                    src="/assets/pets/images/doroking.png"></a>Doroking</div>
+                        <div class="pet-card"><a href="#xoyetiko" class="shrink"><img title="Xoyetiko"
+                                    src="/assets/pets/images/xoyetiko.png"></a>Xoyetiko</div>
+                        <div class="pet-card"><a href="#bahyetiko" class="shrink"><img title="Bahyetiko"
+                                    src="/assets/pets/images/bahyetiko.png"></a>Bahyetiko</div>
+                        <div class="pet-card"><a href="#chippermink" class="shrink"><img title="Chippermink"
+                                    src="/assets/pets/images/chippermink.png"></a>Chippermink</div>
+                        <div class="pet-card"><a href="#frittermink" class="shrink"><img title="Frittermink"
+                                    src="/assets/pets/images/frittermink.png"></a>Frittermink</div>
+                    </div>
+                </div>
+                <!------------------Dorokin-------------------->
+                <div id="dorokin" class="inner-card section">
+                    <h1>Dorokin</h1>
+                    <p style="margin-top:-12px;">2020 . 1st Wave . Pre-Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/dorokin.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/dorokin.png">
+                            </a>
+                            Check out this Community Art of Floss and their Dorokin!
+                            <div id="dorokin-art"></div>
+                            The Dorokins Celebrate their Pet Day on <b>February 2nd</b><br>You can claim a free
+                            Dorokin on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+
+                                Dorokin are little cold friends, their bodies are comprised of a thin ice base, and they
+                                like to roll in snow and ice to keep their icy bodies cold. With no arms to help them,
+                                Dorokin can often be found rolling about in any ice and snow nearby. Wild Dorokin have
+                                never been seen, so it's unknown how they act in the wild. It's not uncommon to find a
+                                Dorokin hiding beneath your Chioni tree along with your presents on Chioni morning.
+                                Thats how they got their name, as "dóro" means gift!
+                                <br><br><img class="left example" src="/assets/pets/images/dorokin.png">
+                                They are very friendly and quiet but needy. If a Dorokin isn't getting enough attention
+                                they will wander off into the snow, so be sure to give it lots of love. If a Dorokin
+                                wants to pack more ice onto their bodies but can't find any snow nearby they will go
+                                after ice cream and slushies instead. Their round beaks don't seem to open and they
+                                don't seem to eat. In fact, if you tug you can pull it right off! Though a Dorokin
+                                doesn't like this, they will be just as happy if you replace it with a similar object
+                                like a carrot or waffle cone. They sure are mysterious creatures.
+                                <br><br>
+                                Dorokin love to dress up! leave a cap around a Dorokin and it will become theirs.
+                                Scarves, hats, socks, you name it - your Dorokin wants it. Some floss are keen to shape
+                                their Dorokin's snow into various forms, they tend to dislike being touched all over but
+                                don't mind the shape changes. Rumor has it the Dorokin are Santafloss' helpers and if
+                                youre mean to one you will be on the naughty list for life!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#doroking">Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/dorokin.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Doroking-------------------->
+                <div id="doroking" class="inner-card section">
+                    <h1>Doroking</h1>
+                    <p style="margin-top:-12px;">2021 . 1st Wave . Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/doroking.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/doroking.png"></a>
+                            Check out this Community Art of Floss and their Dorokings!
+                            <div id="doroking-art"></div>
+                            The Dorokings Celebrate their Pet Day on <b>September 25th</b><br>You can claim a
+                            free Doroking on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size right" src="/assets/pets/charts/doroking-size.png">
+                                The Doroking is a relatively new discovery. A team of hunters in Psi came across the
+                                first of these giant snow beasts deep in the North of Pagoto. It was aggressive and
+                                injured the floss, when they returned with back up, they discovered a huge heard of
+                                these 12-foot-tall beasts, living in caves on a mountain top. It took time, but
+                                eventually the floss were able to make peace with these territorial beasts, when one of
+                                them recognized the hat of their childhood Dorokin resting on its head.
+                                <br>
+                                <br>
+                                It's unknown if the Dorokin truly evolve into this beast, but that is the theory, as
+                                many floss have identified their long lost Dorokin among the herds they've found.
+                                <img class="example left" src="/assets/pets/images/doroking2.png">
+                                <br>
+                                <br>
+                                Not much is known about these lumbering beasts, but they seem similar to the Dorokin, in
+                                how they shape their bodies with snow, ice, and slush. They create a high-pitched sound
+                                like a glass struck with a fork but are otherwise silent and docile once introduced.
+                                Though they can be a bit protective of their pack.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#dorokin">Pre-Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/doroking.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Xoyetiko-------------------->
+                <div id="xoyetiko" class="inner-card section">
+                    <h1>Xoyetiko</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Pre-Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/xoyetiko.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/xoyetiko.png"></a>
+                            Check out this Community Art of Floss and their Xoyetikos!
+                            <div id="xoyetiko-art"></div>
+                            The Xoyetikos Celebrate their Pet Day on <b>October 8th</b><br>You can claim a free
+                            Xoyetiko on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/xoyetiko-size.png">
+                                The Xoteiko are adorable fuzzy creatures who live deep in the icecream mountains of
+                                northern Pagoto! They are only about 10 inches tall and come in many different forms!
+                                These little gremlins are a recent discovery of the Psifloss who inhabit the frigid
+                                north and have recently been spreading south to Pzekazi as household pets. Like monkeys
+                                the Xoyetiko walk on two legs but are known to run and climb with their center and front
+                                arms. Their small limbs stick close to their fur for warmth, and they're even known to
+                                curl into fluff balls when they are shy, hiding from danger, or sleeping.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/xoyetiko.png">
+                                They make chattering noises when talking to one another and coo and chirp in delight
+                                when they are pleased, but when they are angry or scared the Xoyetiko let out loud
+                                screeches and howls to call one another and warn each other of danger. They live in
+                                packs and burrow into the snow and small crevices in the ice and are very social
+                                creatures. They can often be found cuddling up with one another in dog piles and
+                                cleaning each other's thick fur. 
+                                <br><br>
+                                They are extremely docile and eat sweets like cakes and
+                                cookies and are very affectionate to the Candyfloss once their trust is earned. Because
+                                of their loving nature, small and easy to care for forms, and adorable mannerisms the
+                                Xoyetiko have become widely popular as Christmas gifts for kittenfloss and household
+                                pets across Caramella.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#bahyetiko">Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/xoyetiko.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Bahyetiko-------------------->
+                <div id="bahyetiko" class="inner-card section">
+                    <h1>Bahyetiko</h1>
+                    <p style="margin-top:-12px;">2023 . 2nd Wave . Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/bahyetiko.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/bahyetiko.png"></a>
+                            Check out this Community Art of Floss and their Bahyetikos!
+                            <div id="bahyetiko-art"></div>
+                            The Bahyetikos Celebrate their Pet Day on <b>July 9th</b><br>You can claim a free
+                            Bahyetiko on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p> The Bahyetiko stand about waist high on the average Peppermintfloss.  They are rare creatures to find and in the wild they tend to live in deep caves at the top of Pagoto's snowy ice caps. They are rabid creatures who are crooked and grumpy by nature. Unlike most petpets the  Xoyetiko will only evolve into the Bahyetiko if they are overcome with great grief and annoyance.
+                                <br>
+                                <br>
+                                <img class="example" src="/assets/pets/images/bahyetiko.png">
+                                They are grouchy, easily angered and general troublemakers. Many tell stories of Bahyetiko sneaking into Psi towns that are too close to their mountains to cause trouble for floss. From destruction of properly, to mild attacks, to even a sudden increase in prank mail! The Bahyetiko hate all things bright and cheery. The Psi will tell you, 'If you want to win one over and tame it, you have to find a way to make its heart grow a few sizes, but even if it warms up to you, these gruff tricksters can never be fully contained!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#xoyetiko">Pre-Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/bahyetiko.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Chippermink-------------------->
+                <div id="chippermink" class="inner-card section">
+                    <h1>Chippermink</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Un-Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/chippermink.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/chippermink.png"></a>
+                            Check out this Community Art of Floss and their Chipperminks!
+                            <div id="chippermink-art"></div>
+                            The Chipperminks Celebrate their Pet Day on <b>May 13th</b><br>You can claim a free
+                            Chippermink on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Chipperminks are rascally little rodents who live all over the planet of Caramella but especially congregate in cold climates. They are smaller than Knan Nibblers and Doubears and tend to be bite sized morsels for bigger predator critters! These docile little furballs need a lot of care but make good pets for kits and adults alike and can be adorable little additions to your floss family. The Chippermunks love to eat nuts and berries and nest in your hair or clothing. 
+                                <img class="example left" src="/assets/pets/images/chippermink.png">
+                                <br>
+                                <br>
+                                They can climb up walls and trees and love to live inside of pine trees the most! They are pack critters so it's recommended to have 2 or 3 together so they can support one another but watch out because these things multiply like crazy! The chippermink is known to burrow into the snow or ground if they are frightened - and they are often frightened!
+                                <br>
+                                <br>
+                                The Chipperminks' noses are always sniff sniffing and they love to make chattering and chirping noises to alert one another. Their strong bucked teeth help them gnaw into wood and dig in the snow, as well as opening tough nut shells. They can BITE hard with those chompers so don't get on their bad side! Well trained Chipperminks like to ride on top of their Floss companions' shoulders or heads and will often run off to explore and come running back once something scares them! They can be trained quite well and can do some more complex tasks like opening doors, retrieving items, or causing distractions which make them a highly sought after pet for many floss!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#frittermink">Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/chippermink.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Frittermink-------------------->
+                <div id="frittermink" class="inner-card section">
+                    <h1>Frittermink</h1>
+                    <p style="margin-top:-12px;">2025 . 3rd Wave . Evolved . Possession</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/frittermink.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/frittermink.png"></a>
+                            Check out this Community Art of Floss and their Fritterminks!
+                            <div id="frittermink-art"></div>
+                            The Fritterminks Celebrate their Pet Day on <b>August 31st</b><br>You can claim a free
+                            Frittermink on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The  Frettermink, an enchanting species, are long-bodied rodent creatures renowned for their adorable appearance. They possess fuzzy, friendly dispositions, characterized by remarkably long, stretching abdomens and even more voluminous, fluffy tails, making them truly unique.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/frittermink2.png">
+                                
+                                These delightful wintery critters have established their home within  the mystical land of Psi, where tall pine trees and expansive snow banks  serve as their natural playground. Frettermink notably adore the cheerful sound of jingly bells and the melodic songs of chioni carols. Often found cozying up to the denizens of Psi's many quaint villages,  Frettermink make excellent companions. Their diet consists primarily of nuts and berries, though they occasionally savor a fresh arctic fish, and they exceptionally love cuddles and warm places.
+                                <br><br>
+                                <img class="size" src="/assets/pets/charts/frittermink-size.png">
+                                As playful critters, they delight in bouncing around and rolling on the floor. However, handling them requires care; mistreatment or lack of trust can provoke an attack. When treated kindly, Frettermink prove to  be very docile and playful.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button psi" href="#chippermink">Pre-Evolution</a>
+                                <a class="button psi" href="/assets/pets/bases/frittermink.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button psi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            dorokinPool: [
+                { file: "dorokin1.png", artist: "Axototlduck" },
+                { file: "dorokin2.png", artist: "Echospirit" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            dorokingPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            xoyetikoPool: [
+                { file: "xoyetiko1.png", artist: "Countless" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            bahyetikoPool: [
+                { file: "bahyetiko1.png", artist: "Tenshilove" },
+                { file: "bahyetiko2.png", artist: "Echospirit" },
+                { file: "bahyetiko3.png", artist: "Ninjagospirit" },
+                { file: "bahyetiko4.png", artist: "Countless" },
+                { file: "bahyetiko5.png", artist: "KyaKlutz" },
+            ],
+            chipperminkPool: [
+                { file: "chippermink1.png", artist: "FadedFaeble" },
+                { file: "chippermink2.png", artist: "Dressribboness" },
+                { file: "chippermink3.png", artist: "Axototlduck" },
+            ],
+            fritterminkPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ]
+        };
+
+        insertArt(communityArt.dorokinPool, "dorokin-art");
+        insertArt(communityArt.dorokingPool, "doroking-art");
+        insertArt(communityArt.xoyetikoPool, "xoyetiko-art");
+        insertArt(communityArt.bahyetikoPool, "bahyetiko-art");
+        insertArt(communityArt.chipperminkPool, "chippermink-art");
+        insertArt(communityArt.fritterminkPool, "frittermink-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

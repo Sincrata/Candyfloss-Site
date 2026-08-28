@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iota Petpets</title>
+    <style>
+        .section {
+            background-color: #353051;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/iota1.png);"><img id="top"
+                    src="/assets/logos/iota.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#6a60a3;">
+                <h1>Iota Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Iota clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#mikro" class="shrink"><img title="Mikro Oplo"
+                                    src="/assets/pets/images/mikro.png"></a>Mikro Oplo</div>
+                        <div class="pet-card"><a href="#makro" class="shrink"><img title="Makro Oplo"
+                                    src="/assets/pets/images/makro.png"></a>Makro Oplo</div>
+                        <div class="pet-card"><a href="#nibble" class="shrink"><img title="Knan Nibble"
+                                    src="/assets/pets/images/nibble.png"></a>Knan Nibble</div>
+                        <div class="pet-card"><a href="#snap" class="shrink"><img title="Knan Snap"
+                                    src="/assets/pets/images/snap.png"></a>Knan Snap</div>
+                        <div class="pet-card"><a href="#ioneshark" class="shrink"><img title="Ioneshark"
+                                    src="/assets/pets/images/ioneshark.png"></a>Ioneshark</div>
+                        <div class="pet-card" style="display: none;"><a href="#key6" class="shrink"><img title="name6"
+                                    src="/assets/pets/images/key6.png"></a>name6</div>
+                    </div>
+                </div>
+                <!------------------Mikro Oplo-------------------->
+                <div id="mikro" class="inner-card section">
+                    <h1>Mikro Oplo</h1>
+                    <p style="margin-top:-12px;">2019 . 1st Wave . Pre-Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/mikro.png">
+                                <img id="chart" title="click for full sized chart" src="/assets/pets/charts/mikro.png">
+                            </a>
+                            Check out this Community Art of Floss and their Mikro Oplo!
+                            <div id="mikro-art"></div>
+                            The Mikro Oplos Celebrate their Pet Day on <b>May 21st</b><br>You can claim a free
+                            Mikro Oplo on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/mikro-size.png">
+                                Renowned for being used by the Iota Mafia in cage fights, the Mikró óplo are actually
+                                very gentle creatures unless specifically trained to fight. The Mikró óplo can be found
+                                all over the city from pet shops to dumpsters and are in need of a loving home!
+                                <br><br>
+                                The Mikró óplo have the special ability to negate any power within range of them, which
+                                makes them a force to be reckoned with. These feathery creatures usually waddle on their
+                                hind legs but when running or jumping they crawl on all fours. Despite having wings the
+                                Mikró óplo cannot fly but can use them to glide down from high buildings. Usually, they
+                                drag their wings behind them when they waddle.
+                                <img class="example" src="/assets/pets/images/mikro.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#makro">Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/mikro.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Makro Oplo-------------------->
+                <div id="makro" class="inner-card section">
+                    <h1>Makro Oplo</h1>
+                    <p style="margin-top:-12px;">2020 . 1st Wave . Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/makro.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/makro.png"></a>
+                            Check out this Community Art of Floss and their Makro Oplos!
+                            <div id="makro-art"></div>
+                            The Makro Oplos Celebrate their Pet Day on <b>November 18th</b><br>You can claim a
+                            free Makro Oplo on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/makro2.png">
+                                Big, Beautiful. Bossy. These lovable bundles of feathers and sass are the evolution of
+                                the Iota's Mikro Oplo. Not so Micro anymore the Makro Oplos are waist high on a
+                                trufflefloss and can weigh up to 300 lbs.! woah! With diamond deposits growing from
+                                their fur these pets are top dollar companions that are usually owned by the wealthiest
+                                of floss. Makro Oplo are needy creatures, having to be kept in, brushed daily and given
+                                special diets. While cuddly and tolerant to their owners, these birbs can be right
+                                brats, if they dent get what they want they won't hesitate to knock over furniture and
+                                squawk loudly all while giving you the eyes of death. But damn if they're not soft and
+                                adorable.
+                                <br>
+                                <br>
+                                Parent Makros will sometimes hide their Mikro infants under their large cape like wings
+                                for warmth and protection. If you can't find your Kittenfloss check under the Makro.
+                                While they usually prefer to walk on their hind legs like adults, the Makro are known to
+                                run on all fours like their younger evolutions if they are in danger, and if they're
+                                lucky they might be able to get a few feet of height from their wings - if they're in
+                                shape that is.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#mikro">Pre-Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/makro.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Knan Nibble-------------------->
+                <div id="nibble" class="inner-card section">
+                    <h1>Knan Nibble</h1>
+                    <p style="margin-top:-12px;">2021 . 2nd Wave . Pre-Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/nibble.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/nibble.png"></a>
+                            Check out this Community Art of Floss and their Knan Nibbles!
+                            <div id="nibble-art"></div>
+                            The Knan Nibbles Celebrate their Pet Day on <b>June 10th</b><br>You can claim a free
+                            Knan Nibble on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size right" src="/assets/pets/charts/nibble-size.png">
+                                The Knan'Nibblers are small to medium sized city dwelling creatures. They can be found
+                                in dumpsters, alleyways, and trash cans, wherever their favorite food, garbage, can be
+                                found. Generally thought of as gross, due to their diet, Knan'Nibblers aren't kept as
+                                pets except in Iota Clan even though they are found in most of the large cities on
+                                Carmella. These creatures like to gnash their teeth and will eat anything put in front
+                                of their mouth, even non-edible things! They are naturally vicious, living in large
+                                nests that will attack as a group if they think they can win. It's a hotly debated
+                                topic, but it's believed that if there were enough Knan'Nibblers around, they could
+                                probably take down a Flogasaurus Rex. They can be trained to not be violent but will
+                                still be very protective and bare their teeth and hiss at strangers and won't get along
+                                with other Petpets and kittens.
+
+                                <br><br>
+                                They have a special trait where when viewed in low light, they can look like shadows, a
+                                shifting shape and some eyes. It's very hypnotic and if a Floss or other petpet locks
+                                eyes with a Knan'Nibbler, the creature can turn off their abilities. They use this power
+                                a lot when hunting though it doesn't help against Mikro Oplos which hunt them. They can
+                                be seen battling quite often and it usually doesn't end well for the Nibblers. If the
+                                Knan'Nibblers are tame, they like to keep themselves clean. However, they don't care
+                                about cleanliness in the wild. It's a common saying that even if one is a tame petpet
+                                they might eat their owner if they have passed, it's never been proved though.
+                                <img class="example left" src="/assets/pets/images/nibble.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#snap">Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/nibble.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Knan Snap-------------------->
+                <div id="snap" class="inner-card section">
+                    <h1>Knan Snap</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/snap.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/snap.png"></a>
+                            Check out this Community Art of Floss and their Knan Snaps!
+                            <div id="snap-art"></div>
+                            The Knan Snaps Celebrate their Pet Day on <b>Februaru 11th</b><br>You can claim a free
+                            Knan Snap on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/snap-size.png">
+                                The Knan'Snaps are huge, strong rodents with long slinking bodies and strong snapping
+                                jaws. They are rare to see in the wild but are found sparingly haunting the dark back
+                                alleys of Iota. They love garbage and will scarf down just about anything without much
+                                thought. They are viscous creatures who tend to be dangerous when encountered. They are
+                                often hunted and exterminated when found but they breed rapidly making it hard to keep
+                                their numbers low. Knan'Snaps will chatter their sharp teeth to communicate with one
+                                another and will be quick to bite and rip apart anything in their way, so be careful!
+                                They live in colonies and nests that are usually comprised of several hundred
+                                Knan'Nibbles and only one or two Knan'Snaps.
+                                <br>
+                                <br>
+                                <img class="example" src="/assets/pets/images/snap2.png">
+                                Unsurprisingly they don't make good pets and tend to stay wild. Much like the Nibbles,
+                                Snaps' eyes are somewhat hypnotic and can seem like they shift in color if you look into
+                                them too deeply. If they lock eyes with prey or floss they can quench their powers and
+                                make it even harder to catch them. The Snaps emit a smoke-like darkness from their
+                                bodies to shroud themselves and their nests in darkness. Unlike the Nibbles and Mikro
+                                Oplo, the Knan'Snaps don't pay much mind to Makro Oplos and tend to stay away from each
+                                other.
+                                <br>
+                                <br>
+
+                                "Tame" Knan'Snaps can be viewed at zoos and circuses but these dangerous creatures are
+                                also used by the Iota Mafia to terrorize their enemies.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#nibble">Pre-Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/snap.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Ioneshark-------------------->
+                <div id="ioneshark" class="inner-card section">
+                    <h1>Ioneshark</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Un-Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/ioneshark.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/ioneshark.png"></a>
+                            Check out this Community Art of Floss and their Ionesharks!
+                            <div id="ioneshark-art"></div>
+                            The Ionesharks Celebrate their Pet Day on <b>December 17th</b><br>You can claim a free
+                            Ioneshark on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/ioneshark-size.png">
+                                The many waterways and sewer systems of Iota are home to the viscous and terrifying
+                                Ioneshark! These semi-aquatic chompers are slick smooth sharks that swim at speed up to
+                                20 mph and gobble up anything that moves! They have strong jaws that can cut off a
+                                floss' leg in a single chomp and are known to attack floss who fall into the river
+                                surrounding Iota's border. Many floss who leap from the bridges (or are pushed) are said
+                                to be going to "feed the Ionesharks", and it's a common threat for gangsters to use when
+                                trying to scare people. The Ionesharks can chase their prey out of the water and are
+                                known to come ashore and run around on their hind legs causing mayhem. Thankfully
+                                they're much slower and not well coordinated when running on land and will die if they
+                                are away from water for too long.
+                                <br>
+                                <br>
+                                Unlike normal teeth that can fall out, rot, or be pulled, the Ionesharks have evolved to
+                                have internal teeth covered in strong razor shark skin! That way they can chomp right
+                                through trash, metal, and bone without any concern for what they're putting in their
+                                mouths.
+                                <br>
+                                <br>
+                                They will eat just about anything! Including you! It's not unheard of for owners of
+                                Ionesharks to get a bit too comfortable with their dangerous pet and end up on the
+                                dinner menu. Those who choose to keep them usually do so in a large tank that they keep
+                                their distance from.
+                                <img class="example" src="/assets/pets/images/ioneshark.png">
+                                <br>
+                                <br>
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#key6" style="display: none;">Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/ioneshark.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------name6-------------------->
+                <div id="key6" class="inner-card section" style="display: none;">
+                    <h1>name6</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Evolved . Nullification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/key6.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/key6.png"></a>
+                            Check out this Community Art of Floss and their name6s!
+                            <div id="key6-art"></div>
+                            The name6s Celebrate their Pet Day on <b>FILL OUT INFO</b><br>You can claim a free name6 on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Anibolds are thigh high bipedal pets Like many pets they are quite smart and able to
+                                do simple tasks and understand speech to some degree. They are often used as guards in
+                                Alpha and are often found in dungeons and temples in East Alpha. The Anibolds make great
+                                protectors for families, and other pets. They are brave, bold and fierce. While they
+                                prefer to walk on their back legs it's not uncommon to see one run on all 6 when trying
+                                to move quickly.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/key62.png">
+                                They move in packs in the wild with a leader Anibold that governs its pack and the
+                                Anijuru under them. The leader Anibold is often challenged by the others in fights to
+                                determine new leadership. When trained by a family, they are amazing pets. Their soft
+                                fur and obedient nature make them great for any home. They are gentle with children and
+                                tend to treat other pets well if they are given a place of authority over them. They are
+                                known to discipline other pets when they act out of line. In the wild, Anibolds often
+                                fight one another for dominance.
+                                <br><br>
+                                <img class="size" src="/assets/pets/charts/key6-size.png">
+                                Even if they are well trained, they
+                                will fight another Anibold or aggressive petpets when they come across them. To help
+                                them get their wiggles out while being safe about it - some places in Alpha have Anibold
+                                tournaments. This is a safe place where the Anibolds and other pets can fight one
+                                another without killing or mortally wounding each other. A lot of them train to be the
+                                best and actively strive to win these tournaments. It's rare but sometimes wild Anibolds
+                                are known to wander into the tournaments to fight without a Candyfloss representing
+                                them.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button iota" href="#ioneshark">Pre-Evolution</a>
+                                <a class="button iota" href="/assets/pets/bases/key6.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button iota"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            mikroPool: [
+                { file: "mikro1.png", artist: "Perry2012draws" },
+                { file: "mikro2.png", artist: "Dressribboness" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            makroPool: [
+                { file: "makro1.png", artist: "Echospirit" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            nibblePool: [
+                { file: "nibble1.png", artist: "Axototlduck" },
+                { file: "nibble2.png", artist: "Dressribboness" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            snapPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            ionesharkPool: [
+                { file: "ioneshark1.png", artist: "Aquilapurr" },
+                { file: "ioneshark2.png", artist: "Echospirit" },
+                { file: "ioneshark3.png", artist: "Axototlduck" },
+            ],
+            key6Pool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ]
+        };
+
+        insertArt(communityArt.mikroPool, "mikro-art");
+        insertArt(communityArt.makroPool, "makro-art");
+        insertArt(communityArt.nibblePool, "nibble-art");
+        insertArt(communityArt.snapPool, "snap-art");
+        insertArt(communityArt.ionesharkPool, "ioneshark-art");
+        insertArt(communityArt.key6Pool, "key6-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

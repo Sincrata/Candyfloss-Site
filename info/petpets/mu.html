@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mu Petpets</title>
+    <style>
+        .section {
+            background-color: #c0536a;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/mu1.png);"><img id="top"
+                    src="/assets/logos/mu.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#ffa6bc;">
+                <h1>Mu Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Mu clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#eros-moro" class="shrink"><img title="Eros Moro"
+                                    src="/assets/pets/images/eros-moro.png"></a>Eros Moro</div>
+                        <div class="pet-card"><a href="#eros-mythos" class="shrink"><img title="Eros Mythos"
+                                    src="/assets/pets/images/eros-mythos.png"></a>Eros Mythos</div>
+                        <div class="pet-card"><a href="#amouille-mourve" class="shrink"><img title="Amouille Mourve"
+                                    src="/assets/pets/images/amouille-mourve.png"></a>Amouille Mourve</div>
+                        <div class="pet-card"><a href="#amoure-pog" class="shrink"><img title="Amoure Pog"
+                                    src="/assets/pets/images/amoure-pog.png"></a>Amoure Pog</div>
+                        <div class="pet-card"><a href="#pettiplume" class="shrink"><img title="Pettiplume"
+                                    src="/assets/pets/images/pettiplume.png"></a>Pettiplume</div>
+                    </div>
+                </div>
+                <!------------------Eros Moro-------------------->
+                <div id="eros-moro" class="inner-card section">
+                    <h1>Eros Moro</h1>
+                    <p style="margin-top:-12px;">2021 . 1st Wave . Pre-Evolved . Healing</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/eros-moro.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/eros-moro.png">
+                            </a>
+                            Check out this Community Art of Floss and their Eros Moro!
+                            <div id="eros-moro-art"></div>
+                            The Eros Moros Celebrate their Pet Day on <b>September 10th</b><br>You can claim a free
+                            Eros Moro on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size" src="/assets/pets/charts/eros-moro-size.png">
+                                These precious lambs are soft and gleeful and love to sprint through meadows of flowers
+                                and soar through the sunset clouds! Unlike the two headed Dyopaw the Eros Moro's heads
+                                are rarely at odds with each other. You will often find them licking each other's wounds
+                                and snuggling up to each other. They usually share their emotions both negative and
+                                positive. The Eros Moro live all over Glykos and often flock together in similar types.
+                                <br><br>
+                                Feathered Eros Moro are most common and are found dotted around grasslands and forests.
+                                Butterfly Eros tend to make their homes in flowering fields and mystical forests, Bat
+                                winged Eros tend to live in drier areas around Gamma and Alpha and are best suited to
+                                living in cities. Much like Mufloss the Eros Moro are known for their healing abilities.
+                                The snuggle of a Eros Moro can ease the most terrible of headaches and their nuzzles can
+                                even close wounds. They cannot be forced to use their abilities however so capturing
+                                them by force is not going to get you anywhere. They're illusive beasts but there have
+                                been instances where floss lost in the wilderness have survived thanks to the grace and
+                                love of the Eros Moros. Legends say that the Eros Moros are steeds to the Cherubfloss
+                                and live among them in the clouds - tho this isnt proven.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/eros-moro2.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button mu" href="#eros-mythos">Evolution</a>
+                                <a class="button mu" href="/assets/pets/bases/eros-moro.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button mu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Eros Mythos-------------------->
+                <div id="eros-mythos" class="inner-card section">
+                    <h1>Eros Mythos</h1>
+                    <p style="margin-top:-12px;">2022 . 1st Wave . Evolved . Healing</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/eros-mythos.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/eros-mythos.png"></a>
+                            Check out this Community Art of Floss and their Eros Mythoss!
+                            <div id="eros-mythos-art"></div>
+                            The Eros Mythoss Celebrate their Pet Day on <b>November 13th</b><br>You can claim a
+                            free Eros Mythos on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Eros Mythos is, much like the name implies, almost a mythical creature. Only
+                                recently have the floss proved its existence and have been able to evolve Eros Moro into
+                                this form. It's difficult to raise and rare to find. The Eros Mythos is smaller than you
+                                might think, only about 5 feet high from the floor to the tops of their heads when
+                                standing. o 93 Kilometers
+                                per hour at their top speed, kicking up clouds of sand behind them.
+                                <img class="example left" src="/assets/pets/images/eros-mythos.png">
+                                <br>
+                                <br>
+                                A kittenfloss or particularly light Sugarfloss may be able to ride one but the rest of
+                                us are better off with a Petrinos! These regal creatures are calm and friendly if they
+                                know you but are otherwise loners and will run from unfamiliar floss. They are fast on
+                                the ground and in the sky! The Eros Moro love to gallop through the flower fields of mu
+                                and sour through the skies with their herds of Eros Moro.
+                                <br>
+                                <br>
+                                <img class="size right" src="/assets/pets/charts/eros-mythos-size.png">
+                                It's not common to see multiple Eros Mythos together but they can be found among large
+                                groups of Moros. Their healing abilities are extremely potent, but the Mythos are very
+                                reluctant to use them, and no floss has been able to train them to do it on command.
+                                Even faced with a floss who is injured they will refuse to help unless it is certain
+                                that they will die. Some claim the Mythos can revive the recently deceased but this is
+                                not proven. As recent as a decade ago these creatures were talked about with an air of
+                                wonder and disbelief. It was said that this mythical beast would only appear to those
+                                who were near death lost in the forest of norther Mu. After blacking out the floss would
+                                find themselves in a bed of flowers near a settlement where they would have miraculously
+                                recovered. It's believed that their small size, remarkable healing abilities, and quick
+                                flight are responsible for tales like these.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button mu" href="#eros-moro">Pre-Evolution</a>
+                                <a class="button mu" href="/assets/pets/bases/eros-mythos.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button mu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Amouille Mourve-------------------->
+                <div id="amouille-mourve" class="inner-card section">
+                    <h1>Amouille Mourve</h1>
+                    <p style="margin-top:-12px;">2023 . 2nd Wave . Pre-Evolved . Healing</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/amouille-mourve.png"><img id="chart"
+                                    title="click for full sized chart"
+                                    src="/assets/pets/charts/amouille-mourve.png"></a>
+                            Check out this Community Art of Floss and their Amouille Mourves!
+                            <div id="amouille-mourve-art"></div>
+                            The Amouille Mourves Celebrate their Pet Day on <b>October 17th</b><br>You can claim a free
+                            Amouille Mourve on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                These palm sized pets make their homes in flooded wetlands all over Caramella but derive
+                                from the ponds and rivers of the Mu region. They are slimey and many find them gross or
+                                ugly, but if you can come to love them, their plump friend-shaped bodies give them an
+                                endearing charm and their quirky and harmless bahavoir make them great household pets.
+                                The Amouille Mourve are spoken of in old Mu legends, saying that there was once a Mu
+                                prince so obsessed with his looks that he was cursed by the dark spirits to live his
+                                life as a disgusting Mourve, unless someone could come to love him in this slimy ugly
+                                form. The legend says he was able to find love, and when kissed by a princess from Nu,
+                                he transformed back into his floss form, and they lived happily ever after.
+                                <img class="size" src="/assets/pets/charts/amouille-mourve-size.png">
+                                <br><br>
+                                Due to this legend, the Amouille Mourve has stood for love that overcomes outward
+                                appearances and adversity across all of Caramella. Some young Floss maidens still dream
+                                of kissing a Amoiulle Mourve and transforming him into a valiant prince. The Amouille
+                                Mourve have no back limbs and instead drag their sluggish bodies, which often leaves
+                                behind a gooey slime if they're not properly bathed.
+                                <br><br>
+                                The Amouille can use their strong hind quarters to launch themselves into the air. This
+                                form of dragging and jumping is their main way of transportation. Their sticky bodies
+                                can also adhere to vertical surfaces like walls and trees, and they can even hang from
+                                ceilings. They are omnivores and eat mostly algae and small plants but are known to
+                                sometimes eat grubs and flying insects. They are semiaquatic and like to bathe in
+                                shallow water from time to time. The lillypad shaped apendage that grows out of their
+                                head aids them in hiding just on the surface of the water. If you have one as a pet,
+                                it's wise to keep a tank for them to hang out in unless you are handling them.
+                                <img class="example" src="/assets/pets/images/amouille-mourve2.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button mu" href="#amoure-pog">Evolution</a>
+                                <a class="button mu" href="/assets/pets/bases/amouille-mourve.psd" download>Download
+                                    Base
+                                    PSD</a>
+                                <a class="button mu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Amoure Pog-------------------->
+                <div id="amoure-pog" class="inner-card section">
+                    <h1>Amoure Pog</h1>
+                    <p style="margin-top:-12px;">2024 . 2nd Wave . Evolved . Healing</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/amoure-pog.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/amoure-pog.png"></a>
+                            Check out this Community Art of Floss and their Amoure Pogs!
+                            <div id="amoure-pog-art"></div>
+                            The Amoure Pogs Celebrate their Pet Day on <b>May 5th</b><br>You can claim a free
+                            Amoure Pog on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size right" src="/assets/pets/charts/amoure-pog-size.png">
+                                <br>
+                                <br>
+                                The Amoure Pog is the evolved form of the squishy and slimy Amouille Mourve from the Mu
+                                marshlands. These larger amphibians are rather rare to find in the wild. Legends say
+                                that Mourves will only evolve into Pogs if they receive a kiss from a beautiful maiden,
+                                though, this isn't proven. The Amoure Pog is a docile, gentle creature that lives in and
+                                out of the water.
+                                They are lazy fellas that will often hide just below the water level, allowing their
+                                lily pad-shaped heads to sit on the surface and blend them into their environments.
+                                <br>
+                                <br>
+                                These critters are very flirtatious and love to carry flowers around with them to give
+                                to any 'sweet thang' that catches their eye. The Pogs have long, strong legs that they
+                                use to leap far distances. They can also waddle on two legs but prefer to use a hopping
+                                step to get around. On the belly of the Amoure Pog, they have a large sack of
+                                transparent skin that can expand and contract when they breathe. This sack is known to
+                                become filled up on occasion with various things the Pog has eaten like flowers, other
+                                plants, and even water. Some sacks have opaque coverings leading them to resemble a
+                                gigantic soul gem. There are large families of Amouille Mourves, but it's common to find
+                                a single Amoure Pog leading them. The Mourves are known to stick to the body of their
+                                daddy Pog and ride on their lily pads for protection and to show their allegiance and
+                                affection. Some Amouille Mourves are known to have kissy marks on their faces, and it's
+                                believed that these marks are the result of Pogs trying to help their little buddies to
+                                evolve.
+                                <img class="example left" src="/assets/pets/images/amoure-pog2.png">
+                                <br>
+                                <br>
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button mu" href="#amouille-mourve">Pre-Evolution</a>
+                                <a class="button mu" href="/assets/pets/bases/amoure-pog.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button mu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Pettiplume-------------------->
+                <div id="pettiplume" class="inner-card section">
+                    <h1>Pettiplume</h1>
+                    <p style="margin-top:-12px;">2025 . 3rd Wave . Un-Evolved . Healing</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/pettiplume.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/pettiplume.png"></a>
+                            Check out this Community Art of Floss and their Pettiplumes!
+                            <div id="pettiplume-art"></div>
+                            The Pettiplumes Celebrate their Pet Day on <b>April 4th</b><br>You can claim a free
+                            Pettiplume on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Native to the Mu rivers and lakes, but found in many parts of the world, these water fowls come in many varieties unique to certain environments. Around the ocean its common to see "Pettipelicans" scooping up fish from the ocean in their deep beaks. In the jungles of Karpos, there are very brightly colored "Pettiparrots" who use their hook like beaks to pry open fruits and crack nuts. The long-beaked "Petticranes" are common in the bogs of middle and northern glykos.
+                                <br>
+                                <br>
+                                Pink "Pettimingos" can be found in the oases of Alpha, and "Pettipidgeons" have adapted to living in parks in cities in Iota and Zeta. 
+                                <img class="example" src="/assets/pets/images/pettiplume2.png">
+                                <br>
+                                <br>
+                                Of all the Pettiplume breeds however, the "Pettiswans" of Mu are the very first, and the most beloved. In Mu, Pettiplumes are sacred by their premier religion, J'aime Tout, the worshipers of the Godess of Love. The Pettiplume are very affectionate creatures, and if you have one as a pet you can expect it to be very attention seeking and give lots of kisses and cuddles. They are pack critters and arent happy unless they have a mate or friend to prune and flock with. Pettiplumes are resilient birds that are known to be friendly towards those who feed and care for them, and vicious to anyone who crosses them or their young. They are commonly found in large flocks near bodies of water. They love to float on the surface of calm water, fly through the air in V-formations, and walk with their younglings in a neat little row. 
+                                <br><br>
+                                Legends say the Pettiplumes were created by the Goddess of Lust, and are actually her little cupids in disguise. It's said that if a young couple is approached by a Pettiplume and they are kind to it, that Lust will bless their relationship. If a lonely-heart crosses paths with a Pettiplume it's said that the cupid will acknowledge them and send love their way soon. One legend even states that long-beaked Petticranes (sometimes called "Pettistorks") are sent down by the Goddess of Love in the heavens, to carry the souls of new Kittenfloss in a bundle and safely deliver them to expecting parents.
+                                <br><br>
+                                At night, flocks of Pettiplumes are known to make rhythmic calls in unison that are said to sound like the soft sobs of the Goddess Cherish, who weeps for those who are injured and lonely. The tears of a Pettiplume are well known to be potent healing elixirs. However they are hard to come by and extremely expensive because the birds are revered so highly and rarely shed tears in captivity when treated kindly. The most common time a Pettiplume will cry is when their children or mate is killed, and thanks to conservation efforts by the Mu government, that is pretty rare.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button mu" href="#key6" style="display: none;">Evolution</a>
+                                <a class="button mu" href="/assets/pets/bases/pettiplume.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button mu"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            eros_moroPool: [
+                { file: "eros-moro1.png", artist: "Axototlduck" },
+                { file: "eros-moro2.png", artist: "VikaRosnova" },
+                { file: "eros-moro3.png", artist: "KrissySempaiArt" },
+                { file: "eros-moro4.png", artist: "Echospirit" },
+            ],
+            eros_mythosPool: [
+                { file: "eros-mythos1.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ],
+            amouille_mourvePool: [
+                { file: "amouille-mourve1.png", artist: "Perry2012draws" },
+                { file: "amouille-mourve2.png", artist: "Countless" },
+                { file: "amouille-mourve3.png", artist: "FairyreS" },
+                { file: "amouille-mourve4.png", artist: "CursedFreak" },
+                { file: "amouille-mourve5.png", artist: "Echospirit" },
+            ],
+            amoure_pogPool: [
+                { file: "amoure-pog1.png", artist: "Axototlduck" },
+                { file: "amoure-pog2.png", artist: "Perry2012draws" },
+                { file: "amoure-pog3.png", artist: "FadedFaeble" },
+                { file: "amoure-pog4.png", artist: "Ninjagomonster" },
+                { file: "amoure-pog5.png", artist: "FairyreS" },
+                { file: "amoure-pog6.png", artist: "Countless" },
+                { file: "amoure-pog7.png", artist: "DressRibboness" },
+            ],
+            pettiplumePool: [
+                { file: "pettiplume1.png", artist: "Axototlduck" },
+                { file: "pettiplume2.png", artist: "FadedFaeble" },
+                { file: "pettiplume3.png", artist: "KrissySempaiArt" },
+                { file: "pettiplume4.png", artist: "Crystalbinja" },
+            ]
+        };
+
+        insertArt(communityArt.eros_moroPool, "eros-moro-art");
+        insertArt(communityArt.eros_mythosPool, "eros-mythos-art");
+        insertArt(communityArt.amouille_mourvePool, "amouille-mourve-art");
+        insertArt(communityArt.amoure_pogPool, "amoure-pog-art");
+        insertArt(communityArt.pettiplumePool, "pettiplume-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

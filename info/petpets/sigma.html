@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Petpets</title>
+    <style>
+        .section {
+            background-color: #121c58;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                min-width: 100%;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/sigma1.png);"><img id="top"
+                    src="/assets/logos/sigma.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#3643bf;">
+                <h1>Sigma Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Sigma clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#glorbit" class="shrink"><img title="Glorbit"
+                                    src="/assets/pets/images/glorbit.png"></a>Glorbit</div>
+                        <div class="pet-card"><a href="#glorbeast" class="shrink"><img title="Glorbeast"
+                                    src="/assets/pets/images/glorbeast.png"></a>Glorbeast</div>
+                        <div class="pet-card"><a href="#stella-pi" class="shrink"><img title="Stella Pi"
+                                    src="/assets/pets/images/stella-pi.png"></a>Stella Pi</div>
+                    </div>
+                </div>
+                <!------------------Glorbit-------------------->
+                <div id="glorbit" class="inner-card section">
+                    <h1>Glorbit</h1>
+                    <p style="margin-top:-12px;">2023 . 1st Wave . Pre-Evolved . Electricity</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/glorbit.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/glorbit.png">
+                            </a>
+                            Check out this Community Art of Floss and their Glorbit!
+                            <div id="glorbit-art"></div>
+                            The Glorbits Celebrate their Pet Day on <b>October 6th</b><br>You can claim a free
+                            Glorbit on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Glorbits are creatures native to the Sigma's moon Thymono! They lived alongside the
+                                Sigma in space and now call Caramella their home too! They are small squishy critters
+                                who are very abundant and float around in colorful flocks around Thymono! They don't
+                                exactly fly, more like float in the air like they're filled with helium! They turn
+                                slowly and glide into walls and things when they float about. They can steer themselves
+                                and push themselves forward by moving their tentacles but always have a floaty nonsense
+                                about their movement. Around them there is a ring or two of space dust that glows and
+                                spins around their bodies.
+                                <br><br><img class="left example" src="/assets/pets/images/glorbit2.png">
+                                <br><br>
+                                The Glorbits are very glowy, and can illuminate a room! The lights on their tentacles
+                                flicker and even change color seemingly at random! Glorbits are docile creatures and
+                                love the float about and cuddle their floss friends! The Sigma love their Glorbits and
+                                can't wait for the rest of Caramella to love them too! Glorbits like to nest in craters
+                                on Thymono so if you take one home be sure to give them a dark crevice to sleep in! The
+                                Glorbits produce electricity and can shock people on accident so be careful when you
+                                handle one! They even occasionally shock themselves if they gather too much static and
+                                can sometimes get stuck to carpets or blankets if they're having a bad static day so
+                                keep an eye on them! The Glorbits make a chirping sound that's rather cute and cheerful!
+                                Come see the Glorbits all over Thymono and take one home with you!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button sigma" href="#glorbeast">Evolution</a>
+                                <a class="button sigma" href="/assets/pets/bases/glorbit.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button sigma"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Glorbeast-------------------->
+                <div id="glorbeast" class="inner-card section">
+                    <h1>Glorbeast</h1>
+                    <p style="margin-top:-12px;">2024 . 1st Wave . Evolved . Electricity</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/glorbeast.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/glorbeast.png"></a>
+                            Check out this Community Art of Floss and their Glorbeasts!
+                            <div id="glorbeast-art"></div>
+                            The Glorbeasts Celebrate their Pet Day on <b>March 3rd</b><br>You can claim a
+                            free Glorbeast on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The majestic Glorbeast is a rare sight, with only 10 or 12 recorded to be living around
+                                Thymono at a time. The Glorbit pets very rarely evolve, and no one is quite sure what
+                                triggers it for them. The Glorbeast are slow moving and calm creatures, who can float in
+                                the air or on the surface of the sea surrounding their island home.
+                                <img class="example" src="/assets/pets/images/glorbeast.png">
+                                <br>
+                                <br>
+                                They are regarded by the native Sigmafloss as great beasts to be protected, cherished,
+                                and adored. If someone is unkind to a Glorbeast, it can even be punished by law.
+                                Glorbeasts are very loving and careful creatures to their children and companions. They
+                                lay many eggs each season that produce a large family of Glorbits that they will be
+                                extremely protective of. When a Glorbeast is angry, it can be a very fast and dangerous
+                                creature. Its electric shocks can reach targets up to 100 meters away and kill upon
+                                impact. Some floss in history have tried to utilize the Glorbeast's attack as a weapon,
+                                but the Glorbeasts are stubborn and too intelligent to be manipulated.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button sigma" href="#glorbit">Pre-Evolution</a>
+                                <a class="button sigma" href="/assets/pets/bases/glorbeast.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button sigma"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Stella Pi-------------------->
+                <div id="stella-pi" class="inner-card section">
+                    <h1>Stella Pi</h1>
+                    <p style="margin-top:-12px;">2025 . 2nd Wave . Pre-Evolved . Electricity</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/stella-pi.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/stella-pi.png"></a>
+                            Check out this Community Art of Floss and their Stella Pis!
+                            <div id="stella-pi-art"></div>
+                            The Stella Pis Celebrate their Pet Day on <b>June 14th</b><br>You can claim a free
+                            Stella Pi on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Stella Pi are Thymono native little critters. They are soft and playful and love to
+                                climb and play. They are omnivores who eat small bugs and plants and are known to fish
+                                for minnows and little frogs! These critters move in packs of 10-20 and burrow into the
+                                ground in tunnel systems amid the moon's many craters. They will create a small volcano
+                                like hill structure made of dirt and rocks around the entrances to their tunnels. They
+                                are born from football-sized eggs that give off a bright glow!
+                                <br><br>
+                                The Stella Pi make small chittering sounds that can be described as sounding similar to
+                                electric popping. They are known to carry massive amounts of static electricity in their
+                                fur that will zap anything that comes too close to them! If you want to keep one as a
+                                pet, its important to treat their fur with special baths to keep them from harboring too
+                                much electricity at once!
+                                <img class="example left" src="/assets/pets/images/stella-pi.png">
+                                <br><br>
+                                The Candyfloss just fell in love with the Stella Pi's big eyes, adorable fur, and
+                                loving, cuddly personalities! These critters are a delight to have around now that they
+                                have come to the planet!
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button sigma" href="#key4" style="display: none;">Evolution</a>
+                                <a class="button sigma" href="/assets/pets/bases/stella-pi.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button sigma"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            glorbitPool: [
+                { file: "glorbit1.png", artist: "Axototlduck" },
+                { file: "glorbit2.png", artist: "KrissySempaiArt" },
+                { file: "glorbit3.png", artist: "Ninjagomonster" },
+                { file: "glorbit4.png", artist: "Slashmaid" },
+            ],
+            glorbeastPool: [
+                { file: "glorbeast1.png", artist: "Axototlduck" },
+                { file: "glorbeast2.png", artist: "FadedFaeble" },
+                { file: "glorbeast3.png", artist: "Dxrk-Incxrnxte" },
+                { file: "glorbeast4.png", artist: "Echospirit" },
+            ],
+            stella_piPool: [
+                { file: "stella-pi1.png", artist: "Teddybears-hearts" },
+                { file: "stella-pi2.png", artist: "Axototlduck" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ]
+        };
+
+        insertArt(communityArt.glorbitPool, "glorbit-art");
+        insertArt(communityArt.glorbeastPool, "glorbeast-art");
+        insertArt(communityArt.stella_piPool, "stella-pi-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

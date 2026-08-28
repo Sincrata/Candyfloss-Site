@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Petpets</title>
+    <style>
+        .section {
+            background-color: #8d6937;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/chi1.png);"><img id="top"
+                    src="/assets/logos/chi.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#f2da7d;">
+                <h1>Chi Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Chi clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#spraoiling" class="shrink"><img title="Spraoiling"
+                                    src="/assets/pets/images/spraoiling.png"></a>Spraoiling</div>
+                        <div class="pet-card"><a href="#skoinkling" class="shrink"><img title="Skoinkling"
+                                    src="/assets/pets/images/skoinkling.png"></a>Skoinkling</div>
+                        <div class="pet-card"><a href="#bumblegrinn" class="shrink"><img title="Bumblegrinn"
+                                    src="/assets/pets/images/bumblegrinn.png"></a>Bumblegrinn</div>
+                    </div>
+                </div>
+                <!------------------Spraoiling-------------------->
+                <div id="spraoiling" class="inner-card section">
+                    <h1>Spraoiling</h1>
+                    <p style="margin-top:-12px;">2023 . 1st Wave . Pre-Evolved . Minification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/spraoiling.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/spraoiling.png">
+                            </a>
+                            Check out this Community Art of Floss and their Spraoiling!
+                            <div id="spraoiling-art"></div>
+                            The Spraoilings Celebrate their Pet Day on <b>April 7th</b><br>You can claim a free
+                            Spraoiling on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="left example" src="/assets/pets/images/spraoiling.png">
+                                The Spraoiling (Spree-ling) are remarkable creatures. They're docile leaf eaters who
+                                roam the dome-land of Chi. They're slow-moving critters who have many legs and keep low
+                                to the ground. They wear protective "shells" on their backs that they can recoil into
+                                when they're in danger or frightened. Their shell will often take different forms to
+                                match their environment for better protection. The Spraoilings can use minification to
+                                change their size.
+                                <br><br>
+                                Their natural size is quite large in fact, coming in around 15 feet tall at their full
+                                height. When at this large of a size the Spraoiling are often used as mounts for the
+                                Chifloss, and can often be found pulling carriages or carts of supplies across the hills
+                                of Chi. Though they CAN be large, the Spraoiling often WANT to be small, extremely small
+                                in fact, they are most often found between 2 feet tall all the way to several inches in
+                                height. Their bodies come in slick and furred variations that help them to adapt to
+                                conditions in any clan. The little Spraoiling are affectionate, easy to care for and
+                                make for fabulous pets all across Caramella.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button chi" href="#skoinkling">Evolution</a>
+                                <a class="button chi" href="/assets/pets/bases/spraoiling.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button chi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Skoinkling-------------------->
+                <div id="skoinkling" class="inner-card section">
+                    <h1>Skoinkling</h1>
+                    <p style="margin-top:-12px;">2024 . 1st Wave . Evolved . Minification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/skoinkling.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/skoinkling.png"></a>
+                            Check out this Community Art of Floss and their Skoinklings!
+                            <div id="skoinkling-art"></div>
+                            The Skoinklings Celebrate their Pet Day on <b>January 15th</b><br>You can claim a
+                            free Skoinkling on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Unlike their slow moving and docile previous forms, the Skoinklings are fast moving
+                                critters who scurry around on their eight legs, hauling their shells on their lanky
+                                backs. They are able to scurry up vertical surfaces like plants and walls and can even
+                                hang upside down under the hat of a mushroom or the gutters of houses. Their sensitive
+                                eyes have no lids, so the Skoiklings are known to lick their eyes with their long
+                                elastic tongues to keep them moist.
+
+                                <br>
+                                <br>
+                                Their tongues can shoot out of their mouths to catch bugs or leaves and zip them into
+                                their mouths. While the Spraoiling are naturally large, and use their minification
+                                abilities to become small, the Skoinkling are actually the opposite. Their natural state
+                                of being is quite small, able to be held in the arms of a floss, but when they use their
+                                growth abilities, they can become very large - well over the size of a floss and are
+                                used to ride and pull carriages. Some carriages are even fit to be carried up vertical
+                                surfaces by the Skoinklings. These large lizard-like beings are friendly and easy to
+                                tame. They are playful and loving and easily grow bonds with floss who take care of
+                                them.
+                                <img class="example" src="/assets/pets/images/skoinkling.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button chi" href="#spraoiling">Pre-Evolution</a>
+                                <a class="button chi" href="/assets/pets/bases/skoinkling.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button chi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Bumblegrinn-------------------->
+                <div id="bumblegrinn" class="inner-card section">
+                    <h1>Bumblegrinn</h1>
+                    <p style="margin-top:-12px;">2025 . 2nd Wave . Pre-Evolved . Minification</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/bumblegrinn.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/bumblegrinn.png"></a>
+                            Check out this Community Art of Floss and their Bumblegrinns!
+                            <div id="bumblegrinn-art"></div>
+                            The Bumblegrinns Celebrate their Pet Day on <b>February 23rd</b><br>You can claim a free
+                            Bumblegrinn on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example left" src="/assets/pets/images/bumblegrinn.png">
+                                From the enchanting land of Chi hails the Bumblegrinn, a creature as delightful as its
+                                name suggests. These furry, friendly critters are a common and cherished part of life
+                                for the Chi, known for their unique blend of playful charm and incredible adaptability.
+                                Instantly recognizable by their distinct features, Bumblegrinn are flying beings,
+                                propelled through the air by thin insect wings, sporting characteristically big butts
+                                and long, expressive antennae.
+                                <br><br>
+                                Being skittish, they
+                                don't like confronting larger creatures, including Floss, making them hard to tame since
+                                they curl up into a ball when spooked and are very fast to getaway. They are sensitive
+                                to the cold and are recommended to be kept only in Alpha or under heat lamps. The Ammos
+                                Skippers are omnivores and like to eat bugs and desert grass when they can find it. They
+                                are choice meals for the Flogasaurus Rex and do not get along with Floga Drakai because
+                                if they have enough stamina to complete the chase, they will also eat the Ammos
+                                Skippers.
+                                <img class="example" src="/assets/pets/images/bumblegrinn2.png">
+                                <br><br>
+                                These antennae are far more than mere decoration; they serve as sophisticated sensory
+                                organs, allowing the Bumblegrinn to perceive their environment with acute detail and to
+                                emote a wide range of feelings, making them wonderfully communicative companions.
+                                <br><br>
+                                Using their power of size manipulation, they're able to shrink and grow at will. This
+                                allows them to vary from a large size, about knee-high on an adult popfloss, to as
+                                utterly diminutive as an Earth bee. They relish changing their size frequently, a
+                                playful habit that adds to their endearing nature. Chi owners of these captivating pets
+                                sometimes shrink themselves and enjoy riding their larger Bumblegrinn high above the
+                                trees, offering breathtaking views of the Chi landscape.
+                                <br><br>
+                                Despite their robust appearance and ability to carry riders, Bumblegrinn are
+                                surprisingly fragile creatures. This inherent vulnerability has led to a fascinating
+                                evolutionary adaptation: they instinctively look and act cute for the honeyfloss, a
+                                symbiotic relationship where the protective honeyfloss guard them from potential
+                                predators. Their diet consists primarily of the nectar and pollen of various flowers,
+                                making them natural pollinators, and a sweet treat of sugar is always a welcome delight.
+                                <br><br>
+                                Reproduction among Bumblegrinn is a spectacle of nature, as they birth massive litters,
+                                often numbering in the thousands. While this ensures a plentiful population, it also
+                                necessitates careful management. Breeding Bumblegrinn is a restricted practice, with
+                                most individuals required to be neutered or spayed to maintain population control. Only
+                                specific individuals, known as Queen or King Bumblegrinn, are permitted to lay and
+                                fertilize eggs, ensuring the continued, yet regulated, vitality of the species. Beyond
+                                their practical roles and unique biology, Bumblegrinn are deeply affectionate creatures,
+                                loving to cuddle and engage in playful antics, making them truly beloved members of the
+                                Chi ecosystem.
+                                <br><br>
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button chi" href="#key4" style="display: none;">Evolution</a>
+                                <a class="button chi" href="/assets/pets/bases/bumblegrinn.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button chi"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            spraoilingPool: [
+                { file: "spraoiling1.png", artist: "Axototlduck" },
+                { file: "spraoiling2.png", artist: "FadedFaeble" },
+                { file: "spraoiling3.png", artist: "SodaPopCan" },
+                { file: "spraoiling4.png", artist: "NifeWoofy" },
+                { file: "spraoiling5.png", artist: "KrissySempaiArt" },
+                { file: "spraoiling6.png", artist: "Ninjagomonster" },
+                { file: "spraoiling7.png", artist: "Rachelneko" },
+                { file: "spraoiling8.png", artist: "Crystalbinja" },
+                { file: "spraoiling9.png", artist: "KamuiZed" },
+            ],
+            skoinklingPool: [
+                { file: "skoinkling1.png", artist: "Aquilapurr" },
+                { file: "skoinkling2.png", artist: "Countless" },
+                { file: "skoinkling3.png", artist: "Echospirit" },
+            ],
+            bumblegrinnPool: [
+                { file: "bumblegrinn1.png", artist: "Axototlduck" },
+                { file: "bumblegrinn2.png", artist: "Lilbeedraws" },
+                { file: "bumblegrinn3.png", artist: "NifeWoofy" },
+                { file: "bumblegrinn4.png", artist: "DonutDoggy" },
+                { file: "bumblegrinn5.png", artist: "CursedFreak" },
+                { file: "bumblegrinn6.png", artist: "FairyreS" },
+            ]
+        };
+
+        insertArt(communityArt.spraoilingPool, "spraoiling-art");
+        insertArt(communityArt.skoinklingPool, "skoinkling-art");
+        insertArt(communityArt.bumblegrinnPool, "bumblegrinn-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Petpets</title>
+    <style>
+        .section {
+            background-color: #9f844d;
+            max-width: 90%;
+        }
+
+        @media (max-width: 600px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: visible;
+            }
+
+            #top {
+                max-height: 18vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 18vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+            .back-to-top {
+                display: none;
+            }
+
+            .back-to-top-mobile {
+                display: block !important;
+            }
+
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+                max-width: 100%;
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+                max-width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #top {
+                max-height: 30vh;
+                height: auto;
+                margin: auto;
+            }
+
+            .capsuleimg {
+
+                max-height: 30vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .capsule {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .button {
+                min-width: 85% !important;
+                display: block;
+            }
+
+            .pet-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .button-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .page-box {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            .pet-card img {
+                max-width: 100%;
+                display: block;
+            }
+
+            #chart {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/beta2.png);"><img id="top"
+                    src="/assets/logos/beta.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#e6d28d;">
+                <h1>Beta Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Beta clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#charicat" class="shrink"><img title="Charicat"
+                                    src="/assets/pets/images/charicat.png"></a>Charicat</div>
+                        <div class="pet-card"><a href="#charion" class="shrink"><img title="Charion"
+                                    src="/assets/pets/images/charion.png"></a>Charion</div>
+                        <div class="pet-card"><a href="#piaofu-ci" class="shrink"><img title="Piao-Fu Ci"
+                                    src="/assets/pets/images/piaofu-ci.png"></a>Piao-Fu Ci</div>
+                        <div class="pet-card"><a href="#longfu-yu" class="shrink"><img title="Longfu-Yu"
+                                    src="/assets/pets/images/longfu-yu.png"></a>Longfu-Yu</div>
+                        <div class="pet-card"><a href="#doubear" class="shrink"><img title="Doubear"
+                                    src="/assets/pets/images/doubear.png"></a>Doubear</div>
+                        <div class="pet-card"><a href="#doubunni" class="shrink"><img title="Doubunni"
+                                    src="/assets/pets/images/doubunni.png"></a>Doubunni</div>
+                    </div>
+                </div>
+                <!------------------Charicat-------------------->
+                <div id="charicat" class="inner-card section">
+                    <h1>Charicat</h1>
+                    <p style="margin-top:-12px;">2020 . 1st Wave . Pre-Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/charicat.png">
+                                <img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/charicat.png">
+                            </a>
+                            Check out this Community Art of Floss and their Charicat!
+                            <div id="charicat-art"></div>
+                            The Charicats Celebrate their Pet Day on <b>April 24th</b><br>You can claim a free
+                            Charicat on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example" src="/assets/pets/images/charicat2.png">
+                                Listen carefully for the purring of a Cháricat hiding within the flower bushes! These
+                                adorable kitties love to frolic and play in the Gardens of Beta.
+                                The Cháricat are
+                                mischievous little devils who will do anything for a spot of tea or the opportunity to
+                                knock a designer teacup off a table. The Cháricat have the natural ability to hover and
+                                float, and you will rarely find them sitting on the ground.
+                                They prefer to leap and bound through the air, leaving chaos in their wake. Befriend one
+                                of these devils and they will be your cuddliest companions. The Cháricat love nothing
+                                greater than a warm lap to curl up in. However, they do not like being dominated!
+                                <img class="size" src="/assets/pets/charts/charicat-size.png">
+                                <br><br>
+                                Be warned if you adopt a Cháricat they will still love to wreck things from time to time
+                                and demand your attention when they want it! It's hard to stay mad at them though -- I
+                                mean, just look at those eyes!
+                                <br><br>
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#charion">Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/charicat.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Charion-------------------->
+                <div id="charion" class="inner-card section">
+                    <h1>Charion</h1>
+                    <p style="margin-top:-12px;">2021 . 1st Wave . Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/charion.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/charion.png"></a>
+                            Check out this Community Art of Floss and their Charions!
+                            <div id="charion-art"></div>
+                            The Charions Celebrate their Pet Day on <b>July 14th</b><br>You can claim a
+                            free Charion on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Meet the Charion, kings of the Beta region! These big cats are ferocious hunters that
+                                rule over the rest of the animal kingdom. Charions tend to have an air of grace and
+                                arrogance about them and will often hover and refuse to walk on a floor that is dirty or
+                                unfamiliar to them.
+                                <img class="size right" src="/assets/pets/charts/charion-size.png">
+                                <br>
+                                <br>
+                                These glorious beasts can be tamed only if they are raised around floss from birth and
+                                are otherwise fierce and dangerous. However captive Charions are big lazy fur babies and
+                                love to cuddle and play. They are the boss of their owner's household and when they want
+                                your attention you will be bound to give it to them, despite the best efforts by
+                                Candyfloss Charion refuse to be trained and tend to act out against floss they are
+                                annoyed with. They are great with Kittenfloss however and love to snuggle in the night.
+                                Mother Charion will carry their Charicat kittens by the scruff of their neck and like to
+                                bathe in sunlight.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#charicat">Pre-Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/charion.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">
+                                    Back to the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Piao-Fu Ci-------------------->
+                <div id="piaofu-ci" class="inner-card section">
+                    <h1>Piao-Fu Ci</h1>
+                    <p style="margin-top:-12px;">2022 . 2nd Wave . Pre-Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/piaofu-ci.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/piaofu-ci.png"></a>
+                            Check out this Community Art of Floss and their Piao-Fu Cis!
+                            <div id="piaofu-ci-art"></div>
+                            The Piao-Fu Cis Celebrate their Pet Day on <b>August 2nd</b><br>You can claim a free
+                            Piao-Fu Ci on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The PiaoFu-Ci are a beloved creature native only to the Beta region and parts of Theta.
+                                The FiaoFu-Ci never stop growing. They hatch from eggs about the size of a baseball and
+                                grow at a steady rate. The average Piaofu-Ci lives to be about the size of a Paizo dog,
+                                but the largest in history was said to be bigger than a Flogasaurus! PiaoFu-Ci come in
+                                many varieties depending on their breed, but the most common are the Porcelain PiaoFu-Ci
+                                whose body is made of slick milky glass and can be painted and decorated. The PiaoFu-Ci
+                                are docile creatures that do not attack Floss or other pets, but sometimes will fight
+                                one another for territory. Its recommended to not have two together who arent mates.
+                                <br><br>
+                                <img class="example left" src="/assets/pets/images/piaofu-ci.png">
+                                The Piafu-Ci are remarkable pets who use their levitation abilities to float in the air
+                                at about eye level. They dont usually go much higher, and can land on the ground only to
+                                sleep. They do enjoy swimming however its not necessary for them to be in or around
+                                water, as they breathe air and eat bugs.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#longfu-yu">Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/piaofu-ci.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Longfu-Yu-------------------->
+                <div id="longfu-yu" class="inner-card section">
+                    <h1>Longfu-Yu</h1>
+                    <p style="margin-top:-12px;">2023 . 2nd Wave . Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/longfu-yu.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/longfu-yu.png"></a>
+                            Check out this Community Art of Floss and their Longfu-Yus!
+                            <div id="longfu-yu-art"></div>
+                            The Longfu-Yus Celebrate their Pet Day on <b>September 13th</b><br>You can claim a free
+                            Longfu-Yu on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="example" style="padding: 10px;" src="/assets/pets/images/longfu-yu2.png">
+                                The Longfu-Yu are a very rare creature, only several are known to exist and they are
+                                spoken of often in Beta legends. The Longfu-Yu are said to be ever growing longer. Their
+                                tails can stretch on for miles, as they fly over the Beta region's mountain ranges. They
+                                say that young floss who are pure of heart may spot one in the clouds and it's a symbol
+                                that they are destined for greatness.
+                                <br>
+                                <br>
+                                Longfu-yu come in a number of various body types, giving them distinct looks. From the
+                                furry hair covered one, to the slick porcelain style, to the metallic armored Longfu.
+                                The Longfu-yu are generally harmless, and do not attack Floss who come close to them.
+                                They live in isolated places, like mountain tops and inside hidden waterfalls. Many
+                                floss seek them out, believing myths that claim they will help guide you if you are
+                                worthy. Those who have come in contact with this majestic beast have stated that they
+                                are calm, gentle, and elegant.
+                                <br>
+                                <br>
+                                That said, they are very powerful, and there are rare cases where floss have witnessed a
+                                Longfu-yu fighting another petpet! One particular battle shows a Longfu-yu defending a
+                                family of floss from a rouge Flogasaurous Rex! Many floss specialists say the Longfu-Yu
+                                are somewhat related to the Theta's Anosia Kirin, like a distant cousin, though the Beta
+                                refute this claim and tend to not believe in it, since the evidence is sparse at best.
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#piaofu-ci">Pre-Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/longfu-yu.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Doubear-------------------->
+                <div id="doubear" class="inner-card section">
+                    <h1>Doubear</h1>
+                    <p style="margin-top:-12px;">2024 . 3rd Wave . Un-Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/doubear.png"><img id="chart" title="click for full sized chart"
+                                    src="/assets/pets/charts/doubear.png"></a>
+                            Check out this Community Art of Floss and their Doubears!
+                            <div id="doubear-art"></div>
+                            The Doubears Celebrate their Pet Day on <b>May 2nd</b><br>You can claim a free Doubear on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                <img class="size right" src="/assets/pets/charts/doubear-size.png">
+                                The Betan Doubear is a small ground animal that digs into tunnels to burrow. As
+                                domesticated pets, they love to cuddle and bury themselves in blankets and pockets. If
+                                you have one, it's required to have a warm den for them somewhere in the home to curl up
+                                in and feel safe in. The Doubears are docile prey creatures who can be skittish and shy,
+                                but when they learn to trust you, they are playful and curious. The Doubears are ideal
+                                first pets for young floss. When they're happy, they sometimes use their floating
+                                ability in their sleep, causing them to float around the house like a helium balloon.
+                                <br>
+                                <br>
+                                Kittenfloss love to bop them around and play catch with them until they wake up. Large
+                                groups of Doubear in the Betan wild are known to build large and deep tunnels randomly
+                                under the brush. It's not uncommon for a Beta child to stumble into one of these huge
+                                Doubear holes, either. Legends tell of children who get lost in the tunnels and end up
+                                in magical fantasy lands filled with wonder, but most people believe this to be based on
+                                a rare occurrence of a Doubear hole leading into another clan. Most children who tumbled
+                                down Doubear tunnels can locate a Doubear to aid in escorting them back out by holding
+                                onto them as they float to the surface gently. The Doubear don't mind visitors, but they
+                                will help you leave when you out stay your welcome.
+                                <img class="example left" src="/assets/pets/images/doubear.png">
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#doubunni">Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/doubear.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------Doubunni-------------------->
+                <div id="doubunni" class="inner-card section">
+                    <h1>Doubunni</h1>
+                    <p style="margin-top:-12px;">2026 . 3rd Wave . Evolved . Levitation</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/doubunni.png"><img id="chart"
+                                    title="click for full sized chart" src="/assets/pets/charts/doubunni.png"></a>
+                            Check out this Community Art of Floss and their Doubunnis!
+                            <div id="doubunni-art"></div>
+                            The Doubunnis Celebrate their Pet Day on <b>June 21st</b><br>You can claim a free Doubunni
+                            on
+                            that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                The Betan Doubunni is a big, fluffy ball of energy that loves to make itself right at
+                                home in forests, plains, and—much to the chagrin of gardeners—your backyard. These
+                                professional-grade diggers spend their days engineering deep tunnels, but they are
+                                secretly huge suckers for the cozy domestic life. If there's a warm sunbeam or a pile of
+                                fresh-out-of-the-dryer laundry nearby, you can bet a Doubunni is already burrowing into
+                                it. They are total snuggle bugs that live for blanket forts and movie nights, making
+                                them some of the cuddliest roommates a candyfloss could ask for.
+                                <br><br>
+                                Living with a Doubunni is a bit like living with a fuzzy hurricane. These omnivorous
+                                critters have a massive amount of pent-up energy and need some serious playtime to keep
+                                from getting too rowdy. Their favorite party trick involves using their many wings to
+                                launch themselves into the sky. While they can't exactly fly long distances, they use
+                                those wings to glide around and boost their jumps up to a whopping twelve feet! Because
+                                they love a good view, most owners end up buying giant petpet towers or tall lofts where
+                                their Doubunnies can park themselves after a long day of leaping.
+                                <br><br>
+                                <img class="example" src="/assets/pets/images/doubunni.png">
+                                If you're looking for a companion that's a bit of a show-off, the Doubunni is definitely
+                                your guy. They have a natural talent for levitation, which is why you'll often see them
+                                working as the talent in magic shows, popping out of hats and pulling off mid-air flips.
+                                They can be a little standoffish and hard to win over at first, but they aren't above a
+                                little bribery. If you provide enough tasty snacks and some genuine love, they'll
+                                eventually ditch the attitude and become the most loyal, obedient, and playful partner
+                                you've ever had.
+
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button beta" href="#doubear">Pre-Evolution</a>
+                                <a class="button beta" href="/assets/pets/bases/doubunni.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button beta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            charicatPool: [
+                { file: "charicat1.png", artist: "AxototlDuck" },
+                { file: "charicat2.png", artist: "DonutDoggy" },
+                { file: "charicat3.png", artist: "FadedFaeble" },
+                { file: "charicat4.png", artist: "Rachelneko" },
+                { file: "charicat5.png", artist: "Sawaranaide" },
+                { file: "charicat6.png", artist: "Insurgui" },
+                { file: "charicat7.png", artist: "SodaPopCan" },
+                { file: "charicat8.png", artist: "Perry2012draws" },
+                { file: "charicat9.png", artist: "Build-A-Banshee-Arts" },
+                { file: "charicat10.png", artist: "CursedFreak" },
+            ],
+            charionPool: [
+                { file: "charion1.png", artist: "Axototlduck" },
+                { file: "charion2.png", artist: "Aquilapurr" },
+                { file: "charion3.png", artist: "DonutDoggy" },
+                { file: "charion4.png", artist: "Perry2012draws" },
+                { file: "charion5.png", artist: "Echospirit" },
+                { file: "charion6.png", artist: "Mistake-Paradise" },
+                { file: "charion7.png", artist: "Sawaranaide" },
+                { file: "charion8.png", artist: "-spaceman-" },
+                { file: "charion9.png", artist: "VikaRosnova" },
+                { file: "charion10.png", artist: "Build-A-Banshee-Arts" },
+                { file: "charion11.png", artist: "KrissySempaiArt" },
+                { file: "charion12.png", artist: "Countless" },
+            ],
+            piaofu_ciPool: [
+                { file: "piaofu-ci1.png", artist: "-spaceman-" },
+                { file: "piaofu-ci2.png", artist: "Zanixia" },
+                { file: "piaofu-ci3.png", artist: "CursedFreak" },
+                { file: "piaofu-ci4.png", artist: "Ninjagomonster" },
+                { file: "piaofu-ci5.png", artist: "Sawaranaide" },
+                { file: "piaofu-ci6.png", artist: "Countless" },
+                { file: "piaofu-ci7.png", artist: "Donutdoggy" },
+                { file: "piaofu-ci8.png", artist: "VikaRosnova" },
+            ],
+            longfu_yuPool: [
+                { file: "longfu-yu1.png", artist: "Aquilapurr" },
+                { file: "longfu-yu2.png", artist: "NifeWoofy" },
+                { file: "longfu-yu3.png", artist: "Echospirit" },
+            ],
+            doubearPool: [
+                { file: "doubear1.png", artist: "DonutDoggy" },
+                { file: "doubear2.png", artist: "Perry2012draws" },
+                { file: "doubear3.png", artist: "Ninjagomonster" },
+                { file: "doubear4.png", artist: "Axototlduck" },
+                { file: "doubear5.png", artist: "Dressribboness" },
+            ],
+            doubunniPool: [
+                { file: "doubunni1.png", artist: "Axototlduck" },
+                { file: "doubunni2.png", artist: "Perry2012draws" },
+                { file: "doubunni3.png", artist: "DonutDoggy" },
+                { file: "doubunni4.png", artist: "Build-A-Banshee-Arts" },
+            ]
+        };
+
+        insertArt(communityArt.charicatPool, "charicat-art");
+        insertArt(communityArt.charionPool, "charion-art");
+        insertArt(communityArt.piaofu_ciPool, "piaofu-ci-art");
+        insertArt(communityArt.longfu_yuPool, "longfu-yu-art");
+        insertArt(communityArt.doubearPool, "doubear-art");
+        insertArt(communityArt.doubunniPool, "doubunni-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>
