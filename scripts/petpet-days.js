@@ -670,19 +670,9 @@ export const petpetDays = [{
             url: ""
 	    },{
 		    month: "8",
-		    day: "14",
-		    petpet: "Frettermink",
-		    class: "green",
-            upcoming: "No",
-            key: "frettermink",
-            evolution: "Evolved",
-            clan: "Psi",
-            url: ""
-	    },{
-		    month: "8",
 		    day: "16",
 		    petpet: "Frompot",
-		    class: "yellow",
+		    class: "green",
             upcoming: "No",
             key: "frompot",
             evolution: "Unevolved",
@@ -690,19 +680,9 @@ export const petpetDays = [{
             url: ""
 	    },{
 		    month: "8",
-		    day: "19",
-		    petpet: "Mega-Bala",
-		    class: "gold",
-            upcoming: "No",
-            key: "bala-mega",
-            evolution: "Evolved",
-            clan: "Nu",
-            url: ""
-	    },{
-		    month: "8",
 		    day: "21",
 		    petpet: "Ponneli",
-		    class: "silver",
+		    class: "yellow",
             upcoming: "No",
             key: "ponneli",
             evolution: "Unevolved",
@@ -712,7 +692,7 @@ export const petpetDays = [{
 		    month: "8",
 		    day: "25",
 		    petpet: "Vounos Trogon",
-		    class: "pank",
+		    class: "gold",
             upcoming: "No",
             key: "vounos-trogon",
             evolution: "Evolved",
@@ -722,15 +702,25 @@ export const petpetDays = [{
 		    month: "8",
 		    day: "29",
 		    petpet: "Pu'uwai Mantis",
-		    class: "berry",
+		    class: "silver",
             upcoming: "Upcoming",
             key: "puuwai-mantis",
             evolution: "Evolved",
             clan: "Lambda",
             url: ""
 	    },{
+		    month: "8",
+		    day: "31",
+		    petpet: "Frittermink",
+		    class: "pank",
+            upcoming: "Upcoming",
+            key: "frittermink",
+            evolution: "Evolved",
+            clan: "Psi",
+            url: ""
+	    },{
 		    month: "9",
-		    day: "1",
+		    day: "2",
 		    petpet: "Cyutoway Taura",
 		    class: "silver",
             upcoming: "Upcoming",
@@ -743,7 +733,7 @@ export const petpetDays = [{
 		    day: "4",
 		    petpet: "Marsmallow",
 		    class: "pank",
-            upcoming: "No",
+            upcoming: "Upcoming",
             key: "marsmallow",
             evolution: "Unevolved",
             clan: "Common",
@@ -817,6 +807,16 @@ export const petpetDays = [{
             key: "doroking",
             evolution: "Evolved",
             clan: "Psi",
+            url: ""
+	    },{
+		    month: "9",
+		    day: "28",
+		    petpet: "Mega-Bala",
+		    class: "pank",
+            upcoming: "No",
+            key: "bala-mega",
+            evolution: "Evolved",
+            clan: "Nu",
             url: ""
 	    },{
 		    month: "10",
