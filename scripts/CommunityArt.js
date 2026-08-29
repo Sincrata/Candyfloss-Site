@@ -288,4 +288,9 @@ export const communityArt = [{
 		    prompt: "Luau Art Prompt",
 		    position:"center",
 		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/Sugarbee-Breakfast.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Ninjagomonster"
 	    }];

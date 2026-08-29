@@ -703,7 +703,7 @@ export const petpetDays = [{
 		    day: "29",
 		    petpet: "Pu'uwai Mantis",
 		    class: "silver",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "puuwai-mantis",
             evolution: "Evolved",
             clan: "Lambda",
@@ -741,10 +741,10 @@ export const petpetDays = [{
 	    },{
 		    month: "9",
 		    day: "8",
-		    petpet: "Grimotari",
+		    petpet: "Gremotari",
 		    class: "berry",
             upcoming: "No",
-            key: "grimotari",
+            key: "gremotari",
             evolution: "Evolved",
             clan: "Omega",
             url: ""
