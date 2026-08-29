@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="petpet.css">
+    <link rel="stylesheet" href="petpet-mediaquery.css">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eta Petpets</title>
+    <style>
+        .section {
+            background-color: #91434c;
+            max-width: 90%;
+        }
+
+        @media (max-width: 900px) {
+            #top {
+                min-width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <div class="back-to-top-mobile" style="display:none;"><a href="#top">
+                    <p style="margin-top:10px;">Back to Top</p>
+                </a></div>
+            <div class="back-to-top"><a href="#top"><img title="Back to Top" src="/assets/icons/uparrow.png"></a>
+            </div>
+            <div class="capsuleimg" style="height:300px;background-image:url(/assets/banners/eta1.png);"><img
+                    id="top" src="/assets/logos/eta.png" style="max-width:40%;"></div>
+            <div class="capsule" style="background-color:#610913;">
+                <h1>Eta Clan Petpet Guide</h1>
+                <p style="margin-top:-2vh;">Check out these awesome creatures who originate from the Eta clan!</p>
+                <div class="inner-card section">Click on a petpet to view their
+                    information!
+                    <div class="pet-grid">
+                        <div class="pet-card"><a href="#makke-ongu" class="shrink"><img title="Makke Ongu"
+                                    src="/assets/pets/images/makke-ongu.png"></a>Makke Ongu</div>
+                    </div>
+                </div>
+                <!------------------Makke Ongu-------------------->
+                <div id="makke-ongu" class="inner-card section">
+                    <h1>Makke Ongu</h1>
+                    <p style="margin-top:-12px;">2025 . 3rd Wave . Pre-Evolved . Intangibility</p>
+                    <div class="page-grid">
+                        <div class="page-box">
+                            <a href="/assets/pets/charts/makke-ongu.png">
+                                <img id="chart" title="click for full sized chart" src="/assets/pets/charts/makke-ongu.png">
+                            </a>
+                            Check out this Community Art of Floss and their Makke Ongu!
+                            <div id="makke-ongu-art"></div>
+                            The Makke Ongus Celebrate their Pet Day on <b>October 27th</b><br>You can claim a free
+                            Makke Ongu on that day in our discord server!
+                        </div>
+                        <div class="page-box">
+                            <p>
+                                Makke Ongu are a new species of monster that evolved from a similar critter that lived in the forests of Theta before the war. When the Battle on the Wall of Rot changed the landscape of Eta, the creatures in the forests were protected from the flames and ashes by the spirits of Pnevma, who changed their forms to allow them to survive in their new environment. 
+                                <br><br><img class="left example" src="/assets/pets/images/makke-ongu2.png">
+                                Because of this, many of the unique creatures in Eta, including the Ongu, are deeply connected to the spirits, and are able to take on spiritual soul traits and become intangible like the spirits. 
+                                <br><br>
+                                Ongu are playful and rambunctious critters. They are intelligent and use tools and live in small social groups within the land of Eta. They are able to thrive in the Ashen Plains but are also found in the East and Southern shores of Eta. The Ongu are not always docile, but they can be befriended by floss. Ongu are quick to realize that Floss can be beneficial to them, and that by being civil with them they're likely to be protected, fed, and housed. Because of their willingness to be domestication, Ongu are common to find in Etan settlements. The Makke Ongu are very expressive and make snarling and growly vocalizations that can make inflections like language, making it easy for them to express basic emotions to their floss companions.
+                                <br><br>
+                                There is a local legend in one of Eta's villages about the Ongu, telling tale of a blue and red Ongu that were once a part of a pack together. The Red Ongu saw the floss building their village and wanted to scare them off and fight them, but the blue one wanted to befriend the floss and live in peace with them. The blue Ongu didn't listen to his friend and came to the floss. The floss were afraid at first and attacked the blue Ongu, and the red Ongu ran in to protect him. After seeing the red Ongu protecting his friend the floss realized that they were not monsters but cared for one another. The next day the floss brought food to the Ongu to apologize for their rash actions. The red ongu wanted to deny the floss' gifts but despite being hurt and attacked, the blue ongu decided to forgive the floss and be friends. Red ongu couldn't convince him otherwise and decided to leave.
+                                <br><br>
+                                Many believe that this split the Makke Ongu into their two parties, one who attack floss in the forests and cause mischief, and the others who live in harmony with floss and befriend them. 
+                            </p>
+                            <div class="button-grid centered">
+                                <a class="button eta" href="#key2" style="display: none;">Evolution</a>
+                                <a class="button eta" href="/assets/pets/bases/makke-ongu.psd" download>Download Base
+                                    PSD</a>
+                                <a class="button eta"
+                                    href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Back to
+                                    the TH Petshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module">
+        import { insertArt } from '/scripts/petpet-art.js';
+
+        const communityArt =
+        {
+            makke_onguPool: [
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+                { file: "placeholder.png", artist: "Your art could be featured here!" },
+            ]
+        };
+
+        insertArt(communityArt.makke_onguPool, "makke-ongu-art");
+    </script>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

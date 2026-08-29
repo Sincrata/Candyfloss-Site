@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="petpet.css">
+    <link rel="stylesheet" href="petpet-mediaquery.css">
     <script src="/scripts/components/header-component.js"></script>
     <script src="/scripts/components/footer-component.js"></script>
     <script src="/scripts/components/navbar-component.js"></script>
@@ -15,206 +16,10 @@
             background-color: #4b856f;
             max-width: 90%;
         }
-
-        @media (max-width: 600px) {
-            .back-to-top {
-                display: none;
-            }
-
-            .back-to-top-mobile {
-                display: visible;
-            }
-
-            #top {
-                max-height: 18vh;
-                height: auto;
-                margin: auto;
-            }
-
-            .capsuleimg {
-                max-width: 100%;
-                max-height: 18vh;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .capsule {
-                max-width: 100%;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .button {
-                min-width: 85% !important;
-                display: block;
-            }
-
-            .pet-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .button-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-box {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card img {
-                max-width: 100%;
-                display: block;
-            }
-
-            #chart {
-                min-width: 100% !important;
-                max-width: 100% !important;
-                height: auto;
-            }
-
-        }
-
         @media (max-width: 900px) {
-            .back-to-top {
-                display: none;
-            }
-
-            .back-to-top-mobile {
-                display: block !important;
-            }
-
             #top {
-                max-height: 30vh;
-                height: auto;
-                margin: auto;
+                min-width: 50%;
             }
-
-            .capsuleimg {
-                max-width: 100%;
-                max-height: 30vh;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .capsule {
-                max-width: 100%;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .button {
-                min-width: 85% !important;
-                display: block;
-            }
-
-            .pet-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .button-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-box {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card img {
-                max-width: 100%;
-                display: block;
-            }
-
-            #chart {
-                min-width: 100% !important;
-                max-width: 100% !important;
-                height: auto;
-            }
-        }
-
-        @media (max-width: 1500px) {
-            #top {
-                max-height: 30vh;
-                height: auto;
-                margin: auto;
-            }
-
-            .capsuleimg {
-
-                max-height: 30vh;
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .capsule {
-
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-
-            .button {
-                min-width: 85% !important;
-                display: block;
-            }
-
-            .pet-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .button-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .page-box {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card {
-                margin: auto;
-                max-width: 100%;
-                display: block;
-            }
-
-            .pet-card img {
-                max-width: 100%;
-                display: block;
-            }
-
-            #chart {
-                min-width: 100% !important;
-                max-width: 100% !important;
-                height: auto;
-            }
-
         }
     </style>
 </head>
@@ -380,7 +185,7 @@
                                 screeches and howls to call one another and warn each other of danger. They live in
                                 packs and burrow into the snow and small crevices in the ice and are very social
                                 creatures. They can often be found cuddling up with one another in dog piles and
-                                cleaning each other's thick fur. 
+                                cleaning each other's thick fur.
                                 <br><br>
                                 They are extremely docile and eat sweets like cakes and
                                 cookies and are very affectionate to the Candyfloss once their trust is earned. Because
@@ -414,11 +219,21 @@
                             Bahyetiko on that day in our discord server!
                         </div>
                         <div class="page-box">
-                            <p> The Bahyetiko stand about waist high on the average Peppermintfloss.  They are rare creatures to find and in the wild they tend to live in deep caves at the top of Pagoto's snowy ice caps. They are rabid creatures who are crooked and grumpy by nature. Unlike most petpets the  Xoyetiko will only evolve into the Bahyetiko if they are overcome with great grief and annoyance.
+                            <p> The Bahyetiko stand about waist high on the average Peppermintfloss. They are rare
+                                creatures to find and in the wild they tend to live in deep caves at the top of Pagoto's
+                                snowy ice caps. They are rabid creatures who are crooked and grumpy by nature. Unlike
+                                most petpets the Xoyetiko will only evolve into the Bahyetiko if they are overcome with
+                                great grief and annoyance.
                                 <br>
                                 <br>
                                 <img class="example" src="/assets/pets/images/bahyetiko.png">
-                                They are grouchy, easily angered and general troublemakers. Many tell stories of Bahyetiko sneaking into Psi towns that are too close to their mountains to cause trouble for floss. From destruction of properly, to mild attacks, to even a sudden increase in prank mail! The Bahyetiko hate all things bright and cheery. The Psi will tell you, 'If you want to win one over and tame it, you have to find a way to make its heart grow a few sizes, but even if it warms up to you, these gruff tricksters can never be fully contained!
+                                They are grouchy, easily angered and general troublemakers. Many tell stories of
+                                Bahyetiko sneaking into Psi towns that are too close to their mountains to cause trouble
+                                for floss. From destruction of properly, to mild attacks, to even a sudden increase in
+                                prank mail! The Bahyetiko hate all things bright and cheery. The Psi will tell you, 'If
+                                you want to win one over and tame it, you have to find a way to make its heart grow a
+                                few sizes, but even if it warms up to you, these gruff tricksters can never be fully
+                                contained!
                             </p>
                             <div class="button-grid centered">
                                 <a class="button psi" href="#xoyetiko">Pre-Evolution</a>
@@ -448,14 +263,30 @@
                         </div>
                         <div class="page-box">
                             <p>
-                                Chipperminks are rascally little rodents who live all over the planet of Caramella but especially congregate in cold climates. They are smaller than Knan Nibblers and Doubears and tend to be bite sized morsels for bigger predator critters! These docile little furballs need a lot of care but make good pets for kits and adults alike and can be adorable little additions to your floss family. The Chippermunks love to eat nuts and berries and nest in your hair or clothing. 
+                                Chipperminks are rascally little rodents who live all over the planet of Caramella but
+                                especially congregate in cold climates. They are smaller than Knan Nibblers and Doubears
+                                and tend to be bite sized morsels for bigger predator critters! These docile little
+                                furballs need a lot of care but make good pets for kits and adults alike and can be
+                                adorable little additions to your floss family. The Chippermunks love to eat nuts and
+                                berries and nest in your hair or clothing.
                                 <img class="example left" src="/assets/pets/images/chippermink.png">
                                 <br>
                                 <br>
-                                They can climb up walls and trees and love to live inside of pine trees the most! They are pack critters so it's recommended to have 2 or 3 together so they can support one another but watch out because these things multiply like crazy! The chippermink is known to burrow into the snow or ground if they are frightened - and they are often frightened!
+                                They can climb up walls and trees and love to live inside of pine trees the most! They
+                                are pack critters so it's recommended to have 2 or 3 together so they can support one
+                                another but watch out because these things multiply like crazy! The chippermink is known
+                                to burrow into the snow or ground if they are frightened - and they are often
+                                frightened!
                                 <br>
                                 <br>
-                                The Chipperminks' noses are always sniff sniffing and they love to make chattering and chirping noises to alert one another. Their strong bucked teeth help them gnaw into wood and dig in the snow, as well as opening tough nut shells. They can BITE hard with those chompers so don't get on their bad side! Well trained Chipperminks like to ride on top of their Floss companions' shoulders or heads and will often run off to explore and come running back once something scares them! They can be trained quite well and can do some more complex tasks like opening doors, retrieving items, or causing distractions which make them a highly sought after pet for many floss!
+                                The Chipperminks' noses are always sniff sniffing and they love to make chattering and
+                                chirping noises to alert one another. Their strong bucked teeth help them gnaw into wood
+                                and dig in the snow, as well as opening tough nut shells. They can BITE hard with those
+                                chompers so don't get on their bad side! Well trained Chipperminks like to ride on top
+                                of their Floss companions' shoulders or heads and will often run off to explore and come
+                                running back once something scares them! They can be trained quite well and can do some
+                                more complex tasks like opening doors, retrieving items, or causing distractions which
+                                make them a highly sought after pet for many floss!
                             </p>
                             <div class="button-grid centered">
                                 <a class="button psi" href="#frittermink">Evolution</a>
@@ -485,14 +316,25 @@
                         </div>
                         <div class="page-box">
                             <p>
-                                The  Frettermink, an enchanting species, are long-bodied rodent creatures renowned for their adorable appearance. They possess fuzzy, friendly dispositions, characterized by remarkably long, stretching abdomens and even more voluminous, fluffy tails, making them truly unique.
+                                The Frettermink, an enchanting species, are long-bodied rodent creatures renowned for
+                                their adorable appearance. They possess fuzzy, friendly dispositions, characterized by
+                                remarkably long, stretching abdomens and even more voluminous, fluffy tails, making them
+                                truly unique.
                                 <br><br>
                                 <img class="example" src="/assets/pets/images/frittermink2.png">
-                                
-                                These delightful wintery critters have established their home within  the mystical land of Psi, where tall pine trees and expansive snow banks  serve as their natural playground. Frettermink notably adore the cheerful sound of jingly bells and the melodic songs of chioni carols. Often found cozying up to the denizens of Psi's many quaint villages,  Frettermink make excellent companions. Their diet consists primarily of nuts and berries, though they occasionally savor a fresh arctic fish, and they exceptionally love cuddles and warm places.
+
+                                These delightful wintery critters have established their home within the mystical land
+                                of Psi, where tall pine trees and expansive snow banks serve as their natural
+                                playground. Frettermink notably adore the cheerful sound of jingly bells and the melodic
+                                songs of chioni carols. Often found cozying up to the denizens of Psi's many quaint
+                                villages, Frettermink make excellent companions. Their diet consists primarily of nuts
+                                and berries, though they occasionally savor a fresh arctic fish, and they exceptionally
+                                love cuddles and warm places.
                                 <br><br>
                                 <img class="size" src="/assets/pets/charts/frittermink-size.png">
-                                As playful critters, they delight in bouncing around and rolling on the floor. However, handling them requires care; mistreatment or lack of trust can provoke an attack. When treated kindly, Frettermink prove to  be very docile and playful.
+                                As playful critters, they delight in bouncing around and rolling on the floor. However,
+                                handling them requires care; mistreatment or lack of trust can provoke an attack. When
+                                treated kindly, Frettermink prove to be very docile and playful.
 
                             </p>
                             <div class="button-grid centered">

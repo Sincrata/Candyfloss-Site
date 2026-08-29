@@ -23,7 +23,11 @@ background-image:url('/assets/banners/${chosenImage2.file}')">
 customElements.define('main-header', Header);
 
 //------------------------------------- IMAGE ROTATION-----------------------------------------
-const currentMonth2 = new Date().getMonth();
+const now = new Date();
+const options = { timeZone: "America/Chicago" };
+var month_header = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
+month_header = Number(month_header) - 1;
+
 const monthlyContent2 = [
   //JANUARY
   {
@@ -217,6 +221,6 @@ const monthlyContent2 = [
   },
 ];
 
-const currentData2 = monthlyContent2[currentMonth2];
+const currentData2 = monthlyContent2[month_header];
 const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
 const chosenImage2 = currentData2.imgPool[randomIndex2];

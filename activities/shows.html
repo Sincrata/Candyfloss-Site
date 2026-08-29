@@ -68,11 +68,12 @@
 		import { loadClanList } from "/scripts/monthly-content/loading-methods.js";
 		import { clanInfo } from "/scripts/monthly-content/loading-methods.js";
 
-		const currentMonth = new Date().getMonth();
-		const currentYear = new Date().getFullYear();
+		const now = new Date();
+		const options = { timeZone: "America/Chicago" };
+		var month = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
+		var currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
 		const even = currentYear % 2 == 0 ? "even" : "odd";
 		const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
-		const month = String(currentMonth + 1);
 
 
 		let selected = [];

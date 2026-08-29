@@ -155,3 +155,9 @@ body {
   place-content: center;
   place-items: center;
 }
+
+.capsuleimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
