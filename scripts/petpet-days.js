@@ -703,7 +703,7 @@ export const petpetDays = [{
 		    day: "29",
 		    petpet: "Pu'uwai Mantis",
 		    class: "silver",
-            upcoming: "Today",
+            upcoming: "No",
             key: "puuwai-mantis",
             evolution: "Evolved",
             clan: "Lambda",
