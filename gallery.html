@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="preload" href="/assets/logos/logo.gif" as="image">
@@ -9,213 +10,103 @@
 	<link rel="icon" href="/assets/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CF Gallery</title>
-    	<style>
-
-		#entry-grid{
-    			display: grid;
-    			grid-template-columns: repeat(auto-fill, 280px);
-    			gap: 1rem;
-    			justify-content: center;
+	<style>
+		#entry-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 280px);
+			gap: 1rem;
+			justify-content: center;
 		}
 
 
-		.entry{ 
+		.entry {
 			background-color: #403175;
-			border-radius:5px;
+			border-radius: 5px;
 			box-shadow: 5px 5px 5px 5px #140c38;
-			padding: 1em; 
+			padding: 1em;
 			margin: 1rem;
-			display: flex; 
-			flex-direction: column; 
-			justify-content: center; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			align-items: center;
 		}
+
 		.loading {
-			background-color:#403175;
-			border-radius:5px;
+			background-color: #403175;
+			border-radius: 5px;
 			box-shadow: 5px 5px 5px 5px #140c38;
-    			width: 100%;
-    			padding: 1.5rem;
-    			text-align: center;
-    			box-sizing: border-box;
-		}
-		.entry-image{
-    			max-width:100%;
-				width: auto;
-    			height: auto;
-				max-height:300px;
-    			display: block;
-    			border-radius: 6px;
+			width: 100%;
+			padding: 1.5rem;
+			text-align: center;
+			box-sizing: border-box;
 		}
 
-		.entry-title, .loading h4{
-    			margin: 0.5rem 0;
-    			font-size: 1.2rem;
+		.entry-image {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			max-height: 300px;
+			display: block;
+			border-radius: 6px;
+		}
+
+		.entry-title,
+		.loading h4 {
+			margin: 0.5rem 0;
+			font-size: 1.2rem;
 			text-align: center;
 		}
 
-		.entry-info p{
-    			margin: 0;
-    			font-size: 0.9rem;
+		.entry-info p {
+			margin: 0;
+			font-size: 0.9rem;
 			text-align: center;
 		}
-    	</style>
+	</style>
 </head>
+
 <body>
 	<header loading="eager">
 		<main-header></main-header>
 	</header>
 	<main><a href="#" class="back-to-top" aria-label="Scroll to top">
-  <img src="/assets/icons/uparrow.png" alt="Back to top" />
-</a>
+			<img src="/assets/icons/uparrow.png" alt="Back to top" />
+		</a>
 		<nav-bar></nav-bar>
 		<center>
-			<img src="/assets/banners/community.png" style="max-width:70%;margin-bottom:-15px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;">
-			<div class= "card" style="padding-top:5px;width:70%;;margin-top:0px;margin-bottom:30px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;">
+			<img src="/assets/banners/community.png"
+				style="max-width:70%;margin-bottom:-15px; margin-top:25px;border-radius: 5px 5px 0 0 ;box-shadow:5px -7px 5px 5px #140c38;">
+			<div class="card"
+				style="padding-top:5px;width:70%;;margin-top:0px;margin-bottom:30px;padding:0px;box-sizing:border-box;border-radius:  0px 0px 5px 5px ;">
 				<h1>Community Art Gallery</h1>
 				<span>
-					Check out all the amazing art and stories that have been crafted by our lovely community members! <br>Art featured here has been entered into an Event or Achievement!
-					<br><br><b>Want your art or stories to be featured here? </b><br>Just submit them to an achievement or event and they will be automatically added to this community gallery!
+					Check out all the amazing art and stories that have been crafted by our lovely community members!
+					<br>Art featured here has been entered into an Event or Achievement!
+					<br><br><b>Want your art or stories to be featured here? </b><br>Just submit them to an achievement
+					or event and they will be automatically added to this community gallery!
 				</span>
 				<br><br>
 				<br>
-				 &nbsp;
+				&nbsp;
 
 			</div>
 
 			<article id="entries">
 				<div id="entry-body">
-					<div id="entry-loading" class="loading"><h4>Loading Art</h4></div>
+					<div id="entry-loading" class="loading">
+						<h4>Loading Art</h4>
+					</div>
 					<div id="entry-grid">
 					</div>
 				</div>
 			</article>
 		</center>
-	</main> 
+	</main>
 	<footer>
 		<main-footer></main-footer>
 	</footer>
-	<script>
-		document.getElementById("nav-toggle").addEventListener("click", () => {
-    			document.getElementById("nav-wrapper").classList.toggle("open");
-		});
-
-		document.querySelectorAll(".dropdown > a").forEach(link => {
-    		link.addEventListener("click", (e) => {
-        			if (window.innerWidth > 700) return;
-
-        			e.preventDefault();
-        			const dropdown = link.nextElementSibling;
-        			dropdown.classList.toggle("open");
-    			});
-		});
-		async function main() {
-			const params = new URLSearchParams(window.location.search);
-			var achievement = params.get("achievement") ?? "";
-
-			async function fetchCSV(url) {
-    				const res = await fetch(url);
-    				const text = await res.text();
-    				return text;
-			}
-
-			function parseCSV(text) {
-    				return text
-        			.trim()
-        			.split(/\r?\n/)
-        			.map(line =>
-            				line
-                		.split(",")
-                		.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
-        			);
-			}
-
-			function filterRows(rows, colAName, colAValue, colBName, colBValue) {
-    				const header = rows[0];
-    				const data = rows.slice(1);
-
-    				const colAIndex = header.indexOf(colAName);
-    				const colBIndex = header.indexOf(colBName);
-
-    				if (colAIndex === -1 || colBIndex === -1) {
-        			console.error("Column name not found in header:", { header, colAName, colBName });
-        			return [];
-    				}
-
-    				const maxIndex = Math.max(colAIndex, colBIndex);
-
-    				return data.filter(row => {
-        				if (!row || row.length <= maxIndex) {
-            				// too short to safely read both columns → ignore
-            				return false;
-        				}
-
-        				const a = row[colAIndex];
-        				const b = row[colBIndex];
-
-        				if (a == null || b == null) {
-            					return false;
-        				}
-
-        				return a.toLowerCase() === colAValue.toLowerCase() &&
-               				b.toLowerCase() === colBValue.toLowerCase();
-    				});
-			}
-
-			async function loadFilteredEntryData() {
-    				const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=256204382&single=true&output=csv";
-
-    				const csv = await fetchCSV(url);
-    				const rows = parseCSV(csv);
-
-    				const results = filterRows(
-        				rows,
-        				"Approved",  "yes",
-					"Broken Link",  ""
-    				);
-
-    				console.log(results);
-				return results;
-			}
-
-			const entries = await loadFilteredEntryData();
-
-			var html = "";
-			const entrygrid = document.getElementById("entry-grid");
-
-			for (let i = entries.length - 1; i >= 0; i--) { 
-				const entry = entries[i];
-				html +=`<div class="entry"> 	
-				`;
-				if(entry[8] == "Art"){
-					html += `<img class="entry-image" src="${entry[1]}">`;
-				}else{
-					html += `<a href="${entry[1]}"><img class="entry-image" src="https://f2.toyhou.se/file/f2-toyhou-se/images/120184233_7wE40pb13YsbG2i.png"></a>`;
-				}
-				html +=`
-				<h4 class="entry-title">${entry[3]}</h4>
-				<div class="entry-info">
-					<p>Artist: <a style="color: white;" href="https://toyhou.se/${entry[0].trim()}">${entry[0]}</a></p>
-					<p>Date: ${entry[5]}</p>
-				</div>	
-				</div>
-				`;
-			}
-
-			if(html == ""){
-				html = `<div class="loading" style="width: 100%;"> <h4 class="entry-title">No Entries Yet</h4></div>`;
-				entrygrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-			}
-
-			var eloading = document.getElementById("entry-loading");
-			eloading.style.display = "none";
-
-			entrygrid.innerHTML = html;
-
-			
-
-		}
-		main();
-	</script>
+	<script type="module" src="/scripts/nav-bar.js"></script>
+	<script type="module" src="/scripts/gallery.js"></script>
 </body>
-</html> 
+
+</html>

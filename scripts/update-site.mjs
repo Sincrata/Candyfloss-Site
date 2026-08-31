@@ -5,12 +5,14 @@ import generateAchievements from "./pages/achievements.js";
 import generateCommunityArt from "./pages/CommunityArtMaker.js";
 import generatePetpetDays from "./pages/create-petpet-days.js";
 import generatePrizeList from "./pages/create-prize-center-list.js";
+import generateAchievementList from "./pages/create-achievements.js";
 import generateCurrentAchievements from "./pages/current-achievement-maker.js";
 import { csvUrl as achievementUrl } from "./pages/achievements.js";
 import { csvUrl as communityArtUrl } from "./pages/CommunityArtMaker.js";
 import { csvUrl as petpetDaysUrl } from "./pages/create-petpet-days.js";
 import { csvUrl as prizeListUrl } from "./pages/create-prize-center-list.js";
 import { csvUrl as currentListUrl } from "./pages/current-achievement-maker.js";
+import { csvUrl as achievementListUrl } from "./pages/create-achievements.js";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -24,7 +26,8 @@ const pages = [
     { file: "scripts/CommunityArt.js", generator: generateCommunityArt, url: communityArtUrl },
     { file: "scripts/petpet-days.js", generator: generatePetpetDays, url: petpetDaysUrl },
     { file: "scripts/prize-center-list.js", generator: generatePrizeList, url: prizeListUrl },
-    { file: "scripts/current-achievements.js", generator: generateCurrentAchievements, url: currentListUrl }
+    { file: "scripts/current-achievements.js", generator: generateCurrentAchievements, url: currentListUrl },
+    { file: "scripts/monthly-content/achievements.json", generator: generateAchievementList, url: achievementListUrl }
 ];
 
 

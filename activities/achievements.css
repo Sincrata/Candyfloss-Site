@@ -170,6 +170,10 @@ h2 {
 	margin: 5px;
 	margin-top: 0px;
 }
+.past-ach-container .button{
+	min-width:20%;
+	margin-top:0px;
+}
 
 .past-ach-img {
 	min-width: 100%;
@@ -180,6 +184,7 @@ h2 {
 	background-color: #fbb278;
 	border-radius: 5px 0px 0px 5px;
 	margin-top: 0px;
+	background-size: cover !important;
 }
 
 .past-ach-badge {
@@ -191,6 +196,9 @@ h2 {
 	background-color: #584894;
 	border-radius: 0px 5px 5px 0px;
 	margin-right: 10px;
+	background-size: contain !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
 }
 
 #fotm-info a {

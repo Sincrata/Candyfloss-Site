@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="preload" href="/assets/logos/logo.gif" as="image">
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/Planet.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Achievements</title>
+    <style>
+        @media (max-width: 800px) {
+            .past-ach-container {
+                margin: 0%;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .past-ach-box {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .past-ach-entry {
+                overflow: auto;
+                max-height: 20vh;
+            }
+
+            .past-ach-container {
+                margin: 0px;
+                margin-top: 0px;
+                grid-template-columns: 25% 50% 25%;
+            }
+
+            #three-columns {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .past-ach-container {
+                margin: 0%;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .past-ach-box {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .past-ach-entry {
+                overflow: auto;
+                max-height: 20vh;
+            }
+
+            .past-ach-container {
+                margin: 0px;
+                margin-top: 0px;
+                grid-template-columns: 25% 50% 25%;
+            }
+
+            .card,
+            #current-achievements {
+                width: 90%;
+            }
+
+            #fotmbox img {
+                max-width: 35px;
+            }
+
+            #fotm-badge {
+                margin: 0px;
+            }
+
+            #current-achievements {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .past-ach-container {
+                margin: 0%;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .past-ach-box {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .past-ach-entry {
+                overflow: auto;
+                max-height: 20vh;
+            }
+
+            .past-ach-container {
+                margin: 0px;
+                margin-top: 0px;
+                grid-template-columns: 25% 50% 25%;
+            }
+
+            .card,
+            #current-achievements,
+            #fotm {
+                width: 90%;
+            }
+
+            #current-achievements {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            #current-achievements {
+                grid-template-columns: 1fr;
+            }
+
+            .past-ach-container {
+                margin: 0%;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .past-ach-box {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .past-ach-entry {
+                overflow: auto;
+                max-height: 20vh;
+            }
+
+            .past-ach-container {
+                margin: 0px;
+                margin-top: 0px;
+                grid-template-columns: 25% 50% 25%;
+            }
+        }
+
+        @media (max-width: 300px) {
+            #current-achievements {
+                grid-template-columns: 1fr;
+            }
+
+            .past-ach-container {
+                margin: 0%;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .past-ach-box {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .past-ach-entry {
+                overflow: auto;
+                max-height: 20vh;
+            }
+
+            .past-ach-container {
+                margin: 0px;
+                margin-top: 0px;
+                grid-template-columns: 25% 50% 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+    <main>
+        <nav-bar></nav-bar>
+        <center>
+            <img id="achievement-logo" src="/assets/logos/achievements.png" style="max-width:100%;">
+            <div class="card" id="achievement-info">
+                <p>
+                <h1>Rules!</h1>
+                These rules are universal for all achievement entries.<br>
+                By submitting entry, you are agreeing to these terms.<br><br>
+                The use of AI in your entry in ANY way, theft in general, or other misconduct will disqualify you and
+                revoke your right to entry into achievements in the future.
+                <br><br>
+                To qualify your entry must-<br>
+
+                - prominently feature one or more approved Candyfloss<br>
+                - follow the theme/requirements for the specific achievement<br>
+                - abide by the Candyfloss TOS<br>
+                - be completely made by you, aside from credited assets. You cannot collaborate on your entry.<br>
+                - be made specifically for this achievement.<br>
+                - accurately portray Candyfloss anatomy and cannon lore to the best of your abilities.<br>
+                <br><br>
+                <div id="three-columns" "style=" display: block;">
+                    <div>
+                        <h2>Art Entries</h2>
+                        <span>
+
+                            - must be completed past the line art stage<br>
+                            - provide credits to all assets used, bases are okay as long as its obviously credited!<br>
+                            -comic panels are ok but not needed<br>
+                            - By submitting for an Achievement you consent to your art and or stories to be displayed on
+                            the homepage, your achievement page or the CF official discord with proper credit.<br>
+                        </span>
+                    </div>
+                    <div>
+                        <h2>Chains</h2>
+                        <span>
+                            Chain games are taking place on toyhou.se threads! More specific rules and guides for the
+                            chain can be found there!<br>
+                            <br>
+                        </span>
+                    </div>
+                    <div>
+                        <h2>Stories</h2>
+                        <span>
+                            - be between 1000 and 5000 words<br>
+                            - be written in English <br>
+                            -be posted to a google doc or in a toyhou.se literature post<br>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="current-achievements">
+
+            </div>
+
+            <div id="fotm">
+
+            </div>
+            <H1> All Achievements!</h1>
+            <p>
+                Check out all the achievements you can complete! You can see which achievements you have already
+                completed by checking your <a href="/activities/my-achievements.html" style="color:#ae97da;">personal
+                    Achievements List!<a><br>You can earn 1 coin for completing an
+                        achievement for the first time!</p>
+            <div id="prev-achievements">
+                <div class="past-ach-box" id="past-ach-box">
+
+
+                </div>
+
+            </div>
+            </div>
+        </center>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module" src="achievements.js"></script>
+    <script>
+        document.getElementById("nav-toggle").addEventListener("click", () => {
+            document.getElementById("nav-wrapper").classList.toggle("open");
+        });
+
+        document.querySelectorAll(".dropdown > a").forEach(link => {
+            link.addEventListener("click", (e) => {
+                if (window.innerWidth > 700) return;
+
+                e.preventDefault();
+                const dropdown = link.nextElementSibling;
+                dropdown.classList.toggle("open");
+            });
+        });
+        const past_box = document.getElementById("past-ach-box");
+        
+    </script>
+</body>
+
+</html>

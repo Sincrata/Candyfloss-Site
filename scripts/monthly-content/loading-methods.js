@@ -24,3 +24,12 @@ export async function clanInfo() {
         throw new Error("Unable to load pets.");
     }
 }
+
+export async function achievementList() {
+    try {
+        const res = await fetch('/scripts/monthly-content/achievements.json');
+        return await res.json();
+    } catch (error) {
+        throw new Error("Unable to load achievements.");
+    }
+}

@@ -1,154 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 	 <meta charset="UTF-8" />
-  	<title>My Achievements</title>
+	<meta charset="UTF-8" />
+	<title>My Achievements</title>
 	<link rel="stylesheet" href="/css/general.css">
 	<link rel="preload" href="/assets/logos/logo.gif" as="image">
 	<script src="/scripts/components/header-component.js"></script>
 	<script src="/scripts/components/footer-component.js"></script>
 	<script src="/scripts/components/navbar-component.js"></script>
-  	<link rel="icon" href="/assets/icons/Planet.ico">
+	<link rel="icon" href="/assets/icons/Planet.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-	#badge-grid, #image-grid, #literature-grid{
-    		display: grid;
-    		grid-template-columns: repeat(auto-fill, 280px);
-    		gap: 1rem;
-    		justify-content: center;
-		background-color:#403175;
-		border-radius:5px;
-		box-shadow: 5px 5px 5px 5px #140c38;
-    		width: 100%;
-		box-sizing: border-box;
-	}
-	#badge-grid{
-		grid-template-columns: repeat(auto-fill, 150px);
-	}
+	<style>
+		#badge-grid,
+		#image-grid,
+		#literature-grid,
+		#show-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 280px);
+			gap: 1rem;
+			justify-content: center;
+			background-color: #403175;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+			width: 100%;
+			box-sizing: border-box;
+		}
 
-	.badge{
-		border-radius:5px;
-		padding: 1em; 
-		margin: 1rem;
-		display: flex; 
-		flex-direction: column; 
-		justify-content: center; 
-		align-items: center;
-	}
-	.image, .literature{ 
-		background-color: #403175;
-		border-radius:5px;
-		box-shadow: 5px 5px 5px 5px #140c38;
-		padding: 1em; 
-		margin: 1rem;
-		display: flex; 
-		flex-direction: column; 
-		justify-content: center; 
-		align-items: center;
-	}
-	.loading {
-		background-color:#403175;
-		border-radius:5px;
-		box-shadow: 5px 5px 5px 5px #140c38;
-    		width: 100%;
-    		padding: 1.5rem;
-    		text-align: center;
-    		box-sizing: border-box;
-	}
-	.title-card{
-		background-color:#403175;
-		border-radius:5px;
-		box-shadow: 5px 5px 5px 5px #140c38;
-    		width: 100%;
-    		padding: 1.5rem;
-		box-sizing: border-box;
-	}
-	.title-card .title-row{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.badge-image, .image-image, .literature-image{
-    		width: 100%;
-    		height: auto;
-    		display: block;
-    		border-radius: 6px;
-	}
+		#badge-grid,
+		#show-grid {
+			grid-template-columns: repeat(auto-fill, 150px);
+		}
 
-	.badge-title, .image-title, .literature-title, .loading h4{
-    		margin: 0.5rem 0;
-    		font-size: 1.2rem;
-		text-align: center;
-	}
+		.badge,
+		.show {
+			border-radius: 5px;
+			padding: 1em;
+			margin: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
-	.badge-info p, .image-info p, .literature-info p{
-    		margin: 0;
-    		font-size: 0.9rem;
-		text-align: center;
-	}
-	.collapsible {
-    		cursor: pointer;
-    		display: flex;
-    		align-items: center;
-    		gap: 0.5rem;
-		margin-left: 25px;
-		
-	}
-	.arrow {
-    		transition: transform 0.2s ease;
-	}
-	.collapsed .arrow {
-    		transform: rotate(-90deg);
-	}
-	.collapsible-content {
-    		display: block;
-	}
-	.collapsed + .collapsible-content {
-    		display: none;
-	}
-	#achievements{
-		margin: 0px 25px;
-		box-sizing: border-box;
-	}
-	main{
-		min-height: 65vh;
-	}
-	#onto-achievements{
-		max-width: 90%;
-		display: flex;
-		justify-items: center;
-		margin: auto;
-		margin-top: 15px;
-		text-align: center;
-		min-height: 35vh;
-	}
+		.image,
+		.literature {
+			background-color: #403175;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+			padding: 1em;
+			margin: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.loading {
+			background-color: #403175;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+			width: 100%;
+			padding: 1.5rem;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.title-card {
+			background-color: #403175;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px 5px #140c38;
+			width: 100%;
+			padding: 1.5rem;
+			box-sizing: border-box;
+		}
+
+		.title-card .title-row {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.badge-image,
+		.image-image,
+		.literature-image,
+		.show-image {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 6px;
+		}
+
+		.badge-title,
+		.image-title,
+		.literature-title,
+		.show-title,
+		.loading h4 {
+			margin: 0.5rem 0;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+
+		.badge-info p,
+		.image-info p,
+		.literature-info p,
+		.show-info p {
+			margin: 0;
+			font-size: 0.9rem;
+			text-align: center;
+		}
+
+		.collapsible {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			margin-left: 25px;
+
+		}
+
+		.arrow {
+			transition: transform 0.2s ease;
+		}
+
+		.collapsed .arrow {
+			transform: rotate(-90deg);
+		}
+
+		.collapsible-content {
+			display: block;
+		}
+
+		.collapsed+.collapsible-content {
+			display: none;
+		}
+
+		#achievements {
+			margin: 0px 25px;
+			box-sizing: border-box;
+		}
+
+		main {
+			min-height: 65vh;
+		}
+
+		#onto-achievements {
+			max-width: 90%;
+			display: flex;
+			justify-items: center;
+			margin: auto;
+			margin-top: 15px;
+			text-align: center;
+			min-height: 35vh;
+		}
+
 		.input {
-    			width: 25%;
-    			padding: 6px 16px;
-    			border: 2px solid #d9c5ff;
-    			border-radius: 8px;
-    			background: #f7f2ff;
-    			color: #471c81;
-    			font-size: 1rem;
-    			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+			width: 25%;
+			padding: 6px 16px;
+			border: 2px solid #d9c5ff;
+			border-radius: 8px;
+			background: #f7f2ff;
+			color: #471c81;
+			font-size: 1rem;
+			transition: border-color 0.2s ease, box-shadow 0.2s ease;
 			margin-bottom: 15px;
 			margin-top: 15px;
 		}
 
 		.input:focus {
-    			border-color: #8c6cff;
-    			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
-    			outline: none;
+			border-color: #8c6cff;
+			box-shadow: 0 0 6px rgba(140, 108, 255, 0.5);
+			outline: none;
 		}
-	@media (max-width: 600px) {
-		h1{
-			font-size: 1.2em;
-		}
-	}
 
-  </style>
+		@media (max-width: 600px) {
+			h1 {
+				font-size: 1.2em;
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<header id="header">
 		<main-header></main-header>
@@ -162,7 +195,8 @@
 			<br>
 			<input class="input" id="username" type="text" placeholder="Enter Username..."></input>
 			<br>
-			<button id="achievement-button" class="button" style="width: 75%; margin: auto;" disabled>Go To Achievements</button>
+			<button id="achievement-button" class="button" style="width: 75%; margin: auto;" disabled>Go To
+				Achievements</button>
 		</div>
 		<div id="achievements">
 			<div class="title-card" style="margin-top: 15px;">
@@ -178,282 +212,64 @@
 
 
 			<article id="badges">
-				<div id="badge-header" class="collapsible"><span class="arrow">▼</span><h2>Badges</h2></div>
+				<div id="badge-header" class="collapsible"><span class="arrow">▼</span>
+					<h2>Badges</h2>
+				</div>
 				<div id="badge-body" class="collapsible-content">
-					<div id="badge-loading" class="loading"><h4>Loading Badges</h4></div>
+					<div id="badge-loading" class="loading">
+						<h4>Loading Badges</h4>
+					</div>
 					<div id="badge-grid">
+					</div>
+				</div>
+			</article>
+
+			<article id="shows">
+				<div id="show-header" class="collapsible"><span class="arrow">▼</span>
+					<h2>Shows</h2>
+				</div>
+				<div id="show-body" class="collapsible-content">
+					<div id="show-loading" class="loading">
+						<h4>Loading Shows</h4>
+					</div>
+					<div id="show-grid">
 					</div>
 				</div>
 			</article>
 
 
 			<article id="images" style="display: none;">
-				<div id="image-header" class="collapsible"><span class="arrow">▼</span><h2>Art Entries</h2></div>
+				<div id="image-header" class="collapsible"><span class="arrow">▼</span>
+					<h2>Art Entries</h2>
+				</div>
 				<div id="image-body" class="collapsible-content">
-					<div id="image-loading" class="loading"><h4>Coming Soon!</h4></div>
+					<div id="image-loading" class="loading">
+						<h4>Coming Soon!</h4>
+					</div>
 					<div id="image-grid">
 					</div>
 				</div>
 			</article>
 
 			<article id="literatures" style="display: none;">
-				<div id="literature-header" class="collapsible"><span class="arrow">▼</span><h2>Literature Entries</h2></div>
+				<div id="literature-header" class="collapsible"><span class="arrow">▼</span>
+					<h2>Literature Entries</h2>
+				</div>
 				<div id="literature-body" class="collapsible-content">
-					<div id="literature-loading" class="loading"><h4>Coming Soon!</h4></div>
+					<div id="literature-loading" class="loading">
+						<h4>Coming Soon!</h4>
+					</div>
 					<div id="literaturet-grid">
 					</div>
 				</div>
 			</article>
 
-		</main>
+	</main>
 	<footer>
 		<main-footer></main-footer>
 	</footer>
-	<script>
-		document.getElementById("nav-toggle").addEventListener("click", () => {
-    			document.getElementById("nav-wrapper").classList.toggle("open");
-		});
-
-		document.querySelectorAll(".dropdown > a").forEach(link => {
-    		link.addEventListener("click", (e) => {
-        			if (window.innerWidth > 700) return;
-
-        			e.preventDefault();
-        			const dropdown = link.nextElementSibling;
-        			dropdown.classList.toggle("open");
-    			});
-		});
-	async function main() {
-		const params = new URLSearchParams(window.location.search);
-		var username = params.get("username") ?? "";
-
-		if(username ==""){
-			const button = document.getElementById("onto-achievements");
-			const inventory = document.getElementById("achievements");
-			button.style.display = "block";
-			inventory.style.display = "none";
-
-
-			const achbtn = document.getElementById("achievement-button");
-			username = document.getElementById("username");
-
-			var userinput = username.value;
-
-			username.addEventListener("keyup", () => {
-				if(username.value.length > 0){
-					achbtn.disabled = false;
-				}else{
-					achbtn.disabled = true;
-				}
-				userinput = username.value;
-			});
-
-			achbtn.addEventListener("click", () => {
-    				const encoded = encodeURIComponent(userinput);
-				window.location.href = `my-achievements.html?username=${encoded}`;
-			});
-		}
-		
-		document.querySelectorAll(".collapsible").forEach(header => {
-    			header.addEventListener("click", () => {
-        			header.classList.toggle("collapsed");
-    			});
-		});
-
-
-
-		function capitalizeFirstWord(str) {
-    			if (!str) return "";
-    			const [first, ...rest] = str.trim().split(/\s+/);
-    			return first.charAt(0).toUpperCase() + first.slice(1).toLowerCase() + 
-           			(rest.length ? " " + rest.join(" ") : "");
-		}
-		
-		username = capitalizeFirstWord(username);
-
-		
-		const title = document.getElementById("title");
-		title.innerHTML = `${username}'s Achievements`;
-
-
-		async function fetchCSV(url) {
-    			const res = await fetch(url);
-    			const text = await res.text();
-    			return text;
-		}
-
-		function parseCSV(text) {
-    			return text
-        		.trim()
-        		.split(/\r?\n/)
-        		.map(line =>
-            			line
-                	.split(",")
-                	.map(cell => cell.replace(/^"|"$/g, "")) // strip surrounding quotes
-        		);
-		}
-
-		function filterRows(rows, colAName, colAValue, colBName, colBValue) {
-    			const header = rows[0];
-    			const data = rows.slice(1);
-
-    			const colAIndex = header.indexOf(colAName);
-    			const colBIndex = header.indexOf(colBName);
-
-    			if (colAIndex === -1 || colBIndex === -1) {
-        		console.error("Column name not found in header:", { header, colAName, colBName });
-        		return [];
-    			}
-
-    			const maxIndex = Math.max(colAIndex, colBIndex);
-
-    			return data.filter(row => {
-        			if (!row || row.length <= maxIndex) {
-            			// too short to safely read both columns → ignore
-            			return false;
-        			}
-
-        			const a = row[colAIndex];
-        			const b = row[colBIndex];
-
-        			if (a == null || b == null) {
-            				return false;
-        			}
-
-        			return a.toLowerCase() === colAValue.toLowerCase() &&
-               			b.toLowerCase() === colBValue.toLowerCase();
-    			});
-		}
-
-	
-		function filterRows2(rows, colAName, colAValue, colBName, colBValue) {
-    			const header = rows[0];
-    			const data = rows.slice(1);
-
-    			const colAIndex = header.indexOf(colAName);
-    			const colBIndex = header.indexOf(colBName);
-
-    			if (colAIndex === -1 || colBIndex === -1) {
-        		console.error("Column name not found in header:", { header, colAName, colBName });
-        		return [];
-    			}
-
-    			const maxIndex = Math.max(colAIndex, colBIndex);
-
-    			return data.filter(row => {
-        			if (!row || row.length <= maxIndex) {
-            			// too short to safely read both columns → ignore
-            			return false;
-        		}
-
-        		const a = row[colAIndex];
-        		const b = row[colBIndex];
-
-        		if (a == null || b == null) {
-            			return false;
-        		}
-
-        		return a.toLowerCase() === colAValue.toLowerCase() &&
-               		b.toLowerCase() !== colBValue.toLowerCase();
-    			});
-		}
-
-		function filterRows3(rows, colAName, colAValue) {
-    			const header = rows[0];
-    			const data = rows.slice(1);
-
-    			const colAIndex = header.indexOf(colAName);
-    			if (colAIndex === -1) return [];
-
-    			return data.filter(row => {
-        			if (!row || row.length <= colAIndex) return false;
-        			const a = row[colAIndex];
-        			return a != null && a.toLowerCase() === colAValue.toLowerCase();
-    			});
-		}
-
-		async function loadFilteredCoinData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=913397617&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows3(
-        			rows,
-        			"Username",  username
-    			);
-
-    			console.log(results);
-			return results;
-		}
-
-		
-		
-		const count = document.getElementById("coin-count");
-		const coin = await loadFilteredCoinData();
-		var coins = 0;
-		console.log(coin.length);
-		if (coin.length > 0){
-			coins = coin[0][12];
-		}
-		count.innerHTML = `${coins} Coins`;
-
-	
-		async function loadFilteredEntriesData() {
-    			const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTw3S46YYItCsz-DeaZN1uv9hAcoDG8RyVHyATRpYpJsWFM7H9shhrQfEdaDxxCWJF5Wskbx09JSdfH/pub?gid=256204382&single=true&output=csv";
-
-    			const csv = await fetchCSV(url);
-    			const rows = parseCSV(csv);
-
-    			const results = filterRows(
-        			rows,
-        			"User",  username,
-        			"Approved", "Yes"
-    			);
-
-    			console.log(results);
-			return results;
-		}
-		
-		const entries = await loadFilteredEntriesData();
-
-		var html = "";
-
-		for (let i = 0; i < entries.length; i++) { 
-			var entry = entries[i];
-			html += `
-				<div class="badge"> 
-					<img class="badge-image" src="/assets/badge/${entry[7]}">
-					<h4 class="badge-title">${capitalizeFirstWord(entry[3])}</h4>
-					<div class="badge-info">
-						<p>${entry[5]}</p>
-					</div>
-				</div>
-			`;
-		}
-		
-
-		const badgegrid = document.getElementById("badge-grid");
-		if(html == ""){
-			html = `<div class="loading" style="width: 100%;"> <h4 class="badge-title">No Badges Earned</h4></div>`;
-			badgegrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
-		}
-
-		var loading = document.getElementById("badge-loading");
-		loading.style.display = "none";
-
-		badgegrid.innerHTML = html;
-
-
-		html = "";
-
-		
-		
-
-
-	}
-	main();
-	
-	</script>
+	<script type="module" src="/scripts/nav-bar.js"></script>
+	<script type="module" src="/scripts/my-achievements.js"></script>
 </body>
+
 </html>
