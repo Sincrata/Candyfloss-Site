@@ -1,15 +1,82 @@
-import { currentAcheievements } from "/scripts/current-achievements.js";
 import { communityArt } from "/scripts/CommunityArt.js";
 import { topFive } from "/scripts/monthly-content/top-5-floss.js";
 import { petList } from "/scripts/monthly-content/loading-methods.js";
 import { loadClanList } from "/scripts/monthly-content/loading-methods.js";
 import { clanInfo } from "/scripts/monthly-content/loading-methods.js";
+import { achievementList } from "/scripts/monthly-content/loading-methods.js";
+
+//constants--------------------------------------------------------------------------
+const now = new Date();
+const options = { timeZone: "America/Chicago" };
+var month = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
+var currentMonth = Number(new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now));
+var currentDay = Number(new Intl.DateTimeFormat("en-US", { ...options, day: "numeric" }).format(now));
+var currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
+const even = currentYear % 2 == 0 ? "even" : "odd";
+const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
+const todayCST = new Date(currentYear, currentMonth - 1, currentDay);
+
 
 //achievements--------------------------------------------------------------------------
 const events = document.getElementById("current-events");
 
-const fotm = currentAcheievements[0].fotm;
-const achievements = currentAcheievements[0].achievements;
+
+var event_list; //variable to hold the achievement list
+
+function toDate(str) {
+    const [m, d, yRaw] = str.split("/");
+
+    const month = Number(m);
+    const day = Number(d);
+
+    let year = Number(yRaw);
+
+    // Convert 2‑digit years → 20xx
+    if (yRaw.length === 2) {
+        year = 2000 + year;
+    }
+
+    return new Date(year, month - 1, day);
+}
+
+function todayIsBetween(start, end) {
+    return todayCST >= start && todayCST <= end;
+}
+
+
+//get the current FOTM, checks 'current' and 'future' and returns the one that today falls under
+async function getFOTM() {
+    if (!event_list) {
+        event_list = await achievementList();
+    }
+    const current_fotm = [...event_list.fotm["current"], ...event_list.fotm["future"]];
+
+    for (let i = 0; i < current_fotm.length; i++) {
+        const floss = current_fotm[i];
+        //check to see that it is a currently active fotm and add it if it is
+        if (todayIsBetween(toDate(floss.start), toDate(floss.end))) {
+            return floss;
+        }
+    }
+}
+
+//get the current achievements, checks 'current' and 'future' and returns the ones that today falls under
+async function getAchievements() {
+    var current = [];
+    if (!event_list) {
+        event_list = await achievementList();
+    }
+    const current_achievements = [...event_list.achievements["current"], ...event_list.achievements["future"]];
+
+    for (let i = 0; i < current_achievements.length; i++) {
+        const achievement = current_achievements[i];
+        //check to see that it is a currently active prompt and add it if it is
+        if (todayIsBetween(toDate(achievement.start), toDate(achievement.end))) {
+            current.push(achievement);
+        }
+    }
+    return current;
+}
 
 function addEvent(object, fotm) {
     const row = document.createElement("div");
@@ -60,21 +127,17 @@ function addEvent(object, fotm) {
 
 }
 
-for (const [number, object] of Object.entries(achievements)) {
-    addEvent(object, "no");
+
+async function initializeEvents() {
+    const achievements = await getAchievements();
+    for (let i = 0; i < achievements.length; i++) {
+        addEvent(achievements[i], "no");
+    }
+    const fotm = await getFOTM();
+    addEvent(fotm, "yes");
 }
 
-addEvent(fotm, "yes");
-
-
-//constants--------------------------------------------------------------------------
-const now = new Date();
-const options = { timeZone: "America/Chicago" };
-var month = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
-var currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
-const even = currentYear % 2 == 0 ? "even" : "odd";
-const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
-
+initializeEvents();
 
 //petpet-and-featured-clan--------------------------------------------------------------
 async function initialize() {

@@ -149,21 +149,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "JubLubDubs"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
-		    prompt: "Fashion Show",
-		    position:"center",
-		    artist: "Countless"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
-		    prompt: "Fashion Show",
-		    position:"center",
-		    artist: "Axototlduck"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121143719_mAodRZZEBTwaKZc.png?1780719843",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Countless"
-	    },{
 		    artlink: "https://i.postimg.cc/L8NmPN74/Untitled915-20260621214625.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
@@ -174,11 +159,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775569_Z4claMzZBE6onas.png",
-		    prompt: "Fashion Show",
-		    position:"center",
-		    artist: "Ninjagomonster"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519212_xEQZQRIFfWNlEVh.png",
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
@@ -188,11 +168,6 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Chase",
 		    position:"center",
 		    artist: "axototlduck"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775493_6ObhidGUKyVZXBf.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Axototlduck"
 	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031843152.png",
 		    prompt: "Floss of the Month: Chase",
@@ -224,11 +199,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775891_ZQj33D4po8pGIbz.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "DonutDoggy"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
@@ -243,11 +213,6 @@ export const communityArt = [{
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
 		    artist: "g0thieg0re"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775486_YbrkIg5zOi7Mo9x.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Axototlduck"
 	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-07-24_073041895.png",
 		    prompt: "Floss of the Month: Medha",
@@ -309,43 +274,13 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775523_VTY5frxlCQhahdQ.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "GalaxxyBois"
-	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/Sugarbee-Breakfast.png",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "Ninjagomonster"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775577_EoZEHYqiDd7gMk1.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Eggface"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126727559_vA9bWL4vk0HDVMs.jpg",
 		    prompt: "Floss of the Month: Haniko",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775505_LOD8DhRDdXcc2mL.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775477_Z82DnTwMnDoWk0X.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "AxototlDuck"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126775687_9rpLFIy7DQRDM1M.png",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "DonutDoggy"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126794714_afBeUr036NVcRCK.jpg",
-		    prompt: "Fashion Show",
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{

@@ -13,8 +13,19 @@ const currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: 
 const todayCST = new Date(currentYear, currentMonth - 1, currentDay);
 
 function toDate(str) {
-    const [m, d, y] = str.split("/").map(Number);
-    return new Date(y, m - 1, d);
+    const [m, d, yRaw] = str.split("/");
+
+    const month = Number(m);
+    const day = Number(d);
+
+    let year = Number(yRaw);
+
+    // Convert 2‑digit years → 20xx
+    if (yRaw.length === 2) {
+        year = 2000 + year;
+    }
+
+    return new Date(year, month - 1, day);
 }
 
 function todayIsBetween(start, end) {
@@ -48,7 +59,7 @@ function addCurrentAchievement(achievement) {
                 <img class="current-img" src="/assets/banners/achievements/${achievement.banner}">
             </div>
             <div class="small-card">
-                <h2>L${achievement.title}</h2>
+                <h2>${achievement.title}</h2>
                 <span>${achievement.medium} ${achievement.type}</span>
                 <img class="current-badge" src="/assets/badge/${achievement.badge}" style="max-width:${achievement.position};">
                 <p>

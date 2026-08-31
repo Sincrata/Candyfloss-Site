@@ -92,7 +92,6 @@
 	height: 100%;
 	flex: 0 0 40%;
 	overflow: hidden;
-	align: right;
 	border-radius: 5px 0px 0px 5px;
 }
 
@@ -170,9 +169,10 @@ h2 {
 	margin: 5px;
 	margin-top: 0px;
 }
-.past-ach-container .button{
-	min-width:20%;
-	margin-top:0px;
+
+.past-ach-container .button {
+	min-width: 20%;
+	margin-top: 0px;
 }
 
 .past-ach-img {
@@ -203,4 +203,165 @@ h2 {
 
 #fotm-info a {
 	color: white;
+}
+
+
+@media (max-width: 800px) {
+	.past-ach-container {
+		margin: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.past-ach-box {
+		padding: 15px;
+		width: 100%;
+	}
+
+	.past-ach-entry {
+		overflow: auto;
+		max-height: 20vh;
+	}
+
+	.past-ach-container {
+		margin: 0px;
+		margin-top: 0px;
+		grid-template-columns: 25% 50% 25%;
+	}
+
+	#three-columns {
+		grid-template-columns: 1fr;
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 700px) {
+	.past-ach-container {
+		margin: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.past-ach-box {
+		padding: 15px;
+		width: 100%;
+	}
+
+	.past-ach-entry {
+		overflow: auto;
+		max-height: 20vh;
+	}
+
+	.past-ach-container {
+		margin: 0px;
+		margin-top: 0px;
+		grid-template-columns: 25% 50% 25%;
+	}
+
+	.card,
+	#current-achievements {
+		width: 90%;
+	}
+
+	#fotmbox img {
+		max-width: 35px;
+	}
+
+	#fotm-badge {
+		margin: 0px;
+	}
+
+	#current-achievements {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 1000px) {
+	.past-ach-container {
+		margin: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.past-ach-box {
+		padding: 15px;
+		width: 100%;
+	}
+
+	.past-ach-entry {
+		overflow: auto;
+		max-height: 20vh;
+	}
+
+	.past-ach-container {
+		margin: 0px;
+		margin-top: 0px;
+		grid-template-columns: 25% 50% 25%;
+	}
+
+	.card,
+	#current-achievements,
+	#fotm {
+		width: 90%;
+	}
+
+	#current-achievements {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 500px) {
+	#current-achievements {
+		grid-template-columns: 1fr;
+	}
+
+	.past-ach-container {
+		margin: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.past-ach-box {
+		padding: 15px;
+		width: 100%;
+	}
+
+	.past-ach-entry {
+		overflow: auto;
+		max-height: 20vh;
+	}
+
+	.past-ach-container {
+		margin: 0px;
+		margin-top: 0px;
+		grid-template-columns: 25% 50% 25%;
+	}
+}
+
+@media (max-width: 300px) {
+	#current-achievements {
+		grid-template-columns: 1fr;
+	}
+
+	.past-ach-container {
+		margin: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.past-ach-box {
+		padding: 15px;
+		width: 100%;
+	}
+
+	.past-ach-entry {
+		overflow: auto;
+		max-height: 20vh;
+	}
+
+	.past-ach-container {
+		margin: 0px;
+		margin-top: 0px;
+		grid-template-columns: 25% 50% 25%;
+	}
 }
