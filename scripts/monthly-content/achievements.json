@@ -4,30 +4,30 @@
                 "current":[
                     {
 
-            "title": "Movie Night Art Prompt",
-            "type": "Prompt",
+            "title": "Cozy up! Outfit design chain",
+            "type": "Chain",
             "medium": "Art",
-            "banner": "movie.png",
-            "text": "Turn down the lights and grab your popcorn cause it's movie night in Caramella!! Draw your candyfloss enjoying a film in the movies, recording their own home movie or acting the part by cosplaying their favorite movie or TV characters! It's time for a night at the cinema in the Movie Night Art Prompt!",
-            "badge": "movie.png",
-            "start": "8/1/2026",
-            "end": "8/31/2026",
-            "link": "",
-            "position": "50%",
-            "blurb": "Turn down the lights and grab your popcorn cause it's movie night in Caramella!! "
+            "banner": "cozy.png",
+            "text": "Autumn has arrived in caramella! All of the Candyfloss are bundling up in their Autumnal bests in preparation for Sweater weather! Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! ",
+            "badge": "cozy.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
+            "link": "https://toyhou.se/~forums/69434.art-chains/842691.cozy-up-outfit-design-chain",
+            "position": "100%",
+            "blurb": "Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! "
         },{
 
-            "title": "Luau Art Prompt",
+            "title": "Luck of the Draw! Art prompt",
             "type": "Prompt",
             "medium": "Art",
-            "banner": "luau.png",
-            "text": "Let the music move you in this summer time prompt! Those long summer days are coming to an end and the Candyfloss want to invite you to party the season away at a Luau! Draw your candyfloss enjoying the sights, sounds and dance moves in a lambdan luau!",
-            "badge": "luau.png",
-            "start": "8/1/2026",
-            "end": "8/31/2026",
+            "banner": "casino.png",
+            "text": "Dice! Cards! Casinos! The Iotafloss love to Gamble, and have invited you to test your luck! Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!",
+            "badge": "casino.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
             "link": "",
-            "position": "85%",
-            "blurb": "Draw your candyfloss enjoying the sights, sounds and dance moves in a lambdan luau!"
+            "position": "50%",
+            "blurb": " Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!"
         }
                 ],
                 "past": [
@@ -135,6 +135,32 @@
             "link": "/",
             "position": "92%",
             "blurb": "Cupidfloss are in the air looking to give some unsuspecting Floss a love bug!"
+        },{
+
+            "title": "Movie Night Art Prompt",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "movie.png",
+            "text": "Turn down the lights and grab your popcorn cause it's movie night in Caramella!! Draw your candyfloss enjoying a film in the movies, recording their own home movie or acting the part by cosplaying their favorite movie or TV characters! It's time for a night at the cinema in the Movie Night Art Prompt!",
+            "badge": "movie.png",
+            "start": "8/1/2026",
+            "end": "8/31/2026",
+            "link": "",
+            "position": "50%",
+            "blurb": "Turn down the lights and grab your popcorn cause it's movie night in Caramella!! "
+        },{
+
+            "title": "Luau Art Prompt",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "luau.png",
+            "text": "Let the music move you in this summer time prompt! Those long summer days are coming to an end and the Candyfloss want to invite you to party the season away at a Luau! Draw your candyfloss enjoying the sights, sounds and dance moves in a lambdan luau!",
+            "badge": "luau.png",
+            "start": "8/1/2026",
+            "end": "8/31/2026",
+            "link": "",
+            "position": "85%",
+            "blurb": "Draw your candyfloss enjoying the sights, sounds and dance moves in a lambdan luau!"
         }
                 ],
                 "future": [
@@ -151,32 +177,6 @@
             "link": "x",
             "position": "",
             "blurb": ""
-        },{
-
-            "title": "Cozy up! Outfit design chain",
-            "type": "Prompt",
-            "medium": "Art",
-            "banner": "cozy.png",
-            "text": "Autumn has arrived in caramella! All of the Candyfloss are bundling up in their Autumnal bests in preparation for Sweater weather! Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! ",
-            "badge": "cozy.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
-            "link": "https://toyhou.se/~forums/69434.art-chains/842691.cozy-up-outfit-design-chain",
-            "position": "100%",
-            "blurb": "Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! "
-        },{
-
-            "title": "Luck of the Draw! Art prompt",
-            "type": "Chain",
-            "medium": "Art",
-            "banner": "casino.png",
-            "text": "Dice! Cards! Casinos! The Iotafloss love to Gamble, and have invited you to test your luck! Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!",
-            "badge": "casino.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
-            "link": "",
-            "position": "50%",
-            "blurb": " Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!"
         },{
 
             "title": "Petpet Show",
@@ -210,17 +210,17 @@
                 "current":[
                      {
 
-            "title": "Floss of the Month: Haniko",
+            "title": "Floss of the Month: Crystal",
             "type": "FOTM",
             "medium": "Art",
-            "banner": "haniko.png",
-            "text": "Meet <a href=\"https://toyhou.se/24037331.haniko\" style=\"color:#d9c5ff;\">Haniko</a>! Haniko is what some would call a real ‘busy bee’ and always on the move! She loves to work hard, and known to many for her ability to get any job done! She was a Honeyfloss, until she picked up a mysterious shard. Wanting to protect others, unknowingly she took it, quickly realizing her mistake as he became a hybrid. With this change, she decided to reinvent her life and take it by the horns. Nothing was going to stop Haniko in her ambitions, from her fun hobbies of beekeeping to her more lucrative hobbies of podcasting. She loves being recognized for her work, and giving back to her community as well. <br><br>\n\nHaniko belongs to <a href=\"https://toyhou.se/g0thieg0re\" style=\"color:#d9c5ff;\">g0thieg0re</a>! G0thieg0re joined our community last year, and has made her mark by showing their love of creating lore and joining in the conversation! She likes creates funhorror themed floss  and share her lovely art with the community. She always has something funny and kind to say to others art as well, sharing a unique fun and kindness wherever she goes.",
-            "badge": "haniko.png",
-            "start": "8/1/2026",
-            "end": "8/31/2026",
-            "link": "https://toyhou.se/24037331.haniko",
+            "banner": "crystal.png",
+            "text": "Meet <A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal!</a><br><br>\nCrystal is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament. The sky's the limit with this optimistic floss!\n<br><br>\nCrystal belongs to <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>! Crystal is a longtime member of our community. From participating to events, organizing community projects, collecting an impressive amount of hybridfloss, and drawing adorable art, Crystal does it all. In particular, she's a wizard with spreadsheets. She's a gem in our community and we're happy to have them. Say \"hi\" to them if you see her!",
+            "badge": "crystal.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
+            "link": "https://toyhou.se/11809437.crystal-c-nundrum",
             "position": "50%",
-            "blurb": "Meet <a href=\"https://toyhou.se/24037331.haniko\" style=\"color:#d9c5ff;\">Haniko</a>! Haniko is what some would call a real ‘busy bee’ and always on the move! Haniko belongs to <a href=\"https://toyhou.se/g0thieg0re\" style=\"color:#d9c5ff;\">g0thieg0re</a>! "
+            "blurb": "<A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal</a> is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament.\nDraw art of Crystal for our featured member <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>!\n"
         }
                 ],
                 "past": [
@@ -263,23 +263,23 @@
             "link": "https://toyhou.se/39579935.medha",
             "position": "20%",
             "blurb": "<a href=\"https://toyhou.se/39579935.medha\" style=\"color:#d9c5ff;\">Medha</a> is this month's Floss of the month!<br><br> She's a bright and social floss who cares a lot about philosophy and ethics. Never fully identifying with the technology centric culture of the Sigma region, she moved to the Epsilon region to be more in touch with her epsilon telepathic abilities.<br><br>Medha belongs to <a href=\"https://toyhou.se/JubLubDubs\" style=\"color:#d9c5ff;\">JubLubDubs!</a><br> JubLubs is a recent member of the Candyfloss community, but she's already been a delight to be around!Thank you for being a part of Candyfloss, JubLub!\n"
+        },{
+
+            "title": "Floss of the Month: Haniko",
+            "type": "FOTM",
+            "medium": "Art",
+            "banner": "haniko.png",
+            "text": "Meet <a href=\"https://toyhou.se/24037331.haniko\" style=\"color:#d9c5ff;\">Haniko</a>! Haniko is what some would call a real ‘busy bee’ and always on the move! She loves to work hard, and known to many for her ability to get any job done! She was a Honeyfloss, until she picked up a mysterious shard. Wanting to protect others, unknowingly she took it, quickly realizing her mistake as he became a hybrid. With this change, she decided to reinvent her life and take it by the horns. Nothing was going to stop Haniko in her ambitions, from her fun hobbies of beekeeping to her more lucrative hobbies of podcasting. She loves being recognized for her work, and giving back to her community as well. <br><br>\n\nHaniko belongs to <a href=\"https://toyhou.se/g0thieg0re\" style=\"color:#d9c5ff;\">g0thieg0re</a>! G0thieg0re joined our community last year, and has made her mark by showing their love of creating lore and joining in the conversation! She likes creates funhorror themed floss  and share her lovely art with the community. She always has something funny and kind to say to others art as well, sharing a unique fun and kindness wherever she goes.",
+            "badge": "haniko.png",
+            "start": "8/1/2026",
+            "end": "8/31/2026",
+            "link": "https://toyhou.se/24037331.haniko",
+            "position": "50%",
+            "blurb": "Meet <a href=\"https://toyhou.se/24037331.haniko\" style=\"color:#d9c5ff;\">Haniko</a>! Haniko is what some would call a real ‘busy bee’ and always on the move! Haniko belongs to <a href=\"https://toyhou.se/g0thieg0re\" style=\"color:#d9c5ff;\">g0thieg0re</a>! "
         }
                 ],
                 "future": [
-                    {
-
-            "title": "Floss of the Month: Crystal",
-            "type": "FOTM",
-            "medium": "Art",
-            "banner": "crystal.png",
-            "text": "Meet <A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal!</a><br><br>\nCrystal is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament. The sky's the limit with this optimistic floss!\n<br><br>\nCrystal belongs to <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>! Crystal is a longtime member of our community. From participating to events, organizing community projects, collecting an impressive amount of hybridfloss, and drawing adorable art, Crystal does it all. In particular, she's a wizard with spreadsheets. She's a gem in our community and we're happy to have them. Say \"hi\" to them if you see her!",
-            "badge": "crystal.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
-            "link": "https://toyhou.se/11809437.crystal-c-nundrum",
-            "position": "50%",
-            "blurb": "<A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal</a> is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament.\nDraw art of Crystal for our featured member <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>!\n"
-        }
+                    
                 ]
             }
         }
