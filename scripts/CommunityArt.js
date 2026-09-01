@@ -293,4 +293,24 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Haniko",
 		    position:"center",
 		    artist: "Katsumi-Draws"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/FOTM-Haniko.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126920016_qBcRwTXQwBSzlLS.png?1788212975",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126925636_jyYZuqKjf3NddPx.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126940166_NwT2ebdJQvmuGX4.png",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "Axototlduck"
 	    }];
