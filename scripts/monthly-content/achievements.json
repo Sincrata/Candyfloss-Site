@@ -5,7 +5,7 @@
                     {
 
             "title": "Cozy up! Outfit design chain",
-            "type": "Prompt",
+            "type": "Chain",
             "medium": "Art",
             "banner": "cozy.png",
             "text": "Autumn has arrived in caramella! All of the Candyfloss are bundling up in their Autumnal bests in preparation for Sweater weather! Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! ",
@@ -18,7 +18,7 @@
         },{
 
             "title": "Luck of the Draw! Art prompt",
-            "type": "Chain",
+            "type": "Prompt",
             "medium": "Art",
             "banner": "casino.png",
             "text": "Dice! Cards! Casinos! The Iotafloss love to Gamble, and have invited you to test your luck! Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!",
