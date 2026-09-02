@@ -22,19 +22,22 @@
 
         }
 
-        .picture{
+        .picture,
+        #rules ul {
             width: 70%
         }
 
-        .picture img{
+        .picture img {
             max-width: 100%;
             max-height: 50vh;
         }
-        #current-petpet{
+
+        #current-petpet {
             align-items: center;
             justify-content: center;
         }
-        .button-holder{
+
+        .button-holder {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -45,23 +48,44 @@
             width: 100%;
             max-width: 250px;
         }
-        .card{
+
+        .card {
             width: 70%;
         }
-        .button{
+
+        .button {
             width: 100px;
         }
+
         @media (max-width: 800px) {
-            .card{
+            .card {
                 width: 90%;
             }
+
+            .button {
+                width: 150px;
+            }
+
             #calendar {
                 grid-template-columns: repeat(2, 1fr);
             }
-            .picture{
-                width: 60%;
+
+            .picture,
+            #rules ul {
+                width: 80%;
             }
-            
+
+            #day-row {
+                flex-direction: column;
+            }
+            #rules-row{
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+                margin-top: 0px;
+            }
+            #upcoming, #current-petday{
+                width: 80%;
+            }
 
         }
     </style>
@@ -99,7 +123,7 @@
                 </div>
 
                 <div class="inner-card">
-                    <p >Celebrate the petpets on their special day! For 24 hours you can submit
+                    <p>Celebrate the petpets on their special day! For 24 hours you can submit
                         a drawing of your floss with<br>
                         the designated petpet and their petpet ref, to receive a free pet myo and make them real!<br>
                         Check out which pets are coming soon so you can be ready!
@@ -112,6 +136,43 @@
 
                 <div class="inner-card" id="current-petday">
                 </div>
+
+                    <div id="rules-row" class="row">
+                        <div id="rules" class="inner-card">
+                            <h2>Rules</h2>
+                                
+                                    <h3>1. To qualify the design must be valid.</h3>
+                                    <span id="base-ad">We recommend using our editable psd base, available on the
+                                        petpet's page.
+                                    </span>
+                                
+                                    <h3>2. Your artwork MUST clearly feature both the floss and pet,
+                                        and must have clean lines and finished colors with correctly portrayed and
+                                        required
+                                        traits.</h3>
+                                    <span>Shading is optional, and we will let you know if you need to make
+                                        edits.</span>
+                                
+                                    <h3>3. Your artwork MUST clearly show the floss and pet interacting.</h3>
+                                    <span></span>
+                                
+                                    <h3>4. You MAY use bases</h3>
+                                    <span>The artwork and petpet/floss interaction must look cohesive however, and of
+                                        course
+                                        credit the basemaker</span>
+                                
+                                    <h3>5. Art Hosted on Site!</h3>
+                                    <span> If you would like your image to be posted on the site's petpet pages, just
+                                        submit
+                                        as
+                                        normal.
+                                        If you would like to opt out, let us know when you submit and we will respect
+                                        your
+                                        choice.</span>
+
+                        </div>
+                        <div id="upcoming" class="inner-card"></div>
+                    </div>
 
                 <div id="calendar">
                 </div>

@@ -734,7 +734,7 @@ export const petpetDays = [{
 		    petpet: "Cyutoway Taura",
 		    class: "silver",
             upcoming: "Upcoming",
-            key: "cyutoway-calf",
+            key: "cyutoway-taura",
             evolution: "Evolved",
             clan: "Gamma",
             url: ""

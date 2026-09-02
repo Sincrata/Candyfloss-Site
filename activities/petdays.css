@@ -1,161 +1,278 @@
-.calendar-card{
-background-color:#f7edf0;
-border-radius:5px;
-box-shadow: 5px 5px 5px 5px #291e52;
-width:70%;
-margin-top:15px;
+
+.calendar-card {
+    background-color: #f7edf0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #291e52;
+    width: 70%;
+    margin-top: 15px;
 }
-.title p{
-margin:0px;
-box-sizing:border-box;
-padding:0px;
-margin-top:0px;
+
+.title p {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 0px;
 }
-.paw{
+
+.paw {
     mask: url('/assets/paw.png') no-repeat center / contain;
     -webkit-mask: url('/assets/paw.png') no-repeat center / contain;
-    z-index: 1;   
+    z-index: 1;
 }
-.date-number{
+
+.date-number {
     z-index: 2;
     position: relative;
 }
-.little{
-    height:28px;
-    display:flex;
+
+.little {
+    height: 28px;
+    display: flex;
     position: absolute;
     z-index: 2;
-    opacity:50%;
-    margin-left:-13px;
-    margin-top:-15px;
+    opacity: 50%;
+    margin-left: -13px;
+    margin-top: -15px;
 }
-.cal-paw{
-    height:28px;
-    display:flex;
+
+.cal-paw {
+    height: 28px;
+    display: flex;
     position: absolute;
     z-index: 2;
-    opacity:50%;
-    margin-left:-8px;
-    margin-top:-9px;
+    opacity: 50%;
+    margin-left: -8px;
+    margin-top: -9px;
 }
-.right{
+
+.right {
     transform: rotate(15deg);
     aspect-ratio: 1 / 1;
 }
-.left{
+
+.left {
     transform: rotate(-15deg);
     aspect-ratio: 1 / 1;
 }
- 
-/*--------------COLORS-------------*/
-    #berry, .berry{
-        color:#eb91c7;
-        -webkit-text-stroke: 2px #97316f;
-    }
-    #pank, .pank{
-        color:#ffc6d5;
-        -webkit-text-stroke: 2px  #d34771;
-    }
-    #purple, .purple{
-        color:#f2cafe;
-          -webkit-text-stroke: 2px #803896;
-    }
-    #blue, .blue{
-        color:#c1e5e9;
-          -webkit-text-stroke: 2px #227e88;
-    }
-    #green, .green{
-        color:#a3efd1;
-        -webkit-text-stroke: 2px #2a835f;
-    }
-    #yellow, .yellow{
-        color:#fee7b0;
-        -webkit-text-stroke: 2px #aa8122;
-    }
-    #gold, .gold{
-        color:#e7e6ad;
-        -webkit-text-stroke: 2px #818034;
-    }
-    #silver, .silver{
-        color:#dcdcdc;
-        -webkit-text-stroke: 2px #656e85;
-    }
-/*-------------- PAW COLORS-------------*/
-    #paw-berry, .paw-berry{
-        background-color: #eb91c7;
-     }
-    #paw-pank, .paw-pank{
-        background-color:#ffc6d5;
-     }
-    #paw-purple, .paw-purple{
-        background-color:#f2cafe;
-     }
-    #paw-blue, .paw-blue{
-        background-color:#c1e5e9;
-     }
-    #paw-green, .paw-green{
-        background-color:#a3efd1;
-     }
-    #paw-yellow, .paw-yellow{
-        background-color:#fee7b0;
-     }
-    #paw-gold, .paw-gold{
-        background-color:#e7e6ad;
-     }
-    #paw-silver, .paw-silver{
-        background-color:#dcdcdc;
-     }
-     .cal-grid{
-        max-width:100%;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3px;
-	}
-    .month {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        border-radius: 8px;
-        text-align: center;
-        padding: 1rem;
-        background-color: #584894;
-    } 
-    .month p{
-        font-size:20px;
-    } 
-    .small{
-       margin-top:2px;
-       -webkit-text-stroke: 0.5px !important;
-       text-align:left;
-       margin:none;
-    }
-    .date-grid{
-        color: white;
-        max-width:100%;
-        display:grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 7px;
-        margin-top:-7%;
-	}
-    .date-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        text-align: center;
-        position: relative;
-        z-index: 2;
-    } 
-    .day-list p{
-       margin-top:-5px !important;
-       -webkit-text-stroke: 0.5px #481a6d !important;
-       font-size:15px !important;
-       text-align:left;
-       margin:none;
-       font-weight: bold;
-     }
 
-     .title.row{
-        width: 100%;
-     }
+/*--------------COLORS-------------*/
+#berry,
+.berry{
+    color: #eb91c7;
+    -webkit-text-stroke: 2px #97316f;
+}
+
+.day-list .berry, .berry a{
+    color: #e7b8d4;
+}
+
+#pank,
+.pank, .pank a{
+    color: #ffc6d5;
+    -webkit-text-stroke: 2px #d34771;
+}
+
+#purple,
+.purple, .purple a {
+    color: #f2cafe;
+    -webkit-text-stroke: 2px #803896;
+}
+
+#blue,
+.blue, .blue a {
+    color: #c1e5e9;
+    -webkit-text-stroke: 2px #227e88;
+}
+
+#green,
+.green, .green a {
+    color: #a3efd1;
+    -webkit-text-stroke: 2px #2a835f;
+}
+
+#yellow,
+.yellow, .yellow a {
+    color: #fee7b0;
+    -webkit-text-stroke: 2px #aa8122;
+}
+
+#gold,
+.gold, .gold a {
+    color: #e7e6ad;
+    -webkit-text-stroke: 2px #818034;
+}
+
+#silver,
+.silver, .silver a {
+    color: #dcdcdc;
+    -webkit-text-stroke: 2px #656e85;
+}
+
+/*-------------- PAW COLORS-------------*/
+#paw-berry,
+.paw-berry {
+    background-color: #eb91c7;
+}
+
+#paw-pank,
+.paw-pank {
+    background-color: #ffc6d5;
+}
+
+#paw-purple,
+.paw-purple {
+    background-color: #f2cafe;
+}
+
+#paw-blue,
+.paw-blue {
+    background-color: #c1e5e9;
+}
+
+#paw-green,
+.paw-green {
+    background-color: #a3efd1;
+}
+
+#paw-yellow,
+.paw-yellow {
+    background-color: #fee7b0;
+}
+
+#paw-gold,
+.paw-gold {
+    background-color: #e7e6ad;
+}
+
+#paw-silver,
+.paw-silver {
+    background-color: #dcdcdc;
+}
+
+.cal-grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #584894;
+}
+
+.month p {
+    font-size: 20px;
+}
+
+.small {
+    margin-top: 2px;
+    -webkit-text-stroke: 0.5px !important;
+    text-align: left;
+    margin: none;
+}
+
+.date-grid {
+    color: white;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.date-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.day-list p {
+    margin-top: -5px !important;
+    -webkit-text-stroke: 0.5px #481a6d !important;
+    font-size: 15px !important;
+    text-align: left;
+    margin: none;
+    font-weight: bold;
+}
+.day-list a{
+    -webkit-text-stroke: 0.5px #481a6d !important;
+}
+
+.title.row {
+    width: 100%;
+}
+
+#petpet-day-info {
+    width: 80%;
+}
+
+.picture {
+    display: block;
+    margin: auto;
+}
+
+#petpet-day-info a, #rules a, .no-petpet-day a{
+    color: #d9c5ff;
+}
+#petpet-day-info a:hover, #rules a:hover, .no-petpet-day a:hover{
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+span.white{
+    color: #f1ebfa;
+    color: white;
+    font-size: 16px;
+}
+
+#upcoming{
+    min-width: 250px;
+}
+
+a,
+a:-webkit-any-link {
+  -webkit-text-fill-color: currentColor;
+}
+
+.day-list a{
+    text-decoration-thickness: 1px;
+    text-decoration-color: #ae97da;
+}
+.day-list a:hover{
+    color: white;
+}
+
+#rules-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-auto-rows: 1fr; 
+    gap: 20px;
+    width: 100%;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+#rules-row > div{
+    flex: 1;
+    margin: auto;
+}
