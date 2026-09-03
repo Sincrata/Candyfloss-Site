@@ -313,4 +313,9 @@ export const communityArt = [{
 		    prompt: "Luau Art Prompt",
 		    position:"center",
 		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127042277_fePcYU17vWFttZs.png",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "Nifewoofy"
 	    }];
