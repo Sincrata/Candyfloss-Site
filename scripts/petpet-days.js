@@ -821,7 +821,7 @@ export const petpetDays = [{
 	    },{
 		    month: "9",
 		    day: "28",
-		    petpet: "Mega-Bala",
+		    petpet: "Bala-Mega",
 		    class: "berry",
             upcoming: "No",
             key: "bala-mega",
