@@ -7,7 +7,7 @@ export const petpetDays = [{
             key: "galapip",
             evolution: "Unevolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#galapip"
 	    },{
 		    month: "1",
 		    day: "7",
@@ -17,7 +17,7 @@ export const petpetDays = [{
             key: "kyma-neelio",
             evolution: "Evolved",
             clan: "Rho",
-            url: ""
+            url: "/info/petpets/rho.html#kyma-neelio"
 	    },{
 		    month: "1",
 		    day: "11",
@@ -27,7 +27,7 @@ export const petpetDays = [{
             key: "chimecabra",
             evolution: "Unevolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#chimecabra"
 	    },{
 		    month: "1",
 		    day: "15",
@@ -37,7 +37,7 @@ export const petpetDays = [{
             key: "skoinkling",
             evolution: "Evolved",
             clan: "Chi",
-            url: ""
+            url: "/info/petpets/chi.html#skoinkling"
 	    },{
 		    month: "1",
 		    day: "17",
@@ -47,7 +47,7 @@ export const petpetDays = [{
             key: "afeaa-snek",
             evolution: "Unevolved",
             clan: "Eataf",
-            url: ""
+            url: "/info/petpets/eataf.html#afeaa-snek"
 	    },{
 		    month: "1",
 		    day: "19",
@@ -57,7 +57,7 @@ export const petpetDays = [{
             key: "ponnbuki",
             evolution: "Evolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#ponnbuki"
 	    },{
 		    month: "1",
 		    day: "23",
@@ -67,7 +67,7 @@ export const petpetDays = [{
             key: "kinnantas",
             evolution: "Unevolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#kinnantas"
 	    },{
 		    month: "1",
 		    day: "27",
@@ -77,7 +77,7 @@ export const petpetDays = [{
             key: "monkey",
             evolution: "Unevolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#monkey"
 	    },{
 		    month: "1",
 		    day: "30",
@@ -87,7 +87,7 @@ export const petpetDays = [{
             key: "floga",
             evolution: "Unevolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#floga"
 	    },{
 		    month: "2",
 		    day: "1",
@@ -97,7 +97,7 @@ export const petpetDays = [{
             key: "skipper",
             evolution: "Unevolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#skipper"
 	    },{
 		    month: "2",
 		    day: "3",
@@ -107,7 +107,7 @@ export const petpetDays = [{
             key: "ostoreaper",
             evolution: "Evolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#ostoreaper"
 	    },{
 		    month: "2",
 		    day: "7",
@@ -117,7 +117,7 @@ export const petpetDays = [{
             key: "dorokin",
             evolution: "Unevolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#dorokin"
 	    },{
 		    month: "2",
 		    day: "11",
@@ -127,7 +127,7 @@ export const petpetDays = [{
             key: "snap",
             evolution: "Evolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#snap"
 	    },{
 		    month: "2",
 		    day: "15",
@@ -137,7 +137,7 @@ export const petpetDays = [{
             key: "kappabear",
             evolution: "Unevolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#kappabear"
 	    },{
 		    month: "2",
 		    day: "17",
@@ -147,7 +147,7 @@ export const petpetDays = [{
             key: "anosia-kirin",
             evolution: "Evolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#anosia-kirin"
 	    },{
 		    month: "2",
 		    day: "20",
@@ -157,7 +157,7 @@ export const petpetDays = [{
             key: "puwala",
             evolution: "Unevolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#puwala"
 	    },{
 		    month: "2",
 		    day: "23",
@@ -167,7 +167,7 @@ export const petpetDays = [{
             key: "bumblegrinn",
             evolution: "Unevolved",
             clan: "Chi",
-            url: ""
+            url: "/info/petpets/chi.html#bumblegrinn"
 	    },{
 		    month: "2",
 		    day: "26",
@@ -177,7 +177,7 @@ export const petpetDays = [{
             key: "caipeito",
             evolution: "Unevolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#caipeito"
 	    },{
 		    month: "2",
 		    day: "28",
@@ -187,7 +187,7 @@ export const petpetDays = [{
             key: "ione-thrasher",
             evolution: "Evolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#ione-thrasher"
 	    },{
 		    month: "3",
 		    day: "3",
@@ -197,7 +197,7 @@ export const petpetDays = [{
             key: "glorbeast",
             evolution: "Evolved",
             clan: "Sigma",
-            url: ""
+            url: "/info/petpets/sigma.html#glorbeast"
 	    },{
 		    month: "3",
 		    day: "7",
@@ -207,7 +207,7 @@ export const petpetDays = [{
             key: "leoryx",
             evolution: "Unevolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#leoryx"
 	    },{
 		    month: "3",
 		    day: "11",
@@ -217,7 +217,7 @@ export const petpetDays = [{
             key: "frompot-2",
             evolution: "Evolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#frompot-2"
 	    },{
 		    month: "3",
 		    day: "13",
@@ -227,7 +227,7 @@ export const petpetDays = [{
             key: "smolnnefo",
             evolution: "Unevolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#smolnnefo"
 	    },{
 		    month: "3",
 		    day: "17",
@@ -237,7 +237,7 @@ export const petpetDays = [{
             key: "rainblo",
             evolution: "Unevolved",
             clan: "Common",
-            url: ""
+            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17249.rainblo"
 	    },{
 		    month: "3",
 		    day: "21",
@@ -247,7 +247,7 @@ export const petpetDays = [{
             key: "anijuru",
             evolution: "Unevolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#anijuru"
 	    },{
 		    month: "3",
 		    day: "23",
@@ -257,7 +257,7 @@ export const petpetDays = [{
             key: "crow-scurry",
             evolution: "Unevolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#crow-scurry"
 	    },{
 		    month: "3",
 		    day: "26",
@@ -267,7 +267,7 @@ export const petpetDays = [{
             key: "starlotte",
             evolution: "Unevolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#starlotte"
 	    },{
 		    month: "3",
 		    day: "31",
@@ -277,7 +277,7 @@ export const petpetDays = [{
             key: "nenero",
             evolution: "Unevolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#nenero"
 	    },{
 		    month: "4",
 		    day: "4",
@@ -287,7 +287,7 @@ export const petpetDays = [{
             key: "pettiplume",
             evolution: "Unevolved",
             clan: "Mu",
-            url: ""
+            url: "/info/petpets/mu.html#pettiplume"
 	    },{
 		    month: "4",
 		    day: "7",
@@ -297,7 +297,7 @@ export const petpetDays = [{
             key: "spraoiling",
             evolution: "Unevolved",
             clan: "Chi",
-            url: ""
+            url: "/info/petpets/chi.html#spraoiling"
 	    },{
 		    month: "4",
 		    day: "10",
@@ -307,7 +307,7 @@ export const petpetDays = [{
             key: "anibold",
             evolution: "Evolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#anibold"
 	    },{
 		    month: "4",
 		    day: "15",
@@ -317,7 +317,7 @@ export const petpetDays = [{
             key: "wykorr",
             evolution: "Unevolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#wykorr"
 	    },{
 		    month: "4",
 		    day: "19",
@@ -327,7 +327,7 @@ export const petpetDays = [{
             key: "linook",
             evolution: "Unevolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#linook"
 	    },{
 		    month: "4",
 		    day: "21",
@@ -337,7 +337,7 @@ export const petpetDays = [{
             key: "konfetti",
             evolution: "Evolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#konfetti"
 	    },{
 		    month: "4",
 		    day: "24",
@@ -347,7 +347,7 @@ export const petpetDays = [{
             key: "charicat",
             evolution: "Unevolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#charicat"
 	    },{
 		    month: "4",
 		    day: "27",
@@ -357,7 +357,7 @@ export const petpetDays = [{
             key: "rushound",
             evolution: "Unevolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#rushound"
 	    },{
 		    month: "4",
 		    day: "29",
@@ -367,7 +367,7 @@ export const petpetDays = [{
             key: "falanero",
             evolution: "Evolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#falanero"
 	    },{
 		    month: "5",
 		    day: "2",
@@ -377,7 +377,7 @@ export const petpetDays = [{
             key: "doubear",
             evolution: "Unevolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#doubear"
 	    },{
 		    month: "5",
 		    day: "5",
@@ -387,7 +387,7 @@ export const petpetDays = [{
             key: "amoure-pog",
             evolution: "Evolved",
             clan: "Mu",
-            url: ""
+            url: "/info/petpets/mu.html#amoure-pog"
 	    },{
 		    month: "5",
 		    day: "8",
@@ -397,7 +397,7 @@ export const petpetDays = [{
             key: "papabear",
             evolution: "Evolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#papabear"
 	    },{
 		    month: "5",
 		    day: "13",
@@ -407,7 +407,7 @@ export const petpetDays = [{
             key: "chippermink",
             evolution: "Unevolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#chippermink"
 	    },{
 		    month: "5",
 		    day: "16",
@@ -417,7 +417,7 @@ export const petpetDays = [{
             key: "psyhoecho",
             evolution: "Evolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#psyhoecho"
 	    },{
 		    month: "5",
 		    day: "18",
@@ -427,7 +427,7 @@ export const petpetDays = [{
             key: "brilla-murcie",
             evolution: "Unevolved",
             clan: "Omicron",
-            url: ""
+            url: "/info/petpets/omicron.html#brilla-murcie"
 	    },{
 		    month: "5",
 		    day: "21",
@@ -437,7 +437,7 @@ export const petpetDays = [{
             key: "mikro",
             evolution: "Unevolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#mikro"
 	    },{
 		    month: "5",
 		    day: "26",
@@ -447,7 +447,7 @@ export const petpetDays = [{
             key: "nerafligh",
             evolution: "Unevolved",
             clan: "Omega",
-            url: ""
+            url: "/info/petpets/omega.html#nerafligh"
 	    },{
 		    month: "5",
 		    day: "30",
@@ -457,7 +457,7 @@ export const petpetDays = [{
             key: "macho-almaroo",
             evolution: "Unevolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#macho-almaroo"
 	    },{
 		    month: "6",
 		    day: "2",
@@ -467,7 +467,7 @@ export const petpetDays = [{
             key: "smolvolaki",
             evolution: "Evolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#smolvolaki"
 	    },{
 		    month: "6",
 		    day: "6",
@@ -477,7 +477,7 @@ export const petpetDays = [{
             key: "cyutoway-calf",
             evolution: "Unevolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#cyutoway-calf"
 	    },{
 		    month: "6",
 		    day: "10",
@@ -487,7 +487,7 @@ export const petpetDays = [{
             key: "nibble",
             evolution: "Unevolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#nibble"
 	    },{
 		    month: "6",
 		    day: "14",
@@ -497,7 +497,7 @@ export const petpetDays = [{
             key: "stella-pi",
             evolution: "Unevolved",
             clan: "Sigma",
-            url: ""
+            url: "/info/petpets/sigma.html#stella-pi"
 	    },{
 		    month: "6",
 		    day: "16",
@@ -507,7 +507,7 @@ export const petpetDays = [{
             key: "snow-altis",
             evolution: "Unevolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#snow-altis"
 	    },{
 		    month: "6",
 		    day: "19",
@@ -517,7 +517,7 @@ export const petpetDays = [{
             key: "tryopaw",
             evolution: "Evolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#tryopaw"
 	    },{
 		    month: "6",
 		    day: "21",
@@ -527,7 +527,7 @@ export const petpetDays = [{
             key: "doubunni",
             evolution: "Evolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#doubunni"
 	    },{
 		    month: "6",
 		    day: "24",
@@ -537,7 +537,7 @@ export const petpetDays = [{
             key: "synthlotte",
             evolution: "Evolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#synthlotte"
 	    },{
 		    month: "6",
 		    day: "27",
@@ -547,7 +547,7 @@ export const petpetDays = [{
             key: "wyrmkorr",
             evolution: "Evolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#wyrmkorr"
 	    },{
 		    month: "7",
 		    day: "3",
@@ -557,7 +557,7 @@ export const petpetDays = [{
             key: "dyopaw",
             evolution: "Unevolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#dyopaw"
 	    },{
 		    month: "7",
 		    day: "6",
@@ -567,7 +567,7 @@ export const petpetDays = [{
             key: "hayapip",
             evolution: "Evolved",
             clan: "Kappa",
-            url: ""
+            url: "/info/petpets/kappa.html#hayapip"
 	    },{
 		    month: "7",
 		    day: "9",
@@ -577,7 +577,7 @@ export const petpetDays = [{
             key: "bahyetiko",
             evolution: "Evolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#bahyetiko"
 	    },{
 		    month: "7",
 		    day: "12",
@@ -587,7 +587,7 @@ export const petpetDays = [{
             key: "psyhokythi",
             evolution: "Unevolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#psyhokythi"
 	    },{
 		    month: "7",
 		    day: "14",
@@ -597,7 +597,7 @@ export const petpetDays = [{
             key: "charion",
             evolution: "Evolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#charion"
 	    },{
 		    month: "7",
 		    day: "17",
@@ -607,7 +607,7 @@ export const petpetDays = [{
             key: "mimotari",
             evolution: "Unevolved",
             clan: "Omega",
-            url: ""
+            url: "/info/petpets/omega.html#mimotari"
 	    },{
 		    month: "7",
 		    day: "20",
@@ -617,7 +617,7 @@ export const petpetDays = [{
             key: "nookouda",
             evolution: "Evolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#nookouda"
 	    },{
 		    month: "7",
 		    day: "23",
@@ -627,7 +627,7 @@ export const petpetDays = [{
             key: "jawbreaker-bat",
             evolution: "Unevolved",
             clan: "Common",
-            url: ""
+            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17229.jawbreakers"
 	    },{
 		    month: "7",
 		    day: "29",
@@ -637,7 +637,7 @@ export const petpetDays = [{
             key: "paizo-beast",
             evolution: "Evolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#paizo-beast"
 	    },{
 		    month: "8",
 		    day: "2",
@@ -647,7 +647,7 @@ export const petpetDays = [{
             key: "piaofu-ci",
             evolution: "Unevolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#piaofu-ci"
 	    },{
 		    month: "8",
 		    day: "4",
@@ -657,7 +657,7 @@ export const petpetDays = [{
             key: "seeh-ihoaohn",
             evolution: "Evolved",
             clan: "Rho",
-            url: ""
+            url: "/info/petpets/rho.html#seeh-ihoaohn"
 	    },{
 		    month: "8",
 		    day: "8",
@@ -667,7 +667,7 @@ export const petpetDays = [{
             key: "phoelance",
             evolution: "Evolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#phoelance"
 	    },{
 		    month: "8",
 		    day: "12",
@@ -677,7 +677,7 @@ export const petpetDays = [{
             key: "ostomagi",
             evolution: "Unevolved",
             clan: "Delta",
-            url: ""
+            url: "/info/petpets/delta.html#ostomagi"
 	    },{
 		    month: "8",
 		    day: "16",
@@ -687,7 +687,7 @@ export const petpetDays = [{
             key: "frompot",
             evolution: "Unevolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#frompot"
 	    },{
 		    month: "8",
 		    day: "21",
@@ -697,7 +697,7 @@ export const petpetDays = [{
             key: "ponneli",
             evolution: "Unevolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#ponneli"
 	    },{
 		    month: "8",
 		    day: "25",
@@ -707,7 +707,7 @@ export const petpetDays = [{
             key: "vounos-trogon",
             evolution: "Evolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#vounos-trogon"
 	    },{
 		    month: "8",
 		    day: "29",
@@ -717,7 +717,7 @@ export const petpetDays = [{
             key: "puuwai-mantis",
             evolution: "Evolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#puuwai-mantis"
 	    },{
 		    month: "8",
 		    day: "31",
@@ -727,7 +727,7 @@ export const petpetDays = [{
             key: "frittermink",
             evolution: "Evolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#frittermink"
 	    },{
 		    month: "9",
 		    day: "2",
@@ -737,17 +737,17 @@ export const petpetDays = [{
             key: "cyutoway-taura",
             evolution: "Evolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#cyutoway-taura"
 	    },{
 		    month: "9",
 		    day: "4",
 		    petpet: "Marsmallow",
 		    class: "berry",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "marsmallow",
             evolution: "Unevolved",
             clan: "Common",
-            url: ""
+            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17250.marsmallows"
 	    },{
 		    month: "9",
 		    day: "8",
@@ -757,7 +757,7 @@ export const petpetDays = [{
             key: "gremotari",
             evolution: "Evolved",
             clan: "Omega",
-            url: ""
+            url: "/info/petpets/omega.html#gremotari"
 	    },{
 		    month: "9",
 		    day: "10",
@@ -767,7 +767,7 @@ export const petpetDays = [{
             key: "eros-moro",
             evolution: "Unevolved",
             clan: "Mu",
-            url: ""
+            url: "/info/petpets/mu.html#eros-moro"
 	    },{
 		    month: "9",
 		    day: "13",
@@ -777,7 +777,7 @@ export const petpetDays = [{
             key: "longfu-yu",
             evolution: "Evolved",
             clan: "Beta",
-            url: ""
+            url: "/info/petpets/beta.html#longfu-yu"
 	    },{
 		    month: "9",
 		    day: "16",
@@ -787,7 +787,7 @@ export const petpetDays = [{
             key: "kyma-keeihtty",
             evolution: "Unevolved",
             clan: "Rho",
-            url: ""
+            url: "/info/petpets/rho.html#kyma-keeihtty"
 	    },{
 		    month: "9",
 		    day: "19",
@@ -797,7 +797,7 @@ export const petpetDays = [{
             key: "dai-tori",
             evolution: "Evolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#dai-tori"
 	    },{
 		    month: "9",
 		    day: "22",
@@ -807,7 +807,7 @@ export const petpetDays = [{
             key: "kinmaerifas",
             evolution: "Evolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#kinmaerifas"
 	    },{
 		    month: "9",
 		    day: "25",
@@ -817,7 +817,7 @@ export const petpetDays = [{
             key: "doroking",
             evolution: "Evolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#doroking"
 	    },{
 		    month: "9",
 		    day: "28",
@@ -827,7 +827,7 @@ export const petpetDays = [{
             key: "bala-mega",
             evolution: "Evolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#bala-mega"
 	    },{
 		    month: "10",
 		    day: "2",
@@ -837,7 +837,7 @@ export const petpetDays = [{
             key: "puorc",
             evolution: "Evolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#puorc"
 	    },{
 		    month: "10",
 		    day: "6",
@@ -847,7 +847,7 @@ export const petpetDays = [{
             key: "glorbit",
             evolution: "Unevolved",
             clan: "Sigma",
-            url: ""
+            url: "/info/petpets/sigma.html#glorbit"
 	    },{
 		    month: "10",
 		    day: "8",
@@ -857,7 +857,7 @@ export const petpetDays = [{
             key: "xoyetiko",
             evolution: "Unevolved",
             clan: "Psi",
-            url: ""
+            url: "/info/petpets/psi.html#xoyetiko"
 	    },{
 		    month: "10",
 		    day: "11",
@@ -867,7 +867,7 @@ export const petpetDays = [{
             key: "greater-almaroo",
             evolution: "Evolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#greater-almaroo"
 	    },{
 		    month: "10",
 		    day: "14",
@@ -877,7 +877,7 @@ export const petpetDays = [{
             key: "petrinos-trogon",
             evolution: "Unevolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#petrinos-trogon"
 	    },{
 		    month: "10",
 		    day: "17",
@@ -887,7 +887,7 @@ export const petpetDays = [{
             key: "amouille-mourve",
             evolution: "Unevolved",
             clan: "Mu",
-            url: ""
+            url: "/info/petpets/mu.html#amouille-mourve"
 	    },{
 		    month: "10",
 		    day: "22",
@@ -897,7 +897,7 @@ export const petpetDays = [{
             key: "muflickah",
             evolution: "Unevolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#muflickah"
 	    },{
 		    month: "10",
 		    day: "27",
@@ -907,7 +907,7 @@ export const petpetDays = [{
             key: "makke-ongu",
             evolution: "Unevolved",
             clan: "Eta",
-            url: ""
+            url: "/info/petpets/eta.html#makke-ongu"
 	    },{
 		    month: "11",
 		    day: "1",
@@ -917,7 +917,7 @@ export const petpetDays = [{
             key: "chimecayote",
             evolution: "Evolved",
             clan: "Gamma",
-            url: ""
+            url: "/info/petpets/gamma.html#chimecayote"
 	    },{
 		    month: "11",
 		    day: "3",
@@ -927,7 +927,7 @@ export const petpetDays = [{
             key: "geolynx",
             evolution: "Evolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#geolynx"
 	    },{
 		    month: "11",
 		    day: "5",
@@ -937,7 +937,7 @@ export const petpetDays = [{
             key: "tama-tori",
             evolution: "Unevolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#tama-tori"
 	    },{
 		    month: "11",
 		    day: "8",
@@ -947,7 +947,7 @@ export const petpetDays = [{
             key: "cloud-altis",
             evolution: "Evolved",
             clan: "Zeta",
-            url: ""
+            url: "/info/petpets/zeta.html#cloud-altis"
 	    },{
 		    month: "11",
 		    day: "10",
@@ -957,7 +957,7 @@ export const petpetDays = [{
             key: "puuwai-agapi",
             evolution: "Unevolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#puuwai-agapi"
 	    },{
 		    month: "11",
 		    day: "13",
@@ -967,7 +967,7 @@ export const petpetDays = [{
             key: "eros-mythos",
             evolution: "Evolved",
             clan: "Mu",
-            url: ""
+            url: "/info/petpets/mu.html#eros-mythos"
 	    },{
 		    month: "11",
 		    day: "18",
@@ -977,7 +977,7 @@ export const petpetDays = [{
             key: "makro",
             evolution: "Evolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#makro"
 	    },{
 		    month: "11",
 		    day: "22",
@@ -987,7 +987,7 @@ export const petpetDays = [{
             key: "brilla-oso",
             evolution: "Evolved",
             clan: "Omicron",
-            url: ""
+            url: "/info/petpets/omicron.html#brilla-oso"
 	    },{
 		    month: "11",
 		    day: "26",
@@ -997,7 +997,7 @@ export const petpetDays = [{
             key: "poulance",
             evolution: "Unevolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#poulance"
 	    },{
 		    month: "11",
 		    day: "29",
@@ -1007,7 +1007,7 @@ export const petpetDays = [{
             key: "spitter",
             evolution: "Evolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#spitter"
 	    },{
 		    month: "12",
 		    day: "3",
@@ -1017,7 +1017,7 @@ export const petpetDays = [{
             key: "paizo-dog",
             evolution: "Unevolved",
             clan: "Epsilon",
-            url: ""
+            url: "/info/petpets/epsilon.html#paizo-dog"
 	    },{
 		    month: "12",
 		    day: "6",
@@ -1027,7 +1027,7 @@ export const petpetDays = [{
             key: "seeh-khoar",
             evolution: "Unevolved",
             clan: "Rho",
-            url: ""
+            url: "/info/petpets/rho.html#seeh-khoar"
 	    },{
 		    month: "12",
 		    day: "9",
@@ -1037,7 +1037,7 @@ export const petpetDays = [{
             key: "bala-bala",
             evolution: "Unevolved",
             clan: "Nu",
-            url: ""
+            url: "/info/petpets/nu.html#bala-bala"
 	    },{
 		    month: "12",
 		    day: "12",
@@ -1047,7 +1047,7 @@ export const petpetDays = [{
             key: "rex",
             evolution: "Evolved",
             clan: "Alpha",
-            url: ""
+            url: "/info/petpets/alpha.html#rex"
 	    },{
 		    month: "12",
 		    day: "15",
@@ -1057,7 +1057,7 @@ export const petpetDays = [{
             key: "kumimic",
             evolution: "Unevolved",
             clan: "Lambda",
-            url: ""
+            url: "/info/petpets/lambda.html#kumimic"
 	    },{
 		    month: "12",
 		    day: "17",
@@ -1067,7 +1067,7 @@ export const petpetDays = [{
             key: "ioneshark",
             evolution: "Unevolved",
             clan: "Iota",
-            url: ""
+            url: "/info/petpets/iota.html#ioneshark"
 	    },{
 		    month: "12",
 		    day: "21",
@@ -1077,7 +1077,7 @@ export const petpetDays = [{
             key: "kong",
             evolution: "Evolved",
             clan: "Phi",
-            url: ""
+            url: "/info/petpets/phi.html#kong"
 	    },{
 		    month: "12",
 		    day: "27",
@@ -1087,7 +1087,7 @@ export const petpetDays = [{
             key: "spirifligh",
             evolution: "Evolved",
             clan: "Omega",
-            url: ""
+            url: "/info/petpets/omega.html#spirifligh"
 	    },{
 		    month: "12",
 		    day: "29",
@@ -1097,5 +1097,5 @@ export const petpetDays = [{
             key: "anosia-dragon",
             evolution: "Unevolved",
             clan: "Theta",
-            url: ""
+            url: "/info/petpets/theta.html#anosia-dragon"
 	    }];
