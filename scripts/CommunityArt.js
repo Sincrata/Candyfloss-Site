@@ -318,4 +318,9 @@ export const communityArt = [{
 		    prompt: "Luck of the Draw! Art prompt",
 		    position:"center",
 		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/dmrsnrw-b93d2116-cdca-485b-b3c9-f4c0f9508988.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "NifeWoofy"
 	    }];
