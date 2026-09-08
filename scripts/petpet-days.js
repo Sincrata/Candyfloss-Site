@@ -753,7 +753,7 @@ export const petpetDays = [{
 		    day: "8",
 		    petpet: "Gremotari",
 		    class: "purple",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "gremotari",
             evolution: "Evolved",
             clan: "Omega",
