@@ -42,6 +42,7 @@ class Nav extends HTMLElement {
             			      	<a href="/activities/achievements.html">Achievements</a>
             			      	<a href="/shops/gachapon.html">Floss Gachapon</a>
             			      	<a href="/activities/shows.html">Show Events</a>
+								<a href="/activities/petpet-days.html">Petpet Days</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
 								<a href="/activities/dollmakers/jawbreaker.html">Jawbreaker Bat Dollmaker</a>	
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/96567.dollmakers">Dollmakers Randomizers Quizzes</a>		      	
