@@ -323,4 +323,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Crystal",
 		    position:"center",
 		    artist: "NifeWoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127568829_dVHRg6722oLYiU4.webp",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
 	    }];
