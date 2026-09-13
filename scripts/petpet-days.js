@@ -773,7 +773,7 @@ export const petpetDays = [{
 		    day: "13",
 		    petpet: "Long-fu Yu",
 		    class: "green",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "longfu-yu",
             evolution: "Evolved",
             clan: "Beta",
