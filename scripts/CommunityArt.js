@@ -328,4 +328,29 @@ export const communityArt = [{
 		    prompt: "Movie Night Art Prompt",
 		    position:"center",
 		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127813789_iphv3P1jzXJtUML.webp",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127917500_ZJkrfhtTdrcaHdC.webp",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128169338_kAyWaSMa96AwqBk.webp",
+		    prompt: "Spring Cleaning Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-09-26_073154451.png",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "Perry2012draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128407241_HJzFXyOtkGuR8t9.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Axototlduck"
 	    }];
