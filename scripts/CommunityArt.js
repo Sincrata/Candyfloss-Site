@@ -353,4 +353,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Crystal",
 		    position:"center",
 		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-09-29_085545860.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Perry2012draws"
 	    }];
