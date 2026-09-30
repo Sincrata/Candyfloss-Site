@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawbreaker Bat Dollmaker</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/dollmaker.css">
+    <link rel="stylesheet" href="/css/jawbreaker.css">
+    <link rel="preload" href="/assets/logos/logo.gif" as="image">
+    <script type="module" src="/scripts/dollmakers/jawbreaker-bat/jawbreaker-controller.js" defer></script>
+    <script src="/scripts/components/header-component.js"></script>
+    <script src="/scripts/components/footer-component.js"></script>
+    <script src="/scripts/components/navbar-component.js"></script>
+    <link rel="icon" href="/assets/icons/Planet.ico">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header loading="eager">
+        <main-header></main-header>
+    </header>
+
+    <main>
+        <nav-bar></nav-bar>
+
+        <div class="card">
+
+
+            <div id="overlay" class="invisible"></div>
+            <div class="pop-up invisible" id="save-confirm" hidden>
+                <div class="back-bar"><button id="save-back" class="back-btn" tabindex="1">Back</button></div>
+                <button id="save-lines" class="popup-btn" tabindex="1">Save Lines</button>
+                <button id="save-picture" class="popup-btn" tabindex="1">Save PNG</button>
+            </div>
+
+            <div class="pop-up invisible" id="randomize-confirm" hidden>
+                <div class="back-bar"><button id="randomize-back" class="back-btn">Back</button></div>
+                <button id="randomize-all" class="popup-btn">Randomize All</button>
+                <button id="randomize-category" class="popup-btn">Randomize Current Category</button>
+                <button id="randomize-traits" class="popup-btn">Randomize All Traits</button>
+                <button id="randomize-current-trait" class="popup-btn">Randomize Current Trait</button>
+                <button id="randomize-colors" class="popup-btn">Randomize All Colors</button>
+            </div>
+            <div class="pop-up invisible" id="clear-confirm" hidden>
+                <div class="back-bar"><button id="clear-back" class="back-btn">Back</button></div>
+                <button id="clear-all" class="popup-btn">Reset All</button>
+            </div>
+
+            <img src="/assets/logos/jawbreaker-logo.png" id="main-logo" alt="Jawbreaker Bats" />
+            <div id="dollmaker">
+                <div id="preview" aria-label="Preview" tabindex="0">
+                    <div id="buttons">
+                        <a id="save" aria-label="save" role="button" tabindex="0"><img src="/assets/dollmakers/save.png"
+                                alt=""></a>
+                        <a id="random" aria-label="random" role="button" tabindex="0"><img
+                                src="/assets/dollmakers/random.png" alt=""></a>
+                        <a id="clear" aria-label="clear" role="button" tabindex="0"><img
+                                src="/assets/dollmakers/clear.png" alt=""></a>
+                    </div>
+                    <div id="canvases">
+                        <canvas id="fore-canvas" class="preview-canvas"></canvas>
+                        <canvas id="body-canvas" class="preview-canvas"></canvas>
+                        <canvas id="back-canvas" class="preview-canvas"></canvas>
+                        <canvas id="placeholder-canvas"></canvas>
+                    </div>
+                </div>
+
+
+
+                <div id="selection-bar" role="tablist" aria-label="Dollmaker sections">
+
+                    <div data-type="body" class="category selected" aria-label="Body Types" role="tab"
+                        aria-controls="body" tabindex="0" aria-selected="true">Body</div>
+
+                    <div data-type="markings" class="category" aria-label="Markings" role="tab" aria-controls="markings"
+                        tabindex="0" aria-selected="false">Markings</div>
+
+                    <div data-type="topcoat" class="category" aria-label="Topcoat" role="tab" aria-controls="topcoat"
+                        tabindex="0" aria-selected="false">Topcoat</div>
+
+                    <div data-type="antenna" class="category" aria-label="Antenna Shapes" role="tab"
+                        aria-controls="antenna" tabindex="0" aria-selected="false">Antenna</div>
+
+                    <div data-type="teeth" class="category" aria-label="Teeth Color" role="tab" aria-controls="teeth"
+                        tabindex="0" aria-selected="false">Teeth</div>
+
+                    <div data-type="mouth" class="category" aria-label="Teeth Color" role="tab" aria-controls="mouth"
+                        tabindex="0" aria-selected="false">Mouth</div>
+
+                    <div data-type="tongue" class="category" aria-label="Tongue Types" role="tab" aria-controls="tongue"
+                        tabindex="0" aria-selected="false">Tongue</div>
+
+                    <div data-type="tail" class="category" aria-label="Tail Types" role="tab" aria-controls="tail"
+                        tabindex="0" aria-selected="false">Tail</div>
+
+                    <div data-type="wings" class="category" aria-label="Wing Types" role="tab" aria-controls="wings"
+                        tabindex="0" aria-selected="false">Wings</div>
+
+                    <div data-type="horn" class="category" aria-label="Horn Types" role="tab" aria-controls="horn"
+                        tabindex="0" aria-selected="false">Horn</div>
+
+                    <div data-type="ears" class="category" aria-label="Ear Types" role="tab" aria-controls="ears"
+                        tabindex="0" aria-selected="false">Ears</div>
+
+                    <div data-type="background" class="category" aria-label="Backgrounds" role="tab"
+                        aria-controls="background" tabindex="0" aria-selected="false">Background</div>
+                </div>
+                <div id="colors" role="radiogroup">
+                    <div class="custom" aria-label="Color Wheel" role="radio" tabindex="0">
+                        <input type="color" tabindex="-1">
+                    </div>
+                    <div class="color" data-hex="#ffffff" style="background-color:#ffffff" role="radio" tabindex="0">
+                    </div>
+                    <div class="color" data-hex="#929292" style="background-color:#929292" role="radio"></div>
+                    <div class="color" data-hex="#262626" style="background-color:#262626" role="radio"></div>
+                    <div class="color" data-hex="#bd3d0b" style="background-color:#bd3d0b" role="radio"></div>
+                    <div class="color" data-hex="#700100" style="background-color:#700100" role="radio"></div>
+                    <div class="color" data-hex="#ffae8f" style="background-color:#ffae8f" role="radio"></div>
+                    <div class="color" data-hex="#824900" style="background-color:#824900" role="radio"></div>
+                    <div class="color" data-hex="#eaa527" style="background-color:#eaa527" role="radio"></div>
+                    <div class="color" data-hex="#eace9c" style="background-color:#eace9c" role="radio"></div>
+                    <div class="color" data-hex="#9e9500" style="background-color:#9e9500" role="radio"></div>
+                    <div class="color" data-hex="#eae027" style="background-color:#eae027" role="radio"></div>
+                    <div class="color" data-hex="#fffa9c" style="background-color:#fffa9c" role="radio"></div>
+                    <div class="color" data-hex="#294f00" style="background-color:#294f00" role="radio"></div>
+                    <div class="color" data-hex="#acdb2b" style="background-color:#acdb2b" role="radio"></div>
+                    <div class="color" data-hex="#e6ffa1" style="background-color:#e6ffa1" role="radio"></div>
+                    <div class="color" data-hex="#127800" style="background-color:#127800" role="radio"></div>
+                    <div class="color" data-hex="#58ca36" style="background-color:#58ca36" role="radio"></div>
+                    <div class="color" data-hex="#c4ffb2" style="background-color:#c4ffb2" role="radio"></div>
+                    <div class="color" data-hex="#005778" style="background-color:#005778" role="radio"></div>
+                    <div class="color" data-hex="#36a5ca" style="background-color:#36a5ca" role="radio"></div>
+                    <div class="color" data-hex="#b5edff" style="background-color:#b5edff" role="radio"></div>
+                    <div class="color" data-hex="#000066" style="background-color:#000066" role="radio"></div>
+                    <div class="color" data-hex="#3643ca" style="background-color:#3643ca" role="radio"></div>
+                    <div class="color" data-hex="#b0b7ff" style="background-color:#b0b7ff" role="radio"></div>
+                    <div class="color" data-hex="#440a94" style="background-color:#440a94" role="radio"></div>
+                    <div class="color" data-hex="#7436ca" style="background-color:#7436ca" role="radio"></div>
+                    <div class="color" data-hex="#d6b8ff" style="background-color:#d6b8ff" role="radio"></div>
+                    <div class="color" data-hex="#ce26db" style="background-color:#ce26db" role="radio"></div>
+                    <div class="color" data-hex="#d58bdb" style="background-color:#d58bdb" role="radio"></div>
+                    <div class="color" data-hex="#fcd1ff" style="background-color:#fcd1ff" role="radio"></div>
+                    <div class="color" data-hex="#693a13" style="background-color:#693a13" role="radio"></div>
+                    <div class="color" data-hex="#a9865e" style="background-color:#a9865e" role="radio"></div>
+                    <div class="color" data-hex="#e0d0bd" style="background-color:#e0d0bd" role="radio"></div>
+                </div>
+                <div id="tabs">
+                    <div id="body" class="tab" role="tabpanel" aria-hidden="false">
+                    </div>
+                    <div id="teeth" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="mouth" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="markings" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="topcoat" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="antenna" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="tongue" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="tail" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="wings" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="horn" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="ears" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                    <div id="background" class="tab transparent" role="tabpanel" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script type="module" src="/scripts/nav-bar.js"></script>
+</body>
+
+</html>

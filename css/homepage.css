@@ -1,171 +1,180 @@
-
-
-
 @media (min-width: 600px) {
- 	.mobile{
- 	display:none;
- 	}
- 	#mo-text{
- 	display:none;
- 	}
- 	.eventbox{
- 	overflow:auto;
- 	}
- 	.mobile-card{
-display:none;
- 	}
- 	.top5{
- 	width:10%;
- 	}
- 	.clanbox{
- 	overflow:auto;
- 	}
- }
+	.mobile {
+		display: none;
+	}
+
+	#mo-text {
+		display: none;
+	}
+
+	.eventbox {
+		overflow: auto;
+	}
+
+	.mobile-card {
+		display: none;
+	}
+
+	.top5 {
+		width: 10%;
+	}
+
+	.clanbox {
+		overflow: auto;
+	}
+}
 
 
 .col-25 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.hold{
-float:left;
- }
- 
-  .event-row{
- box-sizing:border-box;
- margin:auto;
- margin:-17px;
- width:100%;
- padding:15px ;
- height:25vh;
- display:flex;
-  }
- 
- .mobileclanbox{
- height:fit-content;
- }
- 
- .event-img{
- border-radius:5px  0px 0px 5px ;
- background-size:cover;
- box-sizing:border-box;
- width:30%;
- box-shadow: 5px 5px 5px 5px #140c38; 
- 
- }
- 
- .event-link{
- color:#dbd0fd;
- display:block;
- display:block;
- }
- 
-  .event-link:hover{
- color:#caedf7;
- display:block;
- }
- 
- .eventbox{
-box-sizing:border-box;
-width:70%;
-max-height:500px;
-padding:5px;
-margin-top:0px;
-background-color:#403175;
-border-radius:0px 5px 5px 0px;
-box-shadow: 5px 5px 5px 5px #140c38;
-margin: 0px 0px 0px  0px;
-margin-right:15px;
- }
- 
-.clanbox{
-box-sizing:border-box;
-width:70%;
- min-height:30vh;
-padding:5px;
-margin-top:0px;
-background-color:#403175;
-box-shadow: 12px 5px 5px 5px #140c38;
-margin: 0px 0px 0px  0px;
-margin-right:0px;
-}
- .clanimg{
- border-radius:  0px 5px 5px 0px ;
- background-size:cover;
- box-sizing:border-box;
- width:30%;
- min-height:30vh;
- box-shadow: 5px 5px 5px 5px #140c38; 
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
-.top5{
-
-background-color:#403175;
-box-shadow: 5px 5px 5px 5px #140c38;
-border-radius: 5px 0px 0px  5px; 
+.hold {
+	float: left;
 }
 
-.top5-all{
-height:50px;
-width:50px;
-margin:10px;
-border-radius:100px; 
-background-position:center;
-background-size:100%;
-background-color:#584894;
+.event-row {
+	box-sizing: border-box;
+	margin: auto;
+	margin: -17px;
+	width: 100%;
+	padding: 15px;
+	height: 25vh;
+	display: flex;
 }
 
-.row-art{
-grid-template-columns:1fr 1fr 1fr 1fr;
-display: grid;
-align-items: flex-end; 
-justify-content: space-between;
+.mobileclanbox {
+	height: fit-content;
 }
 
-#mobiletop5{
-float:left;
-margin-left:10%;
-display:none;}
+.event-img {
+	border-radius: 5px 0px 0px 5px;
+	background-size: cover;
+	box-sizing: border-box;
+	width: 30%;
+	box-shadow: 5px 5px 5px 5px #140c38;
 
-#mobiletop5 a{
-width:100%;
-display: block;
-transition: height 5s ease-in-out !important; 
-}
-#mobiletop5 a:hover{
-transform: scale(0.9) rotate(2deg); 
 }
 
+.event-link {
+	color: #dbd0fd;
+	display: block;
+	display: block;
+}
 
-.top5 a{
-width:100%;
-display: block;
-transition: height 5s ease-in-out !important; 
+.event-link:hover {
+	color: #caedf7;
+	display: block;
 }
-.top5 a:hover{
-transform: scale(0.9) rotate(2deg); 
+
+.eventbox {
+	box-sizing: border-box;
+	width: 70%;
+	max-height: 500px;
+	padding: 5px;
+	margin-top: 0px;
+	background-color: #403175;
+	border-radius: 0px 5px 5px 0px;
+	box-shadow: 5px 5px 5px 5px #140c38;
+	margin: 0px 0px 0px 0px;
+	margin-right: 15px;
 }
-#clanofthemonth{
-margin-right:15px; 
-width:98%;
+
+.clanbox {
+	box-sizing: border-box;
+	width: 70%;
+	min-height: 30vh;
+	padding: 5px;
+	margin-top: 0px;
+	background-color: #403175;
+	box-shadow: 12px 5px 5px 5px #140c38;
+	margin: 0px 0px 0px 0px;
+	margin-right: 0px;
 }
-.clanrow{
- box-sizing:border-box;
- display:flex;
- margin:auto;
- margin-top:15px;
- width: 80%;
- padding:15px ;
- overflow:hidden;
+
+.clanimg {
+	border-radius: 0px 5px 5px 0px;
+	background-size: cover;
+	box-sizing: border-box;
+	width: 30%;
+	min-height: 30vh;
+	box-shadow: 5px 5px 5px 5px #140c38;
+}
+
+.top5 {
+
+	background-color: #403175;
+	box-shadow: 5px 5px 5px 5px #140c38;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.top5-all {
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+	border-radius: 100px;
+	background-position: center;
+	background-size: 100%;
+	background-color: #584894;
+}
+
+.row-art {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+#mobiletop5 {
+	float: left;
+	margin-left: 10%;
+	display: none;
+}
+
+#mobiletop5 a {
+	width: 100%;
+	display: block;
+	transition: height 5s ease-in-out !important;
+}
+
+#mobiletop5 a:hover {
+	transform: scale(0.9) rotate(2deg);
 }
 
 
- <!--------------Media Querry---------------->
-@media (min-width: 700px) {
+.top5 a {
+	width: 100%;
+	display: block;
+	transition: height 5s ease-in-out !important;
 }
-@media (min-width: 1000px) {
- 	
+
+.top5 a:hover {
+	transform: scale(0.9) rotate(2deg);
+}
+
+#clanofthemonth {
+	margin-right: 15px;
+	width: 98%;
+}
+
+.clanrow {
+	box-sizing: border-box;
+	display: flex;
+	margin: auto;
+	margin-top: 15px;
+	width: 80%;
+	padding: 15px;
+	overflow: hidden;
+}
+
+#current-events a {
+	color: #d9c5ff;
 }
 
 
+
+@media (min-width: 700px) {}
+
+@media (min-width: 1000px) {}

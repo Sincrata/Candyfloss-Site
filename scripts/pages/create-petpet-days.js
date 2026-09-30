@@ -12,7 +12,11 @@ export default function generatePetpetDays(data) {
 		    day: "${date[1]}",
 		    petpet: "${date[2]}",
 		    class: "${date[3]}",
-            upcoming: "${date[4]}"
+            upcoming: "${date[4]}",
+            key: "${date[5]}",
+            evolution: "${date[6]}",
+            clan: "${date[7]}",
+            url: "${date[8]}"
 	    }`;
 
         if (i < dates.length - 1) {

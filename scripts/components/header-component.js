@@ -14,8 +14,8 @@ width:100%;
 background-size:cover;
 background-position:${chosenImage2.position};
 margin:0px;
-background-image:url('/images/banners/${chosenImage2.file}')">
- <a href="/index.html"><img src="/images/logos/logo.gif" style="max-width:90%; height: auto;"></a>
+background-image:url('/assets/banners/${chosenImage2.file}')">
+ <a href="/index.html"><img src="/assets/logos/logo.gif" style="max-width:90%; height: auto;"></a>
 </div>
 `;
   }
@@ -23,7 +23,11 @@ background-image:url('/images/banners/${chosenImage2.file}')">
 customElements.define('main-header', Header);
 
 //------------------------------------- IMAGE ROTATION-----------------------------------------
-const currentMonth2 = new Date().getMonth();
+const now = new Date();
+const options = { timeZone: "America/Chicago" };
+var month_header = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
+month_header = Number(month_header) - 1;
+
 const monthlyContent2 = [
   //JANUARY
   {
@@ -84,6 +88,7 @@ const monthlyContent2 = [
       { file: "theta1flip.png", position: "100%" },
       { file: "theta2flip.png", position: "100%" },
       { file: "theta3flip.png", position: "100%" },
+      { file: "theta4flip.png", position: "100%" },
     ],
   },
   //MAY
@@ -151,7 +156,7 @@ const monthlyContent2 = [
       { file: "phi3flip.png", position: "100%" },
       { file: "phi4 cropped.png", position: "top 100%" },
       { file: "omicron2flip.png", position: "100%" },
-      { file: "phi5flipcrop.png", position: "top 100%" }
+      { file: "phi5flipcrop.png", position: "top 100%" },
     ],
   },
   //SEPTEMBER
@@ -216,6 +221,6 @@ const monthlyContent2 = [
   },
 ];
 
-const currentData2 = monthlyContent2[currentMonth2];
+const currentData2 = monthlyContent2[month_header];
 const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
 const chosenImage2 = currentData2.imgPool[randomIndex2];

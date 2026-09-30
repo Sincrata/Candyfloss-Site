@@ -27,7 +27,7 @@ class Nav extends HTMLElement {
 				<a>Your Floss</a>
 				<div class="dropdown-content" id="nav2">
             			      	<a href="/inventory.html">Inventory</a>
-            			      	<a href="/my-achievements.html">My Achievements</a>
+            			      	<a href="/activities/my-achievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10545.myo-center">MYO Center</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10546.redesign-center">Redesign Your Floss</a>
@@ -39,10 +39,12 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Activities</a>
 				<div class="dropdown-content" id="nav3">
-            			      	<a href="/achievements.html">Achievements</a>
-            			      	<a href="/gachapon.html">Floss Gachapon</a>
-            			      	<a href="/shows.html">Show Events</a>
+            			      	<a href="/activities/achievements.html">Achievements</a>
+            			      	<a href="/shops/gachapon.html">Floss Gachapon</a>
+            			      	<a href="/activities/shows.html">Show Events</a>
+								<a href="/activities/petpet-days.html">Petpet Days</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10513.world-map">Explore Caramella</a>
+								<a href="/activities/dollmakers/jawbreaker.html">Jawbreaker Bat Dollmaker</a>	
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/96567.dollmakers">Dollmakers Randomizers Quizzes</a>		      	
             			       	
             			</div>
@@ -55,13 +57,31 @@ class Nav extends HTMLElement {
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/bulletins">Adopt a Floss</a>
             			      		<div class="submenu">
               							<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Petpet Shop <span>&raquo;</span></a>
-              							<div class="submenu-content">
-                    					 <a href="/petpets/alpha.html">Alpha Pets</a>
-										 <a href="/petpets/lambda2.html">Lambda Pets</a>
-										 <a href="/petpets/eataf.html">Eataf Pets</a>
+              							<div class="submenu-content" id="petpet-submenu">
+										<a href="/info/petpets/kappa.html">Kappa Pets</a>
+										<a href="/info/petpets/omega.html">Omega Pets</a>
+										<a href="/info/petpets/mu.html">Mu Pets</a>
+										<a href="/info/petpets/psi.html">Psi Pets</a>
+										<a href="/info/petpets/eta.html">Eta Pets</a>
+                    					 <a href="/info/petpets/alpha.html">Alpha Pets</a>
+										 <a href="/info/petpets/gamma.html">Gamma Pets</a>
+										 <a href="/info/petpets/delta.html">Delta Pets</a>
+										 <a href="/info/petpets/nu.html">Nu Pets</a>
+										 <a href="/info/petpets/chi.html">Chi Pets</a>
+										 <a href="/info/petpets/beta.html">Beta Pets</a>
+										 <a href="/info/petpets/phi.html">Phi Pets</a>
+										 <a href="/info/petpets/zeta.html">Zeta Pets</a>
+										 <a href="/info/petpets/theta.html">Theta Pets</a>
+										 <a href="/info/petpets/epsilon.html">Epsilon Pets</a>
+										 <a href="/info/petpets/rho.html">Rho Pets</a>
+										 <a href="/info/petpets/lambda.html">Lambda Pets</a>
+										 <a href="/info/petpets/sigma.html">Sigma Pets</a>
+										 <a href="/info/petpets/omicron.html">Omicron Pets</a>
+										 <a href="/info/petpets/eataf.html">Eataf Pets</a>
+										 <a href="/info/petpets/iota.html">Iota Pets</a>
               						    </div>
          						    </div>  
-            			      	<a href="https://toyhou.se/~forums/36602.prompt-prizes/286717.prompt-prize-counter">Prize Counter</a>
+            			      	<a href="/shops/prize-counter.html">Prize Counter</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10547.base-shop">Base Shop</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/86288.bt">Clothing Boutique</a>
             			       	<a href="https://toyhou.se/~forums/20970.community-commissions">Community Commissions</a>
@@ -98,7 +118,7 @@ class Nav extends HTMLElement {
 		<li id="nav7">
 			<div class="dropdown" >
 				<a>Clans</a>
-				<div class="dropdown-content" id="nav7">
+				<div class="dropdown-content clan-dropdown" id="nav7">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10531.kappa-clan">Kappa Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega">Omega Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan">Mu Clan</a>

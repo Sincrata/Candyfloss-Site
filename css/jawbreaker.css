@@ -1,0 +1,23 @@
+.antenna .feature{
+    min-width: 100px;
+}
+
+.teeth, .mouth {
+    display: none;
+}
+
+.body .feature{
+    min-width: 200px;
+}
+
+#body-canvas {
+    z-index: 3;
+}
+
+#fore-canvas {
+    z-index: 6;
+}
+
+#back-canvas{
+    z-index: 1;
+}

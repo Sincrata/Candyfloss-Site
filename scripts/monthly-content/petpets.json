@@ -512,12 +512,19 @@
         "unevolved": [
             {
                 "name": "Brilla Murcie",
-                "key": "brilla",
+                "key": "brilla-murcie",
                 "year": "2025",
-                "clan": "phi"
+                "clan": "omicron"
             }
         ],
-        "evolved": []
+        "evolved": [
+            {
+                "name": "Brilla Oso",
+                "key": "brilla-oso",
+                "year": "2026",
+                "clan": "omicron"
+            }
+        ]
     },
     "iota": {
         "unevolved": [
@@ -551,6 +558,12 @@
                 "name": "Knan Snap",
                 "key": "snap",
                 "year": "2022",
+                "clan": "iota"
+            },
+            {
+                "name": "Ione Thrasher",
+                "key": "ione-thrasher",
+                "year": "2026",
                 "clan": "iota"
             }
         ]
@@ -636,7 +649,7 @@
                 "clan": "kappa"
             },
             {
-                "name": "Smolnneffo",
+                "name": "Smolnnefo",
                 "key": "smolnnefo",
                 "year": "2021",
                 "clan": "kappa"
@@ -757,6 +770,37 @@
                 "year": "2025",
                 "clan": "psi"
             }
+        ]
+    },
+    "common": {
+        "unevolved": [
+            {
+                "name": "Jawbreaker Bat",
+                "key": "jawbreaker-bat",
+                "year": "2019",
+                "clan": "common"
+            },
+            {
+                "name": "Rainblo",
+                "key": "rainblo",
+                "year": "2020",
+                "clan": "common"
+            },
+            {
+                "name": "Marsmallow",
+                "key": "chippermink",
+                "year": "2021",
+                "clan": "common"
+            }
+        ],
+        "evolved": [
+        ]
+    }
+    ,
+    "club": {
+        "unevolved": [
+        ],
+        "evolved": [
         ]
     }
 }

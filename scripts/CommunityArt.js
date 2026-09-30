@@ -1,4 +1,14 @@
 export const communityArt = [{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120508078_0nj1l427ydVfPR5.png",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "Tenshilove"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120507762_wofsRL0WbYPSjIg.png",
+		    prompt: "Spring Cleaning Art Prompt",
+		    position:"center",
+		    artist: "Tenshilove"
+	    },{
 		    artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dab1e960-5cb3-4067-894a-acf431fd38a1/dlysit3-aeb3c4cf-c43a-4ae7-aa77-cb3652a0c4a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kYWIxZTk2MC01Y2IzLTQwNjctODk0YS1hY2Y0MzFmZDM4YTEvZGx5c2l0My1hZWIzYzRjZi1jNDNhLTRhZTctYWE3Ny1jYjM2NTJhMGM0YTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XZwacvflF5xlS7tTqfHZJqTFmBaKdoYGZwIjuVEuY3s",
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
@@ -29,7 +39,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Aquilapurr"
 	    },{
-		    artlink: "https://i.imgur.com/GNk3xXB.png",
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032238611.png",
 		    prompt: "Dress Up Dollie",
 		    position:"center",
 		    artist: "Eggface"
@@ -39,33 +49,18 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Axototlduck"
 	    },{
+		    artlink: "https://tinyurl.com/4wamxfdx",
+		    prompt: "Dress Up Dollie",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120503909_Jwm8X6ZcWF7eiI1.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Tenshilove"
 	    },{
-		    artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dab1e960-5cb3-4067-894a-acf431fd38a1/dm480xm-0f7d9dc0-6a3a-4dec-909d-be7d3d18b0bd.png/v1/fill/w_942,h_848/untitled_by_nifewoofy_dm480xm-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1MiIsInBhdGgiOiIvZi9kYWIxZTk2MC01Y2IzLTQwNjctODk0YS1hY2Y0MzFmZDM4YTEvZG00ODB4bS0wZjdkOWRjMC02YTNhLTRkZWMtOTA5ZC1iZTdkM2QxOGIwYmQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vTY2-SP1A9TJAtEm2e22LwH6Lwn8TYbWM1Ojsmb8JjI",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120508078_0nj1l427ydVfPR5.png",
-		    prompt: "House Plants Art Prompt",
-		    position:"center",
-		    artist: "Tenshilove"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120507762_wofsRL0WbYPSjIg.png",
-		    prompt: "Spring Cleaning Art Prompt",
-		    position:"center",
-		    artist: "Tenshilove"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120534479_8gReKeOWBekJf69.png",
 		    prompt: "Spring Cleaning Art Prompt",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
-		    artlink: "images/brokenentry.png",
-		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{
@@ -84,6 +79,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Countless"
 	    },{
+		    artlink: "/assets/brokenentry.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120753608_1l0vnsu6Kvfrub0.png",
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
@@ -93,16 +93,6 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "DressRibboness"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863805_A56uTxHWnNnHS0t.png",
-		    prompt: "Floss of the Month: Nyree",
-		    position:"center",
-		    artist: "KrissySempaiArt"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120856032_HrnAIbxX4pzAVAk.png",
-		    prompt: "House Plants Art Prompt",
-		    position:"center",
-		    artist: "KrissySempaiArt"
 	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120578176_dz0CiSs7MmAECKc.png",
 		    prompt: "Dress Up Dollie",
@@ -114,10 +104,20 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Ninjagomonster"
 	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863805_A56uTxHWnNnHS0t.png",
+		    prompt: "Floss of the Month: Nyree",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120860326_MThQ397TM8TbZla.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "Katsumi-draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120856032_HrnAIbxX4pzAVAk.png",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
 	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863846_VhCsenU1ICoLH4M.png",
 		    prompt: "Floss of the Month: Nyree",
@@ -129,7 +129,7 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Build-a-banshee-arts"
 	    },{
-		    artlink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/802de623-7e16-41a8-8ef5-a05fcecfd731/dm6f3sp-23b2102c-33ef-47c3-8521-5d71501c982e.png/v1/fill/w_1280,h_1273/breakfeast_prompt_by_sha3min_dm6f3sp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3MyIsInBhdGgiOiIvZi84MDJkZTYyMy03ZTE2LTQxYTgtOGVmNS1hMDVmY2VjZmQ3MzEvZG02ZjNzcC0yM2IyMTAyYy0zM2VmLTQ3YzMtODUyMS01ZDcxNTAxYzk4MmUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.j95oBZGbdeKiL0FvXfbtJfk-XEXRmPqGBTIzKDrS6hI",
+		    artlink: "https://tinyurl.com/vy3b5xka",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "CursedFreak"
@@ -139,25 +139,15 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031125660.png",
+		    prompt: "Floss of the Month: Chase",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121990005_xhWdISk40cm7lhq.png",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
 		    artist: "JubLubDubs"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/121143719_mAodRZZEBTwaKZc.png?1780719843",
-		    prompt: "Petpet Show",
-		    position:"center",
-		    artist: "Countless"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043963_IO6SjBNuR6bArIF.png",
-		    prompt: "Fashion Show",
-		    position:"center",
-		    artist: "Countless"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122043960_AgUZZpfvFgc2UoY.png",
-		    prompt: "Fashion Show",
-		    position:"center",
-		    artist: "Axototlduck"
 	    },{
 		    artlink: "https://i.postimg.cc/L8NmPN74/Untitled915-20260621214625.png",
 		    prompt: "Floss of the Month: Chase",
@@ -179,10 +169,10 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "axototlduck"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122629917_uiSdhxPjQYqZy80.png",
-		    prompt: "House Plants Art Prompt",
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031843152.png",
+		    prompt: "Floss of the Month: Chase",
 		    position:"center",
-		    artist: "Countless"
+		    artist: "NInjagomonster"
 	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122683714_nvJ0bLPS0l5o5TB.png?1782871498",
 		    prompt: "Floss of the Month: Chase",
@@ -194,6 +184,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Katsumi-Draws"
 	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122629917_uiSdhxPjQYqZy80.png",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "Countless"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122691347_u7Zn3M62EXfCMsR.png?1782878752",
 		    prompt: "Breakfast Time Art Prompt",
 		    position:"center",
@@ -204,23 +199,163 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "tenshilove"
+	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/123041123_iZCMHtcNeN65lex.png?1783291953",
 		    prompt: "Dog Days Chain Game",
 		    position:"center",
 		    artist: "Countless"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_031951386.png",
+		    prompt: "Dog Days Chain Game",
+		    position:"center",
+		    artist: "g0thieg0re"
 	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-07-24_073041895.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
 		    artist: "KrissySempaiArt"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/122519215_XFN6IQlO8hNKbw8.png",
-		    prompt: "Floss of the Month: Medha",
-		    position:"center",
-		    artist: "tenshilove"
-	    },{
-		    artlink: "https://postimg.cc/qNXYVMMD",
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032211747.png",
 		    prompt: "Floss of the Month: Medha",
 		    position:"center",
 		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/124747674_R5R1WrIAC8FthBZ.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Katsumi-draws"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032402514.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "FairyreS"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071159778.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-01_071528493.png",
+		    prompt: "Pool Floaties Chain Game",
+		    position:"center",
+		    artist: "NifeWoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/124756092_5spIvtnDAkoKAXj.png",
+		    prompt: "Floss of the Month: Medha",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/125615222_enB8Cn5Qby4GF1F.jpg",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "JubLubDubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/125828273_bCNbfGwuSA4vCtG.png",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126044338_qUbFN2CcxPwXAf9.png",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126125431_tDrAyWrFyDXrHdN.jpg",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "Jublubdubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126332426_K2TNEkS5Mol3vtu.png",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "KrissySempaiArt"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/Sugarbee-Breakfast.png",
+		    prompt: "Breakfast Time Art Prompt",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126727559_vA9bWL4vk0HDVMs.jpg",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126808644_c6ywStbJqUDztcY.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Tenshilove"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126811924_uX8H6PGygCnEFGh.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Katsumi-Draws"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/FOTM-Haniko.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126920016_qBcRwTXQwBSzlLS.png?1788212975",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126925636_jyYZuqKjf3NddPx.png",
+		    prompt: "Floss of the Month: Haniko",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/126940166_NwT2ebdJQvmuGX4.png",
+		    prompt: "Luau Art Prompt",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127042277_fePcYU17vWFttZs.png",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/dmrsnrw-b93d2116-cdca-485b-b3c9-f4c0f9508988.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "NifeWoofy"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127568829_dVHRg6722oLYiU4.webp",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127813789_iphv3P1jzXJtUML.webp",
+		    prompt: "House Plants Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/127917500_ZJkrfhtTdrcaHdC.webp",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128169338_kAyWaSMa96AwqBk.webp",
+		    prompt: "Spring Cleaning Art Prompt",
+		    position:"center",
+		    artist: "SharkydaivdM"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-09-26_073154451.png",
+		    prompt: "Luck of the Draw! Art prompt",
+		    position:"center",
+		    artist: "Perry2012draws"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128407241_HJzFXyOtkGuR8t9.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-09-29_085545860.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Perry2012draws"
 	    }];
