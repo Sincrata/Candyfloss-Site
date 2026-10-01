@@ -4,30 +4,30 @@
                 "current":[
                     {
 
-            "title": "Cozy up! Outfit design chain",
-            "type": "Chain",
-            "medium": "Art",
-            "banner": "cozy.png",
-            "text": "Autumn has arrived in caramella! All of the Candyfloss are bundling up in their Autumnal bests in preparation for Sweater weather! Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! ",
-            "badge": "cozy.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
-            "link": "https://toyhou.se/~forums/69434.art-chains/842691.cozy-up-outfit-design-chain",
-            "position": "13%",
-            "blurb": "Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! "
-        },{
-
-            "title": "Luck of the Draw! Art prompt",
+            "title": "Pumpkin Carving Art Prompt",
             "type": "Prompt",
             "medium": "Art",
-            "banner": "casino.png",
-            "text": "Dice! Cards! Casinos! The Iotafloss love to Gamble, and have invited you to test your luck! Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!",
-            "badge": "casino.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
+            "banner": "pumpkin.png",
+            "text": "Autumn is here! Candyfloss all over Caramella are carving and decorating Pumpkins to offer to the spirits for Volta tous Talfos. Draw one or more floss decorating and/or carving Pumpkins for the holiday to complete the pumpkin Carving art prompt!",
+            "badge": "pumpkin.png",
+            "start": "10/1/2026",
+            "end": "10/31/2026",
             "link": "",
-            "position": "50%",
-            "blurb": " Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!"
+            "position": "65%",
+            "blurb": "Draw one or more floss decorating and/or carving Pumpkins for the holiday to complete the pumpkin Carving art prompt!"
+        },{
+
+            "title": "Sweet Dreams Art Prompt",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "slumberparty.png",
+            "text": "The eternal night of Delta Calls all floss to cozy up in their most Comfy pajamas! whether it's oversized tee-shirts, fuzzy pants, or a full length night gown we want to see your Floss' coziest night clothes! Draw your floss in their pajamas alone or with a whole Slumber Party of friends in the Sweet Dreams art Prompt!",
+            "badge": "slumberparty.png",
+            "start": "10/1/2026",
+            "end": "10/31/2026",
+            "link": "",
+            "position": "100%",
+            "blurb": "Draw your floss in their pajamas alone or with a whole Slumber Party of friends in the Sweet Dreams art Prompt!"
         }
                 ],
                 "past": [
@@ -161,6 +161,32 @@
             "link": "",
             "position": "85%",
             "blurb": "Draw your candyfloss enjoying the sights, sounds and dance moves in a lambdan luau!"
+        },{
+
+            "title": "Cozy up! Outfit design chain",
+            "type": "Chain",
+            "medium": "Art",
+            "banner": "cozy.png",
+            "text": "Autumn has arrived in caramella! All of the Candyfloss are bundling up in their Autumnal bests in preparation for Sweater weather! Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! ",
+            "badge": "cozy.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
+            "link": "https://toyhou.se/~forums/69434.art-chains/842691.cozy-up-outfit-design-chain",
+            "position": "15%",
+            "blurb": "Design a cozy fit for the floss at the end of the chain, and throw your floss up to receive a custom outfit from the next artist in the chain! "
+        },{
+
+            "title": "Luck of the Draw! Art prompt",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "casino.png",
+            "text": "Dice! Cards! Casinos! The Iotafloss love to Gamble, and have invited you to test your luck! Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!",
+            "badge": "casino.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
+            "link": "",
+            "position": "50%",
+            "blurb": " Draw your Candyfloss in an art peice themed around casinos, Card games, Poker chips, Slot machines, dice, etc. for this Iota inspired Art prompt!"
         }
                 ],
                 "future": [
@@ -177,32 +203,6 @@
             "link": "x",
             "position": "",
             "blurb": ""
-        },{
-
-            "title": "Pumpkin Carving Art Prompt",
-            "type": "Prompt",
-            "medium": "Art",
-            "banner": "pumpkin.png",
-            "text": "Autumn is here! Candyfloss all over Caramella are carving and decorating Pumpkins to offer to the spirits for Volta tous Talfos. Draw one or more floss decorating and/or carving Pumpkins for the holiday to complete the pumpkin Carving art prompt!",
-            "badge": "pumpkin.png",
-            "start": "10/1/2026",
-            "end": "10/31/2026",
-            "link": "",
-            "position": "65%",
-            "blurb": "Draw one or more floss decorating and/or carving Pumpkins for the holiday to complete the pumpkin Carving art prompt!"
-        },{
-
-            "title": "Sweet Dreams Art Prompt",
-            "type": "Prompt",
-            "medium": "Art",
-            "banner": "slumberparty.png",
-            "text": "The eternal night of Delta Calls all floss to cozy up in their most Comfy pajamas! whether it's oversized tee-shirts, fuzzy pants, or a full length night gown we want to see your Floss' coziest night clothes! Draw your floss in their pajamas alone or with a whole Slumber Party of friends in the Sweet Dreams art Prompt!",
-            "badge": "slumberparty.png",
-            "start": "10/1/2026",
-            "end": "10/31/2026",
-            "link": "",
-            "position": "100%",
-            "blurb": "Draw your floss in their pajamas alone or with a whole Slumber Party of friends in the Sweet Dreams art Prompt!"
         },{
 
             "title": "Jack-o-Floss Event",
@@ -249,17 +249,17 @@
                 "current":[
                      {
 
-            "title": "Floss of the Month: Crystal",
+            "title": "Floss of the Month: Ether",
             "type": "FOTM",
             "medium": "Art",
-            "banner": "crystal.png",
-            "text": "Meet <A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal!</a><br><br>\nCrystal is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament. The sky's the limit with this optimistic floss!\n<br><br>\nCrystal belongs to <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>! Crystal is a longtime member of our community. From participating to events, organizing community projects, collecting an impressive amount of hybridfloss, and drawing adorable art, Crystal does it all. In particular, she's a wizard with spreadsheets. She's a gem in our community and we're happy to have them. Say \"hi\" to them if you see her!",
-            "badge": "crystal.png",
-            "start": "9/1/2026",
-            "end": "9/30/2026",
-            "link": "https://toyhou.se/11809437.crystal-c-nundrum",
+            "banner": "ether.png",
+            "text": "Floss of the month for October is <A href=\"https://toyhou.se/13805684.ether\">Ether</a>!<br> Ether is a nonbinary sugarfloss who loves reading books and napping around the house. When they are not found napping though, they are likely either recommending books to the customers at their job as a bookstore clerk, or trying out new hobbies. They especially enjoy the company of their partner Cloud, whom they love to go out camping with, or simply cozy up with him on the couch. The two of them have two kittens together; their oldest Storm, as well as the newest addition to their family, their newborn Rainfall. As a parent Ether tends to be rather protective of their kittens, often trying their best to not be too overbearing and let them have their freedom to make mistakes and learn from them. Alongside their partner, Ether has their younger twin brothers to keep them company and to jokingly remind them how old Ether now is.<br><br>Ether belongs to <a href=\"https://toyhou.se/Axototlduck\">Axototlduck<</a>br> Axototl duck has been a very active member of our community for many years now. They have been an active participant in many events and a cheery chatter on the Dicord server. Axototl is a very kind and positive person, who is often seen complimenting their fellow community members on their art and designs. They are also very helpful, answering questions or giving tips and advice to people when they ask in the MYO checking channel and otherwise. Axototl should also be known as a petpet enthusiast. They have partaken and designed so many petpets for their floss during the petpet days, even going so far as consistenly making a visual calendar for the event, thank you so much!  We are so glad to have you with us, Axototlduck, hope for many more fun years to come!",
+            "badge": "ether.png",
+            "start": "10/1/2026",
+            "end": "10/31/2026",
+            "link": "https://toyhou.se/13805684.ether",
             "position": "50%",
-            "blurb": "<A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal</a> is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament.\nDraw art of Crystal for our featured member <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>!\n"
+            "blurb": "Floss of the month for October is <A href=\"https://toyhou.se/13805684.ether\">Ether</a>!<br> Ether is a nonbinary sugarfloss who loves reading books and napping around the house. When they are not found napping though, they are likely either recommending books to the customers at their job as a bookstore clerk, or trying out new hobbies. <br><br>Ether belongs to <a href=\"https://toyhou.se/Axototlduck\">Axototlduck</a>! We are so glad to have you with us, Axototlduck, hope for many more fun years to come!"
         }
                 ],
                 "past": [
@@ -315,23 +315,23 @@
             "link": "https://toyhou.se/24037331.haniko",
             "position": "50%",
             "blurb": "Meet <a href=\"https://toyhou.se/24037331.haniko\" style=\"color:#d9c5ff;\">Haniko</a>! Haniko is what some would call a real ‘busy bee’ and always on the move! Haniko belongs to <a href=\"https://toyhou.se/g0thieg0re\" style=\"color:#d9c5ff;\">g0thieg0re</a>! "
+        },{
+
+            "title": "Floss of the Month: Crystal",
+            "type": "FOTM",
+            "medium": "Art",
+            "banner": "crystal.png",
+            "text": "Meet <A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal!</a><br><br>\nCrystal is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament. The sky's the limit with this optimistic floss!\n<br><br>\nCrystal belongs to <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>! Crystal is a longtime member of our community. From participating to events, organizing community projects, collecting an impressive amount of hybridfloss, and drawing adorable art, Crystal does it all. In particular, she's a wizard with spreadsheets. She's a gem in our community and we're happy to have them. Say \"hi\" to them if you see her!",
+            "badge": "crystal.png",
+            "start": "9/1/2026",
+            "end": "9/30/2026",
+            "link": "https://toyhou.se/11809437.crystal-c-nundrum",
+            "position": "50%",
+            "blurb": "<A href=\"https://toyhou.se/11809437.crystal-c-nundrum\">Crystal</a> is a sweet floss who might be found daydreaming, reading a book, making something, or even participating in an Omadaball tournament.\nDraw art of Crystal for our featured member <a href=\"https://toyhou.se/Crystalbinja\">Crystalbinja</a>!\n"
         }
                 ],
                 "future": [
-                    {
-
-            "title": "Floss of the Month: Ether",
-            "type": "FOTM",
-            "medium": "Art",
-            "banner": "ether.png",
-            "text": "Floss of the month for October is <A href=\"https://toyhou.se/13805684.ether\">Ether</a>!<br> Ether is a nonbinary sugarfloss who loves reading books and napping around the house. When they are not found napping though, they are likely either recommending books to the customers at their job as a bookstore clerk, or trying out new hobbies. They especially enjoy the company of their partner Cloud, whom they love to go out camping with, or simply cozy up with him on the couch. The two of them have two kittens together; their oldest Storm, as well as the newest addition to their family, their newborn Rainfall. As a parent Ether tends to be rather protective of their kittens, often trying their best to not be too overbearing and let them have their freedom to make mistakes and learn from them. Alongside their partner, Ether has their younger twin brothers to keep them company and to jokingly remind them how old Ether now is.<br><br>Ether belongs to <a href=\"https://toyhou.se/Axototlduck\">Axototlduck<</a>br> Axototl duck has been a very active member of our community for many years now. They have been an active participant in many events and a cheery chatter on the Dicord server. Axototl is a very kind and positive person, who is often seen complimenting their fellow community members on their art and designs. They are also very helpful, answering questions or giving tips and advice to people when they ask in the MYO checking channel and otherwise. Axototl should also be known as a petpet enthusiast. They have partaken and designed so many petpets for their floss during the petpet days, even going so far as consistenly making a visual calendar for the event, thank you so much!  We are so glad to have you with us, Axototlduck, hope for many more fun years to come!",
-            "badge": "ether.png",
-            "start": "10/1/2026",
-            "end": "10/31/2026",
-            "link": "https://toyhou.se/13805684.ether",
-            "position": "50%",
-            "blurb": "Floss of the month for October is <A href=\"https://toyhou.se/13805684.ether\">Ether</a>!<br> Ether is a nonbinary sugarfloss who loves reading books and napping around the house. When they are not found napping though, they are likely either recommending books to the customers at their job as a bookstore clerk, or trying out new hobbies. <br><br>Ether belongs to <a href=\"https://toyhou.se/Axototlduck\">Axototlduck</a>! We are so glad to have you with us, Axototlduck, hope for many more fun years to come!"
-        }
+                    
                 ]
             }
         }
