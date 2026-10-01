@@ -1,6 +1,6 @@
 class Nav extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
 <div class="stripe"></div>
 
 <button id="nav-toggle" aria-label="Toggle navigation"> Menu</button>
@@ -9,10 +9,10 @@ class Nav extends HTMLElement {
 <div id="nav-wrapper">
 <nav>
 	<ul id="button-bar">
-		<li id="nav1">
+		<li id="nav1" class="nav1">
 			<div class="dropdown" >
 				<a>Information</a>
-				<div class="dropdown-content" id="nav1">
+				<div class="dropdown-content nav1" class="nav1">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10511.what-is-candyfloss">What is a Candyfloss?</a>
             			      	<a href="https://docs.google.com/document/d/1MLnlv7rogHVP3n2VtQXL5M_xmBK2y3khSGI_oFw5RKU/edit?usp=sharing">Rules and TOS</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss">Toyhou.se World</a>
@@ -22,10 +22,10 @@ class Nav extends HTMLElement {
             			</div>
             		</div>
             	</li> 
-		<li id="nav2">
+		<li id="nav2" class="nav2">
 			<div class="dropdown" >
 				<a>Your Floss</a>
-				<div class="dropdown-content" id="nav2">
+				<div class="dropdown-content nav2" id="nav2">
             			      	<a href="/inventory.html">Inventory</a>
             			      	<a href="/activities/my-achievements.html">My Achievements</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/88594.candyfloss-discord">Discord Community</a>
@@ -35,10 +35,10 @@ class Nav extends HTMLElement {
             			</div>
             		</div>
             	</li> 
-		<li id="nav3">
+		<li id="nav3" class="nav3">
 			<div class="dropdown" >
 				<a>Activities</a>
-				<div class="dropdown-content" id="nav3">
+				<div class="dropdown-content nav3" id="nav3">
             			      	<a href="/activities/achievements.html">Achievements</a>
             			      	<a href="/shops/gachapon.html">Floss Gachapon</a>
             			      	<a href="/activities/shows.html">Show Events</a>
@@ -50,10 +50,10 @@ class Nav extends HTMLElement {
             			</div>
             		</div>
             	</li> 
-		<li id="nav4">
+		<li id="nav4" class="nav4">
 			<div class="dropdown" >
 				<a>Shops</a>
-				<div class="dropdown-content" id="nav4">
+				<div class="dropdown-content nav4" id="nav4">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/bulletins">Adopt a Floss</a>
             			      		<div class="submenu">
               							<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Petpet Shop <span>&raquo;</span></a>
@@ -88,20 +88,20 @@ class Nav extends HTMLElement {
             			</div>
             		</div>
             	</li>  
-		<li id="nav5">
+		<li id="nav5" class="nav5">
 			<div class="dropdown" >
 				<a>General Traits</a>
-				<div class="dropdown-content" id="nav5">
+				<div class="dropdown-content nav5" id="nav5">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10533.general-information">General Anatomy</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10540.add-on-traits">Add Ons</a>
             			       	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/54962.x">Coat Types</a>
 				</div>
             		</div>
             	</li> 
-		<li id="nav6">
+		<li id="nav6"class="nav6">
 			<div class="dropdown" >
 				<a>Flavors</a>
-				<div class="dropdown-content" id="nav6">
+				<div class="dropdown-content nav6" id="nav6">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10534.popfloss">Popfloss</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10535.sugarfloss">Sugarfloss</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10538.trufflefloss">Trufflefloss</a>
@@ -115,10 +115,10 @@ class Nav extends HTMLElement {
             			</div>
             		</div>
             	</li> 
-		<li id="nav7">
+		<li id="nav7"class="nav7">
 			<div class="dropdown" >
 				<a>Clans</a>
-				<div class="dropdown-content clan-dropdown" id="nav7">
+				<div class="dropdown-content clan-dropdown nav7" id="nav7">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10531.kappa-clan">Kappa Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/27140.omega">Omega Clan</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10528.mu-clan">Mu Clan</a>
@@ -170,7 +170,31 @@ document.querySelectorAll(".dropdown > a").forEach(link => {
 
 
 `;
-  }
+	}
 }
 customElements.define('nav-bar', Nav);
+
+const now_nav = new Date();
+const options_nav = { timeZone: "America/Chicago" };
+var month_nav = new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now);
+month_nav = Number(month_header) - 1;
+
+function addClass(selector, className) {
+	document.querySelectorAll(selector).forEach(el => {
+		el.classList.add(className);
+	});
+
+}
+
+if (month_header == 9) {
+	document.addEventListener("DOMContentLoaded", () => {
+		addClass(".nav1", "halloween");
+		addClass(".nav2", "halloween");
+		addClass(".nav3", "halloween");
+		addClass(".nav4", "halloween");
+		addClass(".nav5", "halloween");
+		addClass(".nav6", "halloween");
+		addClass(".nav7", "halloween");
+	})
+}
 

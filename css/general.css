@@ -101,29 +101,61 @@ nav li {
   background-color: #f694eb;
 }
 
+.nav1.halloween {
+  background-color: #AA7BD4 !important;
+}
+
 #nav2 {
   background-color: #eaa95c;
+}
+
+.nav2.halloween {
+  background-color: #6E3F99 !important;
 }
 
 #nav3 {
   background-color: #eed740;
 }
+.nav3.halloween {
+  background-color: #DE9023 !important;
+}
+
 
 #nav4 {
   background-color: #b0f2a5;
 }
+.nav4.halloween, .nav4.halloween .submenu-content {
+  background-color: #C25215 !important;
+}
+.nav4.halloween  .submenu-content a:hover{
+  background-color: #943d0e !important;
+}
+
+
 
 #nav5 {
   background-color: #8fdccc;
 }
+.nav5.halloween {
+  background-color: #F2E750 !important;
+}
+
 
 #nav6 {
   background-color: #97b7fa;
 }
+.nav6.halloween {
+  background-color: #6E3F99 !important;
+}
+
 
 #nav7 {
   background-color: #d9c5ff;
 }
+.nav7.halloween {
+  background-color: #e6a449 !important;
+}
+
 
 nav a {
   display: block;

@@ -15,7 +15,7 @@ background-size:cover;
 background-position:${chosenImage2.position};
 margin:0px;
 background-image:url('/assets/banners/${chosenImage2.file}')">
- <a href="/index.html"><img src="/assets/logos/logo.gif" style="max-width:90%; height: auto;"></a>
+ <a href="/index.html"><img src="${logo}" style="max-width:90%; height: auto;"></a>
 </div>
 `;
   }
@@ -224,3 +224,12 @@ const monthlyContent2 = [
 const currentData2 = monthlyContent2[month_header];
 const randomIndex2 = Math.floor(Math.random() * currentData2.imgPool.length);
 const chosenImage2 = currentData2.imgPool[randomIndex2];
+
+var logo = "/assets/logos/logo.gif";
+if(month_header == 9){
+  logo = "/assets/logos/halloween.gif";
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.backgroundImage = "url('/assets/backgrounds/halloween.png')";
+  })
+}
+

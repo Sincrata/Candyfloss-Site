@@ -216,16 +216,16 @@ export const topFive = {
         toplink5: "https://toyhou.se/10792519.aziraphale-norin"
     },
     "delta": {
-        topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628",
-        toplink1: "https://toyhou.se/8504270.lady",
-        topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/9179322?1608702797",
-        toplink2: "https://toyhou.se/9179322.pagliacci",
-        topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/11685624?1744812982",
-        toplink3: "https://toyhou.se/11685624.jelle-love-yurself-lubell",
-        topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4918167?1627075652",
-        toplink4: "https://toyhou.se/4918167.hysteria-l",
-        topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/10792519?1618966923",
-        toplink5: "https://toyhou.se/10792519.aziraphale-norin"
+        topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/11728187?1625548649",
+        toplink1: "https://toyhou.se/11728187.viande",
+        topimage2: "https://f2.toyhou.se/file/f2-toyhou-se/characters/2564655?1690244824",
+        toplink2: "https://toyhou.se/2564655.portabella",
+        topimage3: "https://f2.toyhou.se/file/f2-toyhou-se/characters/4539153?1608073932",
+        toplink3: "https://toyhou.se/4539153.jinx",
+        topimage4: "https://f2.toyhou.se/file/f2-toyhou-se/characters/5610394?1602309962",
+        toplink4: "https://toyhou.se/5610394.sian-meyrick",
+        topimage5: "https://f2.toyhou.se/file/f2-toyhou-se/characters/6312875?1688028068",
+        toplink5: "https://toyhou.se/6312875.isidora"
     },
     "kappa": {
         topimage1: "https://f2.toyhou.se/file/f2-toyhou-se/characters/8504270?1612825628",
