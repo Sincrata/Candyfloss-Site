@@ -12,7 +12,7 @@ class Nav extends HTMLElement {
 		<li id="nav1" class="nav1">
 			<div class="dropdown" >
 				<a>Information</a>
-				<div class="dropdown-content nav1" class="nav1">
+				<div class="dropdown-content nav1" id="nav1">
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10511.what-is-candyfloss">What is a Candyfloss?</a>
             			      	<a href="https://docs.google.com/document/d/1MLnlv7rogHVP3n2VtQXL5M_xmBK2y3khSGI_oFw5RKU/edit?usp=sharing">Rules and TOS</a>
             			      	<a href="https://toyhou.se/~world/53663.the-candyfloss">Toyhou.se World</a>
@@ -39,6 +39,7 @@ class Nav extends HTMLElement {
 			<div class="dropdown" >
 				<a>Activities</a>
 				<div class="dropdown-content nav3" id="nav3">
+								<a href="/events/autumn-event-26.html">Jack-o-Floss Event</a>
             			      	<a href="/activities/achievements.html">Achievements</a>
             			      	<a href="/shops/gachapon.html">Floss Gachapon</a>
             			      	<a href="/activities/shows.html">Show Events</a>
@@ -58,6 +59,7 @@ class Nav extends HTMLElement {
             			      		<div class="submenu">
               							<a href="https://toyhou.se/~world/53663.the-candyfloss/page/10548.petpet-shop">Petpet Shop <span>&raquo;</span></a>
               							<div class="submenu-content" id="petpet-submenu">
+										<a href="/info/petpets/common.html">Common Pets</a>
 										<a href="/info/petpets/kappa.html">Kappa Pets</a>
 										<a href="/info/petpets/omega.html">Omega Pets</a>
 										<a href="/info/petpets/mu.html">Mu Pets</a>

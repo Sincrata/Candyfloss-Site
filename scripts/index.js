@@ -14,8 +14,7 @@ var currentDay = Number(new Intl.DateTimeFormat("en-US", { ...options, day: "num
 var currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
 const even = currentYear % 2 == 0 ? "even" : "odd";
 const even_opposite = currentYear % 2 == 0 ? "odd" : "even";
-const todayCST = new Date(currentYear, currentMonth - 1, currentDay);
-
+var todayCST = new Date(currentYear, currentMonth - 1, currentDay);
 
 //achievements--------------------------------------------------------------------------
 const events = document.getElementById("current-events");

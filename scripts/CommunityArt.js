@@ -363,4 +363,29 @@ export const communityArt = [{
 		    prompt: "House Plants Art Prompt",
 		    position:"center",
 		    artist: "FadedFaeble"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128683056_tTMCWBJVFwUqVj0.png?1790806605",
+		    prompt: "Movie Night Art Prompt",
+		    position:"center",
+		    artist: "FadedFaeble"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128677096_HjcOp4dH7zKpLcu.jpg",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Jublubdubs"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128701367_nI9r9GwLWVyqKa1.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Tenshilove"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-10-01_073840331.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Ninjagomonster"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-10-01_120218837.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "CursedFreak"
 	    }];

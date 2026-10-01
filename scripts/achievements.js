@@ -10,7 +10,7 @@ const currentMonth = Number(new Intl.DateTimeFormat("en-US", { ...options, month
 const currentDay = Number(new Intl.DateTimeFormat("en-US", { ...options, day: "numeric" }).format(now));
 const currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
 
-const todayCST = new Date(currentYear, currentMonth - 1, currentDay);
+var todayCST = new Date(currentYear, currentMonth - 1, currentDay);
 
 function toDate(str) {
     const [m, d, yRaw] = str.split("/");
