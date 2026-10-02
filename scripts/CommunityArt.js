@@ -388,4 +388,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Crystal",
 		    position:"center",
 		    artist: "CursedFreak"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128719989_4Yh7pQ3HwZfghmq.png",
+		    prompt: "Floss of the Month: Crystal",
+		    position:"center",
+		    artist: "Katsumi-Draws"
 	    }];
