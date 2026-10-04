@@ -299,7 +299,8 @@ async function main() {
 
     const eventgrid = document.getElementById("event-grid");
     if (html == "") {
-        eventgrid.style.display = "none";
+        html = `<div class="loading" style="width: 100%;"> <h4 class="show-title">No Events Entered</h4></div>`;
+        eventgrid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
     }
 
     var loading = document.getElementById("event-loading");
