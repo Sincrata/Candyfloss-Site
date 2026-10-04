@@ -15,7 +15,8 @@
 		#badge-grid,
 		#image-grid,
 		#literature-grid,
-		#show-grid {
+		#show-grid,
+		#event-grid {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, 280px);
 			gap: 1rem;
@@ -28,12 +29,14 @@
 		}
 
 		#badge-grid,
-		#show-grid {
+		#show-grid,
+		#event-grid {
 			grid-template-columns: repeat(auto-fill, 150px);
 		}
 
 		.badge,
-		.show {
+		.show,
+		.event {
 			border-radius: 5px;
 			padding: 1em;
 			margin: 1rem;
@@ -85,7 +88,8 @@
 		.badge-image,
 		.image-image,
 		.literature-image,
-		.show-image {
+		.show-image,
+		.event-image {
 			width: 100%;
 			height: auto;
 			display: block;
@@ -96,6 +100,7 @@
 		.image-title,
 		.literature-title,
 		.show-title,
+		.event-title,
 		.loading h4 {
 			margin: 0.5rem 0;
 			font-size: 1.2rem;
@@ -105,7 +110,8 @@
 		.badge-info p,
 		.image-info p,
 		.literature-info p,
-		.show-info p {
+		.show-info p,
+		.event-info p {
 			margin: 0;
 			font-size: 0.9rem;
 			text-align: center;
@@ -237,6 +243,19 @@
 				</div>
 			</article>
 
+			<article id="events">
+				<div id="event-header" class="collapsible"><span class="arrow">▼</span>
+					<h2>Events</h2>
+				</div>
+				<div id="event-body" class="collapsible-content">
+					<div id="event-loading" class="loading">
+						<h4>Coming Soon!</h4>
+					</div>
+					<div id="event-grid">
+					</div>
+				</div>
+			</article>
+
 
 			<article id="images" style="display: none;">
 				<div id="image-header" class="collapsible"><span class="arrow">▼</span>
@@ -259,7 +278,7 @@
 					<div id="literature-loading" class="loading">
 						<h4>Coming Soon!</h4>
 					</div>
-					<div id="literaturet-grid">
+					<div id="literature-grid">
 					</div>
 				</div>
 			</article>

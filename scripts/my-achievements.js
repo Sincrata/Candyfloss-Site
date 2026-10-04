@@ -169,7 +169,7 @@ async function main() {
     var coins = 0;
     console.log(coin.length);
     if (coin.length > 0) {
-        coins = coin[0][12];
+        coins = coin[0][13];
     }
     count.innerHTML = `${coins} Coins`;
 
@@ -266,6 +266,47 @@ async function main() {
     loading.style.display = "none";
 
     showgrid.innerHTML = html;
+
+    async function loadFilteredEventsData() {
+        const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu0puNAxuzy-h-SkQYtRU4t_iuM46p5QZNvB1-rGB3BMUbnZkfTs8posmnenr3xboFklqQb7GhODlg/pub?gid=2079390980&single=true&output=csv";
+
+        const csv = await fetchCSV(url);
+        const rows = parseCSV(csv);
+
+        const results = filterRows3(
+            rows,
+            "User", username
+        );
+
+        return results;
+    }
+
+    const events = await loadFilteredEventsData();
+
+    html = "";
+    for (let i = 0; i < events.length; i++) {
+        var event = events[i];
+        html += `
+				<div class="event"> 
+					<img class="event-image" src="/assets/badge/${event[3]}">
+					<h4 class="event-title">${capitalizeFirstWord(event[1])}</h4>
+					<div class="event-info">
+                        <p>${event[2]}</p>
+					</div>
+				</div>
+				`;
+    }
+
+    const eventgrid = document.getElementById("event-grid");
+    if (html == "") {
+        eventgrid.style.display = "none";
+    }
+
+    var loading = document.getElementById("event-loading");
+    loading.style.display = "none";
+
+    eventgrid.innerHTML = html;
+
 
 }
 main();
