@@ -903,7 +903,7 @@ export const petpetDays = [{
 		    day: "11",
 		    petpet: "Greater Almaroo",
 		    class: "blue",
-            upcoming: "No",
+            upcoming: "Upcoming",
             key: "greater-almaroo",
             evolution: "Evolved",
             clan: "Nu",

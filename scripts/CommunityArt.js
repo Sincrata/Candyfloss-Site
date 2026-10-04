@@ -19,11 +19,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Nifewoofy"
 	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119886127_UEcixHR9k534mCH.png?1778775858",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "DressRibboness"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/119671530_64cdYFriNNHxEWJ.png",
 		    prompt: "Spring Cleaning Art Prompt",
 		    position:"center",
@@ -39,21 +34,6 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "Aquilapurr"
 	    },{
-		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-08-02_032238611.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Eggface"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120239032_3SNmfwFC7fgyAcj.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Axototlduck"
-	    },{
-		    artlink: "https://tinyurl.com/4wamxfdx",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Nifewoofy"
-	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120503909_Jwm8X6ZcWF7eiI1.png",
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
@@ -63,21 +43,6 @@ export const communityArt = [{
 		    prompt: "Spring Cleaning Art Prompt",
 		    position:"center",
 		    artist: "Nifewoofy"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120559235_Lst3U8DkZTzcotY.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Countless"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120559198_ylZiEaIdUMmWXw6.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Countless"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120559163_snRONfz7fUK3Ppp.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Countless"
 	    },{
 		    artlink: "/assets/brokenentry.png",
 		    prompt: "Floss of the Month: Nyree",
@@ -93,16 +58,6 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Nyree",
 		    position:"center",
 		    artist: "DressRibboness"
-	    },{
-		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120578176_dz0CiSs7MmAECKc.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Donutdoggy"
-	    },{
-		    artlink: "https://i.postimg.cc/1XNDq36q/Fashion-event.png",
-		    prompt: "Dress Up Dollie",
-		    position:"center",
-		    artist: "Ninjagomonster"
 	    },{
 		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/120863805_A56uTxHWnNnHS0t.png",
 		    prompt: "Floss of the Month: Nyree",
