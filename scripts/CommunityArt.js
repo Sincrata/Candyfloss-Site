@@ -353,4 +353,14 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Ether",
 		    position:"center",
 		    artist: "Axototlduck"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/128701365_qn6ZQo0jzuqZA2A.png",
+		    prompt: "Floss of the Month: Ether",
+		    position:"center",
+		    artist: "tenshilove"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-10-08_092200927.png",
+		    prompt: "Floss of the Month: Ether",
+		    position:"center",
+		    artist: "lilbeedraws"
 	    }];
