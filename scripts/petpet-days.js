@@ -923,7 +923,7 @@ export const petpetDays = [{
 		    day: "17",
 		    petpet: "Amouille Mourve",
 		    class: "yellow",
-            upcoming: "No",
+            upcoming: "Upcoming",
             key: "amouille-mourve",
             evolution: "Unevolved",
             clan: "Mu",
