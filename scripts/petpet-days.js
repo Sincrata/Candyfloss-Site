@@ -913,7 +913,7 @@ export const petpetDays = [{
 		    day: "14",
 		    petpet: "Petrinos Trogon",
 		    class: "green",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "petrinos-trogon",
             evolution: "Unevolved",
             clan: "Gamma",
