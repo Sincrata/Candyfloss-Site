@@ -953,7 +953,7 @@ export const petpetDays = [{
 		    day: "30",
 		    petpet: "Kolytasma",
 		    class: "pank",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "kolytasma",
             evolution: "Unevolved",
             clan: "Common",

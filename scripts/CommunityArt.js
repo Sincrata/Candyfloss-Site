@@ -364,6 +364,11 @@ export const communityArt = [{
 		    position:"center",
 		    artist: "lilbeedraws"
 	    },{
+		    artlink: "https://toyhou.se/~forums/post/11942710/view ",
+		    prompt: "Cozy up! Outfit design chain",
+		    position:"center",
+		    artist: "FadedFaeble"
+	    },{
 		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/image_2026-10-11_043320260.png",
 		    prompt: "Floss of the Month: Ether",
 		    position:"center",
