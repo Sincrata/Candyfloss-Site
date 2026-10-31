@@ -373,4 +373,9 @@ export const communityArt = [{
 		    prompt: "Floss of the Month: Ether",
 		    position:"center",
 		    artist: "Nifewoofy"
+	    },{
+		    artlink: "https://file.garden/ZdrPqBPsnD-ojeTG/FOTM-Ether.png",
+		    prompt: "Floss of the Month: Ether",
+		    position:"center",
+		    artist: "Ninjagomonster"
 	    }];
