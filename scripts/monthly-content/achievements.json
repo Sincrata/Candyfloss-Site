@@ -242,6 +242,32 @@
             "link": "",
             "position": "",
             "blurb": ""
+        },{
+
+            "title": "Rainbow Daze",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "rainbow.png",
+            "text": "Harness all the colors of the rainbow in this art prompt! Draw your candyfloss in a rainbow themed illustration! Use as many ROYGBIV colors as you can and have fun with it! The accurate colors of your candyfloss will not be a requirement for this prompt so you can go wild with their colors as an artistic expression! Draw your candyfloss covered in colors for this prompt!",
+            "badge": "rainbow.png",
+            "start": "11/1/2026",
+            "end": "11/30/2026",
+            "link": "",
+            "position": "50%",
+            "blurb": "Harness all the colors of the rainbow!  Draw your candyfloss covered in colors for this prompt!\n"
+        },{
+
+            "title": "Heroes and Villains",
+            "type": "Prompt",
+            "medium": "Lit",
+            "banner": "hero.png",
+            "text": "It's a bird! It's a plane! It's a Candyfloss Hero! Most Candyfloss harness some amount of their clan's signiture power, but certain individuals - through talent or training - have immense power that they may use to fight crime or to cause it! Write a short story about your candyfloss as a Kappan hero or villain in the style of American Superhero Comics. Up, up and away with tights and capes!",
+            "badge": "hero.png",
+            "start": "11/1/2026",
+            "end": "11/30/2026",
+            "link": "",
+            "position": "0%",
+            "blurb": "Write a short story about your candyfloss as a Kappan hero or villain in the style of American Superhero Comics. Up, up and away with tights and capes!"
         }
                 ]
             },
@@ -331,7 +357,20 @@
         }
                 ],
                 "future": [
-                    
+                    {
+
+            "title": "Floss of the Month: Nick",
+            "type": "FOTM",
+            "medium": "Art",
+            "banner": "nick.png",
+            "text": "The floss of the month for November is <a href=\"https://toyhou.se/12341078.nick\"> Nick!</a> Nick is known as an adventurous, energetic, and determined floss. They try their best to support and listen to their loved ones, even if sometimes they seem overbearing. As for hobbies, they love exploring, crafting, and astrology. Nick is also skilled with it's ability, using it to craft paths in the sky to 'fly' above heavy foot traffic. When traveling, it often makes small bat houses for jawbreaker bats it finds! At home in Chi, xe tends to xyr little garden, makes candles, and spends time with xyr close ones. <br><br>Nick belongs to <a href=\"https://toyhou.se/NifeWoofy\"> NifeWoofy!</a> NifeWoofy is a wonderful, active, long-time member of the community. They often participate in events and share their wonderful art in the server. They put a lot of love into making profiles and icons for their characters too. Sometimes they share free to use resources as well such as cute outfit lines and family bases. When chatting, Nife is friendly and polite, often leaving kind and helpful comments. Thank you for bringing such warm energy to the group, Nife!  ",
+            "badge": "nick.png",
+            "start": "11/1/2026",
+            "end": "11/30/2026",
+            "link": "https://toyhou.se/12341078.nick",
+            "position": "50%",
+            "blurb": "The floss of the month for November is <a href=\"https://toyhou.se/12341078.nick\"> Nick!</a> Nick is known as an adventurous, energetic, and determined floss. Nick belongs to <a href=\"https://toyhou.se/NifeWoofy\"> NifeWoofy!</a> Thank you for bringing such warm energy to the group, Nife!  "
+        }
                 ]
             }
         }
