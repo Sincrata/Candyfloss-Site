@@ -6,8 +6,8 @@ const fotm_box = document.getElementById("fotm");
 
 const now = new Date();
 const options = { timeZone: "America/Chicago" };
-const currentMonth = Number(new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now));
-const currentDay = Number(new Intl.DateTimeFormat("en-US", { ...options, day: "numeric" }).format(now));
+var currentMonth = Number(new Intl.DateTimeFormat("en-US", { ...options, month: "numeric" }).format(now));
+var currentDay = Number(new Intl.DateTimeFormat("en-US", { ...options, day: "numeric" }).format(now));
 const currentYear = Number(new Intl.DateTimeFormat("en-US", { ...options, year: "numeric" }).format(now));
 
 var todayCST = new Date(currentYear, currentMonth - 1, currentDay);
@@ -46,7 +46,7 @@ function addCurrentAchievement(achievement) {
             <div class="small-card">
                 <h2>${achievement.title}</h2>
                 <span>${achievement.medium} ${achievement.type}</span>
-                <img class="current-badge" src="/assets/badge/${achievement.badge}" style="max-width:${achievement.position};">
+                <img class="current-badge" src="/assets/badge/${achievement.badge}" >
                 <p>
                     ${achievement.text}
                 </p>
@@ -61,7 +61,7 @@ function addCurrentAchievement(achievement) {
             <div class="small-card">
                 <h2>${achievement.title}</h2>
                 <span>${achievement.medium} ${achievement.type}</span>
-                <img class="current-badge" src="/assets/badge/${achievement.badge}" style="max-width:${achievement.position};">
+                <img class="current-badge" src="/assets/badge/${achievement.badge}">
                 <p>
                     ${achievement.text}
                 </p>
