@@ -247,7 +247,7 @@ export const petpetDays = [{
             key: "rainblo",
             evolution: "Unevolved",
             clan: "Common",
-            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17249.rainblo"
+            url: "/info/petpets/common.html#rainblo"
 	    },{
 		    month: "3",
 		    day: "21",
@@ -657,7 +657,7 @@ export const petpetDays = [{
             key: "jawbreaker-bat",
             evolution: "Unevolved",
             clan: "Common",
-            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17229.jawbreakers"
+            url: "/info/petpets/common.html#jawbreaker-bat"
 	    },{
 		    month: "7",
 		    day: "29",
@@ -787,7 +787,7 @@ export const petpetDays = [{
             key: "marsmallow",
             evolution: "Unevolved",
             clan: "Common",
-            url: "https://toyhou.se/~world/53663.the-candyfloss/page/17250.marsmallows"
+            url: "/info/petpets/common.html#marsmallow"
 	    },{
 		    month: "9",
 		    day: "8",
@@ -1013,7 +1013,7 @@ export const petpetDays = [{
 		    day: "13",
 		    petpet: "Eros Mythos",
 		    class: "yellow",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "eros-mythos",
             evolution: "Evolved",
             clan: "Mu",
