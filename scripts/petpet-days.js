@@ -1013,7 +1013,7 @@ export const petpetDays = [{
 		    day: "13",
 		    petpet: "Eros Mythos",
 		    class: "yellow",
-            upcoming: "Today",
+            upcoming: "No",
             key: "eros-mythos",
             evolution: "Evolved",
             clan: "Mu",
