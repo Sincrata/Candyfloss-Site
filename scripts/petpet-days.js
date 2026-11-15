@@ -1033,7 +1033,7 @@ export const petpetDays = [{
 		    day: "22",
 		    petpet: "Brilla Oso",
 		    class: "pank",
-            upcoming: "No",
+            upcoming: "Upcoming",
             key: "brilla-oso",
             evolution: "Evolved",
             clan: "Omicron",
