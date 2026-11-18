@@ -1023,7 +1023,7 @@ export const petpetDays = [{
 		    day: "18",
 		    petpet: "Makro Oplo",
 		    class: "gold",
-            upcoming: "Upcoming",
+            upcoming: "Today",
             key: "makro",
             evolution: "Evolved",
             clan: "Iota",
