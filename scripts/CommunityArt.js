@@ -398,4 +398,14 @@ export const communityArt = [{
 		    prompt: "Rainbow Daze",
 		    position:"center",
 		    artist: "MrsPlay"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/131294315_SZXlC7HsQh00gX9.jpg",
+		    prompt: "Sweet Dreams Art Prompt",
+		    position:"center",
+		    artist: "LuckyKitty01"
+	    },{
+		    artlink: "https://f2.toyhou.se/file/f2-toyhou-se/images/131911899_P8iVyqyc5J8bxdi.jpg",
+		    prompt: "Floss of the Month: Nick",
+		    position:"center",
+		    artist: "LuckyKitty01"
 	    }];

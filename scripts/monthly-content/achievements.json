@@ -271,9 +271,9 @@
         },{
 
             "title": "Dashing Through the Snow",
-            "type": "",
-            "medium": "",
-            "banner": "",
+            "type": "Prompt",
+            "medium": "Art",
+            "banner": "snow.png",
             "text": "Snow is falling! Kittens calling! It's holiday cheer! Draw your Candyfloss playing (or suffering) in the snow to earn a badge this christmas season! Whether it's a pleasant bright afternoon with their friends and family, or struggling through a blistering ice storm, we want to see your Floss in the snow!",
             "badge": "snow.png",
             "start": "12/1/2026",
@@ -284,8 +284,8 @@
         },{
 
             "title": "Gizmos and Whirlidids",
-            "type": "",
-            "medium": "",
+            "type": "Prompt",
+            "medium": "Art",
             "banner": "gear.png",
             "text": "Zeta is the clan of mechanisms and gearboxes! Join the Zeta engineers in this steampunk inspired prompt! Draw your floss interacting with, building, repairing, or battling against a Zetan rustbucket robot! Wrenches and oil stains included, we want to see your floss in a Zetan workshop!",
             "badge": "gear.png",
@@ -294,19 +294,6 @@
             "link": "",
             "position": "",
             "blurb": "Join the Zeta engineers in this steampunk inspired prompt! Draw your floss interacting with, building, repairing, or battling against a Zetan rustbucket robot!"
-        },{
-
-            "title": "",
-            "type": "",
-            "medium": "",
-            "banner": "",
-            "text": "",
-            "badge": "",
-            "start": "12/1/2026",
-            "end": "12/31/2026",
-            "link": "",
-            "position": "",
-            "blurb": ""
         }
                 ]
             },
@@ -409,7 +396,20 @@
         }
                 ],
                 "future": [
-                    
+                    {
+
+            "title": "",
+            "type": "FOTM",
+            "medium": "Art",
+            "banner": "",
+            "text": "The floss of the month for December is <a href=\"#\"></a> ",
+            "badge": "",
+            "start": "12/1/2026",
+            "end": "12/31/2026",
+            "link": "",
+            "position": "",
+            "blurb": ""
+        }
                 ]
             }
         }
