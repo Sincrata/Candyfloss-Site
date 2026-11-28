@@ -279,7 +279,7 @@
             "start": "12/1/2026",
             "end": "12/31/2026",
             "link": "",
-            "position": "",
+            "position": "100%",
             "blurb": "Snow is falling! Kittens calling! It's holiday cheer! Draw your Candyfloss playing (or suffering) in the snow to earn a badge this christmas season"
         },{
 
@@ -292,7 +292,7 @@
             "start": "12/1/2026",
             "end": "12/31/2026",
             "link": "",
-            "position": "",
+            "position": "0%",
             "blurb": "Join the Zeta engineers in this steampunk inspired prompt! Draw your floss interacting with, building, repairing, or battling against a Zetan rustbucket robot!"
         }
                 ]
